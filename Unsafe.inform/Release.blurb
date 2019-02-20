@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6M62
 
-status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/jakob/Documents/Inform/Unsafe.inform/Build/StatusCblorb.html"
+status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/raxtus/dev/unsafe/Unsafe.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/Users/jakob/Documents/Inform/Unsafe.inform"
-release to "/Users/jakob/Documents/Inform/Unsafe.materials/Release"
+project folder "/Users/raxtus/dev/unsafe/Unsafe.inform"
+release to "/Users/raxtus/dev/unsafe/Unsafe.materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "Unsafe.gblorb"
-storyfile "/Users/jakob/Documents/Inform/Unsafe.inform/Build/output.ulx" include
-ifiction "/Users/jakob/Documents/Inform/Unsafe.inform/Metadata.iFiction" include
+storyfile "/Users/raxtus/dev/unsafe/Unsafe.inform/Build/output.ulx" include
+ifiction "/Users/raxtus/dev/unsafe/Unsafe.inform/Metadata.iFiction" include
 cover "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 picture 1 "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 
@@ -23,7 +23,7 @@ placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2019"
 placeholder [TITLE] = "Unsafe"
 placeholder [AUTHOR] = "Brian Chen and Jakob Weisblat"
-placeholder [BLURB] = "A work of interactive fiction."
+placeholder [BLURB] = "TODO fixme"
 
 ! Other material to release
 
