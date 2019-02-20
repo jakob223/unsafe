@@ -4,11 +4,12 @@ The story description is "TODO fixme".
 The release number is 1.
 The story creation year is 2019.
 
-Section 1 - Meta
+Part 1 - Meta
 
 Instead of going through a closed door:
 	say "You can't go through [the door gone through] because it's closed."
 [comment: The can't go through closed doors rule is not listed in the check going rulebook.]
+[TODO: similar rule for using objects you're not holding]
 
 When play begins:
 	now the right hand status line is "Moves: [turn count - 1]"; [Inform's turn count basically says what number the "current move" is, so we subtract one.]
@@ -25,9 +26,9 @@ To conclude with (par - a number):
 	else:
 		say "You can reach this ending more quickly!"
 
-Section 2 - House
+Part 2 - House
 
-Part 3 - First Floor
+Section 1 - First Floor
 
 The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east."
 
@@ -53,7 +54,7 @@ South of the Hall is the Back Entryway. There is a blue key in the back entryway
 South of the back door is the backyard. In the backyard is a stick.
 
 
-Part 4 - Second Floor
+Section 2 - Second Floor
 
 Above the Hall is a room called the Upstairs Hall. The description of the Upstairs Hall is "The second floor of your house. Stairs lead down. The study is west, and the bathroom is east."
 The staircase is below the Upstairs Hall.
@@ -63,18 +64,22 @@ North of the Study is a room called the Closet.
 
 East of the Upstairs Hall is the Bathroom.
 The mirror is scenery in the bathroom.
-There is a medicine cabinet in the bathroom. The medicine cabinet is an openable closed container. There is hair gel in the medicine cabinet. The hair gel is wearable. The description is "A bottle of hair gel. You can put it on. There's a warning on the gel that says 'EXTREMELY FLAMMABLE'."
+There is a medicine cabinet in the bathroom. The medicine cabinet is an openable closed container. There is hair gel in the medicine cabinet. The hair gel is wearable. The description is "A bottle of hair gel. You can put it on. There's a warning on the gel that says 'EXTREMELY FLAMMABLE'." 
+[TODO: the player can only put this on while in the bathroom]
+[TODO: you can't take off the hair gel]
+[TODO: when you put on the hair gel, tell you how fancy you look]
 
 Instead of opening or closing the medicine cabinet when the player is not on the stool:
 	say "You're not tall enough to reach the medicine cabinet. Drat!"
 
-Below the Hall is the Basement. The Tunnel of Extraction is a door. It is open. It is not openable. It is west of the Basement. [???] The description is "A long, winding tunnel. It used to be used to extract minerals and stuff. Now, it's probably still useful for extracting other things."
+[TODO: mention the basement when you're in the hall]
+Below the Hall is the Basement. There is a door called The Tunnel of Extraction. It is open. It is not openable. It is west of the Basement. [???] The description is "A long, winding tunnel. It used to be used to extract minerals and stuff. Now, it's probably still useful for extracting other things."
 
 The description of the Basement is "The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west."
 
 The House is a region. The Bedroom and the Kitchen and the Hall and the Upstairs Hall and the Study and the Back Entryway and the Closet and the Bathroom and the Basement are in the House.
 
-Section 2 - Between
+Part 3 - Between
 
 West of the bedroom is a door called the Side Door. West of the side door is a room called The Garden. The side door is closed.
 In the garden is a locked closed container called the Shed.
@@ -90,7 +95,7 @@ West of Further Along the Road is the Parking Lot.
 North of Further Along is the Abandoned Train Station.
 East of the Abandoned Train station is the Control Room.
 
-Abandoned Warehouse is a room. West of the Town Square is the warehouse. The Abandoned Warehouse is south of the Road. The description is "The warehouse is old and abandoned. Not much more to say. The Road is to the west. There's something to the south. The Tunnel of Extraction is below." The Tunnel of Extraction is below the warehouse.
+Abandoned Warehouse is a room. West of the Town Square is the warehouse. The Abandoned Warehouse is south of the Road. The description is "The warehouse is old and abandoned.It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West." The Tunnel of Extraction is below the warehouse.
 
 South of the Abandoned Warehouse is a room called A Spooky Lair. 
 The description of the lair is "A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it."
@@ -101,7 +106,7 @@ Instead of taking or touching the candle when the player is wearing hair gel:
 	say "You touch the candle. The flame leaps onto your hair. Boom!";
 	conclude with 17.
 
-Section 3 - Nature
+Part 4 - Nature
 
 West of the Road is a stream. South of the stream is a clearing. west of the clearing is the edge of the woods. West of the edge is a room called the Woods. South of the Woods is the Hunting Grounds. South of the hunting grounds is the hunting lodge.
 
@@ -109,7 +114,7 @@ East of the clearing is the abandoned warehouse.
 
 The bear is a neuter animal. [TODO: if you try to go to the woods, the bear shows up]
 
-Section 4 - Town
+Part 5 - Town
 
 South of the Outskirts of Town is the Town Square.
 South of the Town Square is a door called the Mad Scientist's Grand Entrance. south of the Mad Scientist's grand entrance is the Mad Scientist's house.

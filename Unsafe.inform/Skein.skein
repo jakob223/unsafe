@@ -19,1239 +19,7 @@ It's your bedroom. It's not very interesting. The hall is to the east.
 You can see the Side Door here.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1031"></child>
-            <child nodeId="node-1028"></child>
-            <child nodeId="node-1019"></child>
-            <child nodeId="node-1061"></child>
-            <child nodeId="node-1018"></child>
-            <child nodeId="node-1003"></child>
-        </children>
-    </item>
-    <item nodeId="node-1003">
-        <command xml:space="preserve">x</command>
-        <result xml:space="preserve">What do you want to examine?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1004"></child>
-        </children>
-    </item>
-    <item nodeId="node-1004">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Bedroom
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1005"></child>
-        </children>
-    </item>
-    <item nodeId="node-1005">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1006"></child>
-        </children>
-    </item>
-    <item nodeId="node-1006">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Hall
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1007"></child>
-        </children>
-    </item>
-    <item nodeId="node-1007">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1008"></child>
-        </children>
-    </item>
-    <item nodeId="node-1008">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Upstairs Hall
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1009"></child>
-        </children>
-    </item>
-    <item nodeId="node-1009">
-        <command xml:space="preserve">d</command>
-        <result xml:space="preserve">
-Hall
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1010"></child>
-        </children>
-    </item>
-    <item nodeId="node-1010">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Kitchen
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1011"></child>
-        </children>
-    </item>
-    <item nodeId="node-1011">
-        <command xml:space="preserve">nw</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1012"></child>
-        </children>
-    </item>
-    <item nodeId="node-1012">
-        <command xml:space="preserve">ne</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1013"></child>
-        </children>
-    </item>
-    <item nodeId="node-1013">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1014"></child>
-        </children>
-    </item>
-    <item nodeId="node-1014">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1015"></child>
-        </children>
-    </item>
-    <item nodeId="node-1015">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Hall
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1016"></child>
-        </children>
-    </item>
-    <item nodeId="node-1016">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">
-Back Entryway
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1017"></child>
-        </children>
-    </item>
-    <item nodeId="node-1017">
-        <command xml:space="preserve">ne</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1018">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">You can't go through the Side Door because it's closed.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1068"></child>
-        </children>
-    </item>
-    <item nodeId="node-1068">
-        <command xml:space="preserve">open door</command>
-        <result xml:space="preserve">You open the Side Door.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1069"></child>
-        </children>
-    </item>
-    <item nodeId="node-1069">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-The Garden
-You can see the Side Door and the Shed (closed) here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1074"></child>
-            <child nodeId="node-1070"></child>
-        </children>
-    </item>
-    <item nodeId="node-1070">
-        <command xml:space="preserve">x shed</command>
-        <result xml:space="preserve">(the Shed)
-You see nothing special about the Shed.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1074">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">Bedroom
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1075"></child>
-        </children>
-    </item>
-    <item nodeId="node-1075">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">Bedroom
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1076"></child>
-        </children>
-    </item>
-    <item nodeId="node-1076">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">Bedroom
-[Previous turn undone.]
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1077"></child>
-        </children>
-    </item>
-    <item nodeId="node-1077">
-        <command xml:space="preserve">undo</command>
-        <result xml:space="preserve">You can't "undo" what hasn't been done!
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1061">
-        <command xml:space="preserve">verbose</command>
-        <result xml:space="preserve">Unsafe is now in its "verbose" mode, which always gives long descriptions of locations (even if you've been there before).
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1062"></child>
-        </children>
-    </item>
-    <item nodeId="node-1062">
-        <command xml:space="preserve">showrules</command>
-        <result xml:space="preserve">That's not a verb I recognise.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1063"></child>
-        </children>
-    </item>
-    <item nodeId="node-1063">
-        <command xml:space="preserve">show rules</command>
-        <result xml:space="preserve">You can't see any such thing.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1064"></child>
-        </children>
-    </item>
-    <item nodeId="node-1064">
-        <command xml:space="preserve">show</command>
-        <result xml:space="preserve">(yourself the Side Door)
-(first taking the Side Door)
-That's fixed in place.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1065"></child>
-        </children>
-    </item>
-    <item nodeId="node-1065">
-        <command xml:space="preserve">rules</command>
-        <result xml:space="preserve">Rules tracing now switched on. Type "rules off" to switch it off again, or "rules all" to include even rules which do not apply.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1066"></child>
-        </children>
-    </item>
-    <item nodeId="node-1066">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">[Rule "declare everything initially unmentioned rule" applies.]
-[Rule "standard set going variables rule" applies.]
-[Rule "announce items from multiple object lists rule" applies.]
-[Rule "set pronouns from items from multiple object lists rule" applies.]
-[Rule "before stage rule" applies.]
-[Rule "instead stage rule" applies.]
-[Rule "investigate player's awareness before action rule" applies.]
-[Rule "player aware of his own actions rule" applies.]
-[Rule "check stage rule" applies.]
-[Rule "can't travel in what's not a vehicle rule" applies.]
-[Rule "can't go through undescribed doors rule" applies.]
-[Rule "can't go through closed doors rule" applies.]
-(first opening the Side Door)
-[Rule "announce items from multiple object lists rule" applies.]
-[Rule "set pronouns from items from multiple object lists rule" applies.]
-[Rule "before stage rule" applies.]
-[Rule "instead stage rule" applies.]
-[Rule "investigate player's awareness before action rule" applies.]
-[Rule "player aware of his own actions rule" applies.]
-[Rule "check stage rule" applies.]
-[Rule "can't open unless openable rule" applies.]
-[Rule "can't open what's locked rule" applies.]
-[Rule "can't open what's already open rule" applies.]
-[Rule "carry out stage rule" applies.]
-[Rule "standard opening rule" applies.]
-[Rule "after stage rule" applies.]
-[Rule "investigate player's awareness after action rule" applies.]
-[Rule "report stage rule" applies.]
-[Rule "last specific action-processing rule" applies.]
-[Rule "determine map connection rule" applies.]
-[Rule "can't go that way rule" applies.]
-[Rule "carry out stage rule" applies.]
-[Rule "move player and vehicle rule" applies.]
-[Rule "move floating objects rule" applies.]
-[Rule "check light in new location rule" applies.]
-[Rule "after stage rule" applies.]
-[Rule "investigate player's awareness after action rule" applies.]
-[Rule "report stage rule" applies.]
-[Rule "describe room gone into rule" applies.]
-
-[Rule "determine visibility ceiling rule" applies.]
-[Rule "investigate player's awareness before action rule" applies.]
-[Rule "player aware of his own actions rule" applies.]
-[Rule "check stage rule" applies.]
-[Rule "carry out stage rule" applies.]
-[Rule "declare everything unmentioned rule" applies.]
-[Rule "room description heading rule" applies.]
-The Garden
-[Rule "room description body text rule" applies.]
-[Rule "room description paragraphs about objects rule" applies.]
-[Rule "initialise locale description rule" applies.]
-[Rule "find notable locale objects rule" applies.]
-[Rule "standard notable locale objects rule" applies.]
-[Rule "interesting locale paragraphs rule" applies.]
-[Rule "don't mention player's supporter in room descriptions rule" applies.]
-[Rule "don't mention scenery in room descriptions rule" applies.]
-[Rule "don't mention undescribed items in room descriptions rule" applies.]
-[Rule "set pronouns from items in room descriptions rule" applies.]
-[Rule "offer items to writing a paragraph about rule" applies.]
-[Rule "use initial appearance in room descriptions rule" applies.]
-[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
-[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
-[Rule "don't mention player's supporter in room descriptions rule" applies.]
-[Rule "don't mention scenery in room descriptions rule" applies.]
-[Rule "don't mention undescribed items in room descriptions rule" applies.]
-[Rule "set pronouns from items in room descriptions rule" applies.]
-[Rule "offer items to writing a paragraph about rule" applies.]
-[Rule "use initial appearance in room descriptions rule" applies.]
-[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
-[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
-[Rule "don't mention player's supporter in room descriptions rule" applies.]
-[Rule "don't mention scenery in room descriptions rule" applies.]
-[Rule "don't mention undescribed items in room descriptions rule" applies.]
-[Rule "set pronouns from items in room descriptions rule" applies.]
-[Rule "offer items to writing a paragraph about rule" applies.]
-[Rule "use initial appearance in room descriptions rule" applies.]
-[Rule "describe what's on scenery supporters in room descriptions rule" applies.]
-[Rule "describe what's on mentioned supporters in room descriptions rule" applies.]
-[Rule "you-can-also-see rule" applies.]
-You can see the Side Door and the Shed (closed) here.
-
-[Rule "check new arrival rule" applies.]
-[Rule "after stage rule" applies.]
-[Rule "investigate player's awareness after action rule" applies.]
-[Rule "report stage rule" applies.]
-[Rule "other people looking rule" applies.]
-[Rule "last specific action-processing rule" applies.]
-[Rule "last specific action-processing rule" applies.]
-[Rule "A first turn sequence rule" applies.]
-[Rule "every turn stage rule" applies.]
-[Rule "A last turn sequence rule" applies.]
-[Rule "notify score changes rule" applies.]
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1019">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1020"></child>
-        </children>
-    </item>
-    <item nodeId="node-1020">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">(first opening the Side Door)
-
-The Garden
-You can see the Side Door and the Shed (closed) here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1021"></child>
-        </children>
-    </item>
-    <item nodeId="node-1021">
-        <command xml:space="preserve">get bucket</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1022"></child>
-        </children>
-    </item>
-    <item nodeId="node-1022">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">The Garden
-You can see the Side Door and the Shed (closed) here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1023"></child>
-        </children>
-    </item>
-    <item nodeId="node-1023">
-        <command xml:space="preserve">x shed</command>
-        <result xml:space="preserve">(the Shed)
-You see nothing special about the Shed.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1024"></child>
-        </children>
-    </item>
-    <item nodeId="node-1024">
-        <command xml:space="preserve">put bucket on shed</command>
-        <result xml:space="preserve">(the Shed)
-Putting things on the Shed would achieve nothing.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1025"></child>
-        </children>
-    </item>
-    <item nodeId="node-1025">
-        <command xml:space="preserve">put bucket on roof</command>
-        <result xml:space="preserve">You put the bucket on the Roof of the Shed.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1026"></child>
-        </children>
-    </item>
-    <item nodeId="node-1026">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Outskirts of Town
-To the North you can see a fork in the road.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1027"></child>
-        </children>
-    </item>
-    <item nodeId="node-1027">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Road
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1028">
-        <command xml:space="preserve">go to hall</command>
-        <result xml:space="preserve">You can't see any such thing.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1029"></child>
-        </children>
-    </item>
-    <item nodeId="node-1029">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Hall
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1030"></child>
-        </children>
-    </item>
-    <item nodeId="node-1030">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Kitchen
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1031">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Hall
-The hall in the middle of your house. Your bedroom is to the west. The staircase leading upwards is to the north. (??) The kitchen is to the east.
-
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1046"></child>
-            <child nodeId="node-1032"></child>
-            <child nodeId="node-1162"></child>
-            <child nodeId="node-1158"></child>
-        </children>
-    </item>
-    <item nodeId="node-1158">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Upstairs Hall
-The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
-
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1159"></child>
-        </children>
-    </item>
-    <item nodeId="node-1159">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Bathroom
-You can see a medicine cabinet (closed) here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1160"></child>
-        </children>
-    </item>
-    <item nodeId="node-1160">
-        <command xml:space="preserve">open cabinet</command>
-        <result xml:space="preserve">You open the medicine cabinet, revealing hair gel.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1162">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Upstairs Hall
-The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
-
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1163"></child>
-        </children>
-    </item>
-    <item nodeId="node-1163">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Bathroom
-You can see a medicine cabinet (closed) here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1164"></child>
-        </children>
-    </item>
-    <item nodeId="node-1164">
-        <command xml:space="preserve">open cabinet</command>
-        <result xml:space="preserve">You're not tall enough to reach the medicine cabinet. Drat!
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1165"></child>
-        </children>
-    </item>
-    <item nodeId="node-1165">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Upstairs Hall
-The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
-
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1166"></child>
-        </children>
-    </item>
-    <item nodeId="node-1166">
-        <command xml:space="preserve">d</command>
-        <result xml:space="preserve">
-Hall
-The hall in the middle of your house. Your bedroom is to the west. The staircase leading upwards is to the north. (??) The kitchen is to the east.
-
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1167"></child>
-        </children>
-    </item>
-    <item nodeId="node-1167">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Kitchen
-You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1168"></child>
-        </children>
-    </item>
-    <item nodeId="node-1168">
-        <command xml:space="preserve">take stool</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1169"></child>
-        </children>
-    </item>
-    <item nodeId="node-1169">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Hall
-The hall in the middle of your house. Your bedroom is to the west. The staircase leading upwards is to the north. (??) The kitchen is to the east.
-
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1170"></child>
-        </children>
-    </item>
-    <item nodeId="node-1170">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Upstairs Hall
-The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
-
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1171"></child>
-        </children>
-    </item>
-    <item nodeId="node-1171">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Bathroom
-You can see a medicine cabinet (closed) here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1172"></child>
-        </children>
-    </item>
-    <item nodeId="node-1172">
-        <command xml:space="preserve">drop stool</command>
-        <result xml:space="preserve">Dropped.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1173"></child>
-        </children>
-    </item>
-    <item nodeId="node-1173">
-        <command xml:space="preserve">stand on stool</command>
-        <result xml:space="preserve">You get onto the stool.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1174"></child>
-        </children>
-    </item>
-    <item nodeId="node-1174">
-        <command xml:space="preserve">open cabinet</command>
-        <result xml:space="preserve">You open the medicine cabinet, revealing hair gel.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1175"></child>
-        </children>
-    </item>
-    <item nodeId="node-1175">
-        <command xml:space="preserve">take gel</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1176"></child>
-        </children>
-    </item>
-    <item nodeId="node-1176">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">(first getting off the stool)
-
-Upstairs Hall
-The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
-
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1177"></child>
-        </children>
-    </item>
-    <item nodeId="node-1177">
-        <command xml:space="preserve">d</command>
-        <result xml:space="preserve">
-Hall
-The hall in the middle of your house. Your bedroom is to the west. The staircase leading upwards is to the north. (??) The kitchen is to the east.
-
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1178"></child>
-        </children>
-    </item>
-    <item nodeId="node-1178">
-        <command xml:space="preserve">put gel on</command>
-        <result xml:space="preserve">You put on hair gel.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1179"></child>
-        </children>
-    </item>
-    <item nodeId="node-1179">
-        <command xml:space="preserve">d</command>
-        <result xml:space="preserve">
-Basement
-The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
-
-You can see a Tunnel of Extraction here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1180"></child>
-        </children>
-    </item>
-    <item nodeId="node-1180">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Abandoned Warehouse
-The warehouse is old and abandoned. Not much more to say. The Road is to the west. There's something to the south. The Tunnel of Extraction is below.
-
-You can see a Tunnel of Extraction here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1221"></child>
-        </children>
-    </item>
-    <item nodeId="node-1221">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">
-A Spooky Lair
-A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it.
-
-On the table is a candle.
-
-You can also see four snakes here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1222"></child>
-        </children>
-    </item>
-    <item nodeId="node-1222">
-        <command xml:space="preserve">take candle</command>
-        <result xml:space="preserve">You touch the candle. The flame leaps onto your hair. Boom!
-You've reached one of this game's 14 endings! In that game you used 22 moves. The optimal number of moves is 17.
-You can reach this ending more quickly!
-
-
-
-    *** You have died ***
-
-
-
-Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
-&gt; </result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1032">
-        <command xml:space="preserve">go up</command>
-        <result xml:space="preserve">
-Upstairs hall
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1033"></child>
-        </children>
-    </item>
-    <item nodeId="node-1033">
-        <command xml:space="preserve">go down</command>
-        <result xml:space="preserve">
-Hall
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1034"></child>
-        </children>
-    </item>
-    <item nodeId="node-1034">
-        <command xml:space="preserve">go to stairs</command>
-        <result xml:space="preserve">You can't see any such thing.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1035"></child>
-        </children>
-    </item>
-    <item nodeId="node-1035">
-        <command xml:space="preserve">x staircase</command>
-        <result xml:space="preserve">You see nothing special about the Staircase.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1036"></child>
-        </children>
-    </item>
-    <item nodeId="node-1036">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Bedroom
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1037"></child>
-        </children>
-    </item>
-    <item nodeId="node-1037">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Hall
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1038"></child>
-        </children>
-    </item>
-    <item nodeId="node-1038">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Upstairs hall
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1039"></child>
-        </children>
-    </item>
-    <item nodeId="node-1039">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1040"></child>
-        </children>
-    </item>
-    <item nodeId="node-1040">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1041"></child>
-        </children>
-    </item>
-    <item nodeId="node-1041">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Study
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1042"></child>
-        </children>
-    </item>
-    <item nodeId="node-1042">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">
-Closet
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1043"></child>
-        </children>
-    </item>
-    <item nodeId="node-1043">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1044"></child>
-        </children>
-    </item>
-    <item nodeId="node-1044">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">
-Study
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1045"></child>
-        </children>
-    </item>
-    <item nodeId="node-1045">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Upstairs hall
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1046">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Kitchen
-You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1080"></child>
-            <child nodeId="node-1056"></child>
-            <child nodeId="node-1047"></child>
-        </children>
-    </item>
-    <item nodeId="node-1047">
-        <command xml:space="preserve">x toaster</command>
-        <result xml:space="preserve">The toaster is currently switched off.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1048"></child>
-        </children>
-    </item>
-    <item nodeId="node-1048">
-        <command xml:space="preserve">switch on toaster</command>
-        <result xml:space="preserve">You switch the toaster on.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1049"></child>
-        </children>
-    </item>
-    <item nodeId="node-1049">
-        <command xml:space="preserve">x toaster</command>
-        <result xml:space="preserve">The toaster is currently switched on.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1050"></child>
-        </children>
-    </item>
-    <item nodeId="node-1050">
-        <command xml:space="preserve">x cabinet</command>
-        <result xml:space="preserve">You see nothing special about the cabinet.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1051"></child>
-        </children>
-    </item>
-    <item nodeId="node-1051">
-        <command xml:space="preserve">open cabinet</command>
-        <result xml:space="preserve">You open the cabinet, revealing a top drawer, a middle drawer and a bottom drawer.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1056">
-        <command xml:space="preserve">take toaster</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1057"></child>
-        </children>
-    </item>
-    <item nodeId="node-1057">
-        <command xml:space="preserve">take cabinet</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1058"></child>
-        </children>
-    </item>
-    <item nodeId="node-1058">
-        <command xml:space="preserve">take refrigerator</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1080">
-        <command xml:space="preserve">take stool</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2012"></child>
-            <child nodeId="node-1081"></child>
-        </children>
-    </item>
-    <item nodeId="node-1081">
-        <command xml:space="preserve">x stool</command>
-        <result xml:space="preserve">It's a stool that you can stand on.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1082"></child>
-        </children>
-    </item>
-    <item nodeId="node-1082">
-        <command xml:space="preserve">get on stool</command>
-        <result xml:space="preserve">You can only get into something free-standing.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1083"></child>
-        </children>
-    </item>
-    <item nodeId="node-1083">
-        <command xml:space="preserve">drop stool</command>
-        <result xml:space="preserve">Dropped.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1084"></child>
-        </children>
-    </item>
-    <item nodeId="node-1084">
-        <command xml:space="preserve">stand on stool</command>
-        <result xml:space="preserve">You get onto the stool.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1085"></child>
-        </children>
-    </item>
-    <item nodeId="node-1085">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">Kitchen (on the stool)
-You can see a toaster, a cabinet (closed) and a refrigerator (closed) here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1086"></child>
-        </children>
-    </item>
-    <item nodeId="node-1086">
-        <command xml:space="preserve">take stool</command>
-        <result xml:space="preserve">You would have to get off the stool first.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1087"></child>
-        </children>
-    </item>
-    <item nodeId="node-1087">
-        <command xml:space="preserve">off</command>
-        <result xml:space="preserve">That's not a verb I recognise.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1088"></child>
-        </children>
-    </item>
-    <item nodeId="node-1088">
-        <command xml:space="preserve">down</command>
-        <result xml:space="preserve">(first getting off the stool)
-You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1089"></child>
-        </children>
-    </item>
-    <item nodeId="node-1089">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Hall
-The hall in the middle of your house. Your bedroom is to the west. The staircase leading upwards is to the north. (??) The kitchen is to the east.
-
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1090"></child>
-        </children>
-    </item>
-    <item nodeId="node-1090">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Kitchen
-You can see a stool, a toaster, a cabinet (closed) and a refrigerator (closed) here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1091"></child>
-        </children>
-    </item>
-    <item nodeId="node-1091">
-        <command xml:space="preserve">take stool</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1092"></child>
-        </children>
-    </item>
-    <item nodeId="node-1092">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Hall
-The hall in the middle of your house. Your bedroom is to the west. The staircase leading upwards is to the north. (??) The kitchen is to the east.
-
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1093"></child>
-        </children>
-    </item>
-    <item nodeId="node-1093">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Bedroom
-It's your bedroom. It's not very interesting. The hall is to the east.
-
-You can see the Side Door here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1094"></child>
-        </children>
-    </item>
-    <item nodeId="node-1094">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">You can't go through the Side Door because it's closed.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1095"></child>
-        </children>
-    </item>
-    <item nodeId="node-1095">
-        <command xml:space="preserve">open door</command>
-        <result xml:space="preserve">You open the Side Door.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1096"></child>
-        </children>
-    </item>
-    <item nodeId="node-1096">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-The Garden
-You can see the Side Door and the Shed (closed) here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1097"></child>
-        </children>
-    </item>
-    <item nodeId="node-1097">
-        <command xml:space="preserve">x shed</command>
-        <result xml:space="preserve">(the Shed)
-You see nothing special about the Shed.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1098"></child>
-        </children>
-    </item>
-    <item nodeId="node-1098">
-        <command xml:space="preserve">open shed</command>
-        <result xml:space="preserve">(the Shed)
-It seems to be locked.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1099"></child>
-        </children>
-    </item>
-    <item nodeId="node-1099">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">The Garden
-You can see the Side Door and the Shed (closed) here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1100"></child>
-        </children>
-    </item>
-    <item nodeId="node-1100">
-        <command xml:space="preserve">take bucket</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1101"></child>
-        </children>
-    </item>
-    <item nodeId="node-1101">
-        <command xml:space="preserve">stand on stool</command>
-        <result xml:space="preserve">You can only get into something free-standing.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1102"></child>
-        </children>
-    </item>
-    <item nodeId="node-1102">
-        <command xml:space="preserve">drop stool</command>
-        <result xml:space="preserve">Dropped.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1103"></child>
-        </children>
-    </item>
-    <item nodeId="node-1103">
-        <command xml:space="preserve">restart</command>
-        <result xml:space="preserve">Are you sure you want to restart? </result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1104"></child>
-        </children>
-    </item>
-    <item nodeId="node-1104">
-        <command xml:space="preserve">yes</command>
-        <result xml:space="preserve">
+        <commentary xml:space="preserve">
 
 
 You wake up in your bedroom.
@@ -1265,12 +33,11 @@ It's your bedroom. It's not very interesting. The hall is to the east.
 
 You can see the Side Door here.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1105"></child>
+&gt;</commentary>
+        <children><child nodeId="node-1005"></child>
         </children>
     </item>
-    <item nodeId="node-1105">
+    <item nodeId="node-1005">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Hall
@@ -1279,31 +46,43 @@ The hall in the middle of your house. Your bedroom is to the west. The staircase
 You can see a Staircase here.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1106"></child>
+        <commentary xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the west. The staircase leading upwards is to the north. (??) The kitchen is to the east.
+
+You can see a Staircase here.
+
+&gt;</commentary>
+        <children><child nodeId="node-1006"></child>
         </children>
     </item>
-    <item nodeId="node-1106">
+    <item nodeId="node-1006">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Kitchen
 You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1107"></child>
+        <commentary xml:space="preserve">
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;</commentary>
+        <children><child nodeId="node-1007"></child>
         </children>
     </item>
-    <item nodeId="node-1107">
-        <command xml:space="preserve">take stool</command>
+    <item nodeId="node-1007">
+        <command xml:space="preserve">get stool</command>
         <result xml:space="preserve">Taken.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1108"></child>
+        <commentary xml:space="preserve">Taken.
+
+&gt;</commentary>
+        <children><child nodeId="node-1008"></child>
         </children>
     </item>
-    <item nodeId="node-1108">
+    <item nodeId="node-1008">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Hall
@@ -1312,182 +91,18 @@ The hall in the middle of your house. Your bedroom is to the west. The staircase
 You can see a Staircase here.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1109"></child>
-        </children>
-    </item>
-    <item nodeId="node-1109">
-        <command xml:space="preserve">u</command>
-        <result xml:space="preserve">
-Upstairs Hall
-The second floor of your house. Stairs lead down. The study is west.
-
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1142"></child>
-        </children>
-    </item>
-    <item nodeId="node-1142">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">
-Bathroom
-You can see a medicine cabinet (closed) here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1143"></child>
-        </children>
-    </item>
-    <item nodeId="node-1143">
-        <command xml:space="preserve">open cabinet</command>
-        <result xml:space="preserve">You open the medicine cabinet, revealing hair gel.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1144"></child>
-        </children>
-    </item>
-    <item nodeId="node-1144">
-        <command xml:space="preserve">take hair gel</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1145"></child>
-        </children>
-    </item>
-    <item nodeId="node-1145">
-        <command xml:space="preserve">use gel</command>
-        <result xml:space="preserve">That's not a verb I recognise.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1146"></child>
-        </children>
-    </item>
-    <item nodeId="node-1146">
-        <command xml:space="preserve">spray gel</command>
-        <result xml:space="preserve">That's not a verb I recognise.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1147"></child>
-        </children>
-    </item>
-    <item nodeId="node-1147">
-        <command xml:space="preserve">x gel</command>
-        <result xml:space="preserve">You see nothing special about hair gel.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1148"></child>
-        </children>
-    </item>
-    <item nodeId="node-1148">
-        <command xml:space="preserve">put gel on</command>
-        <result xml:space="preserve">You put on hair gel.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1149"></child>
-        </children>
-    </item>
-    <item nodeId="node-1149">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Upstairs Hall
-The second floor of your house. Stairs lead down. The study is west.
-
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1150"></child>
-        </children>
-    </item>
-    <item nodeId="node-1150">
-        <command xml:space="preserve">d</command>
-        <result xml:space="preserve">
+        <commentary xml:space="preserve">
 Hall
 The hall in the middle of your house. Your bedroom is to the west. The staircase leading upwards is to the north. (??) The kitchen is to the east.
 
 You can see a Staircase here.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1151"></child>
+&gt;</commentary>
+        <children><child nodeId="node-1009"></child>
         </children>
     </item>
-    <item nodeId="node-1151">
-        <command xml:space="preserve">d</command>
-        <result xml:space="preserve">
-basement
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1152"></child>
-        </children>
-    </item>
-    <item nodeId="node-1152">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1153"></child>
-        </children>
-    </item>
-    <item nodeId="node-1153">
+    <item nodeId="node-1009">
         <command xml:space="preserve">n</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1154"></child>
-        </children>
-    </item>
-    <item nodeId="node-1154">
-        <command xml:space="preserve">e</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1155"></child>
-        </children>
-    </item>
-    <item nodeId="node-1155">
-        <command xml:space="preserve">s</command>
-        <result xml:space="preserve">You can't go that way.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1156"></child>
-        </children>
-    </item>
-    <item nodeId="node-1156">
-        <command xml:space="preserve">l</command>
-        <result xml:space="preserve">basement
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-2012">
-        <command xml:space="preserve">w</command>
-        <result xml:space="preserve">
-Hall
-The hall in the middle of your house. Your bedroom is to the west. The staircase leading upwards is to the north. (??) The kitchen is to the east.
-
-You can see a Staircase here.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2013"></child>
-        </children>
-    </item>
-    <item nodeId="node-2013">
-        <command xml:space="preserve">u</command>
         <result xml:space="preserve">
 Upstairs Hall
 The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
@@ -1495,67 +110,87 @@ The second floor of your house. Stairs lead down. The study is west, and the bat
 You can see a Staircase here.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2014"></child>
+        <commentary xml:space="preserve">
+Upstairs Hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase here.
+
+&gt;</commentary>
+        <children><child nodeId="node-1010"></child>
         </children>
     </item>
-    <item nodeId="node-2014">
+    <item nodeId="node-1010">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Bathroom
 You can see a medicine cabinet (closed) here.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2015"></child>
+        <commentary xml:space="preserve">
+Bathroom
+You can see a medicine cabinet (closed) here.
+
+&gt;</commentary>
+        <children><child nodeId="node-1011"></child>
         </children>
     </item>
-    <item nodeId="node-2015">
-        <command xml:space="preserve">drop stool</command>
+    <item nodeId="node-1011">
+        <command xml:space="preserve">put stool down</command>
         <result xml:space="preserve">Dropped.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2016"></child>
+        <commentary xml:space="preserve">Dropped.
+
+&gt;</commentary>
+        <children><child nodeId="node-1012"></child>
         </children>
     </item>
-    <item nodeId="node-2016">
+    <item nodeId="node-1012">
         <command xml:space="preserve">get on stool</command>
         <result xml:space="preserve">You get onto the stool.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2017"></child>
+        <commentary xml:space="preserve">You get onto the stool.
+
+&gt;</commentary>
+        <children><child nodeId="node-1013"></child>
         </children>
     </item>
-    <item nodeId="node-2017">
+    <item nodeId="node-1013">
         <command xml:space="preserve">open cabinet</command>
         <result xml:space="preserve">You open the medicine cabinet, revealing hair gel.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2018"></child>
+        <commentary xml:space="preserve">You open the medicine cabinet, revealing hair gel.
+
+&gt;</commentary>
+        <children><child nodeId="node-1014"></child>
         </children>
     </item>
-    <item nodeId="node-2018">
-        <command xml:space="preserve">take hair gel</command>
+    <item nodeId="node-1014">
+        <command xml:space="preserve">get gel</command>
         <result xml:space="preserve">Taken.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2019"></child>
+        <commentary xml:space="preserve">Taken.
+
+&gt;</commentary>
+        <children><child nodeId="node-1015"></child>
         </children>
     </item>
-    <item nodeId="node-2019">
-        <command xml:space="preserve">wear gel</command>
+    <item nodeId="node-1015">
+        <command xml:space="preserve">put on gel</command>
         <result xml:space="preserve">You put on hair gel.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2020"></child>
+        <commentary xml:space="preserve">You put on hair gel.
+
+&gt;</commentary>
+        <children><child nodeId="node-1016"></child>
         </children>
     </item>
-    <item nodeId="node-2020">
+    <item nodeId="node-1016">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">(first getting off the stool)
 
@@ -1565,11 +200,18 @@ The second floor of your house. Stairs lead down. The study is west, and the bat
 You can see a Staircase here.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2021"></child>
+        <commentary xml:space="preserve">(first getting off the stool)
+
+Upstairs Hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase here.
+
+&gt;</commentary>
+        <children><child nodeId="node-1017"></child>
         </children>
     </item>
-    <item nodeId="node-2021">
+    <item nodeId="node-1017">
         <command xml:space="preserve">d</command>
         <result xml:space="preserve">
 Hall
@@ -1578,37 +220,55 @@ The hall in the middle of your house. Your bedroom is to the west. The staircase
 You can see a Staircase here.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2022"></child>
+        <commentary xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the west. The staircase leading upwards is to the north. (??) The kitchen is to the east.
+
+You can see a Staircase here.
+
+&gt;</commentary>
+        <children><child nodeId="node-1018"></child>
         </children>
     </item>
-    <item nodeId="node-2022">
+    <item nodeId="node-1018">
         <command xml:space="preserve">d</command>
         <result xml:space="preserve">
 Basement
 The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
 
-You can see a Tunnel of Extraction here.
+You can see The Tunnel of Extraction here.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2023"></child>
+        <commentary xml:space="preserve">
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</commentary>
+        <children><child nodeId="node-1019"></child>
         </children>
     </item>
-    <item nodeId="node-2023">
+    <item nodeId="node-1019">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Abandoned Warehouse
-The warehouse is old and abandoned. Not much more to say. The Road is to the west. There's something to the south. The Tunnel of Extraction is below.
+The warehouse is old and abandoned.It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
 
-You can see a Tunnel of Extraction here.
+You can see The Tunnel of Extraction here.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2024"></child>
+        <commentary xml:space="preserve">
+Abandoned Warehouse
+The warehouse is old and abandoned.It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</commentary>
+        <children><child nodeId="node-1020"></child>
         </children>
     </item>
-    <item nodeId="node-2024">
+    <item nodeId="node-1020">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 A Spooky Lair
@@ -1619,12 +279,20 @@ On the table is a candle.
 You can also see four snakes here.
 
 &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2025"></child>
+        <commentary xml:space="preserve">
+A Spooky Lair
+A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it.
+
+On the table is a candle.
+
+You can also see four snakes here.
+
+&gt;</commentary>
+        <children><child nodeId="node-1021"></child>
         </children>
     </item>
-    <item nodeId="node-2025">
-        <command xml:space="preserve">take candle</command>
+    <item nodeId="node-1021">
+        <command xml:space="preserve">get candle</command>
         <result xml:space="preserve">You touch the candle. The flame leaps onto your hair. Boom!
 You've reached one of this game's 14 endings! In that game you used 17 moves. The optimal number of moves is 17.
 Great job, you got the optimal number of moves!
@@ -1637,6 +305,17 @@ Great job, you got the optimal number of moves!
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
-        <commentary xml:space="preserve"></commentary>
+        <commentary xml:space="preserve">You touch the candle. The flame leaps onto your hair. Boom!
+You've reached one of this game's 14 endings! In that game you used 17 moves. The optimal number of moves is 17.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </commentary>
     </item>
 </Skein>
