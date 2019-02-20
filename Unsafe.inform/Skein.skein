@@ -1,0 +1,495 @@
+<?xml version="1.0"?>
+
+<Skein rootNode="node-1002">
+    <generator>Inform Mac Client (Inform version 1.65/6.33/6M62)</generator>
+    <item nodeId="node-1002">
+        <command xml:space="preserve">Unsafe</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 1 / Serial number 190220 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+You can see the Side Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1020"></child>
+            <child nodeId="node-1045"></child>
+            <child nodeId="node-1036"></child>
+            <child nodeId="node-1035"></child>
+            <child nodeId="node-1005"></child>
+        </children>
+    </item>
+    <item nodeId="node-1005">
+        <command xml:space="preserve">x</command>
+        <result xml:space="preserve">What do you want to examine?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1006"></child>
+        </children>
+    </item>
+    <item nodeId="node-1006">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Bedroom
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1007"></child>
+        </children>
+    </item>
+    <item nodeId="node-1007">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1008"></child>
+        </children>
+    </item>
+    <item nodeId="node-1008">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Hall
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1009"></child>
+        </children>
+    </item>
+    <item nodeId="node-1009">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1010"></child>
+        </children>
+    </item>
+    <item nodeId="node-1010">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+Upstairs Hall
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1011"></child>
+        </children>
+    </item>
+    <item nodeId="node-1011">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Hall
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1012"></child>
+        </children>
+    </item>
+    <item nodeId="node-1012">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1013"></child>
+        </children>
+    </item>
+    <item nodeId="node-1013">
+        <command xml:space="preserve">nw</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1014"></child>
+        </children>
+    </item>
+    <item nodeId="node-1014">
+        <command xml:space="preserve">ne</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1015"></child>
+        </children>
+    </item>
+    <item nodeId="node-1015">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1016"></child>
+        </children>
+    </item>
+    <item nodeId="node-1016">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1017"></child>
+        </children>
+    </item>
+    <item nodeId="node-1017">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Hall
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1018"></child>
+        </children>
+    </item>
+    <item nodeId="node-1018">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Back Entryway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1019"></child>
+        </children>
+    </item>
+    <item nodeId="node-1019">
+        <command xml:space="preserve">ne</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1035">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening the Side Door)
+
+The Garden
+You can see the Side Door and the Shed (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1036">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1037"></child>
+        </children>
+    </item>
+    <item nodeId="node-1037">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening the Side Door)
+
+The Garden
+You can see the Side Door and the Shed (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1038"></child>
+        </children>
+    </item>
+    <item nodeId="node-1038">
+        <command xml:space="preserve">get bucket</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1039"></child>
+        </children>
+    </item>
+    <item nodeId="node-1039">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">The Garden
+You can see the Side Door and the Shed (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1040"></child>
+        </children>
+    </item>
+    <item nodeId="node-1040">
+        <command xml:space="preserve">x shed</command>
+        <result xml:space="preserve">(the Shed)
+You see nothing special about the Shed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1041"></child>
+        </children>
+    </item>
+    <item nodeId="node-1041">
+        <command xml:space="preserve">put bucket on shed</command>
+        <result xml:space="preserve">(the Shed)
+Putting things on the Shed would achieve nothing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1042"></child>
+        </children>
+    </item>
+    <item nodeId="node-1042">
+        <command xml:space="preserve">put bucket on roof</command>
+        <result xml:space="preserve">You put the bucket on the Roof of the Shed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1043"></child>
+        </children>
+    </item>
+    <item nodeId="node-1043">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Outskirts of Town
+To the North you can see a fork in the road.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1044"></child>
+        </children>
+    </item>
+    <item nodeId="node-1044">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Road
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1045">
+        <command xml:space="preserve">go to hall</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1046"></child>
+        </children>
+    </item>
+    <item nodeId="node-1046">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Hall
+You can see a Staircase here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1047"></child>
+        </children>
+    </item>
+    <item nodeId="node-1047">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1020">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Hall
+You can see a Staircase here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1049"></child>
+            <child nodeId="node-1021"></child>
+        </children>
+    </item>
+    <item nodeId="node-1021">
+        <command xml:space="preserve">go up</command>
+        <result xml:space="preserve">
+Upstairs hall
+You can see a Staircase here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1022"></child>
+        </children>
+    </item>
+    <item nodeId="node-1022">
+        <command xml:space="preserve">go down</command>
+        <result xml:space="preserve">
+Hall
+You can see a Staircase here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1023"></child>
+        </children>
+    </item>
+    <item nodeId="node-1023">
+        <command xml:space="preserve">go to stairs</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1024"></child>
+        </children>
+    </item>
+    <item nodeId="node-1024">
+        <command xml:space="preserve">x staircase</command>
+        <result xml:space="preserve">You see nothing special about the Staircase.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1025"></child>
+        </children>
+    </item>
+    <item nodeId="node-1025">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Bedroom
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1026"></child>
+        </children>
+    </item>
+    <item nodeId="node-1026">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Hall
+You can see a Staircase here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1027"></child>
+        </children>
+    </item>
+    <item nodeId="node-1027">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Upstairs hall
+You can see a Staircase here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1028"></child>
+        </children>
+    </item>
+    <item nodeId="node-1028">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1029"></child>
+        </children>
+    </item>
+    <item nodeId="node-1029">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1030"></child>
+        </children>
+    </item>
+    <item nodeId="node-1030">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Study
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1031"></child>
+        </children>
+    </item>
+    <item nodeId="node-1031">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Closet
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1032"></child>
+        </children>
+    </item>
+    <item nodeId="node-1032">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1033"></child>
+        </children>
+    </item>
+    <item nodeId="node-1033">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Study
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1034"></child>
+        </children>
+    </item>
+    <item nodeId="node-1034">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Upstairs hall
+You can see a Staircase here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1049">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen
+You can see a toaster, a cabinet (closed) and a refrigerator (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1050"></child>
+        </children>
+    </item>
+    <item nodeId="node-1050">
+        <command xml:space="preserve">x toaster</command>
+        <result xml:space="preserve">The toaster is currently switched off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1051"></child>
+        </children>
+    </item>
+    <item nodeId="node-1051">
+        <command xml:space="preserve">switch on toaster</command>
+        <result xml:space="preserve">You switch the toaster on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1052"></child>
+        </children>
+    </item>
+    <item nodeId="node-1052">
+        <command xml:space="preserve">x toaster</command>
+        <result xml:space="preserve">The toaster is currently switched on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1053"></child>
+        </children>
+    </item>
+    <item nodeId="node-1053">
+        <command xml:space="preserve">x cabinet</command>
+        <result xml:space="preserve">You see nothing special about the cabinet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1054"></child>
+        </children>
+    </item>
+    <item nodeId="node-1054">
+        <command xml:space="preserve">open cabinet</command>
+        <result xml:space="preserve">You open the cabinet, revealing a top drawer, a middle drawer and a bottom drawer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+</Skein>
