@@ -111,7 +111,7 @@ North of the Space Center is the Launch Pad.
 West of the Outskirts of Town is the Road.
 The description of the Road is "It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west."
 North of the road is a room called Further Along the Road. The description of Further Along the Road is "More road! The road goes south. To the west there's a parking lot."
-West of Further Along the Road is the Parking Lot. The description of Parking Lot is "Where cars park, except there aren't any cars today. The road is to the east."
+West of Further Along the Road is the Parking Lot. The description of Parking Lot is "Where cars park, except there aren't any cars today. The road is to the east." [TODO: the player's car]
 North of Further Along is the Abandoned Train Station. The description of Abandoned Train Station is "No trains."
 East of the Abandoned Train station is the Control Room. The description of Control Room is "Where things get controlled."
 
@@ -119,7 +119,7 @@ Abandoned Warehouse is a room. West of the Town Square is the warehouse. The Aba
 
 South of the Abandoned Warehouse is a room called A Spooky Lair. 
 The description of the lair is "A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it."
-The table is scenery in the Spooky lair. The table is a supporter. There is a candle on the table. The candle is lit.
+The table is scenery in the Spooky lair. The table is a supporter. There is a candle on the table. The candle is lit. A sacrificial knife is on the table. The description of the sacrificial knife is "A knife that looks like it might be used in a demonic ritual - or, you know, for cutting stuff".
 A snake is a kind of animal. There are 4 snakes in the spooky lair.
 
 Instead of taking or touching the candle when the player is wearing a dollop of hair gel:
@@ -134,6 +134,8 @@ Test candle with "e / e / get stool / w / n / e / put stool down / get on stool 
 
 Part 4 - Nature
 
+Section 1 - Pirhanas
+
 West of the Road is By the Stream. The description of By the Stream is "There's a stream, makein whatever sound water makes. There's also a scary warning sign." The sign is scenery in By the Stream. The description is "The sign says BEWARE OF PIRANHAS." A thing called the stream is scenery in By the Stream. The description is "It's a stream of water." Understand "water" as the stream.
 
 Instead of entering the stream: say "Water is nice, but out here? Maybe in the privacy of your own home you'd reconsider."
@@ -143,6 +145,7 @@ Instead of entering the stream: say "Water is nice, but out here? Maybe in the p
 Instead of filling the bucket:
 ]	
 	
+Section 2 - Bear
 
 South of By the Stream is a Clearing. The description of the Clearing is "It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north."
 
@@ -217,5 +220,38 @@ Part 5 - Town
 
 South of the Outskirts of Town is the Town Square.
 South of the Town Square is a door called the Mad Scientist's Grand Entrance. south of the Mad Scientist's grand entrance is the Mad Scientist's house.
-Above the Mad Scientist's house is the Mad Science Laboratory.
+The description of the Mad Scientist's House is "A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier." Gadgets and tubes and a tool shelf and an amplifier are scenery in the Mad Scientist's house. A door called a ladder is above the mad scientist's house. The ladder is open and unopenable. [TODO: climb ladder / go up ladder / use ladder]
+[TODO: suppress shelf description]
+The description of the shelf is "A high-up shelf that you imagine stores the mad scientist's secrets.  [if the player is on the stool]On the tool shelf, you can see [a list of the things on the shelf]. That's disappointing[else]It's so high up that you can't see on it[end if]." The shelf is a supporter. A small tool box and a bottle of soylent are on the shelf. The small tool box is an openable closed container. Super glue is in the small tool box. Super glue and soylent are edible. [TODO: if you eat the soylent, it tastes good.]
+The description of soylent is "A full nutritional meal replacement. It's made of people." The description of the super glue is "Super glue. It has a warning: EXTREMELY STICKY. Unfortunately, the cap seems to be super glued on, so it's not going to be much use to you." The super glue can be cut or whole. The glue is whole.
+Instead of cutting the super glue:
+	If the player has the knife:
+		if the super glue is whole:
+			say "You use the sacrificial knife to cut the super glue's tip right off. Glue gurgles out of the tube viscously.";
+			now the glue is cut;
+			[The glue recongeals in 3 turns from now.]
+		else:
+			say "That seems hard to do without gluing your fingers together.";
+	else:
+		say "With your bare hands??"
+[At the time when the glue recongeals:
+	The glue is now whole.
+	If the player is holding the glue:
+		say "The tube of super glue appears to have dried enough glue to glue itself back together.";]
+Instead of eating the super glue:
+	if the super glue is whole:
+		say "That doesn't look very edible right now. Maybe if you could actually squeeze it into your mouth?";
+	else:
+		say "You squeeze the tube of super glue into your mouth. It tastes like candy! Shortly thereafter, it starts to taste like your throat is glued shut. Maybe this wasn't a great idea...";
+		conclude with 19
+		
+A rule for reaching inside the shelf:
+	if the player is not on the stool:
+		say "You can't reach the shelf.";
+		deny access;
+	allow access.
+
+Test glue with "e / e / take stool / w / down / go through tunnel / s / get knife / n / e / open entrance / s / put down stool / get on stool / get box / open box / get glue / cut glue / eat glue"
+
+Above the ladder is the Mad Science Laboratory.
 The time machine is a device in the Mad Science Laboratory. The time machine has a number called the use count. The time machine's use count is initially 0.

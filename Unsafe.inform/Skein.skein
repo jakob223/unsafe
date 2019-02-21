@@ -983,6 +983,372 @@ There's a stream, makeing whatever sound water makes. There's also a scary warni
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1144"></child>
+        </children>
+    </item>
+    <item nodeId="node-1144">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1145"></child>
+        </children>
+    </item>
+    <item nodeId="node-1145">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Clearing
+It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1146"></child>
+        </children>
+    </item>
+    <item nodeId="node-1146">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Edge of the Woods
+The woods start here and extend to the west. There's a clearing to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1147"></child>
+        </children>
+    </item>
+    <item nodeId="node-1147">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">As you walk into the woods, a large grizzly bear shows up, baring (bear-ing?) its teeth at you. You hastily take three steps back.
+The bear seems to be guarding the entrance to the woods. Seems like it would be awfully difficult to get through here unless the bear were somehow distracted. With food, maybe?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1148"></child>
+        </children>
+    </item>
+    <item nodeId="node-1148">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Clearing
+It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1149"></child>
+        </children>
+    </item>
+    <item nodeId="node-1149">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Abandoned Warehouse
+The warehouse is old and abandoned.It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1150"></child>
+        </children>
+    </item>
+    <item nodeId="node-1150">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Town Square
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1151"></child>
+        </children>
+    </item>
+    <item nodeId="node-1151">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a bucket
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1152"></child>
+        </children>
+    </item>
+    <item nodeId="node-1152">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Abandoned Warehouse
+The warehouse is old and abandoned.It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1153"></child>
+        </children>
+    </item>
+    <item nodeId="node-1153">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1154"></child>
+        </children>
+    </item>
+    <item nodeId="node-1154">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East.
+
+You can see a Staircase here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1155"></child>
+        </children>
+    </item>
+    <item nodeId="node-1155">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen
+You can see a toaster, a cabinet (closed) and a refrigerator (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1156"></child>
+        </children>
+    </item>
+    <item nodeId="node-1156">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East.
+
+You can see a Staircase here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1157"></child>
+        </children>
+    </item>
+    <item nodeId="node-1157">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen
+You can see a toaster, a cabinet (closed) and a refrigerator (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1158"></child>
+        </children>
+    </item>
+    <item nodeId="node-1158">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1159"></child>
+        </children>
+    </item>
+    <item nodeId="node-1159">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East.
+
+You can see a Staircase here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1160"></child>
+        </children>
+    </item>
+    <item nodeId="node-1160">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Back Entryway
+The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. The hall is to the North, the backyard to the South.
+
+You can see the back door and a blue key here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1161"></child>
+        </children>
+    </item>
+    <item nodeId="node-1161">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go through the back door because it's closed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1162"></child>
+        </children>
+    </item>
+    <item nodeId="node-1162">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East.
+
+You can see a Staircase here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1163"></child>
+        </children>
+    </item>
+    <item nodeId="node-1163">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east.
+
+You can see the Side Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1164"></child>
+        </children>
+    </item>
+    <item nodeId="node-1164">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+The Garden
+You can see the Side Door, a stool and the Shed (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1165"></child>
+        </children>
+    </item>
+    <item nodeId="node-1165">
+        <command xml:space="preserve">get stool</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1166"></child>
+        </children>
+    </item>
+    <item nodeId="node-1166">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east.
+
+You can see the Side Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1167"></child>
+        </children>
+    </item>
+    <item nodeId="node-1167">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East.
+
+You can see a Staircase here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1168"></child>
+        </children>
+    </item>
+    <item nodeId="node-1168">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1169"></child>
+        </children>
+    </item>
+    <item nodeId="node-1169">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Abandoned Warehouse
+The warehouse is old and abandoned.It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1170"></child>
+        </children>
+    </item>
+    <item nodeId="node-1170">
+        <command xml:space="preserve">x tunnel</command>
+        <result xml:space="preserve">A long, winding tunnel. It used to be used to extract minerals and stuff. Now, it's probably still useful for extracting other things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1171"></child>
+        </children>
+    </item>
+    <item nodeId="node-1171">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Clearing
+It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1172"></child>
+        </children>
+    </item>
+    <item nodeId="node-1172">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Abandoned Warehouse
+The warehouse is old and abandoned.It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1173"></child>
+        </children>
+    </item>
+    <item nodeId="node-1173">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Town Square
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1174"></child>
+        </children>
+    </item>
+    <item nodeId="node-1174">
+        <command xml:space="preserve">open entrance</command>
+        <result xml:space="preserve">You open the Mad Scientist's Grand Entrance.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1175"></child>
+        </children>
+    </item>
+    <item nodeId="node-1175">
+        <command xml:space="preserve">go through entrance</command>
+        <result xml:space="preserve">
+Mad Scientist's house
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1104">
         <command xml:space="preserve">e</command>
@@ -994,7 +1360,8 @@ You can see a Staircase here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1105"></child>
+        <children><child nodeId="node-1177"></child>
+            <child nodeId="node-1105"></child>
         </children>
     </item>
     <item nodeId="node-1105">
@@ -1061,6 +1428,542 @@ You can see the closet door here.
     <item nodeId="node-1115">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">You are carrying nothing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1177">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1178"></child>
+        </children>
+    </item>
+    <item nodeId="node-1178">
+        <command xml:space="preserve">get stool</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1179"></child>
+        </children>
+    </item>
+    <item nodeId="node-1179">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East.
+
+You can see a Staircase here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1180"></child>
+        </children>
+    </item>
+    <item nodeId="node-1180">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1208"></child>
+            <child nodeId="node-1181"></child>
+        </children>
+    </item>
+    <item nodeId="node-1181">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Abandoned Warehouse
+The warehouse is old and abandoned.It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1182"></child>
+        </children>
+    </item>
+    <item nodeId="node-1182">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Town Square
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1183"></child>
+        </children>
+    </item>
+    <item nodeId="node-1183">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go through the Mad Scientist's Grand Entrance because it's closed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1184"></child>
+        </children>
+    </item>
+    <item nodeId="node-1184">
+        <command xml:space="preserve">open entrance</command>
+        <result xml:space="preserve">You open the Mad Scientist's Grand Entrance.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1185"></child>
+        </children>
+    </item>
+    <item nodeId="node-1185">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Mad Scientist's house
+A house filled with so many useless gadgets the like of which you've never seen. There are tubes, .
+
+You can see the Mad Scientist's Grand Entrance and a ladder here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1186"></child>
+        </children>
+    </item>
+    <item nodeId="node-1186">
+        <command xml:space="preserve">go up ladder</command>
+        <result xml:space="preserve">I only understood you as far as wanting to go up.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1187"></child>
+        </children>
+    </item>
+    <item nodeId="node-1187">
+        <command xml:space="preserve">use ladder</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1188"></child>
+        </children>
+    </item>
+    <item nodeId="node-1188">
+        <command xml:space="preserve">go through ladder</command>
+        <result xml:space="preserve">
+Mad Science Laboratory
+You can see a ladder and a time machine here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1202"></child>
+        </children>
+    </item>
+    <item nodeId="node-1202">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Mad Scientist's house
+A house filled with so many useless gadgets the like of which you've never seen. There are tubes, .
+
+You can see a ladder and the Mad Scientist's Grand Entrance here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1208">
+        <command xml:space="preserve">go through tunnel</command>
+        <result xml:space="preserve">
+Abandoned Warehouse
+The warehouse is old and abandoned.It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1209"></child>
+        </children>
+    </item>
+    <item nodeId="node-1209">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Town Square
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1210"></child>
+        </children>
+    </item>
+    <item nodeId="node-1210">
+        <command xml:space="preserve">open entrance</command>
+        <result xml:space="preserve">You open the Mad Scientist's Grand Entrance.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1211"></child>
+        </children>
+    </item>
+    <item nodeId="node-1211">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Mad Scientist's house
+A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier.
+
+On the tool shelf are a small tool box (closed) and a bottle of soylent.
+
+You can also see the Mad Scientist's Grand Entrance and a ladder here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1212"></child>
+        </children>
+    </item>
+    <item nodeId="node-1212">
+        <command xml:space="preserve">put down shelf</command>
+        <result xml:space="preserve">The tool shelf is already here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1213"></child>
+        </children>
+    </item>
+    <item nodeId="node-1213">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Mad Scientist's house
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1214"></child>
+        </children>
+    </item>
+    <item nodeId="node-1214">
+        <command xml:space="preserve">put down stool</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1215"></child>
+        </children>
+    </item>
+    <item nodeId="node-1215">
+        <command xml:space="preserve">get on stool</command>
+        <result xml:space="preserve">You get onto the stool.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1216"></child>
+            <child nodeId="node-1233"></child>
+        </children>
+    </item>
+    <item nodeId="node-1233">
+        <command xml:space="preserve">x shelf</command>
+        <result xml:space="preserve">A high-up shelf that you imagine stores the mad scientist's secrets.  On the tool shelf, you can see a small tool box and a bottle of soylent. That's disappointing.
+
+On the tool shelf are a small tool box (closed) and a bottle of soylent.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1234"></child>
+        </children>
+    </item>
+    <item nodeId="node-1234">
+        <command xml:space="preserve">get box</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1235"></child>
+        </children>
+    </item>
+    <item nodeId="node-1235">
+        <command xml:space="preserve">open box</command>
+        <result xml:space="preserve">You open the small tool box, revealing Super glue.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1236"></child>
+        </children>
+    </item>
+    <item nodeId="node-1236">
+        <command xml:space="preserve">get glue</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1237"></child>
+        </children>
+    </item>
+    <item nodeId="node-1237">
+        <command xml:space="preserve">eat glue</command>
+        <result xml:space="preserve">That doesn't look very edible right now. Maybe if you could actually squeeze it into your mouth?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1238"></child>
+        </children>
+    </item>
+    <item nodeId="node-1238">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">(first getting off the stool)
+
+Town Square
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1239"></child>
+        </children>
+    </item>
+    <item nodeId="node-1239">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Abandoned Warehouse
+The warehouse is old and abandoned.It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1240"></child>
+        </children>
+    </item>
+    <item nodeId="node-1240">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+A Spooky Lair
+A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it.
+
+On the table are a candle and a sacrificial knife.
+
+You can also see four snakes here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1241"></child>
+        </children>
+    </item>
+    <item nodeId="node-1241">
+        <command xml:space="preserve">get knife</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1242"></child>
+        </children>
+    </item>
+    <item nodeId="node-1242">
+        <command xml:space="preserve">cut glue</command>
+        <result xml:space="preserve">You use the sacrificial knife to cut the super glue's tip right off. Glue gurgles out of the tube viscously.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1266"></child>
+        </children>
+    </item>
+    <item nodeId="node-1266">
+        <command xml:space="preserve">eat glue</command>
+        <result xml:space="preserve">You squeeze the tube of super glue into your mouth. It tastes like candy! Shortly thereafter, it starts to taste like your throat is glued shut. Maybe this wasn't a great idea...
+You've reached one of this game's 14 endings! In that game you used 22 moves. The optimal number of moves is 19.
+You can reach this ending more quickly!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1291"></child>
+        </children>
+    </item>
+    <item nodeId="node-1291">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+You wake up in your bedroom.
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 1 / Serial number 190221 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east.
+
+You can see the Side Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1292"></child>
+        </children>
+    </item>
+    <item nodeId="node-1292">
+        <command xml:space="preserve">test glue</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East.
+
+You can see a Staircase here.
+
+&gt;[2] e
+
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;[3] take stool
+Taken.
+
+&gt;[4] w
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East.
+
+You can see a Staircase here.
+
+&gt;[5] down
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[6] go through tunnel
+
+Abandoned Warehouse
+The warehouse is old and abandoned.It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[7] s
+
+A Spooky Lair
+A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it.
+
+On the table are a candle and a sacrificial knife.
+
+You can also see four snakes here.
+
+&gt;[8] get knife
+Taken.
+
+&gt;[9] n
+
+Abandoned Warehouse
+The warehouse is old and abandoned.It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[10] e
+
+Town Square
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;[11] open entrance
+You open the Mad Scientist's Grand Entrance.
+
+&gt;[12] s
+
+Mad Scientist's house
+A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier.
+
+On the tool shelf are a small tool box (closed) and a bottle of soylent.
+
+You can also see the Mad Scientist's Grand Entrance and a ladder here.
+
+&gt;[13] put down stool
+Dropped.
+
+&gt;[14] get on stool
+You get onto the stool.
+
+&gt;[15] get box
+Taken.
+
+&gt;[16] open box
+You open the small tool box, revealing Super glue.
+
+&gt;[17] get glue
+Taken.
+
+&gt;[18] cut glue
+You use the sacrificial knife to cut the super glue's tip right off. Glue gurgles out of the tube viscously.
+
+&gt;[19] eat glue
+You squeeze the tube of super glue into your mouth. It tastes like candy! Shortly thereafter, it starts to taste like your throat is glued shut. Maybe this wasn't a great idea...
+You've reached one of this game's 14 endings! In that game you used 19 moves. The optimal number of moves is 19.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] e
+[3] take stool
+[4] w
+[5] down
+[6] go through tunnel
+[7] s
+[8] get knife
+[9] n
+[10] e
+[11] open entrance
+[12] s
+[13] put down stool
+[14] get on stool
+[15] get box
+[16] open box
+[17] get glue
+[18] cut glue
+[19] eat glue
+</commentary>
+        <children></children>
+    </item>
+    <item nodeId="node-1216">
+        <command xml:space="preserve">get glue</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1217"></child>
+        </children>
+    </item>
+    <item nodeId="node-1217">
+        <command xml:space="preserve">eat flue</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1218"></child>
+        </children>
+    </item>
+    <item nodeId="node-1218">
+        <command xml:space="preserve">eat glue</command>
+        <result xml:space="preserve">That doesn't look very edible right now. Maybe if you could actually squeeze it into your mouth?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1219"></child>
+        </children>
+    </item>
+    <item nodeId="node-1219">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Mad Scientist's house
+[Previous turn undone.]
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
