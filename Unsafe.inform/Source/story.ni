@@ -115,15 +115,15 @@ East of the clearing is the abandoned warehouse.
 The grizzly bear is a neuter animal. The bear can be asleep or awake. The bear is awake.
 
 To decide whether the woods are accessible:
-	if the bear is not sleeping, decide no;
+	if the bear is awake, decide no;
 	if the time machine's use count is 0, decide no;
 	decide yes.
 
 Every turn when the player can see the bear and the bear is awake:
-		say "The grizzly bear [one of]tries to catch an insect as it flies by[or]stares off into the distance[or]menacingly bares its teeth[or]looks profoundly bored." 
+		say "The grizzly bear [one of]tries to catch an insect as it flies by[or]stares off into the distance[or]menacingly bares its teeth[or]looks profoundly bored[at random]." 
 		
-Instead of going to the woods when the woods are not accessible:
-	say "As you walk into the woods, a large grizzly bear shows up, baring (bear-ing?) its teeth at you. You hastily take three steps back."
+Instead of going to the woods when not the woods are accessible:
+	say "As you walk into the woods, a large grizzly bear shows up, baring (bear-ing?) its teeth at you. You hastily take three steps back.";
 	say "The bear seems to be guarding the entrance to the woods. Seems like it would be awfully difficult to get through here unless the bear were somehow distracted."
 	
 	
