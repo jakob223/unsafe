@@ -42,8 +42,9 @@ The cabinet is a closed openable fixed in place container. The description is "A
 The top drawer, the middle drawer, and the bottom drawer are closed openable containers. The top drawer, the middle drawer, and the bottom drawer are parts of the cabinet. [TODO: improve the drawer situation]
 In the middle drawer is a bread box. The bread box is a closed openable fixed in place container. In the bread box is a loaf of bread. [TODO: make the loaf of bread have slices which are edible] [TODO: the load of bread is wrapped.]
 The refrigerator is a closed openable fixed in place container.
-A fish is in the refrigerator. "It's a blue herring. Delicious!"
-The fish is edible.
+A fish is in the refrigerator. Its description is "It's a blue herring. Delicious!"
+A pie is in the refrigerator. Its description is  "A meat pie that looks like it came out of the oven just this morning."
+The fish and the pie are edible.
 
 The stool is an enterable portable supporter in the kitchen. The description is "It's a stool that you can stand on."
 
@@ -51,7 +52,7 @@ The toaster is a fixed in place device. The description is "The toaster turns br
 
 South of the Hall is the Back Entryway. There is a blue key in the back entryway. There is a locked door called the back door. The back door is south of the back entryway. The blue key unlocks the back door. The description of the back entryway is "The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. The hall is to the North, the backyard to the South." The coat rack and the trash can are scenery in the back entryway.
 
-South of the back door is the Backyard. In the backyard is a stick.
+South of the back door is the Backyard. In the backyard is a stick. The description of the backyard is "Your backyard is so well-manicured that all it contains is grass and a stick. Your house is to the north." Grass is scenery in the backyard.
 
 
 Section 2 - Second Floor
@@ -165,15 +166,18 @@ Instead of dropping the fish when the fish is ready to be thrown:
 	the bear eats the fish in one turn from now.
 
 At the time when the bear eats the fish: [maybe don't show this if the player leaves idk]
-	say "The bear finally decides to eat the fish, in a big gulp.";
+	If the player is in the edge of the woods:
+		say "The bear finally decides to eat the fish, in a big gulp.";
 	the bear rubs its belly in zero turns from now. [??]
 	
 At the time when the bear rubs its belly:
-	say "The bear rubs its belly sleepily. Maybe it'll fall asleep soon.";
+	If the player is in the edge of the woods:
+		say "The bear rubs its belly sleepily. Maybe it'll fall asleep soon.";
 	the bear falls asleep in zero turns from now. [??]
 	
 At the time when the bear falls asleep:
-	say "The bear flops onto its full stomach and starts snoring.";
+	If the player is in the edge of the woods:
+		say "The bear flops onto its full stomach and starts snoring.";
 	now the bear is asleep.
 
 
