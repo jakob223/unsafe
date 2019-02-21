@@ -62,7 +62,7 @@ Above the Hall is a room called the Upstairs Hall. The description of the Upstai
 The staircase is below the Upstairs Hall.
 
 West of the Upstairs Hall is the Study. The description of the Study is "Where you study. The hall is east."
-North of the Study is a room called the Closet. The description of the Closet is "A small room. The hall is south."
+North of the Study is a door called the closet door. North of the closet door is a room called The Closet. The closet door is open. The description of the Closet is "A small room. The hall is south."
 
 East of the Upstairs Hall is the Bathroom. The description of the Bathroom is "It's just a bathroom."
 The mirror is scenery in the bathroom. The description of the mirror is "You can see your own reflection in the mirror. [if the player is wearing some hair gel]Your hair looks awesome with the hair gel on it.[else]You look the same as always.[end if]".
@@ -134,7 +134,7 @@ Test candle with "e / e / get stool / w / n / e / put stool down / get on stool 
 
 Part 4 - Nature
 
-West of the Road is By the Stream. The description of By the Stream is "There's a stream, makeing whatever sound water makes. There's also a scary warning sign." The sign is scenery in By the Stream. The description is "The sign says BEWARE OF PIRANHAS." A thing called the stream is scenery in By the Stream. The description is "It's a stream of water." Understand "water" as the stream.
+West of the Road is By the Stream. The description of By the Stream is "There's a stream, makein whatever sound water makes. There's also a scary warning sign." The sign is scenery in By the Stream. The description is "The sign says BEWARE OF PIRANHAS." A thing called the stream is scenery in By the Stream. The description is "It's a stream of water." Understand "water" as the stream.
 
 Instead of entering the stream: say "Water is nice, but out here? Maybe in the privacy of your own home you'd reconsider."
 
@@ -197,7 +197,7 @@ Instead of dropping the fish when the fish is ready to be thrown:
 	now the fish is nowhere;
 	the bear eats the fish in one turn from now.
 
-At the time when the bear eats the fish: [maybe don't show this if the player leaves idk]
+At the time when the bear eats the fish:
 	If the player is in the edge of the woods:
 		say "The bear finally decides to eat the fish, in a big gulp.";
 	the bear rubs its belly in zero turns from now. [??]
