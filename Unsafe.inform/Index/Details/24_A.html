@@ -276,7 +276,7 @@
             }
         }
         function showAllResp() {
-            for (var i=0;i<362;i++) {
+            for (var i=0;i<366;i++) {
                 showResp('extra'+(1000000+i), 'plus'+(1000000+i));
             }
         }
@@ -623,7 +623,8 @@
     </script>
 </head>
 <body>
-    <font size=2>
+    <script language="JavaScript">function pasteCode(code) { var myProject = project(); myProject.selectView('source'); myProject.pasteCode(code); }</script>
+    <font face="lucida grande,geneva,arial,tahoma,verdana,helvetica,helv" size=2>
     <!--CONTENT BEGINS-->
     <table cellspacing="3" border="0" style="background:#eeeeee;"><tr>
     <td valign="top" align="left">
@@ -653,293 +654,21 @@
     about who will accept what from whom, and only blocks some attempts,
     letting others run on into the carry out and report rules.<p><hr><p><b>Typed commands leading to this action</b><p>
     <p class="hangingin2">&quot;give/pay/offer/feed [something preferably held] to [someone]&quot;</p><p class="hangingin2">&quot;give/pay/offer/feed [someone] [something preferably held]&quot; <i>reversed</i></p><p><b>Rules controlling this action</b></p><p>
-    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">can't give what you haven't got rule</font>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2884(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t give what you haven[=0x0027=]t got rule');
-    }
-    </script>
-    <a href="javascript:pasteCode2884()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-    function pasteCode2885(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('The can[=0x0027=]t give what you haven[=0x0027=]t got rule is not listed in the check giving it to rulebook.[=0x000A=]');
-    }
-    </script>
-    <a href="javascript:pasteCode2885()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000204', 'plus1000204'); return false;"><img border=0 id="plus1000204" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
-    <div id="extra1000204" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[We] [aren't] holding [the noun]."</span>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2886(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t give what you haven[=0x0027=]t got rule response (A)');
-    }
-    </script>
-    <a href="javascript:pasteCode2886()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
-    function pasteCode2887(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t give what you haven[=0x0027=]t got rule response (A) is [=0x0022=]New text.[=0x0022=].');
-    }
-    </script>
-    <a href="javascript:pasteCode2887()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
-    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">can't give to yourself rule</font>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2888(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t give to yourself rule');
-    }
-    </script>
-    <a href="javascript:pasteCode2888()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-    function pasteCode2889(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('The can[=0x0027=]t give to yourself rule is not listed in the check giving it to rulebook.[=0x000A=]');
-    }
-    </script>
-    <a href="javascript:pasteCode2889()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000205', 'plus1000205'); return false;"><img border=0 id="plus1000205" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
-    <div id="extra1000205" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[We] [can't give] [the noun] to [ourselves]."</span>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2890(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t give to yourself rule response (A)');
-    }
-    </script>
-    <a href="javascript:pasteCode2890()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
-    function pasteCode2891(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t give to yourself rule response (A) is [=0x0022=]New text.[=0x0022=].');
-    }
-    </script>
-    <a href="javascript:pasteCode2891()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
-    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">can't give to a non-person rule</font>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2892(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t give to a non-person rule');
-    }
-    </script>
-    <a href="javascript:pasteCode2892()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-    function pasteCode2893(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('The can[=0x0027=]t give to a non-person rule is not listed in the check giving it to rulebook.[=0x000A=]');
-    }
-    </script>
-    <a href="javascript:pasteCode2893()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000206', 'plus1000206'); return false;"><img border=0 id="plus1000206" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
-    <div id="extra1000206" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[The second noun] [aren't] able to receive things."</span>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2894(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t give to a non-person rule response (A)');
-    }
-    </script>
-    <a href="javascript:pasteCode2894()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
-    function pasteCode2895(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t give to a non-person rule response (A) is [=0x0022=]New text.[=0x0022=].');
-    }
-    </script>
-    <a href="javascript:pasteCode2895()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
-    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">can't give clothes being worn rule</font>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2896(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t give clothes being worn rule');
-    }
-    </script>
-    <a href="javascript:pasteCode2896()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-    function pasteCode2897(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('The can[=0x0027=]t give clothes being worn rule is not listed in the check giving it to rulebook.[=0x000A=]');
-    }
-    </script>
-    <a href="javascript:pasteCode2897()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000207', 'plus1000207'); return false;"><img border=0 id="plus1000207" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
-    <div id="extra1000207" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"(first taking [the noun] off)[command clarification break]"</span>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2898(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t give clothes being worn rule response (A)');
-    }
-    </script>
-    <a href="javascript:pasteCode2898()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
-    function pasteCode2899(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t give clothes being worn rule response (A) is [=0x0022=]New text.[=0x0022=].');
-    }
-    </script>
-    <a href="javascript:pasteCode2899()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
-    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">block giving rule</font>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2900(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('block giving rule');
-    }
-    </script>
-    <a href="javascript:pasteCode2900()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-    function pasteCode2901(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('The block giving rule is not listed in the check giving it to rulebook.[=0x000A=]');
-    }
-    </script>
-    <a href="javascript:pasteCode2901()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000208', 'plus1000208'); return false;"><img border=0 id="plus1000208" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
-    <div id="extra1000208" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[The second noun] [don't] seem interested."</span>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2902(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('block giving rule response (A)');
-    }
-    </script>
-    <a href="javascript:pasteCode2902()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
-    function pasteCode2903(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('block giving rule response (A) is [=0x0022=]New text.[=0x0022=].');
-    }
-    </script>
-    <a href="javascript:pasteCode2903()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
-    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">can't exceed carrying capacity when giving rule</font>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2904(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t exceed carrying capacity when giving rule');
-    }
-    </script>
-    <a href="javascript:pasteCode2904()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-    function pasteCode2905(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('The can[=0x0027=]t exceed carrying capacity when giving rule is not listed in the check giving it to rulebook.[=0x000A=]');
-    }
-    </script>
-    <a href="javascript:pasteCode2905()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000209', 'plus1000209'); return false;"><img border=0 id="plus1000209" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
-    <div id="extra1000209" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[The second noun] [are] carrying too many things already."</span>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2906(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t exceed carrying capacity when giving rule response (A)');
-    }
-    </script>
-    <a href="javascript:pasteCode2906()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
-    function pasteCode2907(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t exceed carrying capacity when giving rule response (A) is [=0x0022=]New text.[=0x0022=].');
-    }
-    </script>
-    <a href="javascript:pasteCode2907()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
-    <br><p class="hangingin2">carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">standard giving rule</font>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2908(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('standard giving rule');
-    }
-    </script>
-    <a href="javascript:pasteCode2908()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-    function pasteCode2909(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('The standard giving rule is not listed in the carry out giving it to rulebook.[=0x000A=]');
-    }
-    </script>
-    <a href="javascript:pasteCode2909()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-    <br><p class="hangingin2">report&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">standard report giving rule</font>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2910(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('standard report giving rule');
-    }
-    </script>
-    <a href="javascript:pasteCode2910()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-    function pasteCode2911(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('The standard report giving rule is not listed in the report giving it to rulebook.[=0x000A=]');
-    }
-    </script>
-    <a href="javascript:pasteCode2911()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000211', 'plus1000211'); return false;"><img border=0 id="plus1000211" src=inform:/doc_images/responses.png></a>&nbsp;3</p>
-    <div id="extra1000211" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[We] [give] [the noun] to [the second noun]."</span>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2912(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('standard report giving rule response (A)');
-    }
-    </script>
-    <a href="javascript:pasteCode2912()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
-    function pasteCode2913(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('standard report giving rule response (A) is [=0x0022=]New text.[=0x0022=].');
-    }
-    </script>
-    <a href="javascript:pasteCode2913()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i><br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;B&nbsp;&nbsp;</span> <span style="color: #000066;">"[The actor] [give] [the noun] to [us]."</span>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2914(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('standard report giving rule response (B)');
-    }
-    </script>
-    <a href="javascript:pasteCode2914()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
-    function pasteCode2915(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('standard report giving rule response (B) is [=0x0022=]New text.[=0x0022=].');
-    }
-    </script>
-    <a href="javascript:pasteCode2915()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i><br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;C&nbsp;&nbsp;</span> <span style="color: #000066;">"[The actor] [give] [the noun] to [the second noun]."</span>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2916(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('standard report giving rule response (C)');
-    }
-    </script>
-    <a href="javascript:pasteCode2916()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
-    function pasteCode2917(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('standard report giving rule response (C) is [=0x0022=]New text.[=0x0022=].');
-    }
-    </script>
-    <a href="javascript:pasteCode2917()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">can't give what you haven't got rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t give what you haven[=0x0027=]t got rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The can[=0x0027=]t give what you haven[=0x0027=]t got rule is not listed in the check giving it to rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000204', 'plus1000204'); return false;"><img border=0 id="plus1000204" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
+    <div id="extra1000204" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[We] [aren't] holding [the noun]."</span>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t give what you haven[=0x0027=]t got rule response (A)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t give what you haven[=0x0027=]t got rule response (A) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">can't give to yourself rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t give to yourself rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The can[=0x0027=]t give to yourself rule is not listed in the check giving it to rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000205', 'plus1000205'); return false;"><img border=0 id="plus1000205" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
+    <div id="extra1000205" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[We] [can't give] [the noun] to [ourselves]."</span>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t give to yourself rule response (A)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t give to yourself rule response (A) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">can't give to a non-person rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t give to a non-person rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The can[=0x0027=]t give to a non-person rule is not listed in the check giving it to rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000206', 'plus1000206'); return false;"><img border=0 id="plus1000206" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
+    <div id="extra1000206" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[The second noun] [aren't] able to receive things."</span>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t give to a non-person rule response (A)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t give to a non-person rule response (A) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">can't give clothes being worn rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t give clothes being worn rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The can[=0x0027=]t give clothes being worn rule is not listed in the check giving it to rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000207', 'plus1000207'); return false;"><img border=0 id="plus1000207" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
+    <div id="extra1000207" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"(first taking [the noun] off)[command clarification break]"</span>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t give clothes being worn rule response (A)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t give clothes being worn rule response (A) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">block giving rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('block giving rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The block giving rule is not listed in the check giving it to rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000208', 'plus1000208'); return false;"><img border=0 id="plus1000208" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
+    <div id="extra1000208" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[The second noun] [don't] seem interested."</span>&nbsp;&nbsp;<a href="javascript:pasteCode('block giving rule response (A)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('block giving rule response (A) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">can't exceed carrying capacity when giving rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t exceed carrying capacity when giving rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The can[=0x0027=]t exceed carrying capacity when giving rule is not listed in the check giving it to rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000209', 'plus1000209'); return false;"><img border=0 id="plus1000209" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
+    <div id="extra1000209" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[The second noun] [are] carrying too many things already."</span>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t exceed carrying capacity when giving rule response (A)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t exceed carrying capacity when giving rule response (A) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <br><p class="hangingin2">carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">standard giving rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('standard giving rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The standard giving rule is not listed in the carry out giving it to rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
+    <br><p class="hangingin2">report&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor giving something to</i>&nbsp;&nbsp;<font color="#800000">standard report giving rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('standard report giving rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The standard report giving rule is not listed in the report giving it to rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000211', 'plus1000211'); return false;"><img border=0 id="plus1000211" src=inform:/doc_images/responses.png></a>&nbsp;3</p>
+    <div id="extra1000211" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[We] [give] [the noun] to [the second noun]."</span>&nbsp;&nbsp;<a href="javascript:pasteCode('standard report giving rule response (A)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('standard report giving rule response (A) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i><br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;B&nbsp;&nbsp;</span> <span style="color: #000066;">"[The actor] [give] [the noun] to [us]."</span>&nbsp;&nbsp;<a href="javascript:pasteCode('standard report giving rule response (B)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('standard report giving rule response (B) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i><br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;C&nbsp;&nbsp;</span> <span style="color: #000066;">"[The actor] [give] [the noun] to [the second noun]."</span>&nbsp;&nbsp;<a href="javascript:pasteCode('standard report giving rule response (C)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('standard report giving rule response (C) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
     <br>Click on the speech-bubble icons to see the responses, or here to see all of them:&nbsp;<a href="#" onclick="showAllResp(); return false;"><img border=0 src=inform:/doc_images/responses.png></a>&nbsp;9</p>
     <!--CONTENT ENDS-->
     </font>

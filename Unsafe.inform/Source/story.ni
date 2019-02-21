@@ -38,12 +38,13 @@ North of the Hall is the Staircase. The Staircase is an open door. The staircase
 
 East of the Hall is the Kitchen.
 The toaster, the cabinet, the refrigerator, and the stool are in the kitchen.
+Understand "fridge" as the refrigerator.
 The cabinet is a closed openable fixed in place container. The description is "A cabinet with a top, middle, and bottom drawer."
 The top drawer, the middle drawer, and the bottom drawer are closed openable containers. The top drawer, the middle drawer, and the bottom drawer are parts of the cabinet. [TODO: improve the drawer situation]
 In the middle drawer is a bread box. The bread box is a closed openable fixed in place container. In the bread box is a loaf of bread. [TODO: make the loaf of bread have slices which are edible] [TODO: the load of bread is wrapped.]
 The refrigerator is a closed openable fixed in place container.
-A fish is in the refrigerator. Its description is "It's a blue herring. Delicious!"
-A pie is in the refrigerator. Its description is  "A meat pie that looks like it came out of the oven just this morning."
+A fish is in the refrigerator. The description is "It's a blue herring. Delicious!"
+A pie is in the refrigerator. The description is  "A meat pie that looks like it came out of the oven just this morning."
 The fish and the pie are edible.
 
 The stool is an enterable portable supporter in the kitchen. The description is "It's a stool that you can stand on."
@@ -60,8 +61,8 @@ Section 2 - Second Floor
 Above the Hall is a room called the Upstairs Hall. The description of the Upstairs Hall is "The second floor of your house. Stairs lead down. The study is west, and the bathroom is east."
 The staircase is below the Upstairs Hall.
 
-West of the Upstairs Hall is the Study. The description of the Study is "Where you study."
-North of the Study is a room called the Closet. The description of the Closet is "A small room."
+West of the Upstairs Hall is the Study. The description of the Study is "Where you study. The hall is east."
+North of the Study is a room called the Closet. The description of the Closet is "A small room. The hall is south."
 
 East of the Upstairs Hall is the Bathroom. The description of the Bathroom is "It's just a bathroom."
 The mirror is scenery in the bathroom. The description of the mirror is "You can see your own reflection in the mirror. [if the player is wearing some hair gel]Your hair looks awesome with the hair gel on it.[else]You look the same as always.[end if]".
@@ -71,8 +72,8 @@ There is a medicine cabinet in the bathroom. The medicine cabinet is an openable
 [naming things unambiguously is annoying]
 A dollop of hair gel is nowhere. A dollop of hair gel is wearable. Instead of taking off the dollop of hair gel: say "That's not how hair gel works."
 
-Instead of putting the can of hair gel on:
-	if the player is not in the bathroom:
+Instead of wearing the can of hair gel:
+	if the mirror is not visible:
 		say "You can't put hair gel on without using a mirror! How unseemly.";
 	else if the player is wearing a dollop of hair gel:
 		say "You are already wearing hair gel. There's no point";
@@ -96,15 +97,23 @@ West of the bedroom is a door called the Side Door. West of the side door is a r
 In the garden is a locked closed container called the Shed.
 The roof of the Shed is part of The Shed. On top of the Roof is a bucket. The bucket is an unopenable open container.
 
-West of the Garden is the Outskirts of Town.
+The description of the Shed is "A narrow rusty shed. [if the player is on the stool]On the shed's roof, you can see [a list of the things on the roof of the shed].[else]The shed is really tall and you can't see above it.[end if]".
+
+A rule for reaching inside the roof of the shed:
+	if the player is not on the stool:
+		say "You can't reach the roof of the shed.";
+		deny access;
+	allow access.
+
+West of the Garden is the Outskirts of Town. The description of the Outskirts of Town is "There's less town here than elsewhere. The garden is east. The space center is north. The road is west."
 North of the Outskirts of Town is the Space Center.
 North of the Space Center is the Launch Pad.
-West of the Outskirts of Town is the Road. 
-The description of the Road is "To the North you can see a fork in the road."
-North of the road is a room called Further Along the Road.
-West of Further Along the Road is the Parking Lot.
-North of Further Along is the Abandoned Train Station.
-East of the Abandoned Train station is the Control Room.
+West of the Outskirts of Town is the Road.
+The description of the Road is "It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west."
+North of the road is a room called Further Along the Road. The description of Further Along the Road is "More road! The road goes south. To the west there's a parking lot."
+West of Further Along the Road is the Parking Lot. The description of Parking Lot is "Where cars park, except there aren't any cars today. The road is to the east."
+North of Further Along is the Abandoned Train Station. The description of Abandoned Train Station is "No trains."
+East of the Abandoned Train station is the Control Room. The description of Control Room is "Where things get controlled."
 
 Abandoned Warehouse is a room. West of the Town Square is the warehouse. The Abandoned Warehouse is south of the Road. The description is "The warehouse is old and abandoned.It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West." The Tunnel of Extraction is below the warehouse.
 
@@ -121,9 +130,30 @@ Instead of taking or touching the candle when the player is wearing a dollop of 
 Instead of taking the candle:
 	say "You feel like taking the candle will disrupt the rituals here and curse you and your descendants. Probably better not to disturb it."
 
+Test candle with "e / e / get stool / w / n / e / put stool down / get on stool / open cabinet / get gel / put on gel / w / d / d / w / s / get candle".
+
 Part 4 - Nature
 
-West of the Road is a stream. South of the stream is a clearing. West of the Clearing is the Edge of the woods. West of the Edge is a room called the Woods. South of the Woods is the Hunting Grounds. South of the Hunting Grounds is the Hunting Lodge.
+West of the Road is By the Stream. The description of By the Stream is "There's a stream, makeing whatever sound water makes. There's also a scary warning sign." The sign is scenery in By the Stream. The description is "The sign says BEWARE OF PIRANHAS." A thing called the stream is scenery in By the Stream. The description is "It's a stream of water." Understand "water" as the stream.
+
+Instead of entering the stream: say "Water is nice, but out here? Maybe in the privacy of your own home you'd reconsider."
+
+[Filling is an action applying to one carried thing and requiring light. Instead of filling something: say "That doesn't make sense."
+
+Instead of filling the bucket:
+]	
+	
+
+South of By the Stream is a Clearing. The description of the Clearing is "It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north."
+
+West of the Clearing is the Edge of the Woods. The description of the Edge of the Woods is "The woods start here and extend to the west. There's a clearing to the east."
+West of the Edge is a room called the Woods. The description of the Woods is "There's lots of trees. The edge of the woods is to the east. Going south, you can enter a hunting lodge." Trees are scenery in the Woods. The description is "The trees have bark and leaves." Understand "bark" and "leaves" as trees.
+
+Instead of going nowhere from the Woods: say "Too many trees. You'd get lost."
+
+South of the Woods is the Hunting Grounds. The description of the Hunting Grounds is "Where hunters hunt things, as long as it's the right season. The woods are to the north. You can head into the Hunting Lodge to the south."
+
+South of the Hunting Grounds is the Hunting Lodge. The description of the Hunting Lodge is "Where hunters rest or something. The exit is north." Instead of going outside from the Hunting Lodge, try going north.
 
 East of the clearing is the abandoned warehouse.
 
@@ -153,6 +183,8 @@ Instead of attacking the bear:
 		conclude with 24;
 	else:
 		say "With your bear (*ahem*) bare hands? You're kind of dumb, but not *that* dumb."
+
+Test bear with "e / s / take key / unlock door / open door / s / take stick / n / n / e / open fridge / take fish / w / d / w / w / w / w / throw fish / z / z / z / w / attack bear".
 
 To decide if the fish is ready to be thrown:
 	if the player is in the Edge of the Woods and the bear is in the Woods:
