@@ -32,7 +32,7 @@ Section 1 - First Floor
 
 The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east."
 
-East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the west. The staircase leading upwards is to the north. (??) The kitchen is to the east."
+East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East."
 
 North of the Hall is the Staircase. The Staircase is an open door. The staircase is not openable.
 
@@ -49,9 +49,9 @@ The stool is an enterable portable supporter in the kitchen. The description is 
 
 The toaster is a fixed in place device. The toaster can be plugged in or unplugged. The toaster is unplugged. [TODO: the toaster needs to become more interesting.]
 
-South of the Hall is the Back Entryway. There is a blue key in the back entryway. The back door is a locked door. The back door is south of the back entryway. The blue key unlocks the back door.
+South of the Hall is the Back Entryway. There is a blue key in the back entryway. There is a locked door called the back door. The back door is south of the back entryway. The blue key unlocks the back door. The description of the back entryway is "The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. The hall is to the North, the backyard to the South." The coat rack and the trash can are scenery in the back entryway.
 
-South of the back door is the backyard. In the backyard is a stick.
+South of the back door is the Backyard. In the backyard is a stick.
 
 
 Section 2 - Second Floor
@@ -112,10 +112,25 @@ West of the Road is a stream. South of the stream is a clearing. west of the cle
 
 East of the clearing is the abandoned warehouse.
 
-The bear is a neuter animal. [TODO: if you try to go to the woods, the bear shows up]
+The grizzly bear is a neuter animal. The bear can be asleep or awake. The bear is awake.
+
+To decide whether the woods are accessible:
+	if the bear is not sleeping, decide no;
+	if the time machine's use count is 0, decide no;
+	decide yes.
+
+Every turn when the player can see the bear and the bear is awake:
+		say "The grizzly bear [one of]tries to catch an insect as it flies by[or]stares off into the distance[or]menacingly bares its teeth[or]looks profoundly bored." 
+		
+Instead of going to the woods when the woods are not accessible:
+	say "As you walk into the woods, a large grizzly bear shows up, baring (bear-ing?) its teeth at you. You hastily take three steps back."
+	say "The bear seems to be guarding the entrance to the woods. Seems like it would be awfully difficult to get through here unless the bear were somehow distracted."
+	
+	
 
 Part 5 - Town
 
 South of the Outskirts of Town is the Town Square.
 South of the Town Square is a door called the Mad Scientist's Grand Entrance. south of the Mad Scientist's grand entrance is the Mad Scientist's house.
 Above the Mad Scientist's house is the Mad Science Laboratory.
+The time machine is a device in the Mad Science Laboratory. The time machine has a number called the use count. The time machine's use count is initially 0.
