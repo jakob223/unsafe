@@ -40,7 +40,7 @@ East of the Hall is the Kitchen.
 The toaster, the cabinet, the refrigerator, and the stool are in the kitchen.
 Understand "fridge" as the refrigerator.
 The cabinet is a closed openable fixed in place container. The description is "A cabinet with a top, middle, and bottom drawer."
-The top drawer, the middle drawer, and the bottom drawer are closed openable containers. The top drawer, the middle drawer, and the bottom drawer are parts of the cabinet. [TODO: improve the drawer situation]
+The top drawer, the middle drawer, and the bottom drawer are closed openable containers. The top drawer, the middle drawer, and the bottom drawer are parts of the cabinet. [TODO: improve the drawer situation] [TODO: can you open the drawers without opening the cabinet right now? should fix.]
 In the middle drawer is a bread box. The bread box is a closed openable fixed in place container. In the bread box is a loaf of bread. [TODO: make the loaf of bread have slices which are edible] [TODO: the load of bread is wrapped.]
 The refrigerator is a closed openable fixed in place container.
 A fish is in the refrigerator. The description is "It's a blue herring. Delicious!"
@@ -49,7 +49,7 @@ The fish and the pie are edible.
 
 The stool is an enterable portable supporter in the kitchen. The description is "It's a stool that you can stand on."
 
-The toaster is a fixed in place device. The description is "The toaster turns bread into toast. [if the toaster is plugged in]It is plugged in.[else]It is unplugged.[end if]". The toaster can be plugged in or unplugged. The toaster is unplugged. [TODO: the toaster needs to become more interesting.]
+The toaster is a fixed in place device. The description is "The toaster turns bread into toast. [if the toaster is plugged in]It is plugged in.[else]It is unplugged.[end if]". The toaster can be plugged in or unplugged. The toaster is unplugged. [TODO: support putting bread in the toaster] [TODO: support using the toaster]
 
 South of the Hall is the Back Entryway. There is a blue key in the back entryway. There is a locked door called the back door. The back door is south of the back entryway. The blue key unlocks the back door. The description of the back entryway is "The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. The hall is to the North, the backyard to the South." The coat rack and the trash can are scenery in the back entryway.
 
@@ -61,8 +61,17 @@ Section 2 - Second Floor
 Above the Hall is a room called the Upstairs Hall. The description of the Upstairs Hall is "The second floor of your house. Stairs lead down. The study is west, and the bathroom is east."
 The staircase is below the Upstairs Hall.
 
-West of the Upstairs Hall is the Study. The description of the Study is "Where you study. The hall is east."
+A quarter is a kind of thing.
+West of the Upstairs Hall is the Study. The description of the Study is "Where you study. The hall is east." A desk is scenery in the study. 1 quarter and a dime are on the desk. The description of the quarter is "Arkansas state quarter. Minted 2003. Looks pretty new for a 2003 quarter." The description of the dime is "Just a regular old dime. Minted 1994."
 North of the Study is a door called the closet door. North of the closet door is a room called The Closet. The closet door is open. The description of the Closet is "A small room. The hall is south."
+
+A wooden drawer is a kind of container. Every wooden drawer contains a quarter. Wooden drawers are usually closed. Wooden drawers are always openable.
+In the closet is a chest of drawers. The description of the chest is "An old wooden chest of drawers, with 5 drawers."
+A wooden drawer called the first drawer is part of the chest of drawers.
+A wooden drawer called the second drawer is part of the chest of drawers.
+A wooden drawer called the third drawer is part of the chest of drawers.
+A wooden drawer called the fourth drawer is part of the chest of drawers.
+A wooden drawer called the fifth drawer is part of the chest of drawers.
 
 East of the Upstairs Hall is the Bathroom. The description of the Bathroom is "It's just a bathroom."
 The mirror is scenery in the bathroom. The description of the mirror is "You can see your own reflection in the mirror. [if the player is wearing some hair gel]Your hair looks awesome with the hair gel on it.[else]You look the same as always.[end if]".
@@ -178,7 +187,7 @@ Instead of entering the stream: say "Water is nice, but out here? Maybe in the p
 Instead of filling the bucket:
 ]	
 	
-Section 2 - Bear
+Section 2 - Trees
 
 South of By the Stream is a Clearing. The description of the Clearing is "It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north."
 
@@ -189,7 +198,17 @@ Instead of going nowhere from the Woods: say "Too many trees. You'd get lost."
 
 South of the Woods is the Hunting Grounds. The description of the Hunting Grounds is "Where hunters hunt things, as long as it's the right season. The woods are to the north. You can head into the Hunting Lodge to the south."
 
-South of the Hunting Grounds is the Hunting Lodge. The description of the Hunting Lodge is "Where hunters rest or something. The exit is north." Instead of going outside from the Hunting Lodge, try going north.
+South of the Hunting Grounds is the Hunting Lodge. The description of the Hunting Lodge is "Where hunters rest or something. One wall is covered in animal heads - a deer, a moose, a lion(!). Kinda creepy, to be honest. The exit is north." Instead of going outside from the Hunting Lodge, try going north. The moose head is a wearable portable thing in the hunting lodge. The deer head and the lion head are things in the hunting lodge. The deer head is portable. [TODO: don't tell the player the things again]
+
+To decide if it is hunting season:
+	if the time machine's use count is greater than 2:
+		decide yes;
+	decide no;
+Instead of going to the hunting grounds when the player is wearing the moose head and it is hunting season:
+	say "You go into the hunting grounds, foolishly forgetting that there is a moose head atop your own. The hunters waste no time before shooting you.. at least you got a quick death.";
+	conclude with 36;
+
+Section 3 - Bear
 
 East of the clearing is the abandoned warehouse.
 
@@ -286,5 +305,25 @@ A rule for reaching inside the shelf:
 
 Test glue with "e / e / take stool / w / down / go through tunnel / s / get knife / n / e / open entrance / s / put down stool / get on stool / get box / open box / get glue / cut glue / eat glue"
 
-Above the ladder is the Mad Science Laboratory.
-The time machine is a device in the Mad Science Laboratory. The time machine has a number called the use count. The time machine's use count is initially 0.
+Above the ladder is the Mad Science Laboratory. Understand "Lab" as the mad science laboratory.
+Instead of climbing the ladder, try going up.
+The time machine is a fixed in place enterable container in the Mad Science Laboratory. The time machine has a number called the use count. The time machine's use count is initially 0. [TODO: time machine contents are announced :/]
+The red button is a fixed in place thing in the time machine. The coin slot is a fixed in place closed unopenable container in the time machine. The coin slot has a number called the credits. The coin slot's credits is initially 0.
+[TODO: like, any description around here]
+Instead of inserting something into the coin slot:
+	If the noun is not a quarter:
+		say "That doesn't fit in the slot!";
+		stop the action;
+	say "You put a quarter in the slot. It makes a satisfying *clink*.";
+	now the noun is nowhere;
+	increase the coin slot's credits by 1.
+	
+Instead of pushing the button:
+	if the coin slot's credits is 0:
+		say "You need to insert a quarter first.";
+	else:
+		say "You feel yourself pressed back into the seat, and the world swirls around you. The sun sets and rises again 14 times. And then, suddenly, the world is calm.";
+		increase the time machine's use count by the coin slot's credits;
+		now the coin slot's credits is 0.
+
+[ TODO: rules around time travel and the pie]
