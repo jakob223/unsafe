@@ -32,7 +32,7 @@ Section 1 - First Floor
 
 The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east."
 
-East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East."
+East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East.[if the brown key is in the hall] There is a muddy brown key hanging from a hook on the wall.[end if]". The muddy brown key is in the hall.
 
 North of the Hall is the Staircase. The Staircase is an open door. The staircase is not openable.
 
@@ -93,11 +93,15 @@ The House is a region. The Bedroom and the Kitchen and the Hall and the Upstairs
 
 Part 3 - Between
 
+Section 1 - Garden
+
 West of the bedroom is a door called the Side Door. West of the side door is a room called The Garden. The side door is closed.
-In the garden is a locked closed container called the Shed.
+In the garden is a locked closed container called the Shed. The brown key unlocks the shed.
 The roof of the Shed is part of The Shed. On top of the Roof is a bucket. The bucket is an unopenable open container.
 
 The description of the Shed is "A narrow rusty shed. [if the player is on the stool]On the shed's roof, you can see [a list of the things on the roof of the shed].[else]The shed is really tall and you can't see above it.[end if]".
+
+The cage is a transparent open container. The description of the cage is "A white metal cage that looks to have held a pet rabbit long ago." The cage is in the shed.
 
 A rule for reaching inside the roof of the shed:
 	if the player is not on the stool:
@@ -115,7 +119,9 @@ West of Further Along the Road is the Parking Lot. The description of Parking Lo
 North of Further Along is the Abandoned Train Station. The description of Abandoned Train Station is "No trains."
 East of the Abandoned Train station is the Control Room. The description of Control Room is "Where things get controlled."
 
-Abandoned Warehouse is a room. West of the Town Square is the warehouse. The Abandoned Warehouse is south of the Road. The description is "The warehouse is old and abandoned.It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West." The Tunnel of Extraction is below the warehouse.
+Section 2 - Warehouse
+
+Abandoned Warehouse is a room. West of the Town Square is the warehouse. The Abandoned Warehouse is south of the Road. The description is "The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West." The Tunnel of Extraction is below the warehouse.
 
 South of the Abandoned Warehouse is a room called A Spooky Lair. 
 The description of the lair is "A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it."
@@ -131,6 +137,33 @@ Instead of taking the candle:
 	say "You feel like taking the candle will disrupt the rituals here and curse you and your descendants. Probably better not to disturb it."
 
 Test candle with "e / e / get stool / w / n / e / put stool down / get on stool / open cabinet / get gel / put on gel / w / d / d / w / s / get candle".
+
+A mouse is a kind of animal.
+A jar is a kind of openable container. Every jar contains a mouse.
+
+There is an ancient cabinet in the spooky lair. The description of the ancient cabinet is "The ancient cabinet seems like it could have been here for millenia." The ancient cabinet is a closed openable container. There are 3 jars in the ancient cabinet. The ancient cabinet is fixed in place.
+
+
+[TODO: allow taking a mouse out of a jar]
+[TODO: fix the below chunk which does not compile]
+[
+Instead of putting a mouse in the cage:
+	if the cage is closed:
+		say "You can't put a mouse in a closed cage!";
+	else if the player is in the lair:
+		say "A rattlesnake rushes into the cage and hungrily slurps up the mouse before it even has time to get its bearings.";
+		now the mouse is nowhere;
+		now a snake is in the cage;
+		[The snake leaves the cage in 3 turns from now. [TODO: implement]]
+	else:
+		say "The mouse scurries out of the cage and runs off to wherever it is mice go. Oh well, there are probably more mice wherever that one came from."
+		now the mouse is nowhere.]
+
+[At the time when the snake leaves the cage:
+	if the player and the cage are in the same room:
+		say "The snake slithers out of the cage with remarkable speed."
+	now the snake is in the lair.]
+	
 
 Part 4 - Nature
 
