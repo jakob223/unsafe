@@ -26,6 +26,47 @@ To conclude with (par - a number):
 	else:
 		say "You can reach this ending more quickly!"
 
+Section 1 - Liquids and Dumping
+
+A liquid is a kind of thing.
+Instead of taking a liquid:
+	say "You try to pick up [the noun] but it slips through your fingers."
+
+Dumping is an action applying to one visible thing.
+Understand "dump [something]" as dumping.
+Understand "dump [something] out" as dumping.
+Understand "dump out [something]" as dumping.
+Understand "pour out [something]" as dumping.
+Understand "pour [something]" as dumping.
+
+Carry out dumping:
+	say "That doesn't make sense."
+	
+Instead of dumping the bucket:
+	If the player is in the bathroom and the piranha-infested water is in the bucket:
+		say "You dump the water and the piranhas into the tub. ";
+		if the drain is plugged:
+			say "The piranhas swim around in the bathwater.";
+			move the swimming piranhas to the bathtub;
+			increase the water level by 1;
+		else:
+			say "The water, and the piranhas with it, flow out the drain.";
+		now the piranha-infested water is nowhere; 
+	else if the player is in the house:
+		say "That doesn't really seem like a good idea here.";
+	else if the rocket fuel is in the bucket:
+		if the player is in the launch pad:
+			try inserting the fuel into the spaceship;
+		else:
+			say "You pour the rocket fuel out onto the ground. It immediately starts to evaporate. Smells kinda funky.";
+			now the fuel is nowhere;
+	else if the piranha-infested water is in the bucket:
+		say "You unceremoniously dump the piranhas and the water out of the bucket. Good riddance.";
+		now the piranha-infested water is nowhere;
+	else:
+		say "You can't dump an empty bucket."
+
+
 Part 2 - House
 
 Section 1 - First Floor
@@ -126,6 +167,10 @@ Carry out unplugging:
 	if the noun is the drain or the noun is the bathtub:
 		say "You unplug the drain.";
 		now the drain is unplugged;
+		if the water level is not 0:
+			say "All the water in the bathtub drains out through the drain. That was faster than it should be. Gotta call the plumber eventually..";
+		If the swimming piranhas are in the bathtub:
+			now the swimming piranhas are nowhere;
 	else if the noun is the refrigerator:
 		say "You can't reach the outlet behind the refrigerator.";
 	else if the noun is not the toaster:
@@ -218,17 +263,36 @@ Instead of wearing the can of hair gel:
 Instead of opening or closing the medicine cabinet when the player is not on the stool:
 	say "You're not tall enough to reach the medicine cabinet. Drat!"
 
-The bathtub is a fixed in place thing in the bathroom. The description of the bathtub is "It's a bathtub. Big enough to sit in comfortably or lie down in uncomfortably. The drain is [if the drain is plugged]plugged[else]unplugged[end if]. The faucet is [if the faucet is on]on[else]off[end if]."
-The drain is a part of the bathtub. The drain can be plugged. The bathtub has a number called the water level. The water level is initially 0.
+To say the water status:
+	say "The drain is [if the drain is plugged]plugged[else]unplugged[end if]. The faucet is [if the faucet is on]on[else]off[end if]. ";
+	say "The water is around [the water level]0% of the way up the edge of the tub.";
+	if the water level is 10:
+		say " the bathtub is overflowing into the bathroom. For some reason, you don't really care about this.";
+	say "test.";
+	if the swimming piranhas are in the bathtub:
+		say "A few piranhas are swimming peacefully around the tub.".
+Instead of inserting the bucket into the bathtub:
+	say "You don't really feel like dirtying your pristine tub with the garden bucket."
+Every turn while the water level is greater than 9:
+	say "The tub overflows and a fair amount of water flows out of the bathtub into the rest of the bathroom.";
+	decrease the water level by 1.
+Every turn while the faucet is on:
+	if the water level is not 10:
+		increase the water level by 1.
+		
+The bathtub is a fixed in place enterable container in the bathroom. The description of the bathtub is "It's a bathtub. Big enough to sit in comfortably or lie down in uncomfortably. [paragraph break][the water status]". Understand "tub" as the bathtub.
+The drain is a part of the bathtub. The drain can be plugged. The bathtub has a number called its water level. The water level is initially 0.
 The faucet is a part of the bathtub. The faucet can be on or off.
 Instead of switching on the faucet:
 	say "You turn on the faucet. Water starts flowing out.";
-	
-	[TODO: deal with filling the tub]
+	now the faucet is on.
 Instead of switching off the faucet:
 	say "You turn off the faucet. Water stops flowing.";
-	
-
+	now the faucet is off.
+Instead of entering the bathtub when the piranhas are in the bathtub:
+	say "You get in the tub. The warm water feels wonderful for a few seconds, and then the piranhas start to attack. They eat your feet, your legs, and... you can imagine the rest.[paragraph break]";
+	conclude with 32.
+[TODO: require removing clothes before getting in the tub]
 
 Section 4 - Basement
 
@@ -237,7 +301,7 @@ Below the Hall is the Basement. There is a door called The Tunnel of Extraction.
 The description of the Basement is "The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west."
 
 A vat is in the basement. The vat is a closed openable fixed in place container. There is rocket fuel in the vat. The description of the vat is "A large vat holding a greenish liquid. Who knows how long it's been here?"
-A bucketful of rocket fuel is a thing. The bucketful is nowhere.
+A bucketful of rocket fuel is a liquid. The bucketful is nowhere.
 Instead of opening the vat:
 	say "You lift the large plastic lid off of the vat, revealing the pungent rocket fuel beneath.";
 	now the vat is open.
@@ -344,6 +408,7 @@ At the time when the autopilot takes over:
 		say "The ship stops ascending as the auto pilot takes over. You start to fall toward earth.";
 		the autopilot lands the ship in one turn from now;
 	else:
+		say "The VERY LOW FUEL light blinks on in the corner of the dashboard.";
 		the ship runs out of fuel in zero turns from now.
 the spaceship can be out of control. The spaceship is not out of control.
 At the time when the ship runs out of fuel:
@@ -358,8 +423,8 @@ There is a room called the ruins of the tunnel of extraction.
 At the time when the ship crash lands:
 	say "With a CRASH and a BOOM the ship crash lands into the ground. It breaks through the ground and as you die on impact you vaguely recognize your surroundings: this was formerly part of the tunnel of extraction.[line break]";
 	now the spaceship is in the ruins of the tunnel;
-	conclude with 21.
-understand "bucketful of rocket fuel" as fuel. Understand "ship" as spaceship. Understand "door" as spaceship.
+	conclude with 21. 
+Understand "ship" as spaceship. Understand "door" as spaceship.
 At the time when the autopilot lands the ship:
 	say "The spaceship lands in a near-crash. Your back hurts, but otherwise you feel okay. The ship looks in a rough shape though. All the lights turn off except for a few emergency lights. You should probably get out sooner rather than later.";
 	now the spaceship is off;
@@ -450,15 +515,31 @@ Part 4 - Nature
 
 Section 1 - Piranhas
 
-West of the Road is By the Stream. The description of By the Stream is "There's a stream, makein whatever sound water makes. There's also a scary warning sign." The warning sign is scenery in By the Stream. The description is "The sign says BEWARE OF PIRANHAS." A thing called the stream is scenery in By the Stream. The description is "It's a stream of water." Understand "water" as the stream.
+West of the Road is By the Stream. The description of By the Stream is "There's a stream, making whatever sound water makes. There's also a scary warning sign." The warning sign is scenery in By the Stream. The description is "The sign says BEWARE OF PIRANHAS." A thing called the stream is scenery in By the Stream. The description is "It's a stream of water." Understand "water" as the stream.
 
 Instead of entering the stream: say "Water is nice, but out here? Maybe in the privacy of your own home you'd reconsider."
 
-The bucketful of piranha-infested water is a thing. The piranha-infested water is nowhere.
+The swimming piranhas are an undescribed thing. The swimming piranhas are nowhere.
+The bucketful of piranha-infested water is a liquid. The piranha-infested water is nowhere.
+Instead of taking the stream when the player has the bucket:
+	try inserting the bucket into the stream.
 Instead of inserting the bucket into the stream:
-	say "You dip the bucket in the water, coming out with a bucketful of water and a few.. pirhanas?!";
+	say "You dip the bucket in the water, coming out with a bucketful of water and a few.. piranhas?!";
 	now the piranha-infested water is in the bucket.
-[TODO: you can't just pour the bucket out anywhere, or if you do the water goes away.]	
+
+Test piranhas with "e / e / get stool / w / w / open door / w / put down stool
+	 / get on stool / get bucket / w / w / w / take water / e / s / d / u / u / e / plug drain / turn on faucet / pour bucket / get in tub"
+[
+dump in pirhanas
+take off pants
+take off underwear
+take off socks
+take off shirt
+take off shoes
+take off belt
+take off hat
+take off jacket
+get in tub]
 
 Section 2 - Trees
 
