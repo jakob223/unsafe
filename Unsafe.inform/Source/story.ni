@@ -14,7 +14,6 @@ Instead of going through a closed door:
 
 When play begins:
 	now the right hand status line is "Moves: [turn count - 1]"; [Inform's turn count basically says what number the "current move" is, so we subtract one.]
-	say "You wake up in your bedroom." [TODO: print this after the title matter]
 	
 To conclude with (par - a number):
 	now the right hand status line is "Moves: [turn count]";
@@ -31,7 +30,7 @@ Part 2 - House
 
 Section 1 - First Floor
 
-The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out of the house to the West."
+The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out of the house to the West. [first time]You're lying in your bed, just having woken up.[only]".
 The nightstand is scenery in the Bedroom. There is an iPod on the nightstand. The iPod can be playing. The iPod is not playing. The description of the iPod is "It's an iPod touch, third-generation, maybe? [if playing]It's playing your favorite song.[end if]".
 
 test platform with "get ipod / e / u / w / open drawer / get earbuds / e / d / d / w / n / n / n"
@@ -376,9 +375,23 @@ To decide if it is hunting season:
 	if the time machine's use count is greater than 2:
 		decide yes;
 	decide no;
-Instead of going to the hunting grounds when the player is wearing the moose head and it is hunting season:
+Instead of wearing the moose head:
+	if the player is in the hunting grounds or the player is in the woods:
+		say "You slip on the snow while trying to put the moose head over your own. Maybe you should do this on more stable ground.";
+	else:
+		continue the action.
+
+The moose head can be accustomed. The moose head is not accustomed.
+Instead of going somewhere when the player is wearing the moose head and the moose head is not accustomed:
+	say "Wow, you nearly fell over. Walking while wearing a taxidermied moose head is hard. Maybe try that again?";
+	now the moose head is accustomed.
+
+Instead of going to the hunting grounds when the player is wearing the moose head and it is hunting season and the moose head is accustomed:
 	say "You go into the hunting grounds, foolishly forgetting that there is a moose head atop your own. The hunters waste no time before shooting you.. at least you got a quick death.";
 	conclude with 36;
+
+
+test moose with "e / u / w / get quarter / n / get quarter / open second drawer / get quarter / s / e / d / d / w / e / open entrance / s / u / go into time machine / insert quarter into slot / insert quarter into slot / insert quarter into slot / press button / get out /d / n / w / w / w / w / s / open entrance / s / get moose head / wear moose head / n / n"
 
 Section 3 - Bear
 
