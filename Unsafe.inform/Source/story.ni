@@ -6,6 +6,7 @@ The story creation year is 2019.
 
 Part 1 - Meta
 
+
 Instead of going through a closed door:
 	say "You can't go through [the door gone through] because it's closed."
 [comment: The can't go through closed doors rule is not listed in the check going rulebook.]
@@ -13,7 +14,7 @@ Instead of going through a closed door:
 
 When play begins:
 	now the right hand status line is "Moves: [turn count - 1]"; [Inform's turn count basically says what number the "current move" is, so we subtract one.]
-	say "You wake up in your bedroom."
+	say "You wake up in your bedroom." [TODO: print this after the title matter]
 	
 To conclude with (par - a number):
 	now the right hand status line is "Moves: [turn count]";
@@ -30,18 +31,116 @@ Part 2 - House
 
 Section 1 - First Floor
 
-The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east."
+The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out into the Garden to the West."
 
-East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East.[if the brown key is in the hall] There is a muddy brown key hanging from a hook on the wall.[end if]". The muddy brown key is in the hall.
+East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East.[if the brown key is in the hall] There is a muddy brown key hanging from a hook on the wall.[end if]". The muddy brown key is in the hall.
 
 North of the Hall is the Staircase. The Staircase is an open door. The staircase is not openable.
+Understand "stairs" as the staircase.
+Instead of climbing the staircase:
+	try going north.
 
 East of the Hall is the Kitchen.
 The toaster, the cabinet, the refrigerator, and the stool are in the kitchen.
 Understand "fridge" as the refrigerator.
+Understand "pull out [something]" as opening.
 The cabinet is a closed openable fixed in place container. The description is "A cabinet with a top, middle, and bottom drawer."
-The top drawer, the middle drawer, and the bottom drawer are closed openable containers. The top drawer, the middle drawer, and the bottom drawer are parts of the cabinet. [TODO: improve the drawer situation] [TODO: can you open the drawers without opening the cabinet right now? should fix.]
-In the middle drawer is a bread box. The bread box is a closed openable fixed in place container. In the bread box is a loaf of bread. [TODO: make the loaf of bread have slices which are edible] [TODO: the load of bread is wrapped.]
+The top drawer, the middle drawer, and the bottom drawer are closed openable containers. The top drawer, the middle drawer, and the bottom drawer are in the cabinet. [TODO: improve the drawer situation]
+In the middle drawer is a big tupperware. The big tupperware is a closed openable fixed in place container. 
+understand "bread" as the loaf.
+In the big tupperware is a loaf of bread. The loaf can be wrapped or unwrapped. The loaf is wrapped. The description of the loaf is "A loaf of bread, whole grain and fresh from the bakery. It's pre-sliced! [if the bread is wrapped]It's tightly wrapped in plastic[else]It smells delicious[end if]."
+
+Instead of eating the loaf:
+	if the bread is wrapped:
+		say "You can't eat this, it's wrapped in plastic.";
+	else:
+		say "You take a slice off of the loaf of bread and eat it. It tastes delicious! Probably even better toasted though.";
+
+A slice of bread is a kind of edible thing. A slice of bread can be toasted. The description of a slice of bread is "[if toasted]A piece of toast - scrumptious![else]A slice of bread.[end if]".
+
+[ TODO: suppress correction about loaf]
+Instead of inserting something into the toaster:
+	If the noun is the fork and the toaster is plugged in and the toaster is done:		
+		say "You stick the fork in the toaster, hoping it will help you remove your toast. Unfortunately, the toaster is electrified and as soon as your fork touches the coil you are electrocuted. You'll never get to eat that delicious toast... :([line break]";
+		conclude with 24;
+	else if the button is active:
+		say "The toaster is hard at work, don't bother it.";
+	Else if the noun is not the loaf of bread:
+		say "That's not what you're supposed to put in a toaster!";
+	else if the bread is wrapped:
+		say "You need to unwrap that bread before you can put it in the toaster.";
+	else if the toaster's slice count is 2:
+		say "The toaster is full. Probably you don't want to overload it.";
+	else:
+		say "You put a slice of bread in the toaster.";
+		increase the toaster's slice count by 1;
+Instead of opening the bread: [unwrap means open]
+	say "You take off the plastic wrap and now the bread smells heavenly.";
+	now the bread is unwrapped;
+	
+The toaster is a fixed in place thing. 
+The toaster has a number called its slice count. The toaster's slice count is initially 0.
+The description is "The toaster turns bread into toast. There is a button on the front of the toaster labelled 'TOAST'. [line break]The toaster [if the toaster is plugged in]is plugged in.[else]is unplugged.[end if][if the toaster's slice count is greater than 0] It has [the toaster's slice count] slice[s] of [the toaster's content] in it.[end if]".
+The toaster can be plugged in or unplugged. The toaster is unplugged. The toaster can be done. The toaster is not done.
+
+To say the toaster's content:
+	if the toaster is done:
+		say "toast";
+	else:
+		say "bread";
+		
+Understand "plug [something] in" as plugging.
+Understand "plug in [something]" as plugging.
+Understand "unplug [something]" as unplugging.
+Plugging is an action applying to one visible thing.
+Unplugging is an action applying to one visible thing.
+
+Carry out plugging:
+	if the noun is not the toaster:
+		say "You can't plug in [a noun].";
+	else:
+		say "You plug in the toaster.";
+		now the toaster is plugged in;
+
+Carry out unplugging:
+	if the noun is the refrigerator:
+		say "You can't reach the outlet behind the refrigerator.";
+	else if the noun is not the toaster:
+		say "You can't plug in [a noun].";
+	else if the toaster is done:
+		say "You try to unplug the toaster but it seems to be stuck plugged in.";
+	else if the button is active:
+		say "The toaster is hard at work, don't bother it.";
+	else:
+		say "You unplug the toaster.";
+		now the toaster is unplugged;
+
+The TOAST button is an undescribed part of the toaster. The button can be active. The button is not active.
+Instead of pushing the TOAST button:
+	if the toaster is unplugged:
+		say "Nothing happens. What did you expect from an unplugged toaster??";
+	else if the toaster's slice count is 1:
+		say "Wouldn't it be better to have 2 slices of toast than just one?";
+	else if the toaster's slice count is 0:
+		say "Nothing happens. This isn't a magical toaster - it turns BREAD into toast, not air.";
+	else if the toaster is done:
+		say "Do you want to set off a fire alarm or something? the toast is already done.";
+	else if the button is active:
+		say "The toaster is hard at work, don't bother it.";
+	else:
+		say "The bread recedes into the toaster, and the coils start to light up red. In just a minute, you'll have some tasty tasty toast.";
+		the toaster beeps in two turns from now;
+		now the button is active.
+
+At the time when the toaster beeps:
+	say "DING! The toast is ready. The toaster pops it out but malfunctions and the toast becomes stuck in the toaster.";
+	now the toaster is done;
+	now the button is not active;
+
+[TODO: what if the player tries to take the toast out of the toaster with their hands?]
+Test toaster with "open door / w / w / w / n / pull fork / take fork / s / s / d / u / e / open cabinet / open middle drawer / open big tupperware / get bread / unwrap bread / plug in toaster / put bread in toaster / put bread in toaster / press button / wait / wait / put fork in toaster"	
+		
+
 The refrigerator is a closed openable fixed in place container.
 A fish is in the refrigerator. The description is "It's a blue herring. Delicious!"
 A pie is in the refrigerator. The description is  "A meat pie that looks like it came out of the oven just this morning."
@@ -49,7 +148,6 @@ The fish and the pie are edible.
 
 The stool is an enterable portable supporter in the kitchen. The description is "It's a stool that you can stand on."
 
-The toaster is a fixed in place device. The description is "The toaster turns bread into toast. [if the toaster is plugged in]It is plugged in.[else]It is unplugged.[end if]". The toaster can be plugged in or unplugged. The toaster is unplugged. [TODO: support putting bread in the toaster] [TODO: support using the toaster]
 
 South of the Hall is the Back Entryway. There is a blue key in the back entryway. There is a locked door called the back door. The back door is south of the back entryway. The blue key unlocks the back door. The description of the back entryway is "The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. The hall is to the North, the backyard to the South." The coat rack and the trash can are scenery in the back entryway.
 
@@ -118,17 +216,24 @@ A rule for reaching inside the roof of the shed:
 		deny access;
 	allow access.
 
+Section 2 - Other stuff
+
 West of the Garden is the Outskirts of Town. The description of the Outskirts of Town is "There's less town here than elsewhere. The garden is east. The space center is north. The road is west."
 North of the Outskirts of Town is the Space Center.
 North of the Space Center is the Launch Pad.
 West of the Outskirts of Town is the Road.
 The description of the Road is "It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west."
-North of the road is a room called Further Along the Road. The description of Further Along the Road is "More road! The road goes south. To the west there's a parking lot."
+North of the road is a room called Further Along the Road. The description of Further Along the Road is "More road! [If the fork is stuck]There's a fork in the road here. [end if]The main road goes North and South. To the West there's a parking lot."
+The fork is a thing. The fork can be stuck. The fork is stuck. The fork is in further along the road. The fork is undescribed.
+Instead of taking or pulling the fork when the fork is stuck:
+	say "You try to pull the fork out of the road, but it's pretty stuck. Your hand slips off the fork just as you feel it has dislodged slightly from the road.";
+	now the fork is not stuck.
+
 West of Further Along the Road is the Parking Lot. The description of Parking Lot is "Where cars park, except there aren't any cars today. The road is to the east." [TODO: the player's car]
 North of Further Along is the Abandoned Train Station. The description of Abandoned Train Station is "No trains."
 East of the Abandoned Train station is the Control Room. The description of Control Room is "Where things get controlled."
 
-Section 2 - Warehouse
+Section 3 - Warehouse
 
 Abandoned Warehouse is a room. West of the Town Square is the warehouse. The Abandoned Warehouse is south of the Road. The description is "The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West." The Tunnel of Extraction is below the warehouse.
 
@@ -271,11 +376,15 @@ At the time when the bear falls asleep:
 Part 5 - Town
 
 South of the Outskirts of Town is the Town Square.
+The description of Town Square is "The Town Square stretches out in front of you. There are 10 or 20 unremarkable buildings that you couldn't care less about. South of you is the Mad Scientist's House. West, a hole in the wall leads into the Abandoned Warehouse. North of here, the town thins out."
 South of the Town Square is a door called the Mad Scientist's Grand Entrance. south of the Mad Scientist's grand entrance is the Mad Scientist's house.
 The description of the Mad Scientist's House is "A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier." Gadgets and tubes and a tool shelf and an amplifier are scenery in the Mad Scientist's house. A door called a ladder is above the mad scientist's house. The ladder is open and unopenable. [TODO: climb ladder / go up ladder / use ladder]
 [TODO: suppress shelf description]
 The description of the shelf is "A high-up shelf that you imagine stores the mad scientist's secrets.  [if the player is on the stool]On the tool shelf, you can see [a list of the things on the shelf]. That's disappointing[else]It's so high up that you can't see on it[end if]." The shelf is a supporter. A small tool box and a bottle of soylent are on the shelf. The small tool box is an openable closed container. Super glue is in the small tool box. Super glue and soylent are edible. [TODO: if you eat the soylent, it tastes good.]
-The description of soylent is "A full nutritional meal replacement. It's made of people." The description of the super glue is "Super glue. It has a warning: EXTREMELY STICKY. Unfortunately, the cap seems to be super glued on, so it's not going to be much use to you." The super glue can be cut or whole. The glue is whole.
+The description of soylent is "A full nutritional meal replacement. It's made of people." 
+
+The super glue can be cut or whole. The glue is whole.
+The description of the super glue is "A tube of super glue. It has a warning: EXTREMELY STICKY. [if the glue is whole]Unfortunately, the cap seems to be super glued on, so it's not going to be much use to you.[else]It has been cut, and glue is slowly seeping out of the tube.[end if]".
 Instead of cutting the super glue:
 	If the player has the knife:
 		if the super glue is whole:
