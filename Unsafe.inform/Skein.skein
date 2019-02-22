@@ -48,6 +48,7 @@ You can see the Side Door here.
             <child nodeId="node-3593"></child>
             <child nodeId="node-2615"></child>
             <child nodeId="node-4476"></child>
+            <child nodeId="node-4641"></child>
             <child nodeId="node-1003"></child>
         </children>
     </item>
@@ -1400,6 +1401,167 @@ It's your bedroom. It's not very interesting. The hall is to the east. The side 
 On the nightstand is an iPod.
 
 You can also see the Side Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4641">
+        <command xml:space="preserve">test trees</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] e
+
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;[3] open fridge
+You open the refrigerator, revealing a fish and a pie.
+
+&gt;[4] take fish
+Taken.
+
+&gt;[5] w
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[6] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[7] w
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[8] w
+
+Clearing
+It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north.
+
+&gt;[9] w
+
+Edge of the Woods
+The woods start here and extend to the west. There's a clearing to the east.
+
+&gt;[10] w
+As you walk into the woods, a large grizzly bear shows up, baring (bear-ing?) its teeth at you. You hastily take three steps back.
+The bear seems to be guarding the entrance to the woods. Seems like it would be awfully difficult to get through here unless the bear were somehow distracted. With food, maybe?
+
+&gt;[11] throw fish
+You throw the fish to the west. The bear looks at the fish curiously.
+
+&gt;[12] wait
+Time passes.
+
+The bear finally decides to eat the fish, in a big gulp.
+
+&gt;[13] wait
+Time passes.
+
+The bear rubs its belly sleepily. Maybe it'll fall asleep soon.
+
+&gt;[14] wait
+Time passes.
+
+The bear flops onto its full stomach and starts snoring.
+
+&gt;[15] w
+
+Woods
+There's lots of trees. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.
+
+You can see a grizzly bear, an ash tree, an elm tree and a pine tree here.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] e
+[2] e
+[3] open fridge
+[4] take fish
+[5] w
+[6] d
+[7] w
+[8] w
+[9] w
+[10] w
+[11] throw fish
+[12] wait
+[13] wait
+[14] wait
+[15] w
+</commentary>
+        <children><child nodeId="node-4747"></child>
+            <child nodeId="node-4687"></child>
+        </children>
+    </item>
+    <item nodeId="node-4687">
+        <command xml:space="preserve">climb elm</command>
+        <result xml:space="preserve">Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out of the house to the West. 
+
+On the nightstand is an iPod.
+
+You can also see the Side Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4688"></child>
+        </children>
+    </item>
+    <item nodeId="node-4688">
+        <command xml:space="preserve">showme elm</command>
+        <result xml:space="preserve">elm tree - tree
+location: in the Woods
+singular-named, improper-named; unlit, inedible, portable
+list grouping key: none
+printed name: "elm tree"
+printed plural name: "trees"
+indefinite article: none
+description: none
+initial appearance: none
+branches: Bedroom
+at the top of it: Bedroom
+its height: 0
+its player position: 0
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4689"></child>
+        </children>
+    </item>
+    <item nodeId="node-4689">
+        <command xml:space="preserve">climb up elm</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4690"></child>
+        </children>
+    </item>
+    <item nodeId="node-4690">
+        <command xml:space="preserve">climb down</command>
+        <result xml:space="preserve">You must name something more substantial.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4747">
+        <command xml:space="preserve"> climb ash</command>
+        <result xml:space="preserve">In the Ash Tree
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

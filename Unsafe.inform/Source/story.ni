@@ -448,13 +448,13 @@ test cage with "e / get key / w / open door / w / unlock shed with key / open sh
 
 Part 4 - Nature
 
-Section 1 - Pirhanas
+Section 1 - Piranhas
 
-West of the Road is By the Stream. The description of By the Stream is "There's a stream, makein whatever sound water makes. There's also a scary warning sign." The sign is scenery in By the Stream. The description is "The sign says BEWARE OF PIRANHAS." A thing called the stream is scenery in By the Stream. The description is "It's a stream of water." Understand "water" as the stream.
+West of the Road is By the Stream. The description of By the Stream is "There's a stream, makein whatever sound water makes. There's also a scary warning sign." The warning sign is scenery in By the Stream. The description is "The sign says BEWARE OF PIRANHAS." A thing called the stream is scenery in By the Stream. The description is "It's a stream of water." Understand "water" as the stream.
 
 Instead of entering the stream: say "Water is nice, but out here? Maybe in the privacy of your own home you'd reconsider."
 
-The bucketful of piranha-infested water is a thing. The piranha-infested water is nowhere. [TODO: it has no article]
+The bucketful of piranha-infested water is a thing. The piranha-infested water is nowhere.
 Instead of inserting the bucket into the stream:
 	say "You dip the bucket in the water, coming out with a bucketful of water and a few.. pirhanas?!";
 	now the piranha-infested water is in the bucket.
@@ -468,6 +468,38 @@ West of the Clearing is the Edge of the Woods. The description of the Edge of th
 West of the Edge is a room called the Woods. The description of the Woods is "There's lots of trees. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge." Trees are scenery in the Woods. The description is "The trees have bark and leaves." Understand "bark" and "leaves" as trees.
 
 Instead of going nowhere from the Woods: say "Too many trees. You'd get lost."
+
+
+A tree is a kind of thing. Every tree has a room called the branches. Every tree has a room called at the top of it. Every tree has a number called its height. An ash tree is a tree in the woods. An elm tree is a tree in the woods. A pine tree is a tree in the woods. Every tree has a number called its player position.
+
+The branches of the elm is a room called In the Elm Tree.
+The branches of the pine is a room called In the Pine Tree.
+The branches of the ash is a room called In the Ash Tree.
+[TODO: fix this situation]
+
+Instead of climbing a tree (called the apparatus):
+	move the player to the branches of the apparatus;
+
+test trees with "e / e / open fridge / take fish / w / d / w / w / w / w / throw fish / wait / wait / wait / w"
+[
+climb tree with nest [ash tree]
+climb higher
+climb higher
+shake branch [got slightly loose, maybe try again]
+shake branch [nest falls into elm tree]
+climb down
+climb down
+climb down
+climb elm tree
+climb higher
+shake branch [nest falls into pine tree]
+climb down
+climb down
+climb pine tree
+shake tree
+climb down
+throw wasps nest up in the air"]
+
 
 South of the Woods is the Hunting Grounds. The description of the Hunting Grounds is "Where hunters hunt things, as long as it's the right season. The woods are to the north. You can head into the Hunting Lodge to the south."
 
@@ -602,6 +634,7 @@ Instead of climbing the ladder, try going up.
 The time machine is a fixed in place enterable container in the Mad Science Laboratory. The time machine has a number called the use count. The time machine's use count is initially 0. [TODO: time machine contents are announced :/]
 The red button is a fixed in place thing in the time machine. The coin slot is a fixed in place closed unopenable container in the time machine. The coin slot has a number called the credits. The coin slot's credits is initially 0.
 [TODO: like, any description around here]
+[TODO: time machine kills the wasp nest]
 Instead of inserting something into the coin slot: [TODO: disallow inserting more than one coin at once]
 	If the noun is not a quarter:
 		say "That doesn't fit in the slot!";
