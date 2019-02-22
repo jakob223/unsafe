@@ -1600,11 +1600,105 @@ The bear flops onto its full stomach and starts snoring.
 &gt;[15] w
 
 Woods
-There's lots of trees. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.
 
-You can see a grizzly bear, an ash tree, an elm tree and a pine tree here.
+You can see a grizzly bear here.
 
-&gt;</result>
+&gt;[16] climb ash
+Lower Branches of Ash Tree
+You're a bit off the ground in the ash tree.
+
+&gt;[17] u
+
+Upper Branches of Ash Tree
+More tree.
+
+&gt;[18] u
+
+Top of Ash Tree
+The highest point of the tree. There's no more tree above. Wow, you can see so far away.
+
+You can see a wasps' nest here.
+
+&gt;[19] shake tree
+You shake the tree vigorously.
+The wasps" nest is dislodged. You watch it fall to the top of the elm tree.
+
+&gt;[20] d
+
+Upper Branches of Ash Tree
+More tree.
+
+&gt;[21] d
+
+Lower Branches of Ash Tree
+You're a bit off the ground in the ash tree.
+
+&gt;[22] d
+
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.
+
+You can see a grizzly bear here.
+
+&gt;[23] climb elm
+Middle Branches of Elm Tree
+You're roughly half of the height of the Elm Tree.
+
+&gt;[24] u
+
+Top of Elm Tree
+You can see a wasps' nest here.
+
+&gt;[25] shake tree
+You shake the tree vigorously.
+The wasps" nest is dislodged. You watch it fall to the top of the pine tree.
+
+&gt;[26] d
+
+Middle Branches of Elm Tree
+You're roughly half of the height of the Elm Tree.
+
+&gt;[27] d
+
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.
+
+You can see a grizzly bear here.
+
+&gt;[28] climb pine
+Top of Pine Tree
+The pine tree is short. You're on top.
+
+You can see a wasps' nest here.
+
+&gt;[29] shake tree
+You shake the tree vigorously.
+The wasps" nest is dislodged. You watch it fall to the forest floor.
+
+&gt;[30] d
+
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.
+
+You can see a wasps' nest and a grizzly bear here.
+
+&gt;[31] take nest
+Taken.
+
+&gt;[32] throw nest
+You toss the wasps" nest. Your last sensation is a barrage of stings from the army of angry wasps that bursts from the nest to attack you.
+You've reached one of this game's 14 endings! In that game you used 32 moves. The optimal number of moves is 34.
+Uh-oh, the puzzle is broken! Send us an email!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
         <commentary xml:space="preserve">[1] e
 [2] e
 [3] open fridge
@@ -1620,8 +1714,26 @@ You can see a grizzly bear, an ash tree, an elm tree and a pine tree here.
 [13] wait
 [14] wait
 [15] w
+[16] climb ash
+[17] u
+[18] u
+[19] shake tree
+[20] d
+[21] d
+[22] d
+[23] climb elm
+[24] u
+[25] shake tree
+[26] d
+[27] d
+[28] climb pine
+[29] shake tree
+[30] d
+[31] take nest
+[32] throw nest
 </commentary>
         <children><child nodeId="node-1563"></child>
+            <child nodeId="node-2597"></child>
             <child nodeId="node-1559"></child>
         </children>
     </item>
@@ -1672,6 +1784,34 @@ its player position: 0
     <item nodeId="node-1562">
         <command xml:space="preserve">climb down</command>
         <result xml:space="preserve">You must name something more substantial.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2597">
+        <command xml:space="preserve">climb ash tree</command>
+        <result xml:space="preserve">Lower Branches of Ash Tree
+You're a bit off the ground in the ash tree.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2598"></child>
+        </children>
+    </item>
+    <item nodeId="node-2598">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">
+Upper Branches of Ash Tree
+More tree.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2599"></child>
+        </children>
+    </item>
+    <item nodeId="node-2599">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

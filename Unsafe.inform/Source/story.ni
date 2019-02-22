@@ -552,7 +552,7 @@ The bucketful of piranha-infested water is a liquid. The piranha-infested water 
 Instead of taking the stream when the player has the bucket:
 	try inserting the bucket into the stream.
 Instead of inserting the bucket into the stream:
-	say "You dip the bucket in the water, coming out with a bucketful of water and a few.. piranhas?!";
+	say "You dip the bucket in the water, coming out with a bucketful of water and a few... piranhas?!";
 	now the piranha-infested water is in the bucket.
 
 Test piranhas with "e / e / get stool / w / w / open door / w / put down stool
@@ -574,22 +574,65 @@ Section 2 - Trees
 South of By the Stream is a Clearing. The description of the Clearing is "It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north."
 
 West of the Clearing is the Edge of the Woods. The description of the Edge of the Woods is "The woods start here and extend to the west. There's a clearing to the east."
-West of the Edge is a room called the Woods. The description of the Woods is "There's lots of trees. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge." Trees are scenery in the Woods. The description is "The trees have bark and leaves." Understand "bark" and "leaves" as trees.
+West of the Edge is a room called the Woods. The description of the Woods is "There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge." [Trees are scenery in the Woods. The description is "The trees have bark and leaves." Understand "bark" and "leaves" as trees.]
 
 Instead of going nowhere from the Woods: say "Too many trees. You'd get lost."
 
+A tree is a kind of backdrop. Every tree has a room called the branches. An ash tree is a tree. An elm tree is a tree. A pine tree is a tree.
 
-A tree is a kind of thing. Every tree has a room called the branches. Every tree has a room called at the top of it. Every tree has a number called its height. An ash tree is a tree in the woods. An elm tree is a tree in the woods. A pine tree is a tree in the woods. Every tree has a number called its player position.
+The wasps' nest is in Top of Ash Tree. The description is "A light brown nest of wasps in the tree's branches."
 
-The branches of the elm is a room called In the Elm Tree.
-The branches of the pine is a room called In the Pine Tree.
-The branches of the ash is a room called In the Ash Tree.
-[TODO: fix this situation]
+Instead of taking the wasps' nest when the player is not in the Woods: say "Try as you might, you can't reach the nest. But you think you could shake the tree to make it drop."
+Instead of dropping the wasps' nest:
+	say "You toss the wasps' nest. Your last sensation is a barrage of stings from the army of angry wasps that bursts from the nest to attack you.";
+	conclude with 34.
 
+Shaking is an action applying to one touchable thing. Understand "shake [something]" as shaking.
+
+Carry out shaking: say "That would achieve nothing."
+
+Instead of shaking a tree:
+	say "You shake the tree vigorously.";
+	if the player is in Top of Ash Tree and the wasps' nest is in Top of Ash Tree:
+		say "The wasps' nest is dislodged. You watch it fall to the top of the elm tree.";
+		now the wasps' nest is in Top of Elm Tree;
+	else if the player is in Top of Elm Tree and the wasps' nest is in Top of Elm Tree:
+		say "The wasps' nest is dislodged. You watch it fall to the top of the pine tree.";
+		now the wasps' nest is in Top of Pine Tree;
+	else if the player is in Top of Pine Tree and the wasps' nest is in Top of Pine Tree:
+		say "The wasps' nest is dislodged. You watch it fall to the forest floor.";
+		now the wasps' nest is in Woods.
+
+The branches of the elm is a room called Middle Branches of Elm Tree. The description of Middle Branches of Elm Tree is "You're roughly half of the height of the Elm Tree."
+The branches of the pine is a room called Top of Pine Tree. The description of Top of Pine Tree is "The pine tree is short. You're on top."
+The branches of the ash is a room called Lower Branches of Ash Tree. The description of Lower Branches of Ash Tree is "You're a bit off the ground in the ash tree."
+
+Middle Branches of Ash Tree is above Lower Branches of Ash Tree. The description is "More tree."
+Upper Branches of Ash Tree is above Middle Branches of Ash Tree. The description is "Even more tree."
+Top of Ash Tree is above Upper Branches of Ash Tree. The description is "The highest point of the tree. There's no more tree above. Wow, you can see so far away."
+Top of Elm Tree is above Middle Branches of Elm Tree.
+
+An ash tree is in Woods, Lower Part of Ash Tree, Upper Part of Ash Tree, and Top of Ash Tree.
+An elm tree is in Woods, Middle Branches of Elm Tree, and Top of Elm Tree.
+A pine tree is in Woods and Top of Pine Tree.
+
+The Woods is down from Middle Branches of Elm Tree.
+The Woods is down from Top of Pine Tree.
+The Woods is down from Lower Branches of Ash Tree.
+Up of the Woods is nowhere.
+
+Instead of going up from the Woods: say "There are many trees you could climb. You'll have to name one specifically."
 Instead of climbing a tree (called the apparatus):
-	move the player to the branches of the apparatus;
+	if the player is in the Woods:
+		move the player to the branches of the apparatus;
+	else:
+		try going up.
 
-test trees with "e / e / open fridge / take fish / w / d / w / w / w / w / throw fish / wait / wait / wait / w"
+[?????????? "going" is the action, not "going up", so uh sad.]
+Going-up is an action applying to nothing. Understand "climb up/upward/upwards/higher" as going-up. Instead of going-up: try going up.
+Going-down is an action applying to nothing. Understand "climb down/downward/downwards/lower" as going-down. Instead of going-down: try going down.
+
+Test trees with "e / e / open fridge / take fish / w / d / w / w / w / w / throw fish / wait / wait / wait / w / climb ash / u / u / u / shake tree / d / d / d / d / climb elm / u / shake tree / d / d / climb pine / shake tree / d / take nest / throw nest".
 [
 climb tree with nest [ash tree]
 climb higher
