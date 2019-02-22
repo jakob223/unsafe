@@ -32,11 +32,11 @@ Instead of taking something when the number of entries in the multiple object li
 
 Section 1 - The Player
 
-The player is wearing pants, underwear, socks, a shirt, shoes, a belt, a hat, and a jacket.
+The player is wearing pants, underwear, socks, a shirt, work shoes, a belt, a hat, and a jacket.
 
 The description is "You're wearing [a list of things worn by the player]."
 
-Instead of taking off socks when the player is wearing shoes:
+Instead of taking off socks when the player is wearing work shoes or the player is wearing the pair of running shoes:
 	say "You need to take your shoes off first!"
 Instead of taking off a shirt when the player is wearing a jacket:
 	say "You need to take your jacket off first!"
@@ -97,9 +97,11 @@ Section 1 - First Floor
 The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door ([if the side door is open]open[else]closed[end if]) leads out of the house to the West. [first time]You're lying in your bed, just having woken up.[only]".
 The nightstand is scenery in the Bedroom. There is an iPod on the nightstand. The iPod can be playing. The iPod is not playing. The description of the iPod is "It's an iPod touch, third-generation, maybe? [if playing]It's playing your favorite song.[end if]".
 
-test platform with "get ipod / e / u / w / open drawer / get earbuds / e / d / d / w / n / n / n"
+Instead of inserting the earbuds into the iPod:
+	try plugging the earbuds.
+test platform with "get ipod / e / u / w / open drawer / get earbuds / e / d / d / w / n / n / n / e / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button  / press button / press button / w / put on earbuds / put earbuds in ipod / get on edge"	
 
-East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East.[if the brown key is in the hall] There is a muddy brown key hanging from a hook on the wall.[end if] You can also go down to the basement from here." The muddy brown key is in the hall.
+East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East.[if the brown key is in the hall] There is a muddy brown key hanging from a hook on the wall.[end if] You can also go down to the basement from here." The muddy brown key is in the hall. 
 
 North of the Hall is the Staircase. The Staircase is an open door. The staircase is not openable.
 Understand "stairs" as the staircase.
@@ -185,7 +187,7 @@ At the time when the song ends:
 	if the player has the iPod:
 		say "The iPod has stopped playing its song. Maybe it ran out of battery.";
 		now the iPod is not playing.
-	
+The play button is part of the iPod.	
 Carry out unplugging:
 	if the noun is the drain or the noun is the bathtub:
 		say "You unplug the drain.";
@@ -196,8 +198,10 @@ Carry out unplugging:
 			now the swimming piranhas are nowhere;
 	else if the noun is the refrigerator:
 		say "You can't reach the outlet behind the refrigerator.";
+	else if the noun is the earbuds and the player has the iPod:
+		say "You can't bring yourself to unplug the earbuds. Superstition or something.";
 	else if the noun is not the toaster:
-		say "You can't plug in [a noun].";
+		say "You can't unplug [a noun].";
 	else if the toaster is done:
 		say "You try to unplug the toaster but it seems to be stuck plugged in.";
 	else if the button is active:
@@ -240,7 +244,32 @@ The fish and the pie are edible.
 The stool is an enterable portable supporter in the kitchen. The description is "It's a stool that you can stand on."
 
 
-South of the Hall is the Back Entryway. There is a blue key in the back entryway. There is a locked door called the back door. The back door is south of the back entryway. The blue key unlocks the back door. The description of the back entryway is "The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. The hall is to the North, the backyard to the South." The coat rack and the trash can are scenery in the back entryway.
+South of the Hall is the Back Entryway. There is a blue key in the back entryway. There is a locked door called the back door. The back door is south of the back entryway. The blue key unlocks the back door. The description of the back entryway is "The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. [if the car key is tied]There is a car key tied to the coat rack. [end if]The hall is to the North, the backyard to the South." The coat rack and the trash can are scenery in the back entryway. There is a right running shoe in the back entryway. There is a left running shoe in the upstairs hall.
+
+The car key is in the back entryway. The car key can be tied. The car key is tied.
+untieing is an action applying to one visible thing.
+Understand "untie [something]" as untieing.
+Carry out untieing:
+	say "That doesn't make any sense."
+
+Instead of untieing the work shoes:
+	say "These are velcro shoes, baby."
+Instead of untieing the running shoes:
+	say "You untie the running shoes.";
+	now the running shoes are not laced.
+Instead of untieing the car key:
+	say "You untie the car key, but in your clumsiness it falls to the floor.";
+	now the car key is not tied.
+Before taking the car key:
+	if the car key is tied:
+		say "The car key is tied to the coat rack; you should untie it before you take it.";
+		stop the action
+
+The pair of running shoes is a wearable thing. The pair of running shoes is nowhere.
+Every turn when the player has the right running shoe and the player has the left running shoe:
+	Now the left running shoe is nowhere;
+	Now the right running shoe is nowhere;
+	Now the player has the pair of running shoes.
 
 South of the back door is the Backyard. In the backyard is a stick. The description of the backyard is "Your backyard is so well-manicured that all it contains is grass and a stick. Your house is to the north." Grass is scenery in the backyard.
 
@@ -485,12 +514,73 @@ Instead of taking or pulling the fork when the fork is stuck:
 	now the fork is not stuck.
 
 West of Further Along the Road is the Parking Lot. The description of Parking Lot is "Where cars park, except there aren't any cars today. The road is to the east." [TODO: the player's car]
+
+test car with "e / s / untie car key / get car key / n / d / w / n / n / n / e / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button  / press button / press button / w / s / w"
+
+Section 3 - Trains
+
 North of Further Along is the Abandoned Train Station. The description of Abandoned Train Station is "No trains."
 East of the Abandoned Train station is the Control Room. The description of Control Room is "Where things get controlled."
+The train can be ready. The train is not ready. [if the train is ready, any action that crosses the train tracks will get killed]
 
-Section 3 - Warehouse
+The edge of the platform is an undescribed enterable supporter in the train station.
+
+Every turn when the player is on the edge of the platform:
+	if the player is wearing the earbuds and the iPod is playing and the player has the iPod and the train is ready:
+		say "A train enters the station while you're jamming to the music, and you trip and fall into the train tracks in front of it. That was really dumb.";
+		conclude with 37.
+
+There is a thing in the control room called the CALL TRAIN button. The description of the CALL TRAIN button is "A big red button labelled CALL TRAIN. Next to the button is a handwritten note reading 'This button doesn't work very well. Sometimes you have to press it ten or twenty times to get it to work.'.". The button has a number called the finnickiness. The finnickiness of the button is 18.
+
+Instead of pushing the CALL TRAIN button:
+	if the finnickiness of the button is not 0:
+		say "You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.";
+		decrease the finnickiness of the button by 1;
+	else:
+		say "You press the CALL TRAIN button. An electronic voice informs you, 'The train will be here any minute now.' That was easy.";
+		now the train is ready.
+
+running-across is an action applying to nothing.
+Understand "run across the tracks" as running-across. Understand "run across tracks" as running-across.
+Instead of going when the player is wearing the pair of running shoes:
+	say "You're wearing running shoes. These are for running, not just exploring."
+Carry out running-across:
+	if the player is not in the train station:
+		say "You don't see any tracks.";
+	else if the player is not wearing the pair of running shoes:
+		say "You're gonna run wearing these shoes???? You'd break your back.";
+	else if the pair of running shoes is not laced:
+		say "You start to run but you trip on the loose laces.";
+	else if the train is not ready:
+		say "You run across the tracks to the other platform and back to this one. That was exhilarating!";
+	else:
+		say "Well that was dumb. You get distracted as you run across the tracks and don't notice the train coming until it's too late.";
+		conclude with 37.
+The pair of running shoes can be laced. The pair of running shoes is not laced.
+Lacing is an action applying to one touchable thing. Understand "lace [something] up" as lacing. Understand "tie [something]" as lacing. Understand "lace up [something]" as lacing.
+Carry out lacing:
+	say "That doesn't make sense."
+Instead of lacing the pair of running shoes:
+	if the player is not wearing the pair of running shoes:
+		say "That seems like a rather pointless endeavor if you're not wearing the shoes..";
+	else:
+		say "You tie the laces on the running shoes so that there is no chance you could trip on them. You're ready to run!";
+		now the pair of running shoes is laced.
+	
+After taking off the pair of running shoes:
+	now the pair of running shoes is not laced.
+
+test running with "e / s / get right shoe / n / u / get left shoe / d / d / w / n  / n / n / e / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button  / press button / press button / w / take off shoes / put on running shoes / lace up running shoes / run across tracks "
+
+
+Section 4 - Warehouse
 
 Abandoned Warehouse is a room. West of the Town Square is the warehouse. The Abandoned Warehouse is south of the Road. The description is "The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West." The Tunnel of Extraction is below the warehouse.
+Instead of going west in the basement:
+	if the player is not wearing work shoes and the player is not wearing the pair of running shoes:
+		say "That doesn't look like a safe place to go without shoes.";
+	else:
+		continue the action;
 
 South of the Abandoned Warehouse is a room called A Spooky Lair. 
 The description of the lair is "A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it."
@@ -633,24 +723,7 @@ Going-up is an action applying to nothing. Understand "climb up/upward/upwards/h
 Going-down is an action applying to nothing. Understand "climb down/downward/downwards/lower" as going-down. Instead of going-down: try going down.
 
 Test trees with "e / e / open fridge / take fish / w / d / w / w / w / w / throw fish / wait / wait / wait / w / climb ash / u / u / u / shake tree / d / d / d / d / climb elm / u / shake tree / d / d / climb pine / shake tree / d / take nest / throw nest".
-[
-climb tree with nest [ash tree]
-climb higher
-climb higher
-shake branch [got slightly loose, maybe try again]
-shake branch [nest falls into elm tree]
-climb down
-climb down
-climb down
-climb elm tree
-climb higher
-shake branch [nest falls into pine tree]
-climb down
-climb down
-climb pine tree
-shake tree
-climb down
-throw wasps nest up in the air"]
+
 
 
 South of the Woods is the Hunting Grounds. The description of the Hunting Grounds is "Where hunters hunt things, as long as it's the right season. The woods are to the north. You can head into the Hunting Lodge to the south."
@@ -786,7 +859,6 @@ Instead of climbing the ladder, try going up.
 The time machine is a fixed in place enterable container in the Mad Science Laboratory. The time machine has a number called the use count. The time machine's use count is initially 0. [TODO: time machine contents are announced :/]
 The red button is a fixed in place thing in the time machine. The coin slot is a fixed in place closed unopenable container in the time machine. The coin slot has a number called the credits. The coin slot's credits is initially 0.
 [TODO: like, any description around here]
-[TODO: time machine kills the wasp nest]
 Instead of inserting something into the coin slot: [TODO: disallow inserting more than one coin at once]
 	If the noun is not a quarter:
 		say "That doesn't fit in the slot!";
@@ -797,11 +869,12 @@ Instead of inserting something into the coin slot: [TODO: disallow inserting mor
 	
 Instead of pushing the button:
 	if the coin slot's credits is 0:
-		say "You need to insert a quarter first.";
+		say "You need to put a quarter in the coin slot first.";
 	else:
 		say "You feel yourself pressed back into the seat, and the world swirls around you. The sun sets and rises again 14 times. And then, suddenly, the world is calm."; [TODO: change number based on number of coins] [TODO: time machine should have a label explaining its use]
 		increase the time machine's use count by the coin slot's credits;
-		now the coin slot's credits is 0.
+		now the coin slot's credits is 0;
+		now the wasps' nest is nowhere.
 
 [ TODO: rules around time travel and the pie]
 
