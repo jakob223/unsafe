@@ -279,8 +279,110 @@ A rule for reaching inside the roof of the shed:
 Section 2 - Other stuff
 
 West of the Garden is the Outskirts of Town. The description of the Outskirts of Town is "There's less town here than elsewhere. The garden is east. The space center is north. The road is west."
-North of the Outskirts of Town is the Space Center.
-North of the Space Center is the Launch Pad.
+North of the Outskirts of Town is the Space Center. [TODO: write a description for the space center]
+North of the Space Center is the Launch Pad. [TODO: write a description for the road]
+An enterable openable closed container called a spaceship is in the launch pad. The description of the spaceship is "A very small rocket. Just big enough to carry one person to space.". The spaceship can be low on fuel. The spaceship is low on fuel. The spaceship can be on or off.[TODO: override (closed) on space ship]
+There is an ON button and a LAUNCH button in the spaceship.  The on button is lit. The on button is fixed in place. The launch button is fixed in place. The spaceship can be waiting for confirmation. The computer is a fixed in place undescribed person in the spaceship. There is a spacesuit in the spaceship. There is a helmet in the spaceship. The spacesuit and the helmet are wearable. The spaceship can be broken. The spaceship is not broken.
+Instead of pushing the ON button:
+	if the spaceship is broken:
+		say "The spaceship doesn't seem to work anymore.";
+	if the spaceship is on:
+		say "The spaceship is already on, you're not confident about what pressing that again would do so you're not gonna do it.";
+	else:
+		say "You press the ON button. All around you dials spin and lights blink.";
+		now the spaceship is on;
+		if the spaceship is low on fuel:
+			say "[paragraph break]A dialog appears on the screen: WARNING: LOW FUEL. SAY 'confirm' to continue. Mission abort HIGHLY recommended.";
+			now the spaceship is waiting for confirmation.
+Instead of answering the computer that "confirm":
+	if the spaceship is waiting for confirmation:
+		say "The dialog on the screen goes away. The screen now reads READY FOR LAUNCH.";
+		now the spaceship is not waiting for confirmation.
+Instead of answering the computer that "SUIT UP":
+	say "The spaceship's machinery puts a space suit on you faster than you could possibly have done it yourself.";
+	now the player is wearing the spacesuit;
+	now the player is wearing the helmet.
+Instead of answering the computer that "CANCEL":
+	if the spaceship is in the air:
+		if the computer is not disabled:
+			now the computer is disabled;
+			say "The autopilot is disabled."
+
+the air is a room. outer space is a room. floating is a region. the air and outer space are in floating.
+Instead of pushing the LAUNCH button:
+	if the spaceship is off:
+		say "The button doesn't do anything. Maybe try turning on the spaceship first?";
+	else if the spaceship is open:
+		say "Launching with the door open seems like an extraordinarily bad idea, even for yourself.";
+	else if the spaceship is in the launch pad:
+		say "The computer counts down: '3... 2... 1... LAUNCHING'. [paragraph break] The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. [paragraph break]The computer says 'This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space.'";
+		now the spaceship is in the air;
+		Autopilot engages in one turns from now;
+	else:
+		say "You've already launched, what do you expect to happen?"
+Instead of opening the spaceship in the air:
+	say "The doors of the spaceship don't open while you're in the atmosphere."
+Instead of opening the spaceship in outer space:
+	if the player is wearing the spacesuit and the player is wearing the helmet:
+		continue the action;
+	else:
+		say "Space is pretty and all, but you wouldn't want to go out there without wearing a helmet and a spacesuit."
+
+[Instead of going outside in the spaceship:
+	try exiting the spaceship.]
+
+the computer can be disabled. The computer is not disabled.
+At the time when autopilot engages:
+	if the spaceship is low on fuel:
+		say "The computer announces: 'Auto pilot has engaged. Say CANCEL to fly the ship yourself. Auto pilot has detected that the fuel level is low and will land the ship momentarily.'";
+		the autopilot takes over in one turns from now;
+	else:
+		say "The spaceship has reached space. It's full of stars! It's the most beautiful thing you've ever seen! Now what?";
+		now the spaceship is in outer space.
+At the time when the autopilot takes over:
+	if the computer is not disabled:
+		say "The ship stops ascending as the auto pilot takes over. You start to fall toward earth.";
+		the autopilot lands the ship in one turn from now;
+	else:
+		the ship runs out of fuel in zero turns from now.
+the spaceship can be out of control. The spaceship is not out of control.
+At the time when the ship runs out of fuel:
+	say "With a putter then a WHOOSH, the ship runs out of fuel. You don't have much choice but to grip the controls and try to fly it like a plane.";
+	now the spaceship is out of control;
+	the ship crash lands in five turns from now.
+Every turn while the spaceship is out of control:
+	say "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+	say "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA![line break]";
+	say "The ship barrels toward the ground at an alarming rate.".
+There is a room called the ruins of the tunnel of extraction.
+At the time when the ship crash lands:
+	say "With a CRASH and a BOOM the ship crash lands into the ground. It breaks through the ground and as you die on impact you vaguely recognize your surroundings: this was formerly part of the tunnel of extraction.[line break]";
+	now the spaceship is in the ruins of the tunnel;
+	conclude with 21.
+understand "bucketful of rocket fuel" as fuel. Understand "ship" as spaceship. Understand "door" as spaceship.
+At the time when the autopilot lands the ship:
+	say "The spaceship lands in a near-crash. Your back hurts, but otherwise you feel okay. The ship looks in a rough shape though. All the lights turn off except for a few emergency lights. You should probably get out sooner rather than later.";
+	now the spaceship is off;
+	now the spaceship is broken.
+	
+Instead of inserting bucketful of rocket fuel into the spaceship:	say "You pour the rocket fuel into the ship's fuel hatch, closing the hatch when you are done.";
+	now the bucketful of rocket fuel is nowhere;
+	now the spaceship is not low on fuel;
+	if the spaceship is closed:
+		say "As if in a gesture of thanks, the computer opens the door to the spaceship for you.";
+		now the spaceship is open;
+
+Instead of taking off the spacesuit in outer space:
+	say "That seems like an extraordinarily dumb thing to do."
+Instead of taking off the helmet in outer space:
+	say "You see space, with your own eyes. It's stunningly beautiful. Then your head explodes.[line break]";
+	conclude with 29
+
+
+test fly with "open door / w / w / n / n / open spaceship / get in spaceship / close spaceship / press ON / say confirm / press LAUNCH / wait / say CANCEL / wait / wait / wait / wait / wait / wait / wait / wait"
+
+test space with "e / e / get stool / w / w / open door / w / put down stool / get on stool / get bucket / e / e / d / open vat / dip bucket in vat / w / n / e / n / n / put fuel in ship / get in ship / close door / press ON / press LAUNCH / say SUIT UP / open door / get out / take off helmet"
+
 West of the Outskirts of Town is the Road.
 The description of the Road is "It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west."
 North of the road is a room called Further Along the Road. The description of Further Along the Road is "More road! [If the fork is stuck]There's a fork in the road here. [end if]The main road goes North and South. To the West there's a parking lot."

@@ -9,7 +9,7 @@
 
 Unsafe
 An Interactive Fiction by Brian Chen and Jakob Weisblat
-Release 1 / Serial number 190221 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190222 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Bedroom
 It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out of the house to the West. You're lying in your bed, just having woken up.
@@ -43,9 +43,11 @@ You can see the Side Door here.
             <child nodeId="node-1037"></child>
             <child nodeId="node-3451"></child>
             <child nodeId="node-1027"></child>
+            <child nodeId="node-4124"></child>
             <child nodeId="node-2511"></child>
             <child nodeId="node-3593"></child>
             <child nodeId="node-2615"></child>
+            <child nodeId="node-4476"></child>
             <child nodeId="node-1003"></child>
         </children>
     </item>
@@ -1402,6 +1404,367 @@ You can also see the Side Door here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-4476">
+        <command xml:space="preserve">test space</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] e
+
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;[3] get stool
+Taken.
+
+&gt;[4] w
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[5] w
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out of the house to the West. 
+
+On the nightstand is an iPod.
+
+You can also see the Side Door here.
+
+&gt;[6] open door
+You open the Side Door.
+
+&gt;[7] w
+
+The Garden
+You can see the Side Door and the Shed (closed) here.
+
+&gt;[8] put down stool
+Dropped.
+
+&gt;[9] get on stool
+You get onto the stool.
+
+&gt;[10] get bucket
+Taken.
+
+&gt;[11] e
+(first getting off the stool)
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out of the house to the West. 
+
+On the nightstand is an iPod.
+
+You can also see the Side Door here.
+
+&gt;[12] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[13] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[14] open vat
+You lift the large plastic lid off of the vat, revealing the pungent rocket fuel beneath.
+
+&gt;[15] dip bucket in vat
+You dip the bucket in the vat of rocket fuel and come out with a fair amount. This stuff is lighter than it looks!
+
+&gt;[16] w
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[17] n
+
+Road
+It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west.
+
+&gt;[18] e
+
+Outskirts of Town
+There's less town here than elsewhere. The garden is east. The space center is north. The road is west.
+
+&gt;[19] n
+
+Space Center
+
+&gt;[20] n
+
+Launch Pad
+You can see a spaceship (closed) here.
+
+&gt;[21] put fuel in ship
+You pour the rocket fuel into the ship's fuel hatch, closing the hatch when you are done.
+As if in a gesture of thanks, the computer opens the door to the spaceship for you.
+
+&gt;[22] get in ship
+You get into the spaceship.
+
+In the spaceship you can see an ON button, a LAUNCH button, a spacesuit and a helmet.
+
+&gt;[23] close door
+You close the spaceship.
+
+&gt;[24] press on
+You press the ON button. All around you dials spin and lights blink.
+
+&gt;[25] press launch
+The computer counts down: "3... 2... 1... LAUNCHING". 
+
+ The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. 
+
+The computer says "This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."
+
+&gt;[26] say suit up
+(to the computer)
+The spaceship's machinery puts a space suit on you faster than you could possibly have done it yourself.
+
+The spaceship has reached space. It's full of stars! It's the most beautiful thing you've ever seen! Now what?
+
+&gt;[27] open door
+You open the spaceship.
+
+&gt;[28] get out
+You get out of the spaceship.
+
+outer space
+You can see a spaceship (in which are an ON button and a LAUNCH button) here.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] e
+[2] e
+[3] get stool
+[4] w
+[5] w
+[6] open door
+[7] w
+[8] put down stool
+[9] get on stool
+[10] get bucket
+[11] e
+[12] e
+[13] d
+[14] open vat
+[15] dip bucket in vat
+[16] w
+[17] n
+[18] e
+[19] n
+[20] n
+[21] put fuel in ship
+[22] get in ship
+[23] close door
+[24] press on
+[25] press launch
+[26] say suit up
+[27] open door
+[28] get out
+</commentary>
+        <children><child nodeId="node-4497"></child>
+            <child nodeId="node-4573"></child>
+            <child nodeId="node-4640"></child>
+        </children>
+    </item>
+    <item nodeId="node-4640">
+        <command xml:space="preserve">take off helmet</command>
+        <result xml:space="preserve">You see space, with your own eyes. It's stunningly beautiful. Then your head explodes.
+You've reached one of this game's 14 endings! In that game you used 29 moves. The optimal number of moves is 29.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4573">
+        <command xml:space="preserve">put fuel in ship</command>
+        <result xml:space="preserve">You pour the rocket fuel into the ship, closing the hatch when you are done.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4599"></child>
+            <child nodeId="node-4574"></child>
+        </children>
+    </item>
+    <item nodeId="node-4574">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Launch Pad
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4575"></child>
+        </children>
+    </item>
+    <item nodeId="node-4575">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a bucket
+    a bucketful of rocket fuel
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4599">
+        <command xml:space="preserve">get in ship</command>
+        <result xml:space="preserve">You get into the spaceship.
+
+In the spaceship you can see an ON button, a LAUNCH button, a spacesuit and a helmet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4600"></child>
+        </children>
+    </item>
+    <item nodeId="node-4600">
+        <command xml:space="preserve">press on</command>
+        <result xml:space="preserve">You press the ON button. All around you dials spin and lights blink.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4601"></child>
+        </children>
+    </item>
+    <item nodeId="node-4601">
+        <command xml:space="preserve">press launch</command>
+        <result xml:space="preserve">Launching with the door open seems like an extraordinarily bad idea, even for yourself.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4602"></child>
+        </children>
+    </item>
+    <item nodeId="node-4602">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Launch Pad
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4603"></child>
+        </children>
+    </item>
+    <item nodeId="node-4603">
+        <command xml:space="preserve">close door</command>
+        <result xml:space="preserve">You close the spaceship.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4604"></child>
+        </children>
+    </item>
+    <item nodeId="node-4604">
+        <command xml:space="preserve">press launch</command>
+        <result xml:space="preserve">The computer counts down: "3... 2... 1... LAUNCHING". 
+
+ The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. 
+
+The computer says "This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4605"></child>
+        </children>
+    </item>
+    <item nodeId="node-4605">
+        <command xml:space="preserve">say suit up</command>
+        <result xml:space="preserve">(to the computer)
+The spaceship's machinery puts a space suit on you faster than you could possibly have done it yourself.
+
+The spaceship has reached space. It's full of stars! It's the most beautiful thing you've ever seen! Now what?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4606"></child>
+        </children>
+    </item>
+    <item nodeId="node-4606">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">You open the spaceship.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4607"></child>
+        </children>
+    </item>
+    <item nodeId="node-4607">
+        <command xml:space="preserve">go out</command>
+        <result xml:space="preserve">You would have to get out of the spaceship first.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4608"></child>
+        </children>
+    </item>
+    <item nodeId="node-4608">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">outer space
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4609"></child>
+        </children>
+    </item>
+    <item nodeId="node-4609">
+        <command xml:space="preserve">get out</command>
+        <result xml:space="preserve">You get out of the spaceship.
+
+outer space
+You can see a spaceship (in which are an ON button and a LAUNCH button) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4610"></child>
+        </children>
+    </item>
+    <item nodeId="node-4610">
+        <command xml:space="preserve">take off helmet</command>
+        <result xml:space="preserve">You take off the helmet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4497">
+        <command xml:space="preserve">open spaceship</command>
+        <result xml:space="preserve">You open the spaceship, revealing an ON button, a LAUNCH button, a spacesuit and a helmet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4498"></child>
+        </children>
+    </item>
+    <item nodeId="node-4498">
+        <command xml:space="preserve">put fuel in spaceship</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-2615">
         <command xml:space="preserve">test platform</command>
         <result xml:space="preserve">(Testing.)
@@ -2439,6 +2802,731 @@ You can reach this ending more quickly!
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4124">
+        <command xml:space="preserve">test fly</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] open door
+You open the Side Door.
+
+&gt;[2] w
+
+The Garden
+You can see the Side Door and the Shed (closed) here.
+
+&gt;[3] w
+
+Outskirts of Town
+There's less town here than elsewhere. The garden is east. The space center is north. The road is west.
+
+&gt;[4] n
+
+Space Center
+
+&gt;[5] n
+
+Launch Pad
+You can see a spaceship (closed) here.
+
+&gt;[6] open spaceship
+You open the spaceship, revealing an ON button, a LAUNCH button, a spacesuit and a helmet.
+
+&gt;[7] get in spaceship
+You get into the spaceship.
+
+In the spaceship you can see an ON button, a LAUNCH button, a spacesuit and a helmet.
+
+&gt;[8] close spaceship
+You close the spaceship.
+
+&gt;[9] press on
+You press the ON button. All around you dials spin and lights blink.
+
+
+A dialog appears on the screen: WARNING: LOW FUEL. SAY "confirm" to continue. Mission abort HIGHLY recommended.
+
+&gt;[10] say confirm
+(to the computer)
+The dialog on the screen goes away. The screen now reads READY FOR LAUNCH.
+
+&gt;[11] press launch
+The computer counts down: "3... 2... 1... LAUNCHING". 
+
+ The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. 
+
+The computer says "This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."
+
+&gt;[12] wait
+Time passes.
+
+The computer announces: "Auto pilot has engaged. Say CANCEL to fly the ship yourself. Auto pilot has detected that the fuel level is low and will land the ship momentarily."
+
+&gt;[13] say cancel
+(to the computer)
+The autopilot is disabled.
+
+&gt;[14] wait
+Time passes.
+
+&gt;[15] wait
+Time passes.
+
+With a putter then a WHOOSH, the ship runs out of fuel. You don't have much choice but to grip the controls and try to fly it like a plane.
+
+&gt;[16] wait
+Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+&gt;[17] wait
+Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] open door
+[2] w
+[3] w
+[4] n
+[5] n
+[6] open spaceship
+[7] get in spaceship
+[8] close spaceship
+[9] press on
+[10] say confirm
+[11] press launch
+[12] wait
+[13] say cancel
+[14] wait
+[15] wait
+[16] wait
+[17] wait
+</commentary>
+        <children><child nodeId="node-4154"></child>
+            <child nodeId="node-4255"></child>
+            <child nodeId="node-4444"></child>
+            <child nodeId="node-4202"></child>
+            <child nodeId="node-4165"></child>
+            <child nodeId="node-4282"></child>
+            <child nodeId="node-4269"></child>
+            <child nodeId="node-4472"></child>
+        </children>
+    </item>
+    <item nodeId="node-4472">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4473"></child>
+        </children>
+    </item>
+    <item nodeId="node-4473">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4474"></child>
+        </children>
+    </item>
+    <item nodeId="node-4474">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4475"></child>
+        </children>
+    </item>
+    <item nodeId="node-4475">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+With a CRASH and a BOOM the ship crash lands into the ground. It breaks through the ground and as you die on impact you vaguely recognize your surroundings: this was formerly part of the tunnel of extraction.
+
+You've reached one of this game's 14 endings! In that game you used 21 moves. The optimal number of moves is 21.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4269">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">The spaceship
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4282">
+        <command xml:space="preserve">showme</command>
+        <result xml:space="preserve">air - room
+    spaceship - closed container
+        yourself - person
+        ON button
+        LAUNCH button
+        computer - person
+        spacesuit
+        helmet
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4283"></child>
+        </children>
+    </item>
+    <item nodeId="node-4283">
+        <command xml:space="preserve">showme space ship</command>
+        <result xml:space="preserve">There seems to be no such object anywhere in the model world.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4298"></child>
+        </children>
+    </item>
+    <item nodeId="node-4298">
+        <command xml:space="preserve">showme spaceship</command>
+        <result xml:space="preserve">spaceship - closed container
+    yourself - person
+    ON button
+    LAUNCH button
+    computer - person
+    spacesuit
+    helmet
+location: in the air
+singular-named, improper-named; unlit, inedible, portable; enterable, opaque, closed, openable, unlocked; on, low on fuel
+list grouping key: none
+printed name: "spaceship"
+printed plural name: "containers"
+indefinite article: none
+description: "A very small rocket. Just big enough to carry one person to space."
+initial appearance: none
+carrying capacity: 100
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4314"></child>
+        </children>
+    </item>
+    <item nodeId="node-4314">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+The computer announces: "Auto pilot has engaged. Say CANCEL to fly the ship yourself. Auto pilot has detected that the fuel level is low and will land the ship momentarily."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4347"></child>
+        </children>
+    </item>
+    <item nodeId="node-4347">
+        <command xml:space="preserve">say cancel</command>
+        <result xml:space="preserve">(to the computer)
+The autopilot is disabled.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4365"></child>
+        </children>
+    </item>
+    <item nodeId="node-4365">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4366"></child>
+        </children>
+    </item>
+    <item nodeId="node-4366">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 1 / Serial number 190222 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out of the house to the West. You're lying in your bed, just having woken up.
+
+On the nightstand is an iPod.
+
+You can also see the Side Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4367"></child>
+        </children>
+    </item>
+    <item nodeId="node-4367">
+        <command xml:space="preserve">test fly</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] open door
+You open the Side Door.
+
+&gt;[2] w
+
+The Garden
+You can see the Side Door and the Shed (closed) here.
+
+&gt;[3] w
+
+Outskirts of Town
+There's less town here than elsewhere. The garden is east. The space center is north. The road is west.
+
+&gt;[4] n
+
+Space Center
+
+&gt;[5] n
+
+Launch Pad
+You can see a spaceship (closed) here.
+
+&gt;[6] open spaceship
+You open the spaceship, revealing an ON button, a LAUNCH button, a spacesuit and a helmet.
+
+&gt;[7] get in spaceship
+You get into the spaceship.
+
+In the spaceship you can see an ON button, a LAUNCH button, a spacesuit and a helmet.
+
+&gt;[8] close spaceship
+You close the spaceship.
+
+&gt;[9] press on
+You press the ON button. All around you dials spin and lights blink.
+
+
+A dialog appears on the screen: WARNING: LOW FUEL. SAY "confirm" to continue. Mission abort HIGHLY recommended.
+
+&gt;[10] say confirm
+(to the computer)
+The dialog on the screen goes away. The screen now reads READY FOR LAUNCH.
+
+&gt;[11] press launch
+The computer counts down: "3... 2... 1... LAUNCHING". 
+
+ The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. 
+
+The computer says "This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] open door
+[2] w
+[3] w
+[4] n
+[5] n
+[6] open spaceship
+[7] get in spaceship
+[8] close spaceship
+[9] press on
+[10] say confirm
+[11] press launch
+</commentary>
+        <children><child nodeId="node-4379"></child>
+        </children>
+    </item>
+    <item nodeId="node-4379">
+        <command xml:space="preserve">say cancel</command>
+        <result xml:space="preserve">(to the computer)
+The autopilot is disabled.
+
+The computer announces: "Auto pilot has engaged. Say CANCEL to fly the ship yourself. Auto pilot has detected that the fuel level is low and will land the ship momentarily."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4380"></child>
+        </children>
+    </item>
+    <item nodeId="node-4380">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4381"></child>
+        </children>
+    </item>
+    <item nodeId="node-4381">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4382"></child>
+        </children>
+    </item>
+    <item nodeId="node-4382">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+With a putter then a WHOOSH, the ship runs out of fuel. You don't have much choice but to grip the controls and try to fly it like a plane.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4383"></child>
+        </children>
+    </item>
+    <item nodeId="node-4383">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4384"></child>
+        </children>
+    </item>
+    <item nodeId="node-4384">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4385"></child>
+        </children>
+    </item>
+    <item nodeId="node-4385">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4386"></child>
+        </children>
+    </item>
+    <item nodeId="node-4386">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4387"></child>
+        </children>
+    </item>
+    <item nodeId="node-4387">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4388"></child>
+        </children>
+    </item>
+    <item nodeId="node-4388">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+With a CRASH and a BOOM the ship crash lands into the ground. It breaks through the ground and as you die on impact you vaguely recognize your surroundings: this was formerly part of the tunnel of extraction.
+
+You've reached one of this game's 14 endings! In that game you used 21 moves. The optimal number of moves is 21.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4389"></child>
+        </children>
+    </item>
+    <item nodeId="node-4389">
+        <command xml:space="preserve">wait</command>
+        <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4165">
+        <command xml:space="preserve">say yes</command>
+        <result xml:space="preserve">(to the computer)
+That was a rhetorical question.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4166"></child>
+        </children>
+    </item>
+    <item nodeId="node-4166">
+        <command xml:space="preserve">say "yes"</command>
+        <result xml:space="preserve">(to yourself)
+There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4167"></child>
+        </children>
+    </item>
+    <item nodeId="node-4167">
+        <command xml:space="preserve">showme</command>
+        <result xml:space="preserve">Launch Pad - room
+    spaceship - closed container
+        yourself - person
+        ON button
+        LAUNCH button
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4168"></child>
+        </children>
+    </item>
+    <item nodeId="node-4168">
+        <command xml:space="preserve">actions</command>
+        <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4169"></child>
+        </children>
+    </item>
+    <item nodeId="node-4169">
+        <command xml:space="preserve">say yes</command>
+        <result xml:space="preserve">(to yourself)
+[answering yourself that "yes"]
+There is no reply.
+[answering yourself that "yes" - succeeded]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4202">
+        <command xml:space="preserve">say confirm</command>
+        <result xml:space="preserve">(to the computer)
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4217"></child>
+        </children>
+    </item>
+    <item nodeId="node-4217">
+        <command xml:space="preserve">put on suit</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4218"></child>
+        </children>
+    </item>
+    <item nodeId="node-4218">
+        <command xml:space="preserve">put on spacesuit</command>
+        <result xml:space="preserve">(first taking the spacesuit)
+You put on the spacesuit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4219"></child>
+        </children>
+    </item>
+    <item nodeId="node-4219">
+        <command xml:space="preserve">take off helmet</command>
+        <result xml:space="preserve">You aren't wearing the helmet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4237"></child>
+        </children>
+    </item>
+    <item nodeId="node-4237">
+        <command xml:space="preserve"> take off spacesuit</command>
+        <result xml:space="preserve">You take off the spacesuit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4238"></child>
+        </children>
+    </item>
+    <item nodeId="node-4238">
+        <command xml:space="preserve">say suit up</command>
+        <result xml:space="preserve">(to the computer)
+The spaceship's machinery puts a space suit on you faster than you could possibly have done it yourself.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4239"></child>
+        </children>
+    </item>
+    <item nodeId="node-4239">
+        <command xml:space="preserve">suit up</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4240"></child>
+        </children>
+    </item>
+    <item nodeId="node-4240">
+        <command xml:space="preserve">launch</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4241"></child>
+        </children>
+    </item>
+    <item nodeId="node-4241">
+        <command xml:space="preserve">press launch</command>
+        <result xml:space="preserve">The computer counts down: "3... 2... 1... LAUNCHING". 
+
+ The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. 
+
+The computer says "This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4444">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You would have to get out of the spaceship first.
+
+The computer announces: "Auto pilot has engaged. Say CANCEL to fly the ship yourself. Auto pilot has detected that the fuel level is low and will land the ship momentarily."
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4445"></child>
+        </children>
+    </item>
+    <item nodeId="node-4445">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You would have to get out of the spaceship first.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4446"></child>
+        </children>
+    </item>
+    <item nodeId="node-4446">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">You would have to get out of the spaceship first.
+
+The ship stops ascending as the auto pilot takes over. You start to fall toward earth.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4447"></child>
+        </children>
+    </item>
+    <item nodeId="node-4447">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">You would have to get out of the spaceship first.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4448"></child>
+        </children>
+    </item>
+    <item nodeId="node-4448">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4449"></child>
+        </children>
+    </item>
+    <item nodeId="node-4449">
+        <command xml:space="preserve">open ship</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4450"></child>
+        </children>
+    </item>
+    <item nodeId="node-4450">
+        <command xml:space="preserve">open spaceship</command>
+        <result xml:space="preserve">The doors of the spaceship don't open while you're in the atmosphere.
+
+The spaceship lands in a near-crash. Your back hurts, but otherwise you feel okay. The ship looks in a rough shape though. All the lights turn off except for a few emergency lights. You should probably get out sooner rather than later.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4451"></child>
+        </children>
+    </item>
+    <item nodeId="node-4451">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">The spaceship
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4452"></child>
+        </children>
+    </item>
+    <item nodeId="node-4452">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">The spaceship
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4453"></child>
+        </children>
+    </item>
+    <item nodeId="node-4453">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">The spaceship
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4255">
+        <command xml:space="preserve">press launch</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4154">
+        <command xml:space="preserve"> say test</command>
+        <result xml:space="preserve">(to yourself)
+There is no reply.
+
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1027">
