@@ -718,7 +718,8 @@ You can see the Side Door and the Shed (closed) here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1041"></child>
+        <children><child nodeId="node-2341"></child>
+            <child nodeId="node-1041"></child>
         </children>
     </item>
     <item nodeId="node-1041">
@@ -803,7 +804,7 @@ You can see The Tunnel of Extraction here.
 Basement
 The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
 
-You can see The Tunnel of Extraction here.
+You can see The Tunnel of Extraction and a vat (closed) here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -814,7 +815,7 @@ You can see The Tunnel of Extraction here.
         <command xml:space="preserve">u</command>
         <result xml:space="preserve">
 Hall
-The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall.
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
 
 You can see a Staircase and a muddy brown key here.
 
@@ -1158,12 +1159,12 @@ You can see The Tunnel of Extraction here.
 Basement
 The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
 
-You can see The Tunnel of Extraction here.
+You can see The Tunnel of Extraction and a vat (closed) here.
 
 &gt;[11] u
 
 Hall
-The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall.
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
 
 You can see a Staircase and a muddy brown key here.
 
@@ -1255,6 +1256,286 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
         <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1953"></child>
+        </children>
+    </item>
+    <item nodeId="node-1953">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1954"></child>
+        </children>
+    </item>
+    <item nodeId="node-1954">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+You wake up in your bedroom.
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 1 / Serial number 190221 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out into the Garden to the West.
+
+You can see the Side Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1955"></child>
+        </children>
+    </item>
+    <item nodeId="node-1955">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1956"></child>
+        </children>
+    </item>
+    <item nodeId="node-1956">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Bedroom
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1957"></child>
+        </children>
+    </item>
+    <item nodeId="node-1957">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">You open the Side Door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1958"></child>
+        </children>
+    </item>
+    <item nodeId="node-1958">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+The Garden
+You can see the Side Door and the Shed (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1959"></child>
+        </children>
+    </item>
+    <item nodeId="node-1959">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Bedroom
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1960"></child>
+        </children>
+    </item>
+    <item nodeId="node-1960">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1961"></child>
+        </children>
+    </item>
+    <item nodeId="node-1961">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1962"></child>
+        </children>
+    </item>
+    <item nodeId="node-1962">
+        <command xml:space="preserve">get stool</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1963"></child>
+        </children>
+    </item>
+    <item nodeId="node-1963">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1964"></child>
+        </children>
+    </item>
+    <item nodeId="node-1964">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out into the Garden to the West.
+
+You can see the Side Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1965"></child>
+        </children>
+    </item>
+    <item nodeId="node-1965">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+The Garden
+You can see the Side Door and the Shed (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1966"></child>
+        </children>
+    </item>
+    <item nodeId="node-1966">
+        <command xml:space="preserve">put down stool</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1967"></child>
+        </children>
+    </item>
+    <item nodeId="node-1967">
+        <command xml:space="preserve">get on stool</command>
+        <result xml:space="preserve">You get onto the stool.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1968"></child>
+        </children>
+    </item>
+    <item nodeId="node-1968">
+        <command xml:space="preserve">get bucket</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1969"></child>
+        </children>
+    </item>
+    <item nodeId="node-1969">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first getting off the stool)
+
+Outskirts of Town
+There's less town here than elsewhere. The garden is east. The space center is north. The road is west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1970"></child>
+        </children>
+    </item>
+    <item nodeId="node-1970">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Road
+It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1971"></child>
+        </children>
+    </item>
+    <item nodeId="node-1971">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+By the Stream
+There's a stream, makein whatever sound water makes. There's also a scary warning sign.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1972"></child>
+        </children>
+    </item>
+    <item nodeId="node-1972">
+        <command xml:space="preserve">dip bucket in water</command>
+        <result xml:space="preserve">You dip the bucket in the water, coming out with a bucketful of water and a few.. pirhanas?!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1973"></child>
+        </children>
+    </item>
+    <item nodeId="node-1973">
+        <command xml:space="preserve">x bucket</command>
+        <result xml:space="preserve">In the bucket is a pirhana-infested water.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1974"></child>
+        </children>
+    </item>
+    <item nodeId="node-1974">
+        <command xml:space="preserve">put bucket in stream</command>
+        <result xml:space="preserve">You dip the bucket in the water, coming out with a bucketful of water and a few.. pirhanas?!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1975"></child>
+        </children>
+    </item>
+    <item nodeId="node-1975">
+        <command xml:space="preserve">put bucket in water</command>
+        <result xml:space="preserve">(the stream)
+You dip the bucket in the water, coming out with a bucketful of water and a few.. pirhanas?!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2336"></child>
+        </children>
+    </item>
+    <item nodeId="node-2336">
+        <command xml:space="preserve">pour</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2337"></child>
+        </children>
+    </item>
+    <item nodeId="node-2337">
+        <command xml:space="preserve">plug the water</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2338"></child>
+        </children>
+    </item>
+    <item nodeId="node-2338">
+        <command xml:space="preserve">plug in the water</command>
+        <result xml:space="preserve">(the stream)
+You can't plug in the stream.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1045">
         <command xml:space="preserve">pull fork</command>
@@ -1268,6 +1549,278 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <item nodeId="node-1046">
         <command xml:space="preserve">take fork</command>
         <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2341">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out into the Garden to the West.
+
+You can see the Side Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2342"></child>
+        </children>
+    </item>
+    <item nodeId="node-2342">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2343"></child>
+        </children>
+    </item>
+    <item nodeId="node-2343">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2344"></child>
+        </children>
+    </item>
+    <item nodeId="node-2344">
+        <command xml:space="preserve">get stool</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2345"></child>
+        </children>
+    </item>
+    <item nodeId="node-2345">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2346"></child>
+        </children>
+    </item>
+    <item nodeId="node-2346">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out into the Garden to the West.
+
+You can see the Side Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2347"></child>
+        </children>
+    </item>
+    <item nodeId="node-2347">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+The Garden
+You can see the Side Door and the Shed (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2348"></child>
+        </children>
+    </item>
+    <item nodeId="node-2348">
+        <command xml:space="preserve">put stool down</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2349"></child>
+        </children>
+    </item>
+    <item nodeId="node-2349">
+        <command xml:space="preserve">get on stool</command>
+        <result xml:space="preserve">You get onto the stool.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2350"></child>
+        </children>
+    </item>
+    <item nodeId="node-2350">
+        <command xml:space="preserve">get bucket</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2351"></child>
+        </children>
+    </item>
+    <item nodeId="node-2351">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first getting off the stool)
+
+Outskirts of Town
+There's less town here than elsewhere. The garden is east. The space center is north. The road is west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2352"></child>
+        </children>
+    </item>
+    <item nodeId="node-2352">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Road
+It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2353"></child>
+        </children>
+    </item>
+    <item nodeId="node-2353">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+By the Stream
+There's a stream, makein whatever sound water makes. There's also a scary warning sign.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2354"></child>
+        </children>
+    </item>
+    <item nodeId="node-2354">
+        <command xml:space="preserve">dip bucket in stream</command>
+        <result xml:space="preserve">You dip the bucket in the water, coming out with a bucketful of water and a few.. pirhanas?!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2355"></child>
+        </children>
+    </item>
+    <item nodeId="node-2355">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Road
+It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2356"></child>
+        </children>
+    </item>
+    <item nodeId="node-2356">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2357"></child>
+        </children>
+    </item>
+    <item nodeId="node-2357">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction and a vat (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2358"></child>
+        </children>
+    </item>
+    <item nodeId="node-2358">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2359"></child>
+        </children>
+    </item>
+    <item nodeId="node-2359">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+Upstairs Hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2360"></child>
+        </children>
+    </item>
+    <item nodeId="node-2360">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Bathroom
+It's just a bathroom.
+
+You can see a mirror, a medicine cabinet (closed) and a bathtub here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2361"></child>
+        </children>
+    </item>
+    <item nodeId="node-2361">
+        <command xml:space="preserve">plug bathtub</command>
+        <result xml:space="preserve">You plug the drain.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2385"></child>
+        </children>
+    </item>
+    <item nodeId="node-2385">
+        <command xml:space="preserve">put water in tub</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2386"></child>
+        </children>
+    </item>
+    <item nodeId="node-2386">
+        <command xml:space="preserve">put bucketful in tub</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2387"></child>
+        </children>
+    </item>
+    <item nodeId="node-2387">
+        <command xml:space="preserve">x bucket</command>
+        <result xml:space="preserve">In the bucket is a bucketful of piranha-infested water.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2388"></child>
+        </children>
+    </item>
+    <item nodeId="node-2388">
+        <command xml:space="preserve">turn on faucet</command>
+        <result xml:space="preserve">It isn't something you can switch.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

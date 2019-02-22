@@ -33,12 +33,14 @@ Section 1 - First Floor
 
 The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out into the Garden to the West."
 
-East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East.[if the brown key is in the hall] There is a muddy brown key hanging from a hook on the wall.[end if]". The muddy brown key is in the hall.
+East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East.[if the brown key is in the hall] There is a muddy brown key hanging from a hook on the wall.[end if] You can also go down to the basement from here." The muddy brown key is in the hall.
 
 North of the Hall is the Staircase. The Staircase is an open door. The staircase is not openable.
 Understand "stairs" as the staircase.
 Instead of climbing the staircase:
 	try going north.
+
+Section 2 - Kitchen
 
 East of the Hall is the Kitchen.
 The toaster, the cabinet, the refrigerator, and the stool are in the kitchen.
@@ -58,7 +60,6 @@ Instead of eating the loaf:
 
 A slice of bread is a kind of edible thing. A slice of bread can be toasted. The description of a slice of bread is "[if toasted]A piece of toast - scrumptious![else]A slice of bread.[end if]".
 
-[ TODO: suppress correction about loaf]
 Instead of inserting something into the toaster:
 	If the noun is the fork and the toaster is plugged in and the toaster is done:		
 		say "You stick the fork in the toaster, hoping it will help you remove your toast. Unfortunately, the toaster is electrified and as soon as your fork touches the coil you are electrocuted. You'll never get to eat that delicious toast... :([line break]";
@@ -91,19 +92,26 @@ To say the toaster's content:
 		
 Understand "plug [something] in" as plugging.
 Understand "plug in [something]" as plugging.
+Understand "plug [something]" as plugging.
 Understand "unplug [something]" as unplugging.
 Plugging is an action applying to one visible thing.
 Unplugging is an action applying to one visible thing.
 
 Carry out plugging:
-	if the noun is not the toaster:
+	if the noun is the drain or the noun is the bathtub:
+		say "You plug the drain.";
+		now the drain is plugged;
+	else if the noun is not the toaster:
 		say "You can't plug in [a noun].";
 	else:
 		say "You plug in the toaster.";
 		now the toaster is plugged in;
 
 Carry out unplugging:
-	if the noun is the refrigerator:
+	if the noun is the drain or the noun is the bathtub:
+		say "You unplug the drain.";
+		now the drain is unplugged;
+	else if the noun is the refrigerator:
 		say "You can't reach the outlet behind the refrigerator.";
 	else if the noun is not the toaster:
 		say "You can't plug in [a noun].";
@@ -154,7 +162,7 @@ South of the Hall is the Back Entryway. There is a blue key in the back entryway
 South of the back door is the Backyard. In the backyard is a stick. The description of the backyard is "Your backyard is so well-manicured that all it contains is grass and a stick. Your house is to the north." Grass is scenery in the backyard.
 
 
-Section 2 - Second Floor
+Section 3 - Second Floor
 
 Above the Hall is a room called the Upstairs Hall. The description of the Upstairs Hall is "The second floor of your house. Stairs lead down. The study is west, and the bathroom is east."
 The staircase is below the Upstairs Hall.
@@ -172,9 +180,9 @@ A wooden drawer called the fourth drawer is part of the chest of drawers.
 A wooden drawer called the fifth drawer is part of the chest of drawers.
 
 East of the Upstairs Hall is the Bathroom. The description of the Bathroom is "It's just a bathroom."
-The mirror is scenery in the bathroom. The description of the mirror is "You can see your own reflection in the mirror. [if the player is wearing some hair gel]Your hair looks awesome with the hair gel on it.[else]You look the same as always.[end if]".
+The mirror is a fixed in place thing in the bathroom. The description of the mirror is "You can see your own reflection in the mirror. [if the player is wearing some hair gel]Your hair looks awesome with the hair gel on it.[else]You look the same as always.[end if]".
 There is a medicine cabinet in the bathroom. The medicine cabinet is an openable closed container. There is a can of hair gel in the medicine cabinet. The description is "A can of hair gel. You can put it on. There's a warning on the gel that says 'EXTREMELY FLAMMABLE'."
-[todo: what verbs will people try to use with hair gel? probably "spray" so we should write something]
+Understand the command "spray" as "wear" [for hair gel]
 
 [naming things unambiguously is annoying]
 A dollop of hair gel is nowhere. A dollop of hair gel is wearable. Instead of taking off the dollop of hair gel: say "That's not how hair gel works."
@@ -191,10 +199,32 @@ Instead of wearing the can of hair gel:
 Instead of opening or closing the medicine cabinet when the player is not on the stool:
 	say "You're not tall enough to reach the medicine cabinet. Drat!"
 
-[TODO: mention the basement when you're in the hall]
+The bathtub is a fixed in place thing in the bathroom. The description of the bathtub is "It's a bathtub. Big enough to sit in comfortably or lie down in uncomfortably. The drain is [if the drain is plugged]plugged[else]unplugged[end if]. The faucet is [if the faucet is on]on[else]off[end if]."
+The drain is a part of the bathtub. The drain can be plugged. The bathtub has a number called the water level. The water level is initially 0.
+The faucet is a part of the bathtub. The faucet can be on or off.
+Instead of switching on the faucet:
+	say "You turn on the faucet. Water starts flowing out.";
+	
+	[TODO: deal with filling the tub]
+Instead of switching off the faucet:
+	say "You turn off the faucet. Water stops flowing.";
+	
+
+
+Section 4 - Basement
+
 Below the Hall is the Basement. There is a door called The Tunnel of Extraction. It is open. It is not openable. It is west of the Basement. [???] The description is "A long, winding tunnel. It used to be used to extract minerals and stuff. Now, it's probably still useful for extracting other things."
 
 The description of the Basement is "The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west."
+
+A vat is in the basement. The vat is a closed openable fixed in place container. There is rocket fuel in the vat. 
+A bucketful of rocket fuel is a thing. The bucketful is nowhere.
+Instead of inserting the bucket into the vat:
+	if the piranha-infested water is in the bucket:
+		say "You should probably empty the bucket out first.";
+	else:
+		say "You dip the bucket in the vat of rocket fuel and come out with a fair amount. This stuff is lighter than it looks!";
+		now the bucketful is in the bucket.
 
 The House is a region. The Bedroom and the Kitchen and the Hall and the Upstairs Hall and the Study and the Back Entryway and the Closet and the Bathroom and the Basement are in the House.
 
@@ -205,6 +235,10 @@ Section 1 - Garden
 West of the bedroom is a door called the Side Door. West of the side door is a room called The Garden. The side door is closed.
 In the garden is a locked closed container called the Shed. The brown key unlocks the shed.
 The roof of the Shed is part of The Shed. On top of the Roof is a bucket. The bucket is an unopenable open container.
+
+Understand the command "dip" as "put".
+Understand the command "fill" as "put".
+[TODO: pouring the bucket out into the tub or the rocket]
 
 The description of the Shed is "A narrow rusty shed. [if the player is on the stool]On the shed's roof, you can see [a list of the things on the roof of the shed].[else]The shed is really tall and you can't see above it.[end if]".
 
@@ -287,11 +321,12 @@ West of the Road is By the Stream. The description of By the Stream is "There's 
 
 Instead of entering the stream: say "Water is nice, but out here? Maybe in the privacy of your own home you'd reconsider."
 
-[Filling is an action applying to one carried thing and requiring light. Instead of filling something: say "That doesn't make sense."
+The bucketful of piranha-infested water is a thing. The piranha-infested water is nowhere. [TODO: it has no article]
+Instead of inserting the bucket into the stream:
+	say "You dip the bucket in the water, coming out with a bucketful of water and a few.. pirhanas?!";
+	now the piranha-infested water is in the bucket.
+[TODO: you can't just pour the bucket out anywhere, or if you do the water goes away.]	
 
-Instead of filling the bucket:
-]	
-	
 Section 2 - Trees
 
 South of By the Stream is a Clearing. The description of the Clearing is "It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north."
