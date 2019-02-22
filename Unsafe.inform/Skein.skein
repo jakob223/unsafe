@@ -14,9 +14,11 @@ An Interactive Fiction by Brian Chen and Jakob Weisblat
 Release 1 / Serial number 190221 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Bedroom
-It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out into the Garden to the West.
+It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out of the house to the West.
 
-You can see the Side Door here.
+On the nightstand is an iPod.
+
+You can also see the Side Door here.
 
 &gt;</result>
         <commentary xml:space="preserve">
@@ -2479,7 +2481,7 @@ You can see the Mad Scientist's Grand Entrance here.
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Hall
-The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall.
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
 
 You can see a Staircase and a muddy brown key here.
 
@@ -3000,6 +3002,8 @@ You can also see the closet door here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1171"></child>
+            <child nodeId="node-2436"></child>
+            <child nodeId="node-2402"></child>
             <child nodeId="node-1153"></child>
         </children>
     </item>
@@ -3170,6 +3174,496 @@ You can see the closet door and a chest of drawers here.
     <item nodeId="node-1170">
         <command xml:space="preserve">open drawers</command>
         <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2402">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+The Closet
+A small room. The hall is south.
+
+You can see the closet door and a chest of drawers here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2403"></child>
+        </children>
+    </item>
+    <item nodeId="node-2403">
+        <command xml:space="preserve">open second drawer</command>
+        <result xml:space="preserve">You open the second drawer, revealing a quarter.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2404"></child>
+        </children>
+    </item>
+    <item nodeId="node-2404">
+        <command xml:space="preserve">get quarter</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2405"></child>
+        </children>
+    </item>
+    <item nodeId="node-2405">
+        <command xml:space="preserve">get quarter</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2406"></child>
+        </children>
+    </item>
+    <item nodeId="node-2406">
+        <command xml:space="preserve">put quarters in drawer</command>
+        <result xml:space="preserve">Which do you mean, the first drawer, the second drawer, the third drawer, the fourth drawer or the fifth drawer?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2407"></child>
+        </children>
+    </item>
+    <item nodeId="node-2407">
+        <command xml:space="preserve">put quarters in second drawer</command>
+        <result xml:space="preserve">quarter: Done.
+quarter: Done.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2408"></child>
+        </children>
+    </item>
+    <item nodeId="node-2408">
+        <command xml:space="preserve">get quarters</command>
+        <result xml:space="preserve">quarter: Taken.
+quarter: Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2419"></child>
+        </children>
+    </item>
+    <item nodeId="node-2419">
+        <command xml:space="preserve">get quarter from fifth drawer</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2431"></child>
+        </children>
+    </item>
+    <item nodeId="node-2431">
+        <command xml:space="preserve">get quarter</command>
+        <result xml:space="preserve">You already have that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2432"></child>
+        </children>
+    </item>
+    <item nodeId="node-2432">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  two quarters
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2436">
+        <command xml:space="preserve">get quarter</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2437"></child>
+        </children>
+    </item>
+    <item nodeId="node-2437">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+The Closet
+A small room. The hall is south.
+
+You can see the closet door and a chest of drawers here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2438"></child>
+        </children>
+    </item>
+    <item nodeId="node-2438">
+        <command xml:space="preserve">get quarter</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2439"></child>
+        </children>
+    </item>
+    <item nodeId="node-2439">
+        <command xml:space="preserve">open second drawer</command>
+        <result xml:space="preserve">You open the second drawer, revealing a quarter.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2440"></child>
+        </children>
+    </item>
+    <item nodeId="node-2440">
+        <command xml:space="preserve">get quarter</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2441"></child>
+        </children>
+    </item>
+    <item nodeId="node-2441">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Study
+Where you study. The hall is east.
+
+On the desk is a dime.
+
+You can also see the closet door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2442"></child>
+        </children>
+    </item>
+    <item nodeId="node-2442">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Upstairs Hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2443"></child>
+        </children>
+    </item>
+    <item nodeId="node-2443">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2444"></child>
+        </children>
+    </item>
+    <item nodeId="node-2444">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction and a vat (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2445"></child>
+        </children>
+    </item>
+    <item nodeId="node-2445">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2446"></child>
+        </children>
+    </item>
+    <item nodeId="node-2446">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Town Square
+The Town Square stretches out in front of you. There are 10 or 20 unremarkable buildings that you couldn't care less about. South of you is the Mad Scientist's House. West, a hole in the wall leads into the Abandoned Warehouse. North of here, the town thins out.
+
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2447"></child>
+        </children>
+    </item>
+    <item nodeId="node-2447">
+        <command xml:space="preserve">open entrance</command>
+        <result xml:space="preserve">You open the Mad Scientist's Grand Entrance.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2448"></child>
+        </children>
+    </item>
+    <item nodeId="node-2448">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Mad Scientist's house
+A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier.
+
+On the tool shelf are a small tool box (closed) and a bottle of soylent.
+
+You can also see the Mad Scientist's Grand Entrance and a ladder here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2449"></child>
+        </children>
+    </item>
+    <item nodeId="node-2449">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+Mad Science Laboratory
+You can see a ladder and a time machine (in which are a red button and a coin slot (closed)) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2450"></child>
+        </children>
+    </item>
+    <item nodeId="node-2450">
+        <command xml:space="preserve">enter time machine</command>
+        <result xml:space="preserve">You get into the time machine.
+
+In the time machine you can see a red button and a coin slot (closed).
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2451"></child>
+        </children>
+    </item>
+    <item nodeId="node-2451">
+        <command xml:space="preserve">put quarters in slot</command>
+        <result xml:space="preserve">quarter: You put a quarter in the slot. It makes a satisfying *clink*.
+quarter: You put a quarter in the slot. It makes a satisfying *clink*.
+quarter: You put a quarter in the slot. It makes a satisfying *clink*.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2452"></child>
+        </children>
+    </item>
+    <item nodeId="node-2452">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Mad Science Laboratory
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2453"></child>
+        </children>
+    </item>
+    <item nodeId="node-2453">
+        <command xml:space="preserve">put quarter in slot</command>
+        <result xml:space="preserve">You put a quarter in the slot. It makes a satisfying *clink*.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2454"></child>
+        </children>
+    </item>
+    <item nodeId="node-2454">
+        <command xml:space="preserve">put quarter in slot</command>
+        <result xml:space="preserve">You put a quarter in the slot. It makes a satisfying *clink*.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2455"></child>
+        </children>
+    </item>
+    <item nodeId="node-2455">
+        <command xml:space="preserve">put quarter in slot</command>
+        <result xml:space="preserve">You put a quarter in the slot. It makes a satisfying *clink*.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2456"></child>
+        </children>
+    </item>
+    <item nodeId="node-2456">
+        <command xml:space="preserve">press button</command>
+        <result xml:space="preserve">You feel yourself pressed back into the seat, and the world swirls around you. The sun sets and rises again 14 times. And then, suddenly, the world is calm.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2457"></child>
+        </children>
+    </item>
+    <item nodeId="node-2457">
+        <command xml:space="preserve">get out</command>
+        <result xml:space="preserve">You get out of the time machine.
+
+Mad Science Laboratory
+You can see a ladder and a time machine (in which are a red button and a coin slot (closed)) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2458"></child>
+        </children>
+    </item>
+    <item nodeId="node-2458">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Mad Scientist's house
+A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier.
+
+On the tool shelf are a small tool box (closed) and a bottle of soylent.
+
+You can also see a ladder and the Mad Scientist's Grand Entrance here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2459"></child>
+        </children>
+    </item>
+    <item nodeId="node-2459">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Town Square
+The Town Square stretches out in front of you. There are 10 or 20 unremarkable buildings that you couldn't care less about. South of you is the Mad Scientist's House. West, a hole in the wall leads into the Abandoned Warehouse. North of here, the town thins out.
+
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2460"></child>
+        </children>
+    </item>
+    <item nodeId="node-2460">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2461"></child>
+        </children>
+    </item>
+    <item nodeId="node-2461">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Clearing
+It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2462"></child>
+        </children>
+    </item>
+    <item nodeId="node-2462">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Edge of the Woods
+The woods start here and extend to the west. There's a clearing to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2463"></child>
+        </children>
+    </item>
+    <item nodeId="node-2463">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Woods
+There's lots of trees. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2464"></child>
+        </children>
+    </item>
+    <item nodeId="node-2464">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Hunting Grounds
+Where hunters hunt things, as long as it's the right season. The woods are to the north. You can head into the Hunting Lodge to the south.
+
+You can see the hunting lodge entrance here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2465"></child>
+        </children>
+    </item>
+    <item nodeId="node-2465">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2466"></child>
+        </children>
+    </item>
+    <item nodeId="node-2466">
+        <command xml:space="preserve">go through door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2467"></child>
+        </children>
+    </item>
+    <item nodeId="node-2467">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go through the hunting lodge entrance because it's closed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2468"></child>
+        </children>
+    </item>
+    <item nodeId="node-2468">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go through the hunting lodge entrance because it's closed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2469"></child>
+        </children>
+    </item>
+    <item nodeId="node-2469">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Hunting Grounds
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2470"></child>
+        </children>
+    </item>
+    <item nodeId="node-2470">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Hunting Grounds
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2471"></child>
+        </children>
+    </item>
+    <item nodeId="node-2471">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Hunting Grounds
+[Previous turn undone.]
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -4141,14 +4635,73 @@ You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool h
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Hall
-The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East.
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
 
-You can see a Staircase here.
+You can see a Staircase and a muddy brown key here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1261"></child>
+            <child nodeId="node-2393"></child>
         </children>
+    </item>
+    <item nodeId="node-2393">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out into the Garden to the West.
+
+You can see the Side Door here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2394"></child>
+        </children>
+    </item>
+    <item nodeId="node-2394">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">You open the Side Door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2395"></child>
+        </children>
+    </item>
+    <item nodeId="node-2395">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+The Garden
+You can see the Side Door and the Shed (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2396"></child>
+        </children>
+    </item>
+    <item nodeId="node-2396">
+        <command xml:space="preserve">put down stool</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2397"></child>
+        </children>
+    </item>
+    <item nodeId="node-2397">
+        <command xml:space="preserve">get bucket</command>
+        <result xml:space="preserve">You can't reach the roof of the shed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2398"></child>
+        </children>
+    </item>
+    <item nodeId="node-2398">
+        <command xml:space="preserve">get on stool</command>
+        <result xml:space="preserve">You get onto the stool.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1261">
         <command xml:space="preserve">d</command>

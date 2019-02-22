@@ -31,7 +31,8 @@ Part 2 - House
 
 Section 1 - First Floor
 
-The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out into the Garden to the West."
+The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out of the house to the West."
+The nightstand is scenery in the Bedroom. There is an iPod on the nightstand.
 
 East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East.[if the brown key is in the hall] There is a muddy brown key hanging from a hook on the wall.[end if] You can also go down to the basement from here." The muddy brown key is in the hall.
 
@@ -177,7 +178,7 @@ A wooden drawer called the first drawer is part of the chest of drawers.
 A wooden drawer called the second drawer is part of the chest of drawers.
 A wooden drawer called the third drawer is part of the chest of drawers.
 A wooden drawer called the fourth drawer is part of the chest of drawers.
-A wooden drawer called the fifth drawer is part of the chest of drawers.
+A wooden drawer called the fifth drawer is part of the chest of drawers. The fifth drawer is open. [TODO: currently you can open 2 different drawers and then get both quarters with one command. We should disallow this.]
 
 East of the Upstairs Hall is the Bathroom. The description of the Bathroom is "It's just a bathroom."
 The mirror is a fixed in place thing in the bathroom. The description of the mirror is "You can see your own reflection in the mirror. [if the player is wearing some hair gel]Your hair looks awesome with the hair gel on it.[else]You look the same as always.[end if]".
@@ -332,13 +333,13 @@ Section 2 - Trees
 South of By the Stream is a Clearing. The description of the Clearing is "It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north."
 
 West of the Clearing is the Edge of the Woods. The description of the Edge of the Woods is "The woods start here and extend to the west. There's a clearing to the east."
-West of the Edge is a room called the Woods. The description of the Woods is "There's lots of trees. The edge of the woods is to the east. Going south, you can enter a hunting lodge." Trees are scenery in the Woods. The description is "The trees have bark and leaves." Understand "bark" and "leaves" as trees.
+West of the Edge is a room called the Woods. The description of the Woods is "There's lots of trees. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge." Trees are scenery in the Woods. The description is "The trees have bark and leaves." Understand "bark" and "leaves" as trees.
 
 Instead of going nowhere from the Woods: say "Too many trees. You'd get lost."
 
 South of the Woods is the Hunting Grounds. The description of the Hunting Grounds is "Where hunters hunt things, as long as it's the right season. The woods are to the north. You can head into the Hunting Lodge to the south."
 
-South of the Hunting Grounds is the Hunting Lodge. The description of the Hunting Lodge is "Where hunters rest or something. One wall is covered in animal heads - a deer, a moose, a lion(!). Kinda creepy, to be honest. The exit is north." Instead of going outside from the Hunting Lodge, try going north. The moose head is a wearable portable thing in the hunting lodge. The deer head and the lion head are things in the hunting lodge. The deer head is portable. [TODO: don't tell the player the things again]
+South of the Hunting Grounds is a door called the hunting lodge entrance. South of the entrance is a room called the Hunting Lodge. The description of the Hunting Lodge is "Where hunters rest or something. One wall is covered in animal heads - a deer, a moose, a lion(!). Kinda creepy, to be honest. The exit is north." Instead of going outside from the Hunting Lodge, try going north. The moose head is a wearable portable thing in the hunting lodge. The deer head and the lion head are things in the hunting lodge. The deer head is portable. [TODO: don't tell the player the things again]
 
 To decide if it is hunting season:
 	if the time machine's use count is greater than 2:
@@ -454,7 +455,7 @@ Instead of climbing the ladder, try going up.
 The time machine is a fixed in place enterable container in the Mad Science Laboratory. The time machine has a number called the use count. The time machine's use count is initially 0. [TODO: time machine contents are announced :/]
 The red button is a fixed in place thing in the time machine. The coin slot is a fixed in place closed unopenable container in the time machine. The coin slot has a number called the credits. The coin slot's credits is initially 0.
 [TODO: like, any description around here]
-Instead of inserting something into the coin slot:
+Instead of inserting something into the coin slot: [TODO: disallow inserting more than one coin at once]
 	If the noun is not a quarter:
 		say "That doesn't fit in the slot!";
 		stop the action;
@@ -466,7 +467,7 @@ Instead of pushing the button:
 	if the coin slot's credits is 0:
 		say "You need to insert a quarter first.";
 	else:
-		say "You feel yourself pressed back into the seat, and the world swirls around you. The sun sets and rises again 14 times. And then, suddenly, the world is calm.";
+		say "You feel yourself pressed back into the seat, and the world swirls around you. The sun sets and rises again 14 times. And then, suddenly, the world is calm."; [TODO: change number based on number of coins] [TODO: time machine should have a label explaining its use]
 		increase the time machine's use count by the coin slot's credits;
 		now the coin slot's credits is 0.
 
