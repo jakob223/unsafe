@@ -26,7 +26,30 @@ To conclude with (par - a number):
 	else:
 		say "You can reach this ending more quickly!"
 
-Section 1 - Liquids and Dumping
+[I think this blocks what we want it to, but the output is suboptimal, see §6.15 of the Recipe Book]
+Instead of taking something when the number of entries in the multiple object list is greater than 1:
+	say "One thing at a time!".
+
+Section 1 - The Player
+
+The player is wearing pants, underwear, socks, a shirt, shoes, a belt, a hat, and a jacket.
+
+The description is "You're wearing [a list of things worn by the player]."
+
+Instead of taking off socks when the player is wearing shoes:
+	say "You need to take your shoes off first!"
+Instead of taking off a shirt when the player is wearing a jacket:
+	say "You need to take your jacket off first!"
+Instead of taking off pants when the player is wearing shoes:
+	say "You need to take your shoes off first!"
+Instead of taking off pants when the player is wearing a belt:
+	say "You need to take your belt off first!"
+Instead of taking off pants when the player is wearing a belt:
+	say "You need to take your belt off first!"
+Instead of taking off underwear when the player is wearing pants:
+	say "You need to take your pants off first!"
+
+Section 2 - Liquids and Dumping
 
 A liquid is a kind of thing.
 Instead of taking a liquid:
@@ -71,7 +94,7 @@ Part 2 - House
 
 Section 1 - First Floor
 
-The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out of the house to the West. [first time]You're lying in your bed, just having woken up.[only]".
+The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door ([if the side door is open]open[else]closed[end if]) leads out of the house to the West. [first time]You're lying in your bed, just having woken up.[only]".
 The nightstand is scenery in the Bedroom. There is an iPod on the nightstand. The iPod can be playing. The iPod is not playing. The description of the iPod is "It's an iPod touch, third-generation, maybe? [if playing]It's playing your favorite song.[end if]".
 
 test platform with "get ipod / e / u / w / open drawer / get earbuds / e / d / d / w / n / n / n"
@@ -289,6 +312,11 @@ Instead of switching on the faucet:
 Instead of switching off the faucet:
 	say "You turn off the faucet. Water stops flowing.";
 	now the faucet is off.
+
+A thing can be tub-relevant. A thing is usually tub-relevant. A dollop of hair gel is not tub-relevant.
+
+Instead of entering the bathtub when the player is wearing anything tub-relevant:
+	say "You are a person of few principles, but one of those principles is never to enter a bathtub while wearing anything. (You're wearing [a list of things worn by the player].)".
 Instead of entering the bathtub when the piranhas are in the bathtub:
 	say "You get in the tub. The warm water feels wonderful for a few seconds, and then the piranhas start to attack. They eat your feet, your legs, and... you can imagine the rest.[paragraph break]";
 	conclude with 32.
@@ -322,7 +350,7 @@ Part 3 - Between
 
 Section 1 - Garden
 
-West of the bedroom is a door called the Side Door. West of the side door is a room called The Garden. The side door is closed.
+West of the bedroom is a door called the Side Door. West of the side door is a room called The Garden. The side door is closed. It is scenery.
 In the garden is a locked closed container called the Shed. The brown key unlocks the shed.
 The roof of the Shed is part of The Shed. On top of the Roof is a bucket. The bucket is an unopenable open container.
 
@@ -528,7 +556,7 @@ Instead of inserting the bucket into the stream:
 	now the piranha-infested water is in the bucket.
 
 Test piranhas with "e / e / get stool / w / w / open door / w / put down stool
-	 / get on stool / get bucket / w / w / w / take water / e / s / d / u / u / e / plug drain / turn on faucet / pour bucket / get in tub"
+	 / get on stool / get bucket / w / w / w / take water / e / s / d / u / u / e / plug drain / turn on faucet / pour bucket / take off belt / take off shoes / take off socks / take off pants / take off jacket / take off shirt / take off hat / take off underwear / get in tub"
 [
 dump in pirhanas
 take off pants

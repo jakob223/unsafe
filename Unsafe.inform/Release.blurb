@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6M62
 
-status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Build/StatusCblorb.html"
+status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/raxtus/dev/unsafe/Unsafe.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform"
-release to "/Users/jakob/Documents/Inform/UNSAFE/Unsafe.materials/Release"
+project folder "/Users/raxtus/dev/unsafe/Unsafe.inform"
+release to "/Users/raxtus/dev/unsafe/Unsafe.materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "Unsafe.gblorb"
-storyfile "/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Build/output.ulx" include
-ifiction "/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Metadata.iFiction" include
+storyfile "/Users/raxtus/dev/unsafe/Unsafe.inform/Build/output.ulx" include
+ifiction "/Users/raxtus/dev/unsafe/Unsafe.inform/Metadata.iFiction" include
 cover "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 picture 1 "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 
