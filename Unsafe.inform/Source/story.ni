@@ -32,7 +32,9 @@ Part 2 - House
 Section 1 - First Floor
 
 The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door leads out of the house to the West."
-The nightstand is scenery in the Bedroom. There is an iPod on the nightstand.
+The nightstand is scenery in the Bedroom. There is an iPod on the nightstand. The iPod can be playing. The iPod is not playing. The description of the iPod is "It's an iPod touch, third-generation, maybe? [if playing]It's playing your favorite song.[end if]".
+
+test platform with "get ipod / e / u / w / open drawer / get earbuds / e / d / d / w / n / n / n"
 
 East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East.[if the brown key is in the hall] There is a muddy brown key hanging from a hook on the wall.[end if] You can also go down to the basement from here." The muddy brown key is in the hall.
 
@@ -95,6 +97,10 @@ Understand "plug [something] in" as plugging.
 Understand "plug in [something]" as plugging.
 Understand "plug [something]" as plugging.
 Understand "unplug [something]" as unplugging.
+Understand "plug [something] into the iPod" as plugging.
+Understand "plug [something] into iPod" as plugging.
+Understand "connect [something] to iPod" as plugging.
+Understand "connect [something] to the iPod" as plugging.
 Plugging is an action applying to one visible thing.
 Unplugging is an action applying to one visible thing.
 
@@ -102,12 +108,21 @@ Carry out plugging:
 	if the noun is the drain or the noun is the bathtub:
 		say "You plug the drain.";
 		now the drain is plugged;
-	else if the noun is not the toaster:
-		say "You can't plug in [a noun].";
-	else:
+	else if the noun is the toaster:
 		say "You plug in the toaster.";
 		now the toaster is plugged in;
+	else if the noun is the earbuds and the player has the iPod:
+		now the iPod is playing; [TODO: put (plugged into iPod) in the description]
+		say "You plug the earbuds into the iPod. Your favorite song starts to play through them!";
+		The song ends in five turns from now;
+	else:
+		say "You can't plug in [a noun].";
 
+At the time when the song ends:
+	if the player has the iPod:
+		say "The iPod has stopped playing its song. Maybe it ran out of battery.";
+		now the iPod is not playing.
+	
 Carry out unplugging:
 	if the noun is the drain or the noun is the bathtub:
 		say "You unplug the drain.";
@@ -168,8 +183,12 @@ Section 3 - Second Floor
 Above the Hall is a room called the Upstairs Hall. The description of the Upstairs Hall is "The second floor of your house. Stairs lead down. The study is west, and the bathroom is east."
 The staircase is below the Upstairs Hall.
 
-A quarter is a kind of thing.
-West of the Upstairs Hall is the Study. The description of the Study is "Where you study. The hall is east." A desk is scenery in the study. 1 quarter and a dime are on the desk. The description of the quarter is "Arkansas state quarter. Minted 2003. Looks pretty new for a 2003 quarter." The description of the dime is "Just a regular old dime. Minted 1994."
+A quarter is a kind of thing. 
+The description of a quarter is usually "An unremarkable quarter. Not anything fancy, it's from before state quarters were a thing."
+West of the Upstairs Hall is the Study. The description of the Study is "Where you study. The hall is east." A desk is scenery in the study. 
+The description of the desk is "It's a sturdy wooden desk. There's a drawer.".
+1 quarter and a dime are on the desk. The description of the quarter is "Arkansas state quarter. Minted 2003. Looks pretty new for a 2003 quarter." The description of the dime is "Just a regular old dime. Minted 1994."
+A desk drawer is part of the desk. The desk drawer is a closed openable container. There are earbuds in the desk drawer. The earbuds are wearable. The description of the earbuds is "The earbuds are red."
 North of the Study is a door called the closet door. North of the closet door is a room called The Closet. The closet door is open. The description of the Closet is "A small room. The hall is south."
 
 A wooden drawer is a kind of container. Every wooden drawer contains a quarter. Wooden drawers are usually closed. Wooden drawers are always openable.
@@ -218,14 +237,21 @@ Below the Hall is the Basement. There is a door called The Tunnel of Extraction.
 
 The description of the Basement is "The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west."
 
-A vat is in the basement. The vat is a closed openable fixed in place container. There is rocket fuel in the vat. 
+A vat is in the basement. The vat is a closed openable fixed in place container. There is rocket fuel in the vat. The description of the vat is "A large vat holding a greenish liquid. Who knows how long it's been here?"
 A bucketful of rocket fuel is a thing. The bucketful is nowhere.
+Instead of opening the vat:
+	say "You lift the large plastic lid off of the vat, revealing the pungent rocket fuel beneath.";
+	now the vat is open.
 Instead of inserting the bucket into the vat:
 	if the piranha-infested water is in the bucket:
 		say "You should probably empty the bucket out first.";
 	else:
 		say "You dip the bucket in the vat of rocket fuel and come out with a fair amount. This stuff is lighter than it looks!";
 		now the bucketful is in the bucket.
+There is a key cabinet in the basement. The key cabinet is a fixed in place openable container. The description of the key cabinet is "A small cabinet that looks like it once held keys for all the rooms in the house.[if open] Now it looks like there aren't very many keys in it at all.[end if]". There is a small metal key in the key cabinet. 
+Instead of taking the key cabinet:
+	say "(the small metal key)";
+	try taking the small metal key.
 
 The House is a region. The Bedroom and the Kitchen and the Hall and the Upstairs Hall and the Study and the Back Entryway and the Closet and the Bathroom and the Basement are in the House.
 
@@ -243,7 +269,7 @@ Understand the command "fill" as "put".
 
 The description of the Shed is "A narrow rusty shed. [if the player is on the stool]On the shed's roof, you can see [a list of the things on the roof of the shed].[else]The shed is really tall and you can't see above it.[end if]".
 
-The cage is a transparent open container. The description of the cage is "A white metal cage that looks to have held a pet rabbit long ago." The cage is in the shed.
+The cage is a transparent open lockable container. The small metal key unlocks the cage. The description of the cage is "A white metal cage that looks to have held a pet rabbit long ago." The cage is in the shed.
 
 A rule for reaching inside the roof of the shed:
 	if the player is not on the stool:
@@ -275,7 +301,7 @@ Abandoned Warehouse is a room. West of the Town Square is the warehouse. The Aba
 South of the Abandoned Warehouse is a room called A Spooky Lair. 
 The description of the lair is "A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it."
 The table is scenery in the Spooky lair. The table is a supporter. There is a candle on the table. The candle is lit. A sacrificial knife is on the table. The description of the sacrificial knife is "A knife that looks like it might be used in a demonic ritual - or, you know, for cutting stuff".
-A snake is a kind of animal. There are 4 snakes in the spooky lair.
+A snake is a kind of animal. There is a snake named Alice in the lair. There is a snake named Bob in the lair. There is a snake named Charlie in the lair. There is a snake named David in the lair.
 
 Instead of taking or touching the candle when the player is wearing a dollop of hair gel:
 	say "You touch the candle. The flame leaps onto your hair. Boom!";
@@ -288,30 +314,35 @@ Instead of taking the candle:
 Test candle with "e / e / get stool / w / n / e / put stool down / get on stool / open cabinet / get gel / put on gel / w / d / d / w / s / get candle".
 
 A mouse is a kind of animal.
-A jar is a kind of openable container. Every jar contains a mouse.
+A jar is a kind of openable container. Every jar contains a mouse. Jars are usually closed.
 
 There is an ancient cabinet in the spooky lair. The description of the ancient cabinet is "The ancient cabinet seems like it could have been here for millenia." The ancient cabinet is a closed openable container. There are 3 jars in the ancient cabinet. The ancient cabinet is fixed in place.
 
+the can't take other people rule does nothing when taking the mouse.
 
-[TODO: allow taking a mouse out of a jar]
-[TODO: fix the below chunk which does not compile]
-[
-Instead of putting a mouse in the cage:
+Instead of inserting something into the cage:	
+	if the noun is not a mouse:
+		continue the action;
 	if the cage is closed:
 		say "You can't put a mouse in a closed cage!";
 	else if the player is in the lair:
 		say "A rattlesnake rushes into the cage and hungrily slurps up the mouse before it even has time to get its bearings.";
-		now the mouse is nowhere;
-		now a snake is in the cage;
-		[The snake leaves the cage in 3 turns from now. [TODO: implement]]
+		now the noun is nowhere;
+		move Charlie to the cage;
+		The snake leaves the cage in 2 turns from now;
 	else:
-		say "The mouse scurries out of the cage and runs off to wherever it is mice go. Oh well, there are probably more mice wherever that one came from."
-		now the mouse is nowhere.]
+		say "The mouse scurries out of the cage and runs off to wherever it is mice go. Oh well, there are probably more mice wherever that one came from.";
+		now the noun is nowhere.
 
-[At the time when the snake leaves the cage:
-	if the player and the cage are in the same room:
-		say "The snake slithers out of the cage with remarkable speed."
-	now the snake is in the lair.]
+At the time when the snake leaves the cage:
+	if the cage is closed and the cage is locked:
+		say "Angry at being locked up and not wanting to be a pet, the snake breaks through the cage and attaches itself to your eye. You feeel the effects of the venom almost immediately.";
+		conclude with 22;
+	else if the location of the player is the location of the cage:
+		say "The snake slithers out of the cage with remarkable speed[if the cage is closed], slamming the door open as it goes. Maybe you should lock it next time[end if].";
+	move Charlie to the lair.
+
+test cage with "e / get key / w / open door / w / unlock shed with key / open shed / get cage / e / e / d / get small key / w / s / put cage down / open ancient cabinet / get jar / open jar / get mouse / put mouse in cage / close cage / lock cage with small key"
 	
 
 Part 4 - Nature
@@ -371,8 +402,7 @@ Instead of going to the woods when not the woods are accessible:
 		say "The bear seems to be guarding the entrance to the woods. Seems like it would be awfully difficult to get through here unless the bear were somehow distracted. With food, maybe?";
 		now the bear is in the Woods.
 
-[TODO: implement the "poke" verb]
-
+Understand the command "poke" as "attack".
 Instead of attacking the bear:
 	if the player is holding the stick:
 		say "You take your stick and poke the bear. It wakes up and promptly eats you.";
@@ -426,18 +456,20 @@ Instead of cutting the super glue:
 		if the super glue is whole:
 			say "You use the sacrificial knife to cut the super glue's tip right off. Glue gurgles out of the tube viscously.";
 			now the glue is cut;
-			[The glue recongeals in 3 turns from now.]
+			The glue recongeals in three turns from now;
 		else:
 			say "That seems hard to do without gluing your fingers together.";
 	else:
 		say "With your bare hands??"
-[At the time when the glue recongeals:
-	The glue is now whole.
-	If the player is holding the glue:
-		say "The tube of super glue appears to have dried enough glue to glue itself back together.";]
+		
+At the time when the glue recongeals:
+	Now the glue is whole;
+	If the player has the glue:
+		say "The tube of super glue appears to have dried enough glue to glue itself back together."
+		
 Instead of eating the super glue:
 	if the super glue is whole:
-		say "That doesn't look very edible right now. Maybe if you could actually squeeze it into your mouth?";
+		say "That doesn't look very edible right now. Maybe if there were an opening and you could actually squeeze it into your mouth?";
 	else:
 		say "You squeeze the tube of super glue into your mouth. It tastes like candy! Shortly thereafter, it starts to taste like your throat is glued shut. Maybe this wasn't a great idea...";
 		conclude with 19
@@ -472,3 +504,4 @@ Instead of pushing the button:
 		now the coin slot's credits is 0.
 
 [ TODO: rules around time travel and the pie]
+
