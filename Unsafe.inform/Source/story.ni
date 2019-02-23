@@ -94,7 +94,7 @@ Part 2 - House
 
 Section 1 - First Floor
 
-The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door ([if the side door is open]open[else]closed[end if]) leads out of the house to the West. [first time]You're lying in your bed, just having woken up.[only]".
+The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door ([if the side door is open]open[else]closed[end if]) leads out of the house to the West. [first time][paragraph break]You're lying in your bed, just having woken up.[only]".
 The nightstand is scenery in the Bedroom. There is an iPod on the nightstand. The iPod can be playing. The iPod is not playing. The description of the iPod is "It's an iPod touch, third-generation, maybe? [if playing]It's playing your favorite song.[end if]".
 
 Instead of inserting the earbuds into the iPod:
@@ -947,3 +947,6 @@ Instead of pushing the button:
 			now the pie is nowhere.
 	
 test pie with "e / e / open fridge / get pie / w / u / w / get quarter / e / d / d / w / e / open entrance / s / u / open time safe / open middle safe / open inner safe / put pie in inner safe / close inner safe / close middle safe / close time safe / go in time machine / put quarter in slot / press button / get out / open outer safe / open middle safe / open inner safe / get pie / eat pie"
+
+
+Release along with an interpreter.
