@@ -1,6 +1,6 @@
 "Unsafe" by Brian Chen and Jakob Weisblat
 
-The story description is "TODO fixme".
+The story description is "It's a puzzle".
 The release number is 1.
 The story creation year is 2019.
 
@@ -238,7 +238,7 @@ Test toaster with "open door / w / w / w / n / pull fork / take fork / s / s / d
 
 The refrigerator is a closed openable fixed in place container.
 A fish is in the refrigerator. The description is "It's a blue herring. Delicious!"
-A pie is in the refrigerator. The description is  "A meat pie that looks like it came out of the oven just this morning."
+A pie is in the refrigerator. The description of the pie is "[if the pie is not aged]A meat pie that looks like it came out of the oven just this morning.[else]A meat pie that looks like it has been sitting out for a while. Maybe a bad idea to eat it.[end if]".
 The fish and the pie are edible.
 
 The stool is an enterable portable supporter in the kitchen. The description is "It's a stool that you can stand on."
@@ -293,7 +293,7 @@ A wooden drawer called the first drawer is part of the chest of drawers.
 A wooden drawer called the second drawer is part of the chest of drawers.
 A wooden drawer called the third drawer is part of the chest of drawers.
 A wooden drawer called the fourth drawer is part of the chest of drawers.
-A wooden drawer called the fifth drawer is part of the chest of drawers. The fifth drawer is open. [TODO: currently you can open 2 different drawers and then get both quarters with one command. We should disallow this.]
+A wooden drawer called the fifth drawer is part of the chest of drawers. The fifth drawer is open.
 
 East of the Upstairs Hall is the Bathroom. The description of the Bathroom is "It's just a bathroom."
 The mirror is a fixed in place thing in the bathroom. The description of the mirror is "You can see your own reflection in the mirror. [if the player is wearing some hair gel]Your hair looks awesome with the hair gel on it.[else]You look the same as always.[end if]".
@@ -349,7 +349,6 @@ Instead of entering the bathtub when the player is wearing anything tub-relevant
 Instead of entering the bathtub when the piranhas are in the bathtub:
 	say "You get in the tub. The warm water feels wonderful for a few seconds, and then the piranhas start to attack. They eat your feet, your legs, and... you can imagine the rest.[paragraph break]";
 	conclude with 32.
-[TODO: require removing clothes before getting in the tub]
 
 Section 4 - Basement
 
@@ -385,7 +384,6 @@ The roof of the Shed is part of The Shed. On top of the Roof is a bucket. The bu
 
 Understand the command "dip" as "put".
 Understand the command "fill" as "put".
-[TODO: pouring the bucket out into the tub or the rocket]
 
 The description of the Shed is "A narrow rusty shed. [if the player is on the stool]On the shed's roof, you can see [a list of the things on the roof of the shed].[else]The shed is really tall and you can't see above it.[end if]".
 
@@ -400,8 +398,8 @@ A rule for reaching inside the roof of the shed:
 Section 2 - Other stuff
 
 West of the Garden is the Outskirts of Town. The description of the Outskirts of Town is "There's less town here than elsewhere. The garden is east. The space center is north. The road is west."
-North of the Outskirts of Town is the Space Center. [TODO: write a description for the space center]
-North of the Space Center is the Launch Pad. [TODO: write a description for the road]
+North of the Outskirts of Town is the Space Center. The description of the space center is "Your friendly neighborhood space center. They build rockets and stuff. The outskirts of town are South, the launch pad is North."
+North of the Space Center is the Launch Pad. The description of the launch pad is "The place where rockets take off from. The rest of the Space Center is South."
 An enterable openable closed container called a spaceship is in the launch pad. The description of the spaceship is "A very small rocket. Just big enough to carry one person to space.". The spaceship can be low on fuel. The spaceship is low on fuel. The spaceship can be on or off.[TODO: override (closed) on space ship]
 There is an ON button and a LAUNCH button in the spaceship.  The on button is lit. The on button is fixed in place. The launch button is fixed in place. The spaceship can be waiting for confirmation. The computer is a fixed in place undescribed person in the spaceship. There is a spacesuit in the spaceship. There is a helmet in the spaceship. The spacesuit and the helmet are wearable. The spaceship can be broken. The spaceship is not broken.
 Instead of pushing the ON button:
@@ -487,7 +485,8 @@ At the time when the autopilot lands the ship:
 	now the spaceship is off;
 	now the spaceship is broken.
 	
-Instead of inserting bucketful of rocket fuel into the spaceship:	say "You pour the rocket fuel into the ship's fuel hatch, closing the hatch when you are done.";
+Instead of inserting bucketful of rocket fuel into the spaceship:
+	say "You pour the rocket fuel into the ship's fuel hatch, closing the hatch when you are done.";
 	now the bucketful of rocket fuel is nowhere;
 	now the spaceship is not low on fuel;
 	if the spaceship is closed:
@@ -752,7 +751,9 @@ Test trees with "e / e / open fridge / take fish / w / d / w / w / w / w / throw
 
 South of the Woods is the Hunting Grounds. The description of the Hunting Grounds is "Where hunters hunt things, as long as it's the right season. The woods are to the north. You can head into the Hunting Lodge to the south."
 
-South of the Hunting Grounds is a door called the hunting lodge entrance. South of the entrance is a room called the Hunting Lodge. The description of the Hunting Lodge is "Where hunters rest or something. One wall is covered in animal heads - a deer, a moose, a lion(!). Kinda creepy, to be honest. The exit is north." Instead of going outside from the Hunting Lodge, try going north. The moose head is a wearable portable thing in the hunting lodge. The deer head and the lion head are things in the hunting lodge. The deer head is portable. [TODO: don't tell the player the things again]
+South of the Hunting Grounds is a door called the hunting lodge entrance. South of the entrance is a room called the Hunting Lodge. The description of the Hunting Lodge is "Where hunters rest or something. One wall is covered in animal heads - a deer, a moose, a lion(!). Kinda creepy, to be honest. The exit is north." Instead of going outside from the Hunting Lodge, try going north. The moose head is a wearable portable undescribed things in the hunting lodge. The deer head and the lion head are undescribed things in the hunting lodge. The deer head is portable. There is a poster in the hunting lodge. The poster weeks is initially 5. 
+The description of the poster is "A poster reading '[if it is hunting season]Hunting Season is Now[else]Hunting season begins in [the poster weeks] weeks![end if]'".
+
 
 To decide if it is hunting season:
 	if the time machine's use count is greater than 2:
@@ -773,8 +774,9 @@ Instead of going to the hunting grounds when the player is wearing the moose hea
 	say "You go into the hunting grounds, foolishly forgetting that there is a moose head atop your own. The hunters waste no time before shooting you.. at least you got a quick death.";
 	conclude with 36;
 
-
 test moose with "e / u / w / get quarter / n / get quarter / open second drawer / get quarter / s / e / d / d / w / e / open entrance / s / u / go into time machine / insert quarter into slot / insert quarter into slot / insert quarter into slot / press button / get out /d / n / w / w / w / w / s / open entrance / s / get moose head / wear moose head / n / n"
+
+test time-machine with  "e / u / w / get quarter / n / get quarter / open second drawer / get quarter / s / e / d / d / w / e / open entrance / s / u / go into time machine"
 
 Section 3 - Bear
 
@@ -806,14 +808,17 @@ Instead of attacking the bear:
 	else:
 		say "With your bear (*ahem*) bare hands? You're kind of dumb, but not *that* dumb."
 
-Test bear with "e / s / take key / unlock door / open door / s / take stick / n / n / e / open fridge / take fish / w / d / w / w / w / w / throw fish / z / z / z / w / attack bear".
+Test bear with "e / s / take blue key / unlock door with blue key / open door / s / take stick / n / n / e / open fridge / take fish / w / d / w / w / w / w / throw fish / z / z / z / w / attack bear".
 
 To decide if the fish is ready to be thrown:
 	if the player is in the Edge of the Woods and the bear is in the Woods:
 		decide yes;
 	decide no.
+understand "throw [something] to bear" as dropping.
+understand "throw [something] west" as dropping.
+understand "toss [something] to bear" as dropping.
+understand "toss [something] west" as dropping.
 
-[TODO: implement "throw fish west" or "throw fish to bear" something]
 Instead of dropping the fish when the fish is ready to be thrown:
 	say "You throw the fish to the west. The bear looks at the fish curiously.";
 	now the fish is nowhere;
@@ -840,7 +845,8 @@ Part 5 - Town
 South of the Outskirts of Town is the Town Square.
 The description of Town Square is "The Town Square stretches out in front of you. There are 10 or 20 unremarkable buildings that you couldn't care less about. South of you is the Mad Scientist's House. West, a hole in the wall leads into the Abandoned Warehouse. North of here, the town thins out."
 South of the Town Square is a door called the Mad Scientist's Grand Entrance. south of the Mad Scientist's grand entrance is the Mad Scientist's house.
-The description of the Mad Scientist's House is "A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier." Gadgets and tubes and a tool shelf and an amplifier are scenery in the Mad Scientist's house. A door called a ladder is above the mad scientist's house. The ladder is open and unopenable. [TODO: climb ladder / go up ladder / use ladder]
+The description of the Mad Scientist's House is "A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier." Gadgets and tubes and a tool shelf and an amplifier are scenery in the Mad Scientist's house. A door called a ladder is above the mad scientist's house. The ladder is open and unopenable.
+
 [TODO: suppress shelf description]
 The description of the shelf is "A high-up shelf that you imagine stores the mad scientist's secrets.  [if the player is on the stool]On the tool shelf, you can see [a list of the things on the shelf]. That's disappointing[else]It's so high up that you can't see on it[end if]." The shelf is a supporter. A small tool box and a bottle of soylent are on the shelf. The small tool box is an openable closed container. Super glue is in the small tool box. Super glue and soylent are edible. [TODO: if you eat the soylent, it tastes good.]
 The description of soylent is "A full nutritional meal replacement. It's made of people." 
@@ -878,27 +884,66 @@ A rule for reaching inside the shelf:
 
 Test glue with "e / e / take stool / w / down / go through tunnel / s / get knife / n / e / open entrance / s / put down stool / get on stool / get box / open box / get glue / cut glue / eat glue"
 
-Above the ladder is the Mad Science Laboratory. Understand "Lab" as the mad science laboratory.
+Above the ladder is the Mad Science Laboratory. Understand "Lab" as the mad science laboratory. The description of the mad science laboratory is "A room full of so much mad science, it makes you mad just to think about it. The wall is covered in chalkboards, and the chalkboards are covered in diagrams, and the diagrams are covered in labels. Maddening."
 Instead of climbing the ladder, try going up.
-The time machine is a fixed in place enterable container in the Mad Science Laboratory. The time machine has a number called the use count. The time machine's use count is initially 0. [TODO: time machine contents are announced :/]
-The red button is a fixed in place thing in the time machine. The coin slot is a fixed in place closed unopenable container in the time machine. The coin slot has a number called the credits. The coin slot's credits is initially 0.
-[TODO: like, any description around here]
-Instead of inserting something into the coin slot: [TODO: disallow inserting more than one coin at once]
+The time machine is a fixed in place enterable container in the Mad Science Laboratory. The time machine has a number called the use count. The time machine's use count is initially 0. The description of the time machine is "A cardboard box with the words 'TIME MACHINE' scrawled on it in sharpie. Below the words '25 cents per 2 weeks forward' are written a little smaller."  [TODO: time machine contents are announced :/]
+The red button is a fixed in place thing in the time machine. The coin slot is a fixed in place closed unopenable container in the time machine. The coin slot has a number called the credits. The coin slot's credits is initially 0. The coin slot can be available. The coin slot is available.
+
+The description of the red button is "A big red button. Says 'TRAVEL' on it. You guess it might mean time travel.". The description of the coin slot is "A coin slot that looks like it was ripped from an old arcade machine. Looks like it accepts only quarters."
+
+Every turn:
+	now the coin slot is available.
+Instead of inserting something into the coin slot: 
+	if the coin slot is not available:
+		say "The previous quarter is still making its way into the slot.";
+		stop the action;
 	If the noun is not a quarter:
 		say "That doesn't fit in the slot!";
 		stop the action;
 	say "You put a quarter in the slot. It makes a satisfying *clink*.";
 	now the noun is nowhere;
+	now the coin slot is not available;
 	increase the coin slot's credits by 1.
-	
+
+The time safe is a fixed in place openable closed container. The description of the time safe is "A locker labelled 'TIME SAFE - place objects in here to guarantee that they age properly while not being messed with by people wandering by or the wind while you are in the time machine.". The time safe is in the mad science laboratory.
+The middle safe is a fixed in place openable closed container in the time safe. The description of the middle safe is "A smaller safe inside the bigger one, almost as big.".
+The inner safe is a fixed in place openable closed container in the middle safe. The description of the inner safe is "The innermost safe; where you are supposed to put things.". Understand "innermost safe" as the inner safe.
+Instead of inserting something into the middle safe:
+	say "There's no room. You have to put it in the inner safe."
+Instead of inserting something into the time safe:
+	say "There's no room. You have to put it in the innermost safe."
+Understand "outer safe" as the time safe.
+To decide if the pie is guarded:
+	if the pie is not in the inner safe:
+		decide no;
+	if the inner safe is open:
+		decide no;
+	If the middle safe is open:
+		decide no;
+	If the time safe is open:
+		decide no;
+	decide yes.
+
+The pie can be aged. The pie is not aged.
+Instead of eating the pie when the pie is in the inner safe:
+	say "First you need to take the pie out of the safe."
+Instead of eating the pie when the pie is aged:
+	say "You eat the pie. It tastes... strange. As though it's been sitting out for 2 weeks. Your stomach starts to feel unpleasant and then --";
+	conclude with 32.
 Instead of pushing the button:
 	if the coin slot's credits is 0:
 		say "You need to put a quarter in the coin slot first.";
 	else:
-		say "You feel yourself pressed back into the seat, and the world swirls around you. The sun sets and rises again 14 times. And then, suddenly, the world is calm."; [TODO: change number based on number of coins] [TODO: time machine should have a label explaining its use]
+		say "You feel yourself pressed back into the seat, and the world swirls around you. The sun sets and rises again many times. And then, suddenly, the world is calm.";
 		increase the time machine's use count by the coin slot's credits;
+		decrease the poster weeks by the coin slot's credits;
+		decrease the poster weeks by the coin slot's credits;
 		now the coin slot's credits is 0;
-		now the wasps' nest is nowhere.
-
-[ TODO: rules around time travel and the pie]
-
+		now the wasps' nest is nowhere;
+		if the pie is guarded:
+			if the pie is not in the refrigerator:
+				now the pie is aged;
+		else if the pie is not enclosed by the time machine:
+			now the pie is nowhere.
+	
+test pie with "e / e / open fridge / get pie / w / u / w / get quarter / e / d / d / w / e / open entrance / s / u / open time safe / open middle safe / open inner safe / put pie in inner safe / close inner safe / close middle safe / close time safe / go in time machine / put quarter in slot / press button / get out / open outer safe / open middle safe / open inner safe / get pie / eat pie"

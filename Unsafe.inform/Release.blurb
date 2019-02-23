@@ -23,7 +23,7 @@ placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2019"
 placeholder [TITLE] = "Unsafe"
 placeholder [AUTHOR] = "Brian Chen and Jakob Weisblat"
-placeholder [BLURB] = "TODO fixme"
+placeholder [BLURB] = "It's a puzzle"
 
 ! Other material to release
 

@@ -9,7 +9,7 @@
 
 Unsafe
 An Interactive Fiction by Brian Chen and Jakob Weisblat
-Release 1 / Serial number 190222 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190223 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Bedroom
 It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. You're lying in your bed, just having woken up.
@@ -34,6 +34,7 @@ You can see the Side Door here.
 &gt;</commentary>
         <children><child nodeId="node-2914"></child>
             <child nodeId="node-1523"></child>
+            <child nodeId="node-3388"></child>
             <child nodeId="node-1517"></child>
             <child nodeId="node-1492"></child>
             <child nodeId="node-1432"></child>
@@ -49,10 +50,12 @@ You can see the Side Door here.
             <child nodeId="node-1245"></child>
             <child nodeId="node-1237"></child>
             <child nodeId="node-1212"></child>
+            <child nodeId="node-3211"></child>
             <child nodeId="node-1168"></child>
             <child nodeId="node-1167"></child>
             <child nodeId="node-2414"></child>
             <child nodeId="node-1148"></child>
+            <child nodeId="node-3494"></child>
             <child nodeId="node-1139"></child>
             <child nodeId="node-1016"></child>
             <child nodeId="node-1003"></child>
@@ -1824,6 +1827,162 @@ More tree.
     <item nodeId="node-1147">
         <command xml:space="preserve"> climb ash</command>
         <result xml:space="preserve">In the Ash Tree
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3494">
+        <command xml:space="preserve">test time-machine</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] u
+
+upstairs hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase and a left running shoe here.
+
+&gt;[3] w
+
+Study
+Where you study. The hall is east.
+
+On the desk are a dime and a quarter.
+
+You can also see the closet door here.
+
+&gt;[4] get quarter
+Taken.
+
+&gt;[5] n
+
+The Closet
+A small room. The hall is south.
+
+You can see the closet door and a chest of drawers here.
+
+&gt;[6] get quarter
+Taken.
+
+&gt;[7] open second drawer
+You open the second drawer, revealing a quarter.
+
+&gt;[8] get quarter
+Taken.
+
+&gt;[9] s
+
+Study
+Where you study. The hall is east.
+
+On the desk is a dime.
+
+You can also see the closet door here.
+
+&gt;[10] e
+
+upstairs hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase and a left running shoe here.
+
+&gt;[11] d
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[12] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[13] w
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[14] e
+
+Town Square
+The Town Square stretches out in front of you. There are 10 or 20 unremarkable buildings that you couldn't care less about. South of you is the Mad Scientist's House. West, a hole in the wall leads into the Abandoned Warehouse. North of here, the town thins out.
+
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;[15] open entrance
+You open the Mad Scientist's Grand Entrance.
+
+&gt;[16] s
+
+Mad Scientist's house
+A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier.
+
+On the tool shelf are a small tool box (closed) and a bottle of soylent.
+
+You can also see the Mad Scientist's Grand Entrance and a ladder here.
+
+&gt;[17] u
+
+Mad Science Laboratory
+A room full of so much mad science, it makes you mad just to think about it. The wall is covered in chalkboards, and the chalkboards are covered in diagrams, and the diagrams are covered in labels. Maddening.
+
+You can see a ladder, a time machine (in which are a red button and a coin slot (closed)) and a time safe (closed) here.
+
+&gt;[18] go into time machine
+You get into the time machine.
+
+In the time machine you can see a red button and a coin slot (closed).
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] e
+[2] u
+[3] w
+[4] get quarter
+[5] n
+[6] get quarter
+[7] open second drawer
+[8] get quarter
+[9] s
+[10] e
+[11] d
+[12] d
+[13] w
+[14] e
+[15] open entrance
+[16] s
+[17] u
+[18] go into time machine
+</commentary>
+        <children><child nodeId="node-3513"></child>
+        </children>
+    </item>
+    <item nodeId="node-3513">
+        <command xml:space="preserve">put quarters in slot</command>
+        <result xml:space="preserve">quarter: You put a quarter in the slot. It makes a satisfying *clink*.
+quarter: You can only insert one coin per turn.
+quarter: You can only insert one coin per turn.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3514"></child>
+        </children>
+    </item>
+    <item nodeId="node-3514">
+        <command xml:space="preserve">put quarters in slot</command>
+        <result xml:space="preserve">quarter: You put a quarter in the slot. It makes a satisfying *clink*.
+quarter: You can only insert one coin per turn.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -3666,6 +3825,424 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
         <result xml:space="preserve"></result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-3211">
+        <command xml:space="preserve">test pie</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] e
+
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;[3] open fridge
+You open the refrigerator, revealing a fish and a pie.
+
+&gt;[4] get pie
+Taken.
+
+&gt;[5] w
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[6] u
+
+upstairs hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase and a left running shoe here.
+
+&gt;[7] w
+
+Study
+Where you study. The hall is east.
+
+On the desk are a dime and a quarter.
+
+You can also see the closet door here.
+
+&gt;[8] get quarter
+Taken.
+
+&gt;[9] e
+
+upstairs hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase and a left running shoe here.
+
+&gt;[10] d
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[11] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[12] w
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[13] e
+
+Town Square
+The Town Square stretches out in front of you. There are 10 or 20 unremarkable buildings that you couldn't care less about. South of you is the Mad Scientist's House. West, a hole in the wall leads into the Abandoned Warehouse. North of here, the town thins out.
+
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;[14] open entrance
+You open the Mad Scientist's Grand Entrance.
+
+&gt;[15] s
+
+Mad Scientist's house
+A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier.
+
+On the tool shelf are a small tool box (closed) and a bottle of soylent.
+
+You can also see the Mad Scientist's Grand Entrance and a ladder here.
+
+&gt;[16] u
+
+Mad Science Laboratory
+You can see a ladder, a time machine (in which are a red button and a coin slot (closed)) and a time safe (closed) here.
+
+&gt;[17] open time safe
+You open the time safe, revealing a middle safe.
+
+&gt;[18] open middle safe
+You open the middle safe, revealing an inner safe.
+
+&gt;[19] open inner safe
+You open the inner safe.
+
+&gt;[20] put pie in inner safe
+You put the pie into the inner safe.
+
+&gt;[21] close inner safe
+You close the inner safe.
+
+&gt;[22] close middle safe
+You close the middle safe.
+
+&gt;[23] close time safe
+You close the time safe.
+
+&gt;[24] go in time machine
+You get into the time machine.
+
+In the time machine you can see a red button and a coin slot (closed).
+
+&gt;[25] put quarter in slot
+You put a quarter in the slot. It makes a satisfying *clink*.
+
+&gt;[26] press button
+You feel yourself pressed back into the seat, and the world swirls around you. The sun sets and rises again many times. And then, suddenly, the world is calm.
+
+&gt;[27] get out
+You get out of the time machine.
+
+Mad Science Laboratory
+You can see a ladder, a time machine (in which are a red button and a coin slot (closed)) and a time safe (closed) here.
+
+&gt;[28] open outer safe
+You open the time safe, revealing a middle safe.
+
+&gt;[29] open middle safe
+You open the middle safe, revealing an inner safe.
+
+&gt;[30] open inner safe
+You open the inner safe, revealing a pie.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] e
+[2] e
+[3] open fridge
+[4] get pie
+[5] w
+[6] u
+[7] w
+[8] get quarter
+[9] e
+[10] d
+[11] d
+[12] w
+[13] e
+[14] open entrance
+[15] s
+[16] u
+[17] open time safe
+[18] open middle safe
+[19] open inner safe
+[20] put pie in inner safe
+[21] close inner safe
+[22] close middle safe
+[23] close time safe
+[24] go in time machine
+[25] put quarter in slot
+[26] press button
+[27] get out
+[28] open outer safe
+[29] open middle safe
+[30] open inner safe
+</commentary>
+        <children><child nodeId="node-3277"></child>
+            <child nodeId="node-3228"></child>
+        </children>
+    </item>
+    <item nodeId="node-3228">
+        <command xml:space="preserve">x time safe</command>
+        <result xml:space="preserve">A locker labelled "TIME SAFE - place objects in here to guarantee that they age properly while not being messed with by people wandering by or the wind while you are in the time machine.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3229"></child>
+        </children>
+    </item>
+    <item nodeId="node-3229">
+        <command xml:space="preserve">open time safe</command>
+        <result xml:space="preserve">You open the time safe, revealing a middle safe.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3230"></child>
+        </children>
+    </item>
+    <item nodeId="node-3230">
+        <command xml:space="preserve">open middle safe</command>
+        <result xml:space="preserve">You open the middle safe, revealing an inner safe.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3231"></child>
+        </children>
+    </item>
+    <item nodeId="node-3231">
+        <command xml:space="preserve">open inner safe</command>
+        <result xml:space="preserve">You open the inner safe.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3232"></child>
+        </children>
+    </item>
+    <item nodeId="node-3232">
+        <command xml:space="preserve">put pie in time safe</command>
+        <result xml:space="preserve">There's no room. You have to put it in the innermost safe.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3233"></child>
+        </children>
+    </item>
+    <item nodeId="node-3233">
+        <command xml:space="preserve">put pie in inner safe</command>
+        <result xml:space="preserve">You put the pie into the inner safe.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3234"></child>
+        </children>
+    </item>
+    <item nodeId="node-3234">
+        <command xml:space="preserve">close inner safe</command>
+        <result xml:space="preserve">You close the inner safe.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3235"></child>
+        </children>
+    </item>
+    <item nodeId="node-3235">
+        <command xml:space="preserve">close middle safe</command>
+        <result xml:space="preserve">You close the middle safe.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3236"></child>
+        </children>
+    </item>
+    <item nodeId="node-3236">
+        <command xml:space="preserve">close time safe</command>
+        <result xml:space="preserve">You close the time safe.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3237"></child>
+        </children>
+    </item>
+    <item nodeId="node-3237">
+        <command xml:space="preserve">enter time machine</command>
+        <result xml:space="preserve">You get into the time machine.
+
+In the time machine you can see a red button and a coin slot (closed).
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3238"></child>
+        </children>
+    </item>
+    <item nodeId="node-3238">
+        <command xml:space="preserve">put quarter in slot</command>
+        <result xml:space="preserve">You put a quarter in the slot. It makes a satisfying *clink*.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3239"></child>
+        </children>
+    </item>
+    <item nodeId="node-3239">
+        <command xml:space="preserve">press button</command>
+        <result xml:space="preserve">You feel yourself pressed back into the seat, and the world swirls around you. The sun sets and rises again many times. And then, suddenly, the world is calm.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3240"></child>
+        </children>
+    </item>
+    <item nodeId="node-3240">
+        <command xml:space="preserve">get out</command>
+        <result xml:space="preserve">You get out of the time machine.
+
+Mad Science Laboratory
+You can see a ladder, a time machine (in which are a red button and a coin slot (closed)) and a time safe (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3241"></child>
+        </children>
+    </item>
+    <item nodeId="node-3241">
+        <command xml:space="preserve">open time safe</command>
+        <result xml:space="preserve">You open the time safe, revealing a middle safe.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3242"></child>
+        </children>
+    </item>
+    <item nodeId="node-3242">
+        <command xml:space="preserve">open middle safe</command>
+        <result xml:space="preserve">You open the middle safe, revealing an inner safe.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3243"></child>
+        </children>
+    </item>
+    <item nodeId="node-3243">
+        <command xml:space="preserve">open inner safe</command>
+        <result xml:space="preserve">You open the inner safe, revealing a pie.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3244"></child>
+        </children>
+    </item>
+    <item nodeId="node-3244">
+        <command xml:space="preserve">showme ipe</command>
+        <result xml:space="preserve">There seems to be no such object anywhere in the model world.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3245"></child>
+        </children>
+    </item>
+    <item nodeId="node-3245">
+        <command xml:space="preserve">showme pie</command>
+        <result xml:space="preserve">pie - thing
+location: in the inner safe in the middle safe in the time safe in the Mad Science Laboratory
+singular-named, improper-named; unlit, edible, portable, handled, tub-relevant; aged
+list grouping key: none
+printed name: "pie"
+printed plural name: none
+indefinite article: none
+description: "A meat pie that looks like it came out of the oven just this morning."
+initial appearance: none
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3277">
+        <command xml:space="preserve">eat pie</command>
+        <result xml:space="preserve">First you need to take the pie out of the safe.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3278"></child>
+        </children>
+    </item>
+    <item nodeId="node-3278">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Mad Science Laboratory
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3345"></child>
+        </children>
+    </item>
+    <item nodeId="node-3345">
+        <command xml:space="preserve">open inner safe</command>
+        <result xml:space="preserve">That's already open.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3346"></child>
+        </children>
+    </item>
+    <item nodeId="node-3346">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Mad Science Laboratory
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3347"></child>
+        </children>
+    </item>
+    <item nodeId="node-3347">
+        <command xml:space="preserve">get pie</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3348"></child>
+        </children>
+    </item>
+    <item nodeId="node-3348">
+        <command xml:space="preserve">eat pie</command>
+        <result xml:space="preserve">You eat the pie. It tastes... strange. As though it's been sitting out for 2 weeks. Your stomach starts to feel unpleasant and then --You've reached one of this game's 14 endings! In that game you used 32 moves. The optimal number of moves is 32.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1212">
         <command xml:space="preserve">test moose</command>
         <result xml:space="preserve">(Testing.)
@@ -3679,10 +4256,10 @@ You can see a Staircase and a muddy brown key here.
 
 &gt;[2] u
 
-Upstairs Hall
+upstairs hall
 The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
 
-You can see a Staircase here.
+You can see a Staircase and a left running shoe here.
 
 &gt;[3] w
 
@@ -3723,10 +4300,10 @@ You can also see the closet door here.
 
 &gt;[10] e
 
-Upstairs Hall
+upstairs hall
 The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
 
-You can see a Staircase here.
+You can see a Staircase and a left running shoe here.
 
 &gt;[11] d
 
@@ -3771,7 +4348,9 @@ You can also see the Mad Scientist's Grand Entrance and a ladder here.
 &gt;[17] u
 
 Mad Science Laboratory
-You can see a ladder and a time machine (in which are a red button and a coin slot (closed)) here.
+A room full of so much mad science, it makes you mad just to think about it. The wall is covered in chalkboards, and the chalkboards are covered in diagrams, and the diagrams are covered in labels. Maddening.
+
+You can see a ladder, a time machine (in which are a red button and a coin slot (closed)) and a time safe (closed) here.
 
 &gt;[18] go into time machine
 You get into the time machine.
@@ -3782,19 +4361,21 @@ In the time machine you can see a red button and a coin slot (closed).
 You put a quarter in the slot. It makes a satisfying *clink*.
 
 &gt;[20] insert quarter into slot
-You put a quarter in the slot. It makes a satisfying *clink*.
+You can only insert one coin per turn.
 
 &gt;[21] insert quarter into slot
-You put a quarter in the slot. It makes a satisfying *clink*.
+You can only insert one coin per turn.
 
 &gt;[22] press button
-You feel yourself pressed back into the seat, and the world swirls around you. The sun sets and rises again 14 times. And then, suddenly, the world is calm.
+You feel yourself pressed back into the seat, and the world swirls around you. The sun sets and rises again many times. And then, suddenly, the world is calm.
 
 &gt;[23] get out
 You get out of the time machine.
 
 Mad Science Laboratory
-You can see a ladder and a time machine (in which are a red button and a coin slot (closed)) here.
+A room full of so much mad science, it makes you mad just to think about it. The wall is covered in chalkboards, and the chalkboards are covered in diagrams, and the diagrams are covered in labels. Maddening.
+
+You can see a ladder, a time machine (in which are a red button and a coin slot (closed)) and a time safe (closed) here.
 
 &gt;[24] d
 
@@ -3832,7 +4413,7 @@ The woods start here and extend to the west. There's a clearing to the east.
 &gt;[29] w
 
 Woods
-There's lots of trees. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.
 
 &gt;[30] s
 
@@ -3849,13 +4430,23 @@ You open the hunting lodge entrance.
 Hunting Lodge
 Where hunters rest or something. One wall is covered in animal heads - a deer, a moose, a lion(!). Kinda creepy, to be honest. The exit is north.
 
-You can see the hunting lodge entrance, a moose head, a deer head and a lion head here.
+You can see the hunting lodge entrance, a moose head, a deer head, a lion head and a poster here.
 
 &gt;[33] get moose head
 Taken.
 
 &gt;[34] wear moose head
 You put on the moose head.
+
+&gt;[35] n
+Wow, you nearly fell over. Walking while wearing a taxidermied moose head is hard. Maybe try that again?
+
+&gt;[36] n
+
+Hunting Grounds
+Where hunters hunt things, as long as it's the right season. The woods are to the north. You can head into the Hunting Lodge to the south.
+
+You can see the hunting lodge entrance here.
 
 &gt;</result>
         <commentary xml:space="preserve">[1] e
@@ -3892,9 +4483,12 @@ You put on the moose head.
 [32] s
 [33] get moose head
 [34] wear moose head
+[35] n
+[36] n
 </commentary>
         <children><child nodeId="node-1234"></child>
             <child nodeId="node-1230"></child>
+            <child nodeId="node-3455"></child>
             <child nodeId="node-1223"></child>
             <child nodeId="node-1213"></child>
         </children>
@@ -4319,6 +4913,13 @@ You can't see any such thing.
     <item nodeId="node-1229">
         <command xml:space="preserve">restart</command>
         <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3455">
+        <command xml:space="preserve">put quarters in coin slot</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1230">
@@ -6870,22 +7471,21 @@ You can't see any such thing.
 &gt;[1] e
 
 Hall
-The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East.
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
 
-You can see a Staircase here.
+You can see a Staircase and a muddy brown key here.
 
 &gt;[2] s
 
 Back Entryway
-The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. The hall is to the North, the backyard to the South.
+The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. There is a Toyota key tied to the coat rack. The hall is to the North, the backyard to the South.
 
-You can see the back door and a blue key here.
+You can see the back door, a blue key, a right running shoe and a Toyota key here.
 
-&gt;[3] take key
+&gt;[3] take blue key
 Taken.
 
-&gt;[4] unlock door
-(with the blue key)
+&gt;[4] unlock door with blue key
 You unlock the back door.
 
 &gt;[5] open door
@@ -6904,16 +7504,16 @@ Taken.
 &gt;[8] n
 
 Back Entryway
-The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. The hall is to the North, the backyard to the South.
+The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. There is a Toyota key tied to the coat rack. The hall is to the North, the backyard to the South.
 
-You can see the back door here.
+You can see the back door, a right running shoe and a Toyota key here.
 
 &gt;[9] n
 
 Hall
-The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East.
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
 
-You can see a Staircase here.
+You can see a Staircase and a muddy brown key here.
 
 &gt;[10] e
 
@@ -6929,21 +7529,21 @@ Taken.
 &gt;[13] w
 
 Hall
-The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. (??) The kitchen is to the East.
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
 
-You can see a Staircase here.
+You can see a Staircase and a muddy brown key here.
 
 &gt;[14] d
 
 Basement
 The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
 
-You can see The Tunnel of Extraction here.
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
 
 &gt;[15] w
 
 Abandoned Warehouse
-The warehouse is old and abandoned.It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
 
 You can see The Tunnel of Extraction here.
 
@@ -6982,7 +7582,7 @@ The bear flops onto its full stomach and starts snoring.
 &gt;[23] w
 
 Woods
-There's lots of trees. The edge of the woods is to the east. Going south, you can enter a hunting lodge.
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.
 
 You can see a grizzly bear here.
 
@@ -7001,8 +7601,8 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </result>
         <commentary xml:space="preserve">[1] e
 [2] s
-[3] take key
-[4] unlock door
+[3] take blue key
+[4] unlock door with blue key
 [5] open door
 [6] s
 [7] take stick
@@ -7025,7 +7625,642 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 [24] attack bear
 </commentary>
         <children><child nodeId="node-1328"></child>
+            <child nodeId="node-3154"></child>
         </children>
+    </item>
+    <item nodeId="node-3154">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Woods
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3375"></child>
+            <child nodeId="node-3155"></child>
+        </children>
+    </item>
+    <item nodeId="node-3155">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Too many trees. You'd get lost.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3156"></child>
+        </children>
+    </item>
+    <item nodeId="node-3156">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Hunting Grounds
+Where hunters hunt things, as long as it's the right season. The woods are to the north. You can head into the Hunting Lodge to the south.
+
+You can see the hunting lodge entrance here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3157"></child>
+        </children>
+    </item>
+    <item nodeId="node-3157">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go through the hunting lodge entrance because it's closed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3158"></child>
+        </children>
+    </item>
+    <item nodeId="node-3158">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3159"></child>
+        </children>
+    </item>
+    <item nodeId="node-3159">
+        <command xml:space="preserve">open entrance</command>
+        <result xml:space="preserve">You open the hunting lodge entrance.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3160"></child>
+        </children>
+    </item>
+    <item nodeId="node-3160">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Hunting Lodge
+Where hunters rest or something. One wall is covered in animal heads - a deer, a moose, a lion(!). Kinda creepy, to be honest. The exit is north.
+
+You can see the hunting lodge entrance, a moose head, a deer head, a lion head and a poster here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3161"></child>
+        </children>
+    </item>
+    <item nodeId="node-3161">
+        <command xml:space="preserve">x poster</command>
+        <result xml:space="preserve">A poster reading "Hunting season begins in 5 weeks!"
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3162"></child>
+        </children>
+    </item>
+    <item nodeId="node-3162">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Hunting Grounds
+Where hunters hunt things, as long as it's the right season. The woods are to the north. You can head into the Hunting Lodge to the south.
+
+You can see the hunting lodge entrance here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3163"></child>
+        </children>
+    </item>
+    <item nodeId="node-3163">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.
+
+You can see a grizzly bear here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3164"></child>
+        </children>
+    </item>
+    <item nodeId="node-3164">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Edge of the Woods
+The woods start here and extend to the west. There's a clearing to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3165"></child>
+        </children>
+    </item>
+    <item nodeId="node-3165">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Clearing
+It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3166"></child>
+        </children>
+    </item>
+    <item nodeId="node-3166">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3167"></child>
+        </children>
+    </item>
+    <item nodeId="node-3167">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Town Square
+The Town Square stretches out in front of you. There are 10 or 20 unremarkable buildings that you couldn't care less about. South of you is the Mad Scientist's House. West, a hole in the wall leads into the Abandoned Warehouse. North of here, the town thins out.
+
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3168"></child>
+        </children>
+    </item>
+    <item nodeId="node-3168">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3169"></child>
+        </children>
+    </item>
+    <item nodeId="node-3169">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3170"></child>
+        </children>
+    </item>
+    <item nodeId="node-3170">
+        <command xml:space="preserve">u</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3171"></child>
+        </children>
+    </item>
+    <item nodeId="node-3171">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3172"></child>
+        </children>
+    </item>
+    <item nodeId="node-3172">
+        <command xml:space="preserve">test moose</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] u
+
+upstairs hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase and a left running shoe here.
+
+&gt;[3] w
+
+Study
+Where you study. The hall is east.
+
+On the desk are a dime and a quarter.
+
+You can also see the closet door here.
+
+&gt;[4] get quarter
+Taken.
+
+&gt;[5] n
+
+The Closet
+A small room. The hall is south.
+
+You can see the closet door and a chest of drawers here.
+
+&gt;[6] get quarter
+Taken.
+
+&gt;[7] open second drawer
+You open the second drawer, revealing a quarter.
+
+&gt;[8] get quarter
+Taken.
+
+&gt;[9] s
+
+Study
+Where you study. The hall is east.
+
+On the desk is a dime.
+
+You can also see the closet door here.
+
+&gt;[10] e
+
+upstairs hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase and a left running shoe here.
+
+&gt;[11] d
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[12] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[13] w
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[14] e
+
+Town Square
+The Town Square stretches out in front of you. There are 10 or 20 unremarkable buildings that you couldn't care less about. South of you is the Mad Scientist's House. West, a hole in the wall leads into the Abandoned Warehouse. North of here, the town thins out.
+
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;[15] open entrance
+You open the Mad Scientist's Grand Entrance.
+
+&gt;[16] s
+
+Mad Scientist's house
+A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier.
+
+On the tool shelf are a small tool box (closed) and a bottle of soylent.
+
+You can also see the Mad Scientist's Grand Entrance and a ladder here.
+
+&gt;[17] u
+
+Mad Science Laboratory
+You can see a ladder and a time machine (in which are a red button and a coin slot (closed)) here.
+
+&gt;[18] go into time machine
+You get into the time machine.
+
+In the time machine you can see a red button and a coin slot (closed).
+
+&gt;[19] insert quarter into slot
+You put a quarter in the slot. It makes a satisfying *clink*.
+
+&gt;[20] insert quarter into slot
+You put a quarter in the slot. It makes a satisfying *clink*.
+
+&gt;[21] insert quarter into slot
+You put a quarter in the slot. It makes a satisfying *clink*.
+
+&gt;[22] press button
+You feel yourself pressed back into the seat, and the world swirls around you. The sun sets and rises again many times. And then, suddenly, the world is calm.
+
+&gt;[23] get out
+You get out of the time machine.
+
+Mad Science Laboratory
+You can see a ladder and a time machine (in which are a red button and a coin slot (closed)) here.
+
+&gt;[24] d
+
+Mad Scientist's house
+A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier.
+
+On the tool shelf are a small tool box (closed) and a bottle of soylent.
+
+You can also see a ladder and the Mad Scientist's Grand Entrance here.
+
+&gt;[25] n
+
+Town Square
+The Town Square stretches out in front of you. There are 10 or 20 unremarkable buildings that you couldn't care less about. South of you is the Mad Scientist's House. West, a hole in the wall leads into the Abandoned Warehouse. North of here, the town thins out.
+
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;[26] w
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[27] w
+
+Clearing
+It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north.
+
+&gt;[28] w
+
+Edge of the Woods
+The woods start here and extend to the west. There's a clearing to the east.
+
+&gt;[29] w
+
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.
+
+You can see a grizzly bear here.
+
+&gt;[30] s
+
+Hunting Grounds
+Where hunters hunt things, as long as it's the right season. The woods are to the north. You can head into the Hunting Lodge to the south.
+
+You can see the hunting lodge entrance here.
+
+&gt;[31] open entrance
+That's already open.
+
+&gt;[32] s
+
+Hunting Lodge
+Where hunters rest or something. One wall is covered in animal heads - a deer, a moose, a lion(!). Kinda creepy, to be honest. The exit is north.
+
+You can see the hunting lodge entrance, a moose head, a deer head, a lion head and a poster here.
+
+&gt;[33] get moose head
+Taken.
+
+&gt;[34] wear moose head
+You put on the moose head.
+
+&gt;[35] n
+Wow, you nearly fell over. Walking while wearing a taxidermied moose head is hard. Maybe try that again?
+
+&gt;[36] n
+You go into the hunting grounds, foolishly forgetting that there is a moose head atop your own. The hunters waste no time before shooting you.. at least you got a quick death.
+You've reached one of this game's 14 endings! In that game you used 75 moves. The optimal number of moves is 36.
+You can reach this ending more quickly!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] u
+[3] w
+[4] get quarter
+[5] n
+[6] get quarter
+[7] open second drawer
+[8] get quarter
+[9] s
+[10] e
+[11] d
+[12] d
+[13] w
+[14] e
+[15] open entrance
+[16] s
+[17] u
+[18] go into time machine
+[19] insert quarter into slot
+[20] insert quarter into slot
+[21] insert quarter into slot
+[22] press button
+[23] get out
+[24] d
+[25] n
+[26] w
+[27] w
+[28] w
+[29] w
+[30] s
+[31] open entrance
+[32] s
+[33] get moose head
+[34] wear moose head
+[35] n
+[36] n
+</commentary>
+        <children><child nodeId="node-3209"></child>
+        </children>
+    </item>
+    <item nodeId="node-3209">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Hunting Lodge
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3210"></child>
+        </children>
+    </item>
+    <item nodeId="node-3210">
+        <command xml:space="preserve">x poster</command>
+        <result xml:space="preserve">A poster reading "Hunting Season is Now""
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3375">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Edge of the Woods
+[Previous turn undone.]
+
+&gt;[24] attack bear
+You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3376"></child>
+        </children>
+    </item>
+    <item nodeId="node-3376">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Edge of the Woods
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3377"></child>
+        </children>
+    </item>
+    <item nodeId="node-3377">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Edge of the Woods
+[Previous turn undone.]
+
+&gt;[23] w
+You're too scared of the bear to go there.
+
+The bear flops onto its full stomach and starts snoring.
+
+&gt;[24] attack bear
+You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3378"></child>
+        </children>
+    </item>
+    <item nodeId="node-3378">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Edge of the Woods
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3379"></child>
+        </children>
+    </item>
+    <item nodeId="node-3379">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Edge of the Woods
+[Previous turn undone.]
+
+&gt;[24] attack bear
+You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3380"></child>
+        </children>
+    </item>
+    <item nodeId="node-3380">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Edge of the Woods
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3381"></child>
+        </children>
+    </item>
+    <item nodeId="node-3381">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Edge of the Woods
+[Previous turn undone.]
+
+&gt;[22] z
+Time passes.
+
+The bear rubs its belly sleepily. Maybe it'll fall asleep soon.
+
+&gt;[23] w
+You're too scared of the bear to go there.
+
+The bear flops onto its full stomach and starts snoring.
+
+&gt;[24] attack bear
+You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3382"></child>
+        </children>
+    </item>
+    <item nodeId="node-3382">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Edge of the Woods
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3383"></child>
+        </children>
+    </item>
+    <item nodeId="node-3383">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.
+
+You can see a grizzly bear here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3384"></child>
+        </children>
+    </item>
+    <item nodeId="node-3384">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">Too many trees. You'd get lost.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3385"></child>
+        </children>
+    </item>
+    <item nodeId="node-3385">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Edge of the Woods
+The woods start here and extend to the west. There's a clearing to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3386"></child>
+        </children>
+    </item>
+    <item nodeId="node-3386">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Clearing
+It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3387"></child>
+        </children>
+    </item>
+    <item nodeId="node-3387">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Edge of the Woods
+The woods start here and extend to the west. There's a clearing to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1328">
         <command xml:space="preserve">i</command>
@@ -9467,6 +10702,267 @@ On the desk are a dime and a quarter.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
+    <item nodeId="node-3388">
+        <command xml:space="preserve">e / s / take blue key / unlock door with blue key / open door / s / take stick / n / n / e / open fridge / take fish / w / d / w / w / w / w</command>
+        <result xml:space="preserve">I only understood you as far as wanting to (go) e.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3389"></child>
+        </children>
+    </item>
+    <item nodeId="node-3389">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go through the Side Door because it's closed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3390"></child>
+        </children>
+    </item>
+    <item nodeId="node-3390">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3391"></child>
+        </children>
+    </item>
+    <item nodeId="node-3391">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Back Entryway
+The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. There is a Toyota key tied to the coat rack. The hall is to the North, the backyard to the South.
+
+You can see the back door, a blue key, a right running shoe and a Toyota key here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3392"></child>
+        </children>
+    </item>
+    <item nodeId="node-3392">
+        <command xml:space="preserve">take blue key</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3393"></child>
+        </children>
+    </item>
+    <item nodeId="node-3393">
+        <command xml:space="preserve">unlock door with blue key</command>
+        <result xml:space="preserve">You unlock the back door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3394"></child>
+        </children>
+    </item>
+    <item nodeId="node-3394">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">You open the back door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3395"></child>
+        </children>
+    </item>
+    <item nodeId="node-3395">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Backyard
+Your backyard is so well-manicured that all it contains is grass and a stick. Your house is to the north.
+
+You can see the back door and a stick here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3396"></child>
+        </children>
+    </item>
+    <item nodeId="node-3396">
+        <command xml:space="preserve">tkae stick</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3397"></child>
+        </children>
+    </item>
+    <item nodeId="node-3397">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Back Entryway
+The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. There is a Toyota key tied to the coat rack. The hall is to the North, the backyard to the South.
+
+You can see the back door, a right running shoe and a Toyota key here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3398"></child>
+        </children>
+    </item>
+    <item nodeId="node-3398">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Backyard
+Your backyard is so well-manicured that all it contains is grass and a stick. Your house is to the north.
+
+You can see the back door and a stick here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3399"></child>
+        </children>
+    </item>
+    <item nodeId="node-3399">
+        <command xml:space="preserve">take stick</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3400"></child>
+        </children>
+    </item>
+    <item nodeId="node-3400">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Back Entryway
+The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. There is a Toyota key tied to the coat rack. The hall is to the North, the backyard to the South.
+
+You can see the back door, a right running shoe and a Toyota key here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3401"></child>
+        </children>
+    </item>
+    <item nodeId="node-3401">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3402"></child>
+        </children>
+    </item>
+    <item nodeId="node-3402">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3403"></child>
+        </children>
+    </item>
+    <item nodeId="node-3403">
+        <command xml:space="preserve">open fridge</command>
+        <result xml:space="preserve">You open the refrigerator, revealing a fish and a pie.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3404"></child>
+        </children>
+    </item>
+    <item nodeId="node-3404">
+        <command xml:space="preserve">get fish</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3405"></child>
+        </children>
+    </item>
+    <item nodeId="node-3405">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3406"></child>
+        </children>
+    </item>
+    <item nodeId="node-3406">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3407"></child>
+        </children>
+    </item>
+    <item nodeId="node-3407">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3408"></child>
+        </children>
+    </item>
+    <item nodeId="node-3408">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Clearing
+It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3409"></child>
+        </children>
+    </item>
+    <item nodeId="node-3409">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Edge of the Woods
+The woods start here and extend to the west. There's a clearing to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3410"></child>
+        </children>
+    </item>
+    <item nodeId="node-3410">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">As you walk into the woods, a large grizzly bear shows up, baring (bear-ing?) its teeth at you. You hastily take three steps back.
+The bear seems to be guarding the entrance to the woods. Seems like it would be awfully difficult to get through here unless the bear were somehow distracted. With food, maybe?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3411"></child>
+        </children>
+    </item>
+    <item nodeId="node-3411">
+        <command xml:space="preserve">throw fish to bear</command>
+        <result xml:space="preserve">You throw the fish to the west. The bear looks at the fish curiously.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1523">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
@@ -9970,10 +11466,10 @@ You can see a Staircase and a muddy brown key here.
     <item nodeId="node-1567">
         <command xml:space="preserve">u</command>
         <result xml:space="preserve">
-Upstairs Hall
+upstairs hall
 The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
 
-You can see a Staircase here.
+You can see a Staircase and a left running shoe here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -10253,7 +11749,25 @@ You can see the closet door and a chest of drawers here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1594"></child>
+            <child nodeId="node-3541"></child>
         </children>
+    </item>
+    <item nodeId="node-3541">
+        <command xml:space="preserve">get quarters</command>
+        <result xml:space="preserve">quarter: One thing at a time!
+quarter: One thing at a time!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3542"></child>
+        </children>
+    </item>
+    <item nodeId="node-3542">
+        <command xml:space="preserve">get quarter</command>
+        <result xml:space="preserve">You're being greedy. Pick up one quarter at a time.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1594">
         <command xml:space="preserve">get quarter</command>
