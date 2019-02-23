@@ -244,9 +244,9 @@ The fish and the pie are edible.
 The stool is an enterable portable supporter in the kitchen. The description is "It's a stool that you can stand on."
 
 
-South of the Hall is the Back Entryway. There is a blue key in the back entryway. There is a locked door called the back door. The back door is south of the back entryway. The blue key unlocks the back door. The description of the back entryway is "The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. [if the car key is tied]There is a car key tied to the coat rack. [end if]The hall is to the North, the backyard to the South." The coat rack and the trash can are scenery in the back entryway. There is a right running shoe in the back entryway. There is a left running shoe in the upstairs hall.
+South of the Hall is the Back Entryway. There is a blue key in the back entryway. There is a locked door called the back door. The back door is south of the back entryway. The blue key unlocks the back door. The description of the back entryway is "The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. [if the Toyota key is tied]There is a Toyota key tied to the coat rack. [end if]The hall is to the North, the backyard to the South." The coat rack and the trash can are scenery in the back entryway. There is a right running shoe in the back entryway. There is a left running shoe in the upstairs hall.
 
-The car key is in the back entryway. The car key can be tied. The car key is tied.
+The Toyota key is in the back entryway. The Toyota key can be tied. The Toyota key is tied.
 untieing is an action applying to one visible thing.
 Understand "untie [something]" as untieing.
 Carry out untieing:
@@ -257,12 +257,12 @@ Instead of untieing the work shoes:
 Instead of untieing the running shoes:
 	say "You untie the running shoes.";
 	now the running shoes are not laced.
-Instead of untieing the car key:
-	say "You untie the car key, but in your clumsiness it falls to the floor.";
-	now the car key is not tied.
-Before taking the car key:
-	if the car key is tied:
-		say "The car key is tied to the coat rack; you should untie it before you take it.";
+Instead of untieing the Toyota key:
+	say "You untie the Toyota key, but in your clumsiness it falls to the floor.";
+	now the Toyota key is not tied.
+Before taking the Toyota key:
+	if the Toyota key is tied:
+		say "The Toyota key is tied to the coat rack; you should untie it before you take it.";
 		stop the action
 
 The pair of running shoes is a wearable thing. The pair of running shoes is nowhere.
@@ -513,9 +513,33 @@ Instead of taking or pulling the fork when the fork is stuck:
 	say "You try to pull the fork out of the road, but it's pretty stuck. Your hand slips off the fork just as you feel it has dislodged slightly from the road.";
 	now the fork is not stuck.
 
-West of Further Along the Road is the Parking Lot. The description of Parking Lot is "Where cars park, except there aren't any cars today. The road is to the east." [TODO: the player's car]
+West of Further Along the Road is the Parking Lot. The description of Parking Lot is "Where cars park[if the car is in the lot]. You see your boxy blue-gray Toyota in the corner of the lot.[else], except there aren't any today.[end if] The road is to the east." The blue car is a vehicle in the parking lot. The description of the blue car is "It's your car. Bluish-gray paint, steering wheel, headlights. All that.".  The blue car can be started. The blue car is closed. The blue car is openable. The blue car is transparent. the blue car can be ready. The blue car is not ready.
 
-test car with "e / s / untie car key / get car key / n / d / w / n / n / n / e / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button  / press button / press button / w / s / w"
+Before opening the blue car:
+	if the player does not have the Toyota key:
+		say "You can't do that without the key.";
+		stop the action.
+	
+understand "car door" as the car.
+
+Before going when the player is in the car:
+	if the car is open:
+		say "That would be unsafe. You should close the car door.";
+		stop the action.
+		
+understand "car key" as the Toyota key.
+
+test car with "e / s / untie Toyota key / get Toyota key / n / d / w / n / n / n / e / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button  / press button / press button / w / s / w / open car / get in car / close car / e / n / n"
+
+Instead of going to the abandoned train station when the player is in the car and the train is ready and the car is not ready:
+	say "The boom gates are closing, it looks like a train is coming. You probably shouldn't go to the train station right now.";
+	now the car is ready.
+Instead of going to the abandoned train station when the player is in the car and the train is ready and the car is ready:
+	say "The boom gates are closing, it looks like a train is coming. You drive around them and toward the train station. As you go past them, a train comes and runs you over. That was really dumb.";
+	conclude with 39.
+
+understand "drive around boom gates" as a mistake ("I don't understand those words. Maybe you want to go toward wherever the boom gates are.").
+understand "drive around the boom gates" as a mistake ("I don't understand those words. Maybe you want to go toward wherever the boom gates are.").
 
 Section 3 - Trains
 

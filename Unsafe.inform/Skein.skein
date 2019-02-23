@@ -32,7 +32,8 @@ It's your bedroom. It's not very interesting. The hall is to the east.
 You can see the Side Door here.
 
 &gt;</commentary>
-        <children><child nodeId="node-1523"></child>
+        <children><child nodeId="node-2914"></child>
+            <child nodeId="node-1523"></child>
             <child nodeId="node-1517"></child>
             <child nodeId="node-1492"></child>
             <child nodeId="node-1432"></child>
@@ -5824,14 +5825,14 @@ You can see a Staircase and a muddy brown key here.
 &gt;[2] s
 
 Back Entryway
-The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. There is a car key tied to the coat rack. The hall is to the North, the backyard to the South.
+The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. There is a Toyota key tied to the coat rack. The hall is to the North, the backyard to the South.
 
-You can see the back door, a blue key, a right running shoe and a car key here.
+You can see the back door, a blue key, a right running shoe and a Toyota key here.
 
-&gt;[3] untie car key
-You untie the car key, but in your clumsiness it falls to the floor.
+&gt;[3] untie toyota key
+You untie the Toyota key, but in your clumsiness it falls to the floor.
 
-&gt;[4] get car key
+&gt;[4] get toyota key
 Taken.
 
 &gt;[5] n
@@ -5944,14 +5945,47 @@ No trains.
 Further Along the Road
 More road! There's a fork in the road here. The main road goes North and South. To the West there's a parking lot.
 
-&gt;[33] e
-You can't go that way.
+&gt;[33] w
 
-&gt;</result>
+Parking Lot
+Where cars park. You see your boxy blue-gray Toyota in the corner of the lot. The road is to the east.
+
+You can see a blue car (closed and empty) here.
+
+&gt;[34] open car
+You open the blue car.
+
+&gt;[35] get in car
+You get into the blue car.
+
+&gt;[36] close car
+You close the blue car.
+
+&gt;[37] e
+
+Further Along the Road (in the blue car)
+More road! There's a fork in the road here. The main road goes North and South. To the West there's a parking lot.
+
+&gt;[38] n
+The boom gates are closing, it looks like a train is coming. You probably shouldn't go to the train station right now.
+
+&gt;[39] n
+The boom gates are closing, it looks like a train is coming. You drive around them and toward the train station. As you go past them, a train comes and runs you over. That was really dumb.
+You've reached one of this game's 14 endings! In that game you used 39 moves. The optimal number of moves is 39.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
         <commentary xml:space="preserve">[1] e
 [2] s
-[3] untie car key
-[4] get car key
+[3] untie toyota key
+[4] get toyota key
 [5] n
 [6] d
 [7] w
@@ -5980,9 +6014,18 @@ You can't go that way.
 [30] press button
 [31] w
 [32] s
-[33] e
+[33] w
+[34] open car
+[35] get in car
+[36] close car
+[37] e
+[38] n
+[39] n
 </commentary>
-        <children><child nodeId="node-2599"></child>
+        <children><child nodeId="node-2865"></child>
+            <child nodeId="node-2634"></child>
+            <child nodeId="node-3037"></child>
+            <child nodeId="node-2599"></child>
         </children>
     </item>
     <item nodeId="node-2599">
@@ -5990,6 +6033,221 @@ You can't go that way.
         <result xml:space="preserve">
 Parking Lot
 Where cars park, except there aren't any cars today. The road is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3037">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Further Along the Road
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3038"></child>
+        </children>
+    </item>
+    <item nodeId="node-3038">
+        <command xml:space="preserve">drive around boom gates</command>
+        <result xml:space="preserve">try going north
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2634">
+        <command xml:space="preserve">open car</command>
+        <result xml:space="preserve">You open the blue car.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2789"></child>
+            <child nodeId="node-2635"></child>
+        </children>
+    </item>
+    <item nodeId="node-2635">
+        <command xml:space="preserve">open your car</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2708"></child>
+        </children>
+    </item>
+    <item nodeId="node-2708">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a car key
+  pants (being worn)
+  underwear (being worn)
+  socks (being worn)
+  a shirt (being worn)
+  work shoes (being worn)
+  a belt (being worn)
+  a hat (being worn)
+  a jacket (being worn)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2709"></child>
+        </children>
+    </item>
+    <item nodeId="node-2709">
+        <command xml:space="preserve">open car</command>
+        <result xml:space="preserve">(the car key)
+That's already open.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2710"></child>
+        </children>
+    </item>
+    <item nodeId="node-2710">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">Parking Lot
+Where cars park. You see your boxy blue-gray car in the corner of the lot. The road is to the east.
+
+You can see a blue car (empty) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2711"></child>
+        </children>
+    </item>
+    <item nodeId="node-2711">
+        <command xml:space="preserve">get in car</command>
+        <result xml:space="preserve">(the car key)
+That's not something you can enter.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2712"></child>
+        </children>
+    </item>
+    <item nodeId="node-2712">
+        <command xml:space="preserve">showme car</command>
+        <result xml:space="preserve">(the car key)
+car key - thing
+location: carried by yourself in the Parking Lot
+singular-named, improper-named; unlit, inedible, portable, handled, tub-relevant; list grouping key: none
+printed name: "car key"
+printed plural name: none
+indefinite article: none
+description: none
+initial appearance: none
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2789">
+        <command xml:space="preserve">get in car</command>
+        <result xml:space="preserve">You get into the blue car.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2790"></child>
+        </children>
+    </item>
+    <item nodeId="node-2790">
+        <command xml:space="preserve">get in blue car</command>
+        <result xml:space="preserve">But you're already in the blue car.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2828"></child>
+        </children>
+    </item>
+    <item nodeId="node-2828">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Further Along the Road (in the blue car)
+More road! There's a fork in the road here. The main road goes North and South. To the West there's a parking lot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2829"></child>
+        </children>
+    </item>
+    <item nodeId="node-2829">
+        <command xml:space="preserve">x car</command>
+        <result xml:space="preserve">It's your car. Bluish-gray paint, steering wheel, headlights. All that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2830"></child>
+        </children>
+    </item>
+    <item nodeId="node-2830">
+        <command xml:space="preserve">close car</command>
+        <result xml:space="preserve">You close the blue car.
+
+It is now pitch dark in here!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2865">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2866"></child>
+        </children>
+    </item>
+    <item nodeId="node-2866">
+        <command xml:space="preserve">open car</command>
+        <result xml:space="preserve">You open the blue car.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2867"></child>
+        </children>
+    </item>
+    <item nodeId="node-2867">
+        <command xml:space="preserve">enter car</command>
+        <result xml:space="preserve">You get into the blue car.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2868"></child>
+        </children>
+    </item>
+    <item nodeId="node-2868">
+        <command xml:space="preserve">q</command>
+        <result xml:space="preserve">Are you sure you want to quit? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2869"></child>
+        </children>
+    </item>
+    <item nodeId="node-2869">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2870"></child>
+        </children>
+    </item>
+    <item nodeId="node-2870">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">That would be unsafe. You should close the door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2871"></child>
+        </children>
+    </item>
+    <item nodeId="node-2871">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">That would be unsafe. You should close the door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2913"></child>
+        </children>
+    </item>
+    <item nodeId="node-2913">
+        <command xml:space="preserve">close door</command>
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -12122,6 +12380,13 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
         <command xml:space="preserve">take fish and stool</command>
         <result xml:space="preserve">fish: One thing at a time!
 stool: One thing at a time!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2914">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
