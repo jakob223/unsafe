@@ -77,7 +77,7 @@ Instead of dumping the bucket:
 		now the piranha-infested water is nowhere; 
 	else if the player is in the house:
 		say "That doesn't really seem like a good idea here.";
-	else if the rocket fuel is in the bucket:
+	else if the rocket fuel	 is in the bucket:
 		if the player is in the launch pad:
 			try inserting the fuel into the spaceship;
 		else:
@@ -356,7 +356,7 @@ Below the Hall is the Basement. There is a door called The Tunnel of Extraction.
 
 The description of the Basement is "The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west."
 
-A vat is in the basement. The vat is a closed openable fixed in place container. There is rocket fuel in the vat. The description of the vat is "A large vat holding a greenish liquid. Who knows how long it's been here?"
+A vat is in the basement. The vat is a closed openable fixed in place container. There is rocket fuel in the vat. The rocket fuel is a liquid. The description of the vat is "A large vat holding a greenish liquid. Who knows how long it's been here?"
 A bucketful of rocket fuel is a liquid. The bucketful is nowhere.
 Instead of opening the vat:
 	say "You lift the large plastic lid off of the vat, revealing the pungent rocket fuel beneath.";

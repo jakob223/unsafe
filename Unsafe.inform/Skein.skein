@@ -12,7 +12,9 @@ An Interactive Fiction by Brian Chen and Jakob Weisblat
 Release 1 / Serial number 190223 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Bedroom
-It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. You're lying in your bed, just having woken up.
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up.
 
 On the nightstand is an iPod.
 
@@ -10973,7 +10975,8 @@ You can see a Staircase and a muddy brown key here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1728"></child>
+        <children><child nodeId="node-3544"></child>
+            <child nodeId="node-1728"></child>
             <child nodeId="node-1690"></child>
             <child nodeId="node-1687"></child>
             <child nodeId="node-1681"></child>
@@ -13897,6 +13900,278 @@ stool: One thing at a time!
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3544">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3545"></child>
+        </children>
+    </item>
+    <item nodeId="node-3545">
+        <command xml:space="preserve">open vat</command>
+        <result xml:space="preserve">You lift the large plastic lid off of the vat, revealing the pungent rocket fuel beneath.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3546"></child>
+        </children>
+    </item>
+    <item nodeId="node-3546">
+        <command xml:space="preserve">take fuel</command>
+        <result xml:space="preserve">You try to pick up rocket fuel but it slips through your fingers.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3547"></child>
+        </children>
+    </item>
+    <item nodeId="node-3547">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  pants (being worn)
+  underwear (being worn)
+  socks (being worn)
+  a shirt (being worn)
+  work shoes (being worn)
+  a belt (being worn)
+  a hat (being worn)
+  a jacket (being worn)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3553"></child>
+        </children>
+    </item>
+    <item nodeId="node-3553">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3554"></child>
+        </children>
+    </item>
+    <item nodeId="node-3554">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">Please answer yes or no.&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3555"></child>
+        </children>
+    </item>
+    <item nodeId="node-3555">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 1 / Serial number 190223 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3556"></child>
+        </children>
+    </item>
+    <item nodeId="node-3556">
+        <command xml:space="preserve">test space</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] e
+
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;[3] get stool
+Taken.
+
+&gt;[4] w
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[5] w
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+On the nightstand is an iPod.
+
+&gt;[6] open door
+You open the Side Door.
+
+&gt;[7] w
+
+The Garden
+You can see the Shed (closed) here.
+
+&gt;[8] put down stool
+Dropped.
+
+&gt;[9] get on stool
+You get onto the stool.
+
+&gt;[10] get bucket
+Taken.
+
+&gt;[11] e
+(first getting off the stool)
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (open) leads out of the house to the West. 
+
+On the nightstand is an iPod.
+
+&gt;[12] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[13] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[14] open vat
+You lift the large plastic lid off of the vat, revealing the pungent rocket fuel beneath.
+
+&gt;[15] dip bucket in vat
+You dip the bucket in the vat of rocket fuel and come out with a fair amount. This stuff is lighter than it looks!
+
+&gt;[16] w
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[17] n
+
+Road
+It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west.
+
+&gt;[18] e
+
+Outskirts of Town
+There's less town here than elsewhere. The garden is east. The space center is north. The road is west.
+
+&gt;[19] n
+
+Space Center
+Your friendly neighborhood space center. They build rockets and stuff. The outskirts of town are South, the launch pad is North.
+
+&gt;[20] n
+
+Launch Pad
+The place where rockets take off from. The rest of the Space Center is South.
+
+You can see a spaceship (closed) here.
+
+&gt;[21] put fuel in ship
+You pour the rocket fuel into the ship's fuel hatch, closing the hatch when you are done.
+As if in a gesture of thanks, the computer opens the door to the spaceship for you.
+
+&gt;[22] get in ship
+You get into the spaceship.
+
+In the spaceship you can see an ON button, a LAUNCH button, a spacesuit and a helmet.
+
+&gt;[23] close door
+You close the spaceship.
+
+&gt;[24] press on
+You press the ON button. All around you dials spin and lights blink.
+
+&gt;[25] press launch
+The computer counts down: "3... 2... 1... LAUNCHING". 
+
+ The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. 
+
+The computer says "This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."
+
+&gt;[26] say suit up
+(to the computer)
+The spaceship's machinery puts a space suit on you faster than you could possibly have done it yourself.
+
+The spaceship has reached space. It's full of stars! It's the most beautiful thing you've ever seen! Now what?
+
+&gt;[27] open door
+You open the spaceship.
+
+&gt;[28] get out
+You get out of the spaceship.
+
+outer space
+You can see a spaceship (in which are an ON button and a LAUNCH button) here.
+
+&gt;[29] take off helmet
+You see space, with your own eyes. It's stunningly beautiful. Then your head explodes.
+You've reached one of this game's 14 endings! In that game you used 29 moves. The optimal number of moves is 29.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] e
+[3] get stool
+[4] w
+[5] w
+[6] open door
+[7] w
+[8] put down stool
+[9] get on stool
+[10] get bucket
+[11] e
+[12] e
+[13] d
+[14] open vat
+[15] dip bucket in vat
+[16] w
+[17] n
+[18] e
+[19] n
+[20] n
+[21] put fuel in ship
+[22] get in ship
+[23] close door
+[24] press on
+[25] press launch
+[26] say suit up
+[27] open door
+[28] get out
+[29] take off helmet
+</commentary>
+        <children></children>
     </item>
     <item nodeId="node-2914">
         <command xml:space="preserve"></command>
