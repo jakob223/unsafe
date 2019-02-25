@@ -115,6 +115,8 @@ Instead of using the car:
 		say "Try going in a direction.";
 	else:
 		try entering the car.
+Instead of using the hair gel:
+	try wearing the hair gel.
 
 Part 2 - House
 
@@ -154,6 +156,8 @@ Instead of eating the loaf:
 		say "You take a slice off of the loaf of bread and eat it. It tastes delicious! Probably even better toasted though.";
 
 A slice of bread is a kind of edible thing. A slice of bread can be toasted. The description of a slice of bread is "[if toasted]A piece of toast - scrumptious![else]A slice of bread.[end if]".
+
+Understand "use fork on toaster" as a mistake ("Try the verb INSERT.").
 
 Instead of inserting something into the toaster:
 	If the noun is the fork and the toaster is plugged in and the toaster is done:		
@@ -695,7 +699,7 @@ The hole is scenery in the warehouse. The description of the hole is "A hole in 
 South of the Abandoned Warehouse is a room called A Spooky Lair. 
 The description of the lair is "A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it."
 The table is scenery in the Spooky lair. The table is a supporter. There is a candle on the table. The candle is lit. A sacrificial knife is on the table. The description of the sacrificial knife is "A knife that looks like it might be used in a demonic ritual - or, you know, for cutting stuff".
-A snake is a kind of animal. There is a snake named Alice in the lair. There is a snake named Bob in the lair. There is a snake named Charlie in the lair. There is a snake named David in the lair.
+A snake is a kind of animal. A snake is usually privately-named. There is a snake called Alice. There is a snake called Bob. There is a snake called Charlie. There is a snake called David. Alice, Bob, Charlie, and David are in the lair.
 
 Instead of taking or touching the candle when the player is wearing a dollop of hair gel:
 	say "You touch the candle. The flame leaps onto your hair. Boom!";
