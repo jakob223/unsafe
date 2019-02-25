@@ -501,6 +501,12 @@
     #minibox8_1 {
      background: #111111;
      }
+    #box9_1 {
+     background: #cf0a38;
+     }
+    #minibox9_1 {
+     background: #cf0a38;
+     }
 
     ul.leaders {
         padding: 0;
@@ -575,8 +581,6 @@
         } else {
             var x = 0;
             if (document.getElementById('segment1').style.display == '') { x++; }
-            if (document.getElementById('segment2').style.display == '') { x++; }
-            if (document.getElementById('segment3').style.display == '') { x++; }
             if (x == 1) { show_all_elements(); }
             else { show_only_one_element(id); }
         }
@@ -591,28 +595,16 @@
     function show_all_elements() {
         show_element('segment1');
         light_up('segment1');
-        show_element('segment2');
-        light_up('segment2');
-        show_element('segment3');
-        light_up('segment3');
     	}
     function show_only_one_element(id) {
         hide_element('segment1');
         light_down('segment1');
-        hide_element('segment2');
-        light_down('segment2');
-        hide_element('segment3');
-        light_down('segment3');
         show_element(id);
         light_up(id);
     }
     function enter_periodic_table() {
         hide_element('segment1');
         light_up('segment1');
-        hide_element('segment2');
-        light_up('segment2');
-        hide_element('segment3');
-        light_up('segment3');
     }
     function show_element(id) {
         document.getElementById(id).style.display = '';
@@ -621,15 +613,11 @@
         document.getElementById(id).style.display = 'none';
     }
     function light_up(id) {
-        var ic = 'box6_1';
-        if (id == 'segment2') { ic = 'box6_2';}
-        if (id == 'segment3') { ic = 'box6_3';}
-        document.getElementById(ic).style.background = '#001860';
+        var ic = 'box9_1';
+        document.getElementById(ic).style.background = '#cf0a38';
     }
     function light_down(id) {
-        var ic = 'box6_1';
-        if (id == 'segment2') { ic = 'box6_2';}
-        if (id == 'segment3') { ic = 'box6_3';}
+        var ic = 'box9_1';
         document.getElementById(ic).style.background = '#cccccc';
     }
     </script>
@@ -638,74 +626,24 @@
     <script language="JavaScript">function pasteCode(code) { var myProject = project(); myProject.selectView('source'); myProject.pasteCode(code); }</script>
     <font face="lucida grande,geneva,arial,tahoma,verdana,helvetica,helv" size=2>
     <!--CONTENT BEGINS-->
-    <div id="periodictable">
-    <table cellspacing="3" border="0" width="100%">
-    <tr id="surround6"><td onclick="window.location='Welcome.html'; return false;"><div class="sidebar"></div></td><td onclick="click_element_box('segment1'); return false;"><div id="box6_1" class="box">
-    <a class="symbol" title="Plot" href="#">Pl</a>
-    <div class="indexno">1</div>
-    <div class="rubric">Plot</div>
-    </div>
-    </td><td onclick="click_element_box('segment2'); return false;"><div id="box6_2" class="box">
-    <a class="symbol" title="Events" href="#">Ev</a>
-    <div class="indexno">2</div>
-    <div class="rubric">Events</div>
-    </div>
-    </td><td onclick="click_element_box('segment3'); return false;"><div id="box6_3" class="box">
-    <a class="symbol" title="Rules" href="#">RS</a>
-    <div class="indexno">3</div>
-    <div class="rubric">Rules</div>
-    </div>
-    </td><td onclick="show_all_elements(); return false;" colspan="3" style="width:100%">
-    <div class="headingbox">
-    	<div class="headingtext">Scenes Index</div>
-    	<div class="headingrubric">Like scenes in a movie</div>
-    </div></td>
-    </tr></table></div><div id="segment1">
-    <hr><table cellspacing="3" border="0" style="background:#eeeeee;"><tr>
+    <table cellspacing="3" border="0" style="background:#eeeeee;"><tr>
     <td valign="top" align="left">
-    <div id="minibox6_1" class="smallbox">
-    <a class="symbol" title="Plot" href="#" onclick="click_element_box('segment1'); return false;">Pl</a>
+    <div id="minibox9_1" class="smallbox">
+    <a class="symbol" title="Details" href="../Actions.html">^</a>
     <div class="indexno">1</div>
     </div>
     </td>
     <td style="width:100%;" align="left" valign="top">
-    <p style="margin-top:0px;padding-top:0px;margin-bottom:0px;padding-bottom:0px;line-height:150%;"><b>Plot</b> &mdash; 
-    A map of how the scenes begin and end<br><i>About scenes&nbsp;&nbsp;<a href=inform:/doc150.html><img border=0 src=inform:/doc_images/help.png></a>; How they link together&nbsp;&nbsp;<a href=inform:/doc154.html><img border=0 src=inform:/doc_images/help.png></a></i></p>
+    <p style="margin-top:0px;padding-top:0px;margin-bottom:0px;padding-bottom:0px;line-height:150%;"><b>Details</b> &mdash; 
+    A single action in detail.<br><i>About the action rulebooks&nbsp;&nbsp;<a href=inform:/doc178.html><img border=0 src=inform:/doc_images/help.png></a></i></p>
     </td>
     </tr></table>
-    <p class="tightin1"><img border=0 src=inform:/scene_icons/WPB.png>&nbsp;&nbsp;Entire Game&nbsp;<a href=#A0><img border=0 src=inform:/doc_images/Below.tif></a>&nbsp;&nbsp;<img border=0 src=inform:/scene_icons/Recurring.png></p><p>Legend: <img border=0 src=inform:/scene_icons/WPB.png>&nbsp;<i>Begins when play begins</i>; <img border=0 src=inform:/scene_icons/WhenC.png>&nbsp;<i>can begin whenever some condition holds</i>; <img border=0 src=inform:/scene_icons/Segue.png>&nbsp;<i>follows when a previous scene ends</i>; <img border=0 src=inform:/scene_icons/Simul.png>&nbsp;<i>begins simultaneously</i>; <img border=0 src=inform:/scene_icons/WNever.png>&nbsp;<i>never begins</i>; <img border=0 src=inform:/scene_icons/ENever.png>&nbsp;<i>never ends</i>; <img border=0 src=inform:/scene_icons/Recurring.png>&nbsp;<i>recurring (can happen more than once)</i>. <i>Scene names are italicised when and if they appear for a second or subsequent time because the scene can begin in more than one way</i>.</p><a name=SDETAILS></a><hr><p class="hangingin1"><a name=A0></a><b>The <i>Entire Game</i> scene</b>&nbsp;&nbsp;<i>recurring</i></p><p class="tightin1">The Entire Game scene is built-in. It is going on whenever play is going on. (It is recurring so that if the story ends, but then resumes, it too will end but then begin again.)</p><p class="hangingin1"><i>Begins when:</i> the story has not ended</p><p class="hangingin1"><i>Ends when:</i> the story has ended</p></div>
-    <div id="segment2">
-    <hr><table cellspacing="3" border="0" style="background:#eeeeee;"><tr>
-    <td valign="top" align="left">
-    <div id="minibox6_2" class="smallbox">
-    <a class="symbol" title="Events" href="#" onclick="click_element_box('segment2'); return false;">Ev</a>
-    <div class="indexno">2</div>
-    </div>
-    </td>
-    <td style="width:100%;" align="left" valign="top">
-    <p style="margin-top:0px;padding-top:0px;margin-bottom:0px;padding-bottom:0px;line-height:150%;"><b>Events</b> &mdash; 
-    Timed events, if any<br><i>About timed events&nbsp;&nbsp;<a href=inform:/doc145.html><img border=0 src=inform:/doc_images/help.png></a></i></p>
-    </td>
-    </tr></table>
-    <p><i>Events with no specific time</i></p><p class="tightin2">At the time when the song ends&nbsp;<a href="source:story.ni#line216"><img border=0 src=inform:/doc_images/Reveal.tif></a> (where triggered: &nbsp;<a href="source:story.ni#line212"><img border=0 src=inform:/doc_images/Reveal.tif></a>)</p><p class="tightin2">At the time when the toaster beeps&nbsp;<a href="source:story.ni#line265"><img border=0 src=inform:/doc_images/Reveal.tif></a> (where triggered: &nbsp;<a href="source:story.ni#line262"><img border=0 src=inform:/doc_images/Reveal.tif></a>)</p><p class="tightin2">At the time when autopilot engages&nbsp;<a href="source:story.ni#line520"><img border=0 src=inform:/doc_images/Reveal.tif></a> (where triggered: &nbsp;<a href="source:story.ni#line505"><img border=0 src=inform:/doc_images/Reveal.tif></a>)</p><p class="tightin2">At the time when the autopilot takes over&nbsp;<a href="source:story.ni#line527"><img border=0 src=inform:/doc_images/Reveal.tif></a> (where triggered: &nbsp;<a href="source:story.ni#line523"><img border=0 src=inform:/doc_images/Reveal.tif></a>)</p><p class="tightin2">At the time when the ship runs out of fuel&nbsp;<a href="source:story.ni#line535"><img border=0 src=inform:/doc_images/Reveal.tif></a> (where triggered: &nbsp;<a href="source:story.ni#line533"><img border=0 src=inform:/doc_images/Reveal.tif></a>)</p><p class="tightin2">At the time when the ship crash lands&nbsp;<a href="source:story.ni#line544"><img border=0 src=inform:/doc_images/Reveal.tif></a> (where triggered: &nbsp;<a href="source:story.ni#line538"><img border=0 src=inform:/doc_images/Reveal.tif></a>)</p><p class="tightin2">At the time when the autopilot lands the ship&nbsp;<a href="source:story.ni#line549"><img border=0 src=inform:/doc_images/Reveal.tif></a> (where triggered: &nbsp;<a href="source:story.ni#line530"><img border=0 src=inform:/doc_images/Reveal.tif></a>)</p><p class="tightin2">At the time when the train comes&nbsp;<a href="source:story.ni#line644"><img border=0 src=inform:/doc_images/Reveal.tif></a> (where triggered: &nbsp;<a href="source:story.ni#line642"><img border=0 src=inform:/doc_images/Reveal.tif></a>)</p><p class="tightin2">At the time when the snake leaves the cage&nbsp;<a href="source:story.ni#line735"><img border=0 src=inform:/doc_images/Reveal.tif></a> (where triggered: &nbsp;<a href="source:story.ni#line730"><img border=0 src=inform:/doc_images/Reveal.tif></a>)</p><p class="tightin2">At the time when the bear eats the fish&nbsp;<a href="source:story.ni#line918"><img border=0 src=inform:/doc_images/Reveal.tif></a> (where triggered: &nbsp;<a href="source:story.ni#line916"><img border=0 src=inform:/doc_images/Reveal.tif></a>)</p><p class="tightin2">At the time when the bear rubs its belly&nbsp;<a href="source:story.ni#line923"><img border=0 src=inform:/doc_images/Reveal.tif></a> (where triggered: &nbsp;<a href="source:story.ni#line921"><img border=0 src=inform:/doc_images/Reveal.tif></a>)</p><p class="tightin2">At the time when the bear falls asleep&nbsp;<a href="source:story.ni#line928"><img border=0 src=inform:/doc_images/Reveal.tif></a> (where triggered: &nbsp;<a href="source:story.ni#line926"><img border=0 src=inform:/doc_images/Reveal.tif></a>)</p><p class="tightin2">At the time when the glue recongeals&nbsp;<a href="source:story.ni#line958"><img border=0 src=inform:/doc_images/Reveal.tif></a> (where triggered: &nbsp;<a href="source:story.ni#line952"><img border=0 src=inform:/doc_images/Reveal.tif></a>)</p></div>
-    <div id="segment3">
-    <hr><table cellspacing="3" border="0" style="background:#eeeeee;"><tr>
-    <td valign="top" align="left">
-    <div id="minibox6_3" class="smallbox">
-    <a class="symbol" title="Rules" href="#" onclick="click_element_box('segment3'); return false;">RS</a>
-    <div class="indexno">3</div>
-    </div>
-    </td>
-    <td style="width:100%;" align="left" valign="top">
-    <p style="margin-top:0px;padding-top:0px;margin-bottom:0px;padding-bottom:0px;line-height:150%;"><b>Rules</b> &mdash; 
-    General rules about scenes</p>
-    </td>
-    </tr></table>
-    <p><b>The scene-changing machinery</b><p><p class="in1"><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #e0e0e0"><tr><td width="8"><img src="inform:/bg_images/tl_corner_e0e0e0.gif" width="8" height="8" border="0" alt="..." /></td><td></td><td width="8"><img src="inform:/bg_images/tr_corner_e0e0e0.gif" width="8" height="8" border="0" alt="..." /></td></tr><tr><td width="8"></td><td><font face="lucida grande,geneva,arial,tahoma,verdana,helvetica,helv" size=2><table border="0" cellspacing="4" cellpadding="0" width=100%><tr><td align="left" valign="top"><font face="lucida grande,geneva,arial,tahoma,verdana,helvetica,helv" size=2><p class="tightin1"><b>scene changing</b> ...  rulebook</p></font></td><td align="right" valign="top"><font face="lucida grande,geneva,arial,tahoma,verdana,helvetica,helv" size=2><p class="tightin1"><a href="javascript:pasteCode('scene changing')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i></p></font></td></tr></table><p class="hangingin2">&nbsp;&nbsp;&nbsp;&nbsp;<img border=0 src=inform:/doc_images/rulenone.png title="start of rulebook"><font color="#800000">scene change machinery rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('scene change machinery rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The scene change machinery rule is not listed in the scene changing rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-    </font></td><td width="8"></td></tr><tr><td width="8"><img src="inform:/bg_images/bl_corner_e0e0e0.gif" width="8" height="8" border="0" alt="..." /></td><td></td><td width="8"><img src="inform:/bg_images/br_corner_e0e0e0.gif" width="8" height="8" border="0" alt="..." /></td></tr></table></p><p><a name=SRULES></a><b>General rules applying to scene changes</b><p><p class="in1"><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #e0e0e0"><tr><td width="8"><img src="inform:/bg_images/tl_corner_e0e0e0.gif" width="8" height="8" border="0" alt="..." /></td><td></td><td width="8"><img src="inform:/bg_images/tr_corner_e0e0e0.gif" width="8" height="8" border="0" alt="..." /></td></tr><tr><td width="8"></td><td><font face="lucida grande,geneva,arial,tahoma,verdana,helvetica,helv" size=2><table border="0" cellspacing="4" cellpadding="0" width=100%><tr><td align="left" valign="top"><font face="lucida grande,geneva,arial,tahoma,verdana,helvetica,helv" size=2><p class="tightin1"><b>when a scene begins</b> ...  a scene based rulebook</p></font></td><td align="right" valign="top"><font face="lucida grande,geneva,arial,tahoma,verdana,helvetica,helv" size=2><p class="tightin1"><a href="javascript:pasteCode('when a scene begins')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i></p></font></td></tr></table><p class="hangingin2">&nbsp;&nbsp;&nbsp;&nbsp;<img border=0 src=inform:/doc_images/rulenone.png title="start of rulebook"><i>a scene (called the event)</i>&nbsp;&nbsp;<font color="#800000">scene description text rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('scene description text rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The scene description text rule is not listed in the when scene begins rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-    </font></td><td width="8"></td></tr><tr><td width="8"><img src="inform:/bg_images/bl_corner_e0e0e0.gif" width="8" height="8" border="0" alt="..." /></td><td></td><td width="8"><img src="inform:/bg_images/br_corner_e0e0e0.gif" width="8" height="8" border="0" alt="..." /></td></tr></table></p><p class="in1"><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #e0e0e0"><tr><td width="8"><img src="inform:/bg_images/tl_corner_e0e0e0.gif" width="8" height="8" border="0" alt="..." /></td><td></td><td width="8"><img src="inform:/bg_images/tr_corner_e0e0e0.gif" width="8" height="8" border="0" alt="..." /></td></tr><tr><td width="8"></td><td><font face="lucida grande,geneva,arial,tahoma,verdana,helvetica,helv" size=2><table border="0" cellspacing="4" cellpadding="0" width=100%><tr><td align="left" valign="top"><font face="lucida grande,geneva,arial,tahoma,verdana,helvetica,helv" size=2><p class="tightin1"><b>when a scene ends</b> ...  a scene based rulebook</p></font></td><td align="right" valign="top"><font face="lucida grande,geneva,arial,tahoma,verdana,helvetica,helv" size=2><p class="tightin1"><a href="javascript:pasteCode('when a scene ends')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i></p></font></td></tr></table><p class="tightin2">There are no rules in this rulebook.</p></font></td><td width="8"></td></tr><tr><td width="8"><img src="inform:/bg_images/bl_corner_e0e0e0.gif" width="8" height="8" border="0" alt="..." /></td><td></td><td width="8"><img src="inform:/bg_images/br_corner_e0e0e0.gif" width="8" height="8" border="0" alt="..." /></td></tr></table></p></div>
-    <hr>
-
+    <hr>Dumping&nbsp;<a href="source:story.ni#line59"><img border=0 src=inform:/doc_images/Reveal.tif></a>&nbsp;<a href=77_A.html><img border=0 src=inform:/doc_images/Beneath.png></a>, using&nbsp;<a href="source:story.ni#line96"><img border=0 src=inform:/doc_images/Reveal.tif></a>&nbsp;<a href=78_A.html><img border=0 src=inform:/doc_images/Beneath.png></a>, Plugging&nbsp;<a href="source:story.ni#line198"><img border=0 src=inform:/doc_images/Reveal.tif></a>&nbsp;<a href=79_A.html><img border=0 src=inform:/doc_images/Beneath.png></a>, Unplugging&nbsp;<a href="source:story.ni#line199"><img border=0 src=inform:/doc_images/Reveal.tif></a>&nbsp;<a href=80_A.html><img border=0 src=inform:/doc_images/Beneath.png></a>, untieing&nbsp;<a href="source:story.ni#line285"><img border=0 src=inform:/doc_images/Reveal.tif></a>&nbsp;<a href=81_A.html><img border=0 src=inform:/doc_images/Beneath.png></a>, Flying&nbsp;<a href="source:story.ni#line460"><img border=0 src=inform:/doc_images/Reveal.tif></a>&nbsp;<a href=82_A.html><img border=0 src=inform:/doc_images/Beneath.png></a>, running-across&nbsp;<a href="source:story.ni#line649"><img border=0 src=inform:/doc_images/Reveal.tif></a>&nbsp;<a href=83_A.html><img border=0 src=inform:/doc_images/Beneath.png></a>, Lacing&nbsp;<a href="source:story.ni#line666"><img border=0 src=inform:/doc_images/Reveal.tif></a>&nbsp;<a href=84_A.html><img border=0 src=inform:/doc_images/Beneath.png></a>, Blowing out&nbsp;<a href="source:story.ni#line706"><img border=0 src=inform:/doc_images/Reveal.tif></a>&nbsp;<a href=85_A.html><img border=0 src=inform:/doc_images/Beneath.png></a>, <b>Shaking</b>&nbsp;<a href="source:story.ni#line794"><img border=0 src=inform:/doc_images/Reveal.tif></a>&nbsp;<a href=86_A.html><img border=0 src=inform:/doc_images/Beneath.png></a>, Going-up&nbsp;<a href="source:story.ni#line836"><img border=0 src=inform:/doc_images/Reveal.tif></a>&nbsp;<a href=87_A.html><img border=0 src=inform:/doc_images/Beneath.png></a>, Going-down&nbsp;<a href="source:story.ni#line837"><img border=0 src=inform:/doc_images/Reveal.tif></a>&nbsp;<a href=88_A.html><img border=0 src=inform:/doc_images/Beneath.png></a><p><hr><p><b>Shaking <font color="#000080">something</font> </b>&nbsp;<a href="source:story.ni#line794"><img border=0 src=inform:/doc_images/Reveal.tif></a><a name=A86_shaking></a> (<i>past tense</i> shaken)<br>
+    <p><hr><p><b>Typed commands leading to this action</b><p>
+    <p class="hangingin2">&quot;shake [something]&quot;&nbsp;<a href="source:story.ni#line794"><img border=0 src=inform:/doc_images/Reveal.tif></a></p><p><b>Rules controlling this action</b></p><p>
+    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>shaking a tree</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line798"><img border=0 src=inform:/doc_images/Reveal.tif></a></p>
+    <br><p class="hangingin2">carry out&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line796"><img border=0 src=inform:/doc_images/Reveal.tif></a></p>
+    <br>
     <!--CONTENT ENDS-->
     </font>
 </body>
