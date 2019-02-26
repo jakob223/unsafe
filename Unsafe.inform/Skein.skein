@@ -9,7 +9,7 @@
 
 Unsafe
 An Interactive Fiction by Brian Chen and Jakob Weisblat
-Release 2 / Serial number 190225 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 3 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Bedroom
 It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
@@ -2210,7 +2210,7 @@ You can see a Staircase and a muddy brown key here.
 
 &gt;[5] n
 
-upstairs hall
+Upstairs Hall
 The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
 
 You can see a Staircase and a left running shoe here.
@@ -2240,7 +2240,7 @@ Carefully, you spray the hair gel on your head while looking on the mirror. It l
 &gt;[12] w
 (first getting off the stool)
 
-upstairs hall
+Upstairs Hall
 The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
 
 You can see a Staircase and a left running shoe here.
@@ -2398,7 +2398,2797 @@ Great job, you got the optimal number of moves!
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 &gt; </commentary>
-        <children></children>
+        <children><child nodeId="node-4327"></child>
+        </children>
+    </item>
+    <item nodeId="node-4327">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4328"></child>
+        </children>
+    </item>
+    <item nodeId="node-4328">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 3 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4329"></child>
+        </children>
+    </item>
+    <item nodeId="node-4329">
+        <command xml:space="preserve">test bear</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] s
+
+Back Entryway
+The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. There is a Toyota key tied to the coat rack. The hall is to the North, the backyard to the South.
+
+You can see the back door, a blue key, a right running shoe and a Toyota key here.
+
+&gt;[3] take blue key
+Taken.
+
+&gt;[4] unlock door with blue key
+You unlock the back door.
+
+&gt;[5] open door
+You open the back door.
+
+&gt;[6] s
+
+Backyard
+Your backyard is so well-manicured that all it contains is grass and a stick. Your house is to the north.
+
+You can see the back door and a stick here.
+
+&gt;[7] take stick
+Taken.
+
+&gt;[8] n
+
+Back Entryway
+The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. There is a Toyota key tied to the coat rack. The hall is to the North, the backyard to the South.
+
+You can see the back door, a right running shoe and a Toyota key here.
+
+&gt;[9] n
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[10] e
+
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;[11] open fridge
+You open the refrigerator, revealing a fish and a pie.
+
+&gt;[12] take fish
+Taken.
+
+&gt;[13] w
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[14] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[15] w
+You go through the long and winding Tunnel of Extraction.
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[16] w
+
+Clearing
+It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north.
+
+&gt;[17] w
+
+Edge of the Woods
+The woods start here and extend to the west. There's a clearing to the east.
+
+&gt;[18] w
+As you walk into the woods, a large grizzly bear shows up, baring (bear-ing?) its teeth at you. You hastily take three steps back.
+The bear seems to be guarding the entrance to the woods. Seems like it would be awfully difficult to get through here unless the bear were somehow distracted. With food, maybe?
+
+&gt;[19] throw fish
+You throw the fish to the west. The bear looks at the fish curiously.
+
+&gt;[20] z
+Time passes.
+
+The bear finally decides to eat the fish, in a big gulp.
+
+&gt;[21] z
+Time passes.
+
+The bear rubs its belly sleepily. Maybe it'll fall asleep soon.
+
+&gt;[22] z
+Time passes.
+
+The bear flops onto its full stomach and starts snoring.
+
+&gt;[23] w
+
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge. You can hear a faint sound from above.
+
+You can see a grizzly bear here.
+
+&gt;[24] attack bear
+You take your stick and poke the bear. It wakes up and promptly eats you.
+
+
+You've reached one of this game's 14 endings! In that game you used 24 moves. The optimal number of moves is 24.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] s
+[3] take blue key
+[4] unlock door with blue key
+[5] open door
+[6] s
+[7] take stick
+[8] n
+[9] n
+[10] e
+[11] open fridge
+[12] take fish
+[13] w
+[14] d
+[15] w
+[16] w
+[17] w
+[18] w
+[19] throw fish
+[20] z
+[21] z
+[22] z
+[23] w
+[24] attack bear
+</commentary>
+        <children><child nodeId="node-4354"></child>
+        </children>
+    </item>
+    <item nodeId="node-4354">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 3 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4355"></child>
+        </children>
+    </item>
+    <item nodeId="node-4355">
+        <command xml:space="preserve">test piranhas</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] e
+
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;[3] get stool
+Taken.
+
+&gt;[4] w
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[5] w
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+On the nightstand is an iPod.
+
+&gt;[6] open door
+You open the Side Door.
+
+&gt;[7] w
+
+The Garden
+A small garden. There are a few different kinds of flowers and a few different kinds of squash. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt.
+
+You can see the shed (closed) here.
+
+&gt;[8] put down stool
+Dropped.
+
+&gt;[9] get on stool
+You get onto the stool.
+
+&gt;[10] get bucket
+Taken.
+
+&gt;[11] w
+(first getting off the stool)
+
+Outskirts of Town
+There's less town here than there is to the South. The garden is east. The space center is North. The road is West.
+
+&gt;[12] w
+
+Road
+It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west.
+
+&gt;[13] w
+
+By the Stream
+There's a stream, making whatever sound water makes. There's also a scary warning sign.
+
+&gt;[14] take water
+You dip the bucket in the water, coming out with a bucketful of water and a few... piranhas?!
+
+&gt;[15] e
+
+Road
+It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west.
+
+&gt;[16] s
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[17] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[18] u
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[19] u
+
+Upstairs Hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase and a left running shoe here.
+
+&gt;[20] e
+
+Bathroom
+It's just a bathroom.
+
+You can see a mirror, a medicine cabinet (closed) and a bathtub (empty) here.
+
+&gt;[21] plug drain
+You plug the drain.
+
+&gt;[22] turn on faucet
+You turn on the faucet. Water starts flowing out.
+
+&gt;[23] pour bucket
+You dump the water and the piranhas into the tub. The piranhas swim around in the bathwater.
+
+&gt;[24] take off belt
+You take off the belt.
+
+&gt;[25] take off shoes
+You take off work shoes.
+
+&gt;[26] take off socks
+You take off socks.
+
+&gt;[27] take off pants
+You take off pants.
+
+&gt;[28] take off jacket
+You take off the jacket.
+
+&gt;[29] take off shirt
+You take off the shirt.
+
+&gt;[30] take off hat
+You take off the hat.
+
+&gt;[31] take off underwear
+You take off underwear.
+
+The tub overflows and a fair amount of water flows out of the bathtub into the rest of the bathroom.
+
+&gt;[32] get in tub
+You get in the tub. The warm water feels wonderful for a few seconds, and then the piranhas start to attack. They eat your feet, your legs, and... you can imagine the rest.
+
+
+You've reached one of this game's 14 endings! In that game you used 32 moves. The optimal number of moves is 32.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] e
+[3] get stool
+[4] w
+[5] w
+[6] open door
+[7] w
+[8] put down stool
+[9] get on stool
+[10] get bucket
+[11] w
+[12] w
+[13] w
+[14] take water
+[15] e
+[16] s
+[17] d
+[18] u
+[19] u
+[20] e
+[21] plug drain
+[22] turn on faucet
+[23] pour bucket
+[24] take off belt
+[25] take off shoes
+[26] take off socks
+[27] take off pants
+[28] take off jacket
+[29] take off shirt
+[30] take off hat
+[31] take off underwear
+[32] get in tub
+</commentary>
+        <children><child nodeId="node-4388"></child>
+        </children>
+    </item>
+    <item nodeId="node-4388">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 3 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4389"></child>
+        </children>
+    </item>
+    <item nodeId="node-4389">
+        <command xml:space="preserve">test toaster</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] open door
+You open the Side Door.
+
+&gt;[2] w
+
+The Garden
+A small garden. There are a few different kinds of flowers and a few different kinds of squash. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt.
+
+You can see the shed (closed) here.
+
+&gt;[3] w
+
+Outskirts of Town
+There's less town here than there is to the South. The garden is east. The space center is North. The road is West.
+
+&gt;[4] w
+
+Road
+It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west.
+
+&gt;[5] n
+
+Further Along the Road
+More road! There's a fork in the road here. The main road goes North and South. To the West there's a parking lot.
+
+&gt;[6] pull fork
+You try to pull the fork out of the road, but it's pretty stuck. Your hand slips off the fork just as you feel it has dislodged slightly from the road.
+
+&gt;[7] take fork
+Taken.
+
+&gt;[8] s
+
+Road
+It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west.
+
+&gt;[9] s
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[10] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[11] u
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[12] e
+
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;[13] open cabinet
+You open the cabinet, revealing a top drawer, a middle drawer and a bottom drawer.
+
+&gt;[14] open middle drawer
+You open the middle drawer, revealing a big tupperware container.
+
+&gt;[15] open big tupperware
+You open the big tupperware container, revealing a loaf of bread.
+
+&gt;[16] get bread
+Taken.
+
+&gt;[17] unwrap bread
+You take off the plastic wrap and now the bread smells heavenly.
+
+&gt;[18] plug in toaster
+You plug in the toaster.
+
+&gt;[19] put bread in toaster
+You put a slice of bread in the toaster.
+
+&gt;[20] put bread in toaster
+You put a slice of bread in the toaster.
+
+&gt;[21] press button
+The bread recedes into the toaster, and the coils start to light up red. In just a minute, you'll have some tasty tasty toast.
+
+&gt;[22] wait
+Time passes.
+
+&gt;[23] wait
+Time passes.
+
+DING! The toast is ready. The toaster pops it out but malfunctions and the toast becomes stuck in the toaster.
+
+&gt;[24] put fork in toaster
+You stick the fork in the toaster, hoping it will help you remove your toast. Unfortunately, the toaster is electrified and as soon as your fork touches the coil you are electrocuted. You'll never get to eat that delicious toast... :(
+
+You've reached one of this game's 14 endings! In that game you used 24 moves. The optimal number of moves is 24.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] open door
+[2] w
+[3] w
+[4] w
+[5] n
+[6] pull fork
+[7] take fork
+[8] s
+[9] s
+[10] d
+[11] u
+[12] e
+[13] open cabinet
+[14] open middle drawer
+[15] open big tupperware
+[16] get bread
+[17] unwrap bread
+[18] plug in toaster
+[19] put bread in toaster
+[20] put bread in toaster
+[21] press button
+[22] wait
+[23] wait
+[24] put fork in toaster
+</commentary>
+        <children><child nodeId="node-4414"></child>
+        </children>
+    </item>
+    <item nodeId="node-4414">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 3 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4415"></child>
+        </children>
+    </item>
+    <item nodeId="node-4415">
+        <command xml:space="preserve">test fly</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] open door
+You open the Side Door.
+
+&gt;[2] w
+
+The Garden
+A small garden. There are a few different kinds of flowers and a few different kinds of squash. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt.
+
+You can see the shed (closed) here.
+
+&gt;[3] w
+
+Outskirts of Town
+There's less town here than there is to the South. The garden is east. The space center is North. The road is West.
+
+&gt;[4] n
+
+Space Center
+Your friendly neighborhood space center. They build rockets and stuff. The outskirts of town are South, the launch pad is North.
+
+&gt;[5] n
+
+Launch Pad
+The place where rockets take off from. The rest of the Space Center is South.
+
+You can see a spaceship here.
+
+&gt;[6] open spaceship
+You open the spaceship, revealing an ON button, a LAUNCH button, a spacesuit and a helmet.
+
+&gt;[7] get in spaceship
+You get into the spaceship.
+
+In the spaceship you can see an ON button, a LAUNCH button, a spacesuit and a helmet.
+
+&gt;[8] close spaceship
+You close the spaceship.
+
+&gt;[9] press on
+You press the ON button. All around you dials spin and lights blink.
+
+
+A dialog appears on the screen: WARNING: LOW FUEL. SAY "confirm" to continue. Mission abort HIGHLY recommended.
+
+&gt;[10] say confirm
+(to the computer)
+The dialog on the screen goes away. The screen now reads READY FOR LAUNCH.
+
+&gt;[11] press launch
+The computer counts down: "3... 2... 1... LAUNCHING". 
+
+ The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. 
+
+The computer says "This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."
+
+&gt;[12] wait
+Time passes.
+
+The computer announces: "Auto pilot has engaged. Say CANCEL to fly the ship yourself. Auto pilot has detected that the fuel level is low and will land the ship momentarily."
+
+&gt;[13] say cancel
+(to the computer)
+The autopilot is disabled.
+
+&gt;[14] wait
+Time passes.
+
+The VERY LOW FUEL light blinks on in the corner of the dashboard.
+
+&gt;[15] wait
+Time passes.
+
+With a putter then a WHOOSH, the ship runs out of fuel. You don't have much choice but to grip the controls and try to fly it like a plane.
+
+&gt;[16] wait
+Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+&gt;[17] wait
+Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+&gt;[18] wait
+Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+&gt;[19] wait
+Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+&gt;[20] wait
+Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+&gt;[21] wait
+Time passes.
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+The ship barrels toward the ground at an alarming rate.
+
+Ruins of the Tunnel of Extraction
+With a CRASH and a BOOM the ship crash lands into the ground. It breaks through the ground and as you die on impact you vaguely recognize your surroundings: this was formerly part of the Tunnel of Extraction.
+
+
+You've reached one of this game's 14 endings! In that game you used 21 moves. The optimal number of moves is 21.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] open door
+[2] w
+[3] w
+[4] n
+[5] n
+[6] open spaceship
+[7] get in spaceship
+[8] close spaceship
+[9] press on
+[10] say confirm
+[11] press launch
+[12] wait
+[13] say cancel
+[14] wait
+[15] wait
+[16] wait
+[17] wait
+[18] wait
+[19] wait
+[20] wait
+[21] wait
+</commentary>
+        <children><child nodeId="node-4437"></child>
+        </children>
+    </item>
+    <item nodeId="node-4437">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 3 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4438"></child>
+        </children>
+    </item>
+    <item nodeId="node-4438">
+        <command xml:space="preserve">test space</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] e
+
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;[3] get stool
+Taken.
+
+&gt;[4] w
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[5] w
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+On the nightstand is an iPod.
+
+&gt;[6] open door
+You open the Side Door.
+
+&gt;[7] w
+
+The Garden
+A small garden. There are a few different kinds of flowers and a few different kinds of squash. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt.
+
+You can see the shed (closed) here.
+
+&gt;[8] put down stool
+Dropped.
+
+&gt;[9] get on stool
+You get onto the stool.
+
+&gt;[10] get bucket
+Taken.
+
+&gt;[11] e
+(first getting off the stool)
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (open) leads out of the house to the West. 
+
+On the nightstand is an iPod.
+
+&gt;[12] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[13] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[14] open vat
+You lift the large plastic lid off of the vat, revealing the pungent rocket fuel beneath.
+
+&gt;[15] dip bucket in vat
+You dip the bucket in the vat of rocket fuel and come out with a fair amount. This stuff is lighter than it looks!
+
+&gt;[16] w
+You go through the long and winding Tunnel of Extraction.
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[17] n
+
+Road
+It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west.
+
+&gt;[18] e
+
+Outskirts of Town
+There's less town here than there is to the South. The garden is east. The space center is North. The road is West.
+
+&gt;[19] n
+
+Space Center
+Your friendly neighborhood space center. They build rockets and stuff. The outskirts of town are South, the launch pad is North.
+
+&gt;[20] n
+
+Launch Pad
+The place where rockets take off from. The rest of the Space Center is South.
+
+You can see a spaceship here.
+
+&gt;[21] put fuel in ship
+You pour the rocket fuel into the ship's fuel hatch, closing the hatch when you are done.
+As if in a gesture of thanks, the computer opens the door to the spaceship for you.
+
+&gt;[22] get in ship
+You get into the spaceship.
+
+In the spaceship you can see an ON button, a LAUNCH button, a spacesuit and a helmet.
+
+&gt;[23] close door
+You close the spaceship.
+
+&gt;[24] press on
+You press the ON button. All around you dials spin and lights blink.
+
+&gt;[25] press launch
+The computer counts down: "3... 2... 1... LAUNCHING". 
+
+ The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. 
+
+The computer says "This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."
+
+&gt;[26] say suit up
+(to the computer)
+The spaceship's machinery puts a space suit on you faster than you could possibly have done it yourself.
+
+The spaceship has reached space. It's full of stars! It's the most beautiful thing you've ever seen! Now what?
+
+&gt;[27] open door
+You open the spaceship.
+
+&gt;[28] get out
+You get out of the spaceship.
+
+Outer Space
+You can see a spaceship here.
+
+&gt;[29] take off helmet
+You see space, with your own eyes. It's stunningly beautiful. Then your head explodes.
+
+
+You've reached one of this game's 14 endings! In that game you used 29 moves. The optimal number of moves is 29.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] e
+[3] get stool
+[4] w
+[5] w
+[6] open door
+[7] w
+[8] put down stool
+[9] get on stool
+[10] get bucket
+[11] e
+[12] e
+[13] d
+[14] open vat
+[15] dip bucket in vat
+[16] w
+[17] n
+[18] e
+[19] n
+[20] n
+[21] put fuel in ship
+[22] get in ship
+[23] close door
+[24] press on
+[25] press launch
+[26] say suit up
+[27] open door
+[28] get out
+[29] take off helmet
+</commentary>
+        <children><child nodeId="node-4468"></child>
+        </children>
+    </item>
+    <item nodeId="node-4468">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 3 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4469"></child>
+        </children>
+    </item>
+    <item nodeId="node-4469">
+        <command xml:space="preserve">test space</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] e
+
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;[3] get stool
+Taken.
+
+&gt;[4] w
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[5] w
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+On the nightstand is an iPod.
+
+&gt;[6] open door
+You open the Side Door.
+
+&gt;[7] w
+
+The Garden
+A small garden. There are a few different kinds of flowers and a few different kinds of squash. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt.
+
+You can see the shed (closed) here.
+
+&gt;[8] put down stool
+Dropped.
+
+&gt;[9] get on stool
+You get onto the stool.
+
+&gt;[10] get bucket
+Taken.
+
+&gt;[11] e
+(first getting off the stool)
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (open) leads out of the house to the West. 
+
+On the nightstand is an iPod.
+
+&gt;[12] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[13] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[14] open vat
+You lift the large plastic lid off of the vat, revealing the pungent rocket fuel beneath.
+
+&gt;[15] dip bucket in vat
+You dip the bucket in the vat of rocket fuel and come out with a fair amount. This stuff is lighter than it looks!
+
+&gt;[16] w
+You go through the long and winding Tunnel of Extraction.
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[17] n
+
+Road
+It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west.
+
+&gt;[18] e
+
+Outskirts of Town
+There's less town here than there is to the South. The garden is east. The space center is North. The road is West.
+
+&gt;[19] n
+
+Space Center
+Your friendly neighborhood space center. They build rockets and stuff. The outskirts of town are South, the launch pad is North.
+
+&gt;[20] n
+
+Launch Pad
+The place where rockets take off from. The rest of the Space Center is South.
+
+You can see a spaceship here.
+
+&gt;[21] put fuel in ship
+You pour the rocket fuel into the ship's fuel hatch, closing the hatch when you are done.
+As if in a gesture of thanks, the computer opens the door to the spaceship for you.
+
+&gt;[22] get in ship
+You get into the spaceship.
+
+In the spaceship you can see an ON button, a LAUNCH button, a spacesuit and a helmet.
+
+&gt;[23] close door
+You close the spaceship.
+
+&gt;[24] press on
+You press the ON button. All around you dials spin and lights blink.
+
+&gt;[25] press launch
+The computer counts down: "3... 2... 1... LAUNCHING". 
+
+ The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. 
+
+The computer says "This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."
+
+&gt;[26] say suit up
+(to the computer)
+The spaceship's machinery puts a space suit on you faster than you could possibly have done it yourself.
+
+The spaceship has reached space. It's full of stars! It's the most beautiful thing you've ever seen! Now what?
+
+&gt;[27] open door
+You open the spaceship.
+
+&gt;[28] get out
+You get out of the spaceship.
+
+Outer Space
+You can see a spaceship here.
+
+&gt;[29] take off helmet
+You see space, with your own eyes. It's stunningly beautiful. Then your head explodes.
+
+
+You've reached one of this game's 14 endings! In that game you used 29 moves. The optimal number of moves is 29.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] e
+[3] get stool
+[4] w
+[5] w
+[6] open door
+[7] w
+[8] put down stool
+[9] get on stool
+[10] get bucket
+[11] e
+[12] e
+[13] d
+[14] open vat
+[15] dip bucket in vat
+[16] w
+[17] n
+[18] e
+[19] n
+[20] n
+[21] put fuel in ship
+[22] get in ship
+[23] close door
+[24] press on
+[25] press launch
+[26] say suit up
+[27] open door
+[28] get out
+[29] take off helmet
+</commentary>
+        <children><child nodeId="node-4499"></child>
+        </children>
+    </item>
+    <item nodeId="node-4499">
+        <command xml:space="preserve"> restart</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 3 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4500"></child>
+        </children>
+    </item>
+    <item nodeId="node-4500">
+        <command xml:space="preserve">test cage</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] get key
+Taken.
+
+&gt;[3] w
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+On the nightstand is an iPod.
+
+&gt;[4] open door
+You open the Side Door.
+
+&gt;[5] w
+
+The Garden
+A small garden. There are a few different kinds of flowers and a few different kinds of squash. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt.
+
+You can see the shed (closed) here.
+
+&gt;[6] unlock shed with key
+(the shed with the muddy brown key)
+You unlock the shed.
+
+&gt;[7] open shed
+(the shed)
+You open the shed, revealing a cage.
+
+&gt;[8] get cage
+Taken.
+
+&gt;[9] e
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (open) leads out of the house to the West. 
+
+On the nightstand is an iPod.
+
+&gt;[10] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.
+
+You can see a Staircase here.
+
+&gt;[11] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[12] get small key
+Taken.
+
+&gt;[13] w
+You go through the long and winding Tunnel of Extraction.
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[14] s
+
+A Spooky Lair
+A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it.
+
+On the table are a candle and a sacrificial knife.
+
+You can also see four snakes and an ancient cabinet (closed) here.
+
+&gt;[15] put cage down
+Dropped.
+
+&gt;[16] open ancient cabinet
+You open the ancient cabinet, revealing three jars.
+
+&gt;[17] get jar
+Taken.
+
+&gt;[18] open jar
+You open the jar, revealing a mouse.
+
+&gt;[19] get mouse
+Taken.
+
+&gt;[20] put mouse in cage
+A rattlesnake rushes into the cage and hungrily slurps up the mouse before it even has time to get its bearings.
+
+&gt;[21] close cage
+You close the cage.
+
+&gt;[22] lock cage with small key
+You lock the cage.
+
+Angry at being locked up and not wanting to be a pet, the snake breaks through the cage and attaches itself to your eye. You feeel the effects of the venom almost immediately.
+
+
+You've reached one of this game's 14 endings! In that game you used 22 moves. The optimal number of moves is 22.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] get key
+[3] w
+[4] open door
+[5] w
+[6] unlock shed with key
+[7] open shed
+[8] get cage
+[9] e
+[10] e
+[11] d
+[12] get small key
+[13] w
+[14] s
+[15] put cage down
+[16] open ancient cabinet
+[17] get jar
+[18] open jar
+[19] get mouse
+[20] put mouse in cage
+[21] close cage
+[22] lock cage with small key
+</commentary>
+        <children><child nodeId="node-4951"></child>
+        </children>
+    </item>
+    <item nodeId="node-4951">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 3 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4952"></child>
+        </children>
+    </item>
+    <item nodeId="node-4952">
+        <command xml:space="preserve">test glue</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] e
+
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;[3] take stool
+Taken.
+
+&gt;[4] w
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[5] down
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[6] go through tunnel
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[7] s
+
+A Spooky Lair
+A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it.
+
+On the table are a candle and a sacrificial knife.
+
+You can also see four snakes and an ancient cabinet (closed) here.
+
+&gt;[8] get knife
+Taken.
+
+&gt;[9] n
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[10] e
+
+Town Square
+The Town Square stretches out in front of you. There are 10 or 20 unremarkable buildings that you couldn't care less about. South of you is the Mad Scientist's House. West, a hole in the wall leads into the Abandoned Warehouse. North of here, the town thins out.
+
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;[11] open entrance
+You open the Mad Scientist's Grand Entrance.
+
+&gt;[12] s
+
+Mad Scientist's House
+A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier.
+
+On the high-up shelf are a small tool box (closed) and a bottle of soylent.
+
+You can also see the Mad Scientist's Grand Entrance and a ladder here.
+
+&gt;[13] put down stool
+Dropped.
+
+&gt;[14] get on stool
+You get onto the stool.
+
+&gt;[15] get box
+Taken.
+
+&gt;[16] open box
+You open the small tool box, revealing Super glue.
+
+&gt;[17] get glue
+Taken.
+
+&gt;[18] cut glue
+You use the sacrificial knife to cut the super glue's tip right off. Glue gurgles out of the tube viscously.
+
+&gt;[19] eat glue
+You squeeze the tube of super glue into your mouth. It tastes like candy! Shortly thereafter, it starts to taste like your throat is glued shut. Maybe this wasn't a great idea...
+
+
+You've reached one of this game's 14 endings! In that game you used 19 moves. The optimal number of moves is 19.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] e
+[3] take stool
+[4] w
+[5] down
+[6] go through tunnel
+[7] s
+[8] get knife
+[9] n
+[10] e
+[11] open entrance
+[12] s
+[13] put down stool
+[14] get on stool
+[15] get box
+[16] open box
+[17] get glue
+[18] cut glue
+[19] eat glue
+</commentary>
+        <children><child nodeId="node-4972"></child>
+        </children>
+    </item>
+    <item nodeId="node-4972">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 3 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4973"></child>
+        </children>
+    </item>
+    <item nodeId="node-4973">
+        <command xml:space="preserve">test moose</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] u
+
+Upstairs Hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase and a left running shoe here.
+
+&gt;[3] w
+
+Study
+Where you study. The hall is east.
+
+On the desk are a dime and a quarter.
+
+You can also see the closet door here.
+
+&gt;[4] get quarter
+Taken.
+
+&gt;[5] n
+
+The Closet
+A small room. The study is south.
+
+You can see the closet door and a chest of drawers here.
+
+&gt;[6] get quarter
+Taken.
+
+&gt;[7] open second drawer
+You open the second drawer, revealing a quarter.
+
+&gt;[8] get quarter
+Taken.
+
+&gt;[9] s
+
+Study
+Where you study. The hall is east.
+
+On the desk is a dime.
+
+You can also see the closet door here.
+
+&gt;[10] e
+
+Upstairs Hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase and a left running shoe here.
+
+&gt;[11] d
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[12] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[13] w
+You go through the long and winding Tunnel of Extraction.
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[14] e
+
+Town Square
+The Town Square stretches out in front of you. There are 10 or 20 unremarkable buildings that you couldn't care less about. South of you is the Mad Scientist's House. West, a hole in the wall leads into the Abandoned Warehouse. North of here, the town thins out.
+
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;[15] open entrance
+You open the Mad Scientist's Grand Entrance.
+
+&gt;[16] s
+
+Mad Scientist's House
+A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier.
+
+On the high-up shelf are a small tool box (closed) and a bottle of soylent.
+
+You can also see the Mad Scientist's Grand Entrance and a ladder here.
+
+&gt;[17] u
+
+Mad Science Laboratory
+A room full of so much mad science, it makes you mad just to think about it. The wall is covered in chalkboards, and the chalkboards are covered in diagrams, and the diagrams are covered in labels. Maddening.
+
+You can see a ladder, a time machine and a time safe (closed) here.
+
+&gt;[18] go into time machine
+You get into the time machine.
+
+In the time machine you can see a red button and a coin slot (closed).
+
+&gt;[19] insert quarter into slot
+You put a quarter in the slot. It makes a satisfying *clink*.
+
+&gt;[20] insert quarter into slot
+You put a quarter in the slot. It makes a satisfying *clink*.
+
+&gt;[21] insert quarter into slot
+You put a quarter in the slot. It makes a satisfying *clink*.
+
+&gt;[22] press button
+You feel yourself pressed back into the seat, and the world swirls around you. The sun sets and rises again many times. And then, suddenly, the world is calm.
+
+&gt;[23] get out
+You get out of the time machine.
+
+Mad Science Laboratory
+A room full of so much mad science, it makes you mad just to think about it. The wall is covered in chalkboards, and the chalkboards are covered in diagrams, and the diagrams are covered in labels. Maddening.
+
+You can see a ladder, a time machine and a time safe (closed) here.
+
+&gt;[24] d
+
+Mad Scientist's House
+A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier.
+
+On the high-up shelf are a small tool box (closed) and a bottle of soylent.
+
+You can also see a ladder and the Mad Scientist's Grand Entrance here.
+
+&gt;[25] n
+
+Town Square
+The Town Square stretches out in front of you. There are 10 or 20 unremarkable buildings that you couldn't care less about. South of you is the Mad Scientist's House. West, a hole in the wall leads into the Abandoned Warehouse. North of here, the town thins out.
+
+You can see the Mad Scientist's Grand Entrance here.
+
+&gt;[26] w
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[27] w
+
+Clearing
+It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north.
+
+&gt;[28] w
+
+Edge of the Woods
+The woods start here and extend to the west. There's a clearing to the east.
+
+&gt;[29] w
+
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge. You can hear a faint sound from above.
+
+&gt;[30] s
+
+Hunting Grounds
+Where hunters hunt things, as long as it's the right season. The woods are to the north. You can head into the Hunting Lodge to the south.
+
+You can see the hunting lodge entrance here.
+
+&gt;[31] open entrance
+You open the hunting lodge entrance.
+
+&gt;[32] s
+
+Hunting Lodge
+Where hunters rest or something. One wall is covered in animal heads - a deer, a moose, a lion(!). Kinda creepy, to be honest. The exit is north.
+
+You can see the hunting lodge entrance and a poster here.
+
+&gt;[33] get moose head
+Taken.
+
+&gt;[34] wear moose head
+You put on the moose head.
+
+&gt;[35] n
+Wow, you nearly fell over. Walking while wearing a taxidermied moose head is hard. Maybe it'll go better if you try that again now that you have your balance?
+
+&gt;[36] n
+You go into the hunting grounds, foolishly forgetting that there is a moose head atop your own. The hunters waste no time before shooting you.. at least you got a quick death.
+
+
+You've reached one of this game's 14 endings! In that game you used 36 moves. The optimal number of moves is 36.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] u
+[3] w
+[4] get quarter
+[5] n
+[6] get quarter
+[7] open second drawer
+[8] get quarter
+[9] s
+[10] e
+[11] d
+[12] d
+[13] w
+[14] e
+[15] open entrance
+[16] s
+[17] u
+[18] go into time machine
+[19] insert quarter into slot
+[20] insert quarter into slot
+[21] insert quarter into slot
+[22] press button
+[23] get out
+[24] d
+[25] n
+[26] w
+[27] w
+[28] w
+[29] w
+[30] s
+[31] open entrance
+[32] s
+[33] get moose head
+[34] wear moose head
+[35] n
+[36] n
+</commentary>
+        <children><child nodeId="node-5010"></child>
+        </children>
+    </item>
+    <item nodeId="node-5010">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 3 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5011"></child>
+        </children>
+    </item>
+    <item nodeId="node-5011">
+        <command xml:space="preserve">test trees</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] e
+
+Kitchen
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;[3] open fridge
+You open the refrigerator, revealing a fish and a pie.
+
+&gt;[4] take fish
+Taken.
+
+&gt;[5] w
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[6] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[7] w
+You go through the long and winding Tunnel of Extraction.
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[8] w
+
+Clearing
+It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north.
+
+&gt;[9] w
+
+Edge of the Woods
+The woods start here and extend to the west. There's a clearing to the east.
+
+&gt;[10] w
+As you walk into the woods, a large grizzly bear shows up, baring (bear-ing?) its teeth at you. You hastily take three steps back.
+The bear seems to be guarding the entrance to the woods. Seems like it would be awfully difficult to get through here unless the bear were somehow distracted. With food, maybe?
+
+&gt;[11] throw fish
+You throw the fish to the west. The bear looks at the fish curiously.
+
+&gt;[12] wait
+Time passes.
+
+The bear finally decides to eat the fish, in a big gulp.
+
+&gt;[13] wait
+Time passes.
+
+The bear rubs its belly sleepily. Maybe it'll fall asleep soon.
+
+&gt;[14] wait
+Time passes.
+
+The bear flops onto its full stomach and starts snoring.
+
+&gt;[15] w
+
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge. You can hear a faint sound from above.
+
+You can see a grizzly bear here.
+
+&gt;[16] climb ash
+Lower Branches of Ash Tree
+You're a bit off the ground in the ash tree.
+
+&gt;[17] u
+
+Middle Branches of Ash Tree
+More tree.
+
+&gt;[18] u
+
+Upper Branches of Ash Tree
+Even more tree.
+
+&gt;[19] u
+
+Top of Ash Tree
+The highest point of the tree. There's no more tree above. Wow, you can see so far away.
+
+You can see a wasps' nest here.
+
+&gt;[20] shake tree
+You shake the tree vigorously.
+The wasps' nest is dislodged. You watch it fall to the top of the elm tree.
+
+&gt;[21] d
+
+Upper Branches of Ash Tree
+Even more tree.
+
+&gt;[22] d
+
+Middle Branches of Ash Tree
+More tree.
+
+&gt;[23] d
+
+Lower Branches of Ash Tree
+You're a bit off the ground in the ash tree.
+
+&gt;[24] d
+
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge. You can hear a faint sound from above.
+
+You can see a grizzly bear here.
+
+&gt;[25] climb elm
+Middle Branches of Elm Tree
+You're roughly half of the height of the Elm Tree.
+
+&gt;[26] u
+
+Top of Elm Tree
+You can see a wasps' nest here.
+
+&gt;[27] shake tree
+You shake the tree vigorously.
+The wasps' nest is dislodged. You watch it fall to the top of the pine tree.
+
+&gt;[28] d
+
+Middle Branches of Elm Tree
+You're roughly half of the height of the Elm Tree.
+
+&gt;[29] d
+
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge. You can hear a faint sound from above.
+
+You can see a grizzly bear here.
+
+&gt;[30] climb pine
+Top of Pine Tree
+The pine tree is short. You're on top.
+
+You can see a wasps' nest here.
+
+&gt;[31] shake tree
+You shake the tree vigorously.
+The wasps' nest is dislodged. You watch it fall to the forest floor.
+
+&gt;[32] d
+
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.
+
+You can see a wasps' nest and a grizzly bear here.
+
+&gt;[33] take nest
+Taken.
+
+&gt;[34] throw nest
+You toss the wasps' nest. Your last sensation is a barrage of stings from the army of angry wasps that bursts from the nest to attack you.
+
+
+You've reached one of this game's 14 endings! In that game you used 34 moves. The optimal number of moves is 34.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] e
+[3] open fridge
+[4] take fish
+[5] w
+[6] d
+[7] w
+[8] w
+[9] w
+[10] w
+[11] throw fish
+[12] wait
+[13] wait
+[14] wait
+[15] w
+[16] climb ash
+[17] u
+[18] u
+[19] u
+[20] shake tree
+[21] d
+[22] d
+[23] d
+[24] d
+[25] climb elm
+[26] u
+[27] shake tree
+[28] d
+[29] d
+[30] climb pine
+[31] shake tree
+[32] d
+[33] take nest
+[34] throw nest
+</commentary>
+        <children><child nodeId="node-5046"></child>
+        </children>
+    </item>
+    <item nodeId="node-5046">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 3 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5047"></child>
+        </children>
+    </item>
+    <item nodeId="node-5047">
+        <command xml:space="preserve">test platform</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] get ipod
+Taken.
+
+&gt;[2] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[3] u
+
+Upstairs Hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase and a left running shoe here.
+
+&gt;[4] w
+
+Study
+Where you study. The hall is east.
+
+On the desk are a dime and a quarter.
+
+You can also see the closet door here.
+
+&gt;[5] open drawer
+You open the desk drawer, revealing earbuds.
+
+&gt;[6] get earbuds
+Taken.
+
+&gt;[7] e
+
+Upstairs Hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase and a left running shoe here.
+
+&gt;[8] d
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[9] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[10] w
+You go through the long and winding Tunnel of Extraction.
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[11] n
+
+Road
+It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west.
+
+&gt;[12] n
+
+Further Along the Road
+More road! There's a fork in the road here. The main road goes North and South. To the West there's a parking lot.
+
+&gt;[13] n
+
+Abandoned Train Station
+No trains.
+
+You can see a map here.
+
+&gt;[14] e
+
+Control Room
+Where things get controlled.
+
+You can see the CALL TRAIN button here.
+
+&gt;[15] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[16] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[17] press button
+(the CALL TRAIN button)
+Now that you've been standing here for a bit, you notice a sticky note next to the button.
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[18] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[19] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[20] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[21] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[22] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[23] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[24] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[25] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[26] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[27] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[28] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[29] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[30] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[31] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[32] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[33] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. An electronic voice informs you, "The train will be here any minute now." That was easy.
+
+&gt;[34] w
+
+Abandoned Train Station
+No trains.
+
+You can see a map here.
+
+&gt;[35] put on earbuds
+You put on earbuds.
+
+&gt;[36] put earbuds in ipod
+You plug the earbuds into the iPod. Your favorite song starts to play through them!
+
+&gt;[37] get on edge
+You get onto the edge of the platform.
+
+A train enters the station while you're jamming to the music, and you trip and fall into the train tracks in front of it. That was really dumb.
+
+
+You've reached one of this game's 14 endings! In that game you used 37 moves. The optimal number of moves is 37.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] get ipod
+[2] e
+[3] u
+[4] w
+[5] open drawer
+[6] get earbuds
+[7] e
+[8] d
+[9] d
+[10] w
+[11] n
+[12] n
+[13] n
+[14] e
+[15] press button
+[16] press button
+[17] press button
+[18] press button
+[19] press button
+[20] press button
+[21] press button
+[22] press button
+[23] press button
+[24] press button
+[25] press button
+[26] press button
+[27] press button
+[28] press button
+[29] press button
+[30] press button
+[31] press button
+[32] press button
+[33] press button
+[34] w
+[35] put on earbuds
+[36] put earbuds in ipod
+[37] get on edge
+</commentary>
+        <children><child nodeId="node-5085"></child>
+        </children>
+    </item>
+    <item nodeId="node-5085">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 3 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5086"></child>
+        </children>
+    </item>
+    <item nodeId="node-5086">
+        <command xml:space="preserve">test car</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] s
+
+Back Entryway
+The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. There is a Toyota key tied to the coat rack. The hall is to the North, the backyard to the South.
+
+You can see the back door, a blue key, a right running shoe and a Toyota key here.
+
+&gt;[3] untie toyota key
+You untie the Toyota key, but in your clumsiness it falls to the floor.
+
+&gt;[4] get toyota key
+Taken.
+
+&gt;[5] n
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[6] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[7] w
+You go through the long and winding Tunnel of Extraction.
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[8] n
+
+Road
+It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west.
+
+&gt;[9] n
+
+Further Along the Road
+More road! There's a fork in the road here. The main road goes North and South. To the West there's a parking lot.
+
+&gt;[10] n
+
+Abandoned Train Station
+No trains.
+
+You can see a map here.
+
+&gt;[11] e
+
+Control Room
+Where things get controlled.
+
+You can see the CALL TRAIN button here.
+
+&gt;[12] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[13] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[14] press button
+Now that you've been standing here for a bit, you notice a sticky note next to the button.
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[15] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[16] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[17] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[18] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[19] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[20] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[21] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[22] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[23] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[24] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[25] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[26] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[27] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[28] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[29] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[30] press button
+You press the CALL TRAIN button. An electronic voice informs you, "The train will be here any minute now." That was easy.
+
+&gt;[31] w
+
+Abandoned Train Station
+No trains.
+
+You can see a map here.
+
+&gt;[32] s
+
+Further Along the Road
+More road! There's a fork in the road here. The main road goes North and South. To the West there's a parking lot.
+
+&gt;[33] w
+
+Parking Lot
+Where cars park. You see your boxy blue-gray Toyota in the corner of the lot. The road is to the east.
+
+You can see a blue car (closed and empty) here.
+
+&gt;[34] open car
+You open the blue car.
+
+&gt;[35] get in car
+You get into and start the car. It's ready to roll!
+
+&gt;[36] close car
+You close the blue car.
+
+&gt;[37] e
+
+Further Along the Road (in the blue car)
+More road! There's a fork in the road here. The main road goes North and South. To the West there's a parking lot.
+
+&gt;[38] n
+The boom gates are closing, it looks like a train is coming. You probably shouldn't go to the train station right now.
+
+&gt;[39] n
+The boom gates are closing, it looks like a train is coming. You drive around them and toward the train station. As you go past them, a train comes and runs you over. That was really dumb.
+
+
+You've reached one of this game's 14 endings! In that game you used 39 moves. The optimal number of moves is 39.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] s
+[3] untie toyota key
+[4] get toyota key
+[5] n
+[6] d
+[7] w
+[8] n
+[9] n
+[10] n
+[11] e
+[12] press button
+[13] press button
+[14] press button
+[15] press button
+[16] press button
+[17] press button
+[18] press button
+[19] press button
+[20] press button
+[21] press button
+[22] press button
+[23] press button
+[24] press button
+[25] press button
+[26] press button
+[27] press button
+[28] press button
+[29] press button
+[30] press button
+[31] w
+[32] s
+[33] w
+[34] open car
+[35] get in car
+[36] close car
+[37] e
+[38] n
+[39] n
+</commentary>
+        <children><child nodeId="node-5126"></child>
+        </children>
+    </item>
+    <item nodeId="node-5126">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 3 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-5127"></child>
+        </children>
+    </item>
+    <item nodeId="node-5127">
+        <command xml:space="preserve">test running</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[2] s
+
+Back Entryway
+The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. There is a Toyota key tied to the coat rack. The hall is to the North, the backyard to the South.
+
+You can see the back door, a blue key, a right running shoe and a Toyota key here.
+
+&gt;[3] get right shoe
+Taken.
+
+&gt;[4] n
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[5] u
+
+Upstairs Hall
+The second floor of your house. Stairs lead down. The study is west, and the bathroom is east.
+
+You can see a Staircase and a left running shoe here.
+
+&gt;[6] get left shoe
+Taken.
+
+&gt;[7] d
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.
+
+You can see a Staircase and a muddy brown key here.
+
+&gt;[8] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[9] w
+You go through the long and winding Tunnel of Extraction.
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[10] n
+
+Road
+It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west.
+
+&gt;[11] n
+
+Further Along the Road
+More road! There's a fork in the road here. The main road goes North and South. To the West there's a parking lot.
+
+&gt;[12] n
+
+Abandoned Train Station
+No trains.
+
+You can see a map here.
+
+&gt;[13] e
+
+Control Room
+Where things get controlled.
+
+You can see the CALL TRAIN button here.
+
+&gt;[14] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[15] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[16] press button
+Now that you've been standing here for a bit, you notice a sticky note next to the button.
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[17] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[18] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[19] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[20] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[21] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[22] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[23] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[24] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[25] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[26] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[27] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[28] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[29] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[30] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[31] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[32] press button
+You press the CALL TRAIN button. An electronic voice informs you, "The train will be here any minute now." That was easy.
+
+&gt;[33] w
+
+Abandoned Train Station
+No trains.
+
+You can see a map here.
+
+&gt;[34] take off shoes
+(work shoes)
+You take off work shoes.
+
+&gt;[35] put on running shoes
+You put on the pair of running shoes.
+
+&gt;[36] lace up running shoes
+You tie the laces on the running shoes so that there is no chance you could trip on them. You're ready to run!
+
+&gt;[37] run across tracks
+Well that was dumb. You get distracted as you run across the tracks and don't notice the train coming until it's too late.
+
+
+You've reached one of this game's 14 endings! In that game you used 37 moves. The optimal number of moves is 37.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] s
+[3] get right shoe
+[4] n
+[5] u
+[6] get left shoe
+[7] d
+[8] d
+[9] w
+[10] n
+[11] n
+[12] n
+[13] e
+[14] press button
+[15] press button
+[16] press button
+[17] press button
+[18] press button
+[19] press button
+[20] press button
+[21] press button
+[22] press button
+[23] press button
+[24] press button
+[25] press button
+[26] press button
+[27] press button
+[28] press button
+[29] press button
+[30] press button
+[31] press button
+[32] press button
+[33] w
+[34] take off shoes
+[35] put on running shoes
+[36] lace up running shoes
+[37] run across tracks
+</commentary>
+        <children><child nodeId="node-5165"></child>
+        </children>
+    </item>
+    <item nodeId="node-5165">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+Unsafe
+An Interactive Fiction by Brian Chen and Jakob Weisblat
+Release 3 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. 
+
+You're lying in your bed, just having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-4120">
         <command xml:space="preserve">e</command>

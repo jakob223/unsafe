@@ -10,8 +10,7 @@ test all with "test candle / restart / test bear / restart / test piranhas / res
 
 Instead of going through a closed door:
 	say "You can't go through [the door gone through] because it's closed."
-[comment: The can't go through closed doors rule is not listed in the check going rulebook.]
-[TODO: similar rule for using objects you're not holding]
+
 
 When play begins:
 	now the right hand status line is "Moves: [turn count - 1]"; [Inform's turn count basically says what number the "current move" is, so we subtract one.]
@@ -151,9 +150,9 @@ The toaster, the cabinet, the refrigerator, and the stool are in the kitchen.
 Understand "fridge" as the refrigerator.
 Understand "pull out [something]" as opening.
 The cabinet is a closed openable fixed in place container. The description is "A cabinet with a top, middle, and bottom drawer."
-The top drawer, the middle drawer, and the bottom drawer are closed openable containers. The top drawer, the middle drawer, and the bottom drawer are in the cabinet. Cereal crumbs are a liquid in the top drawer. Instead of opening the bottom drawer, say "It's stuck. But you're pretty sure it's empty; you don't recall ever having used it."
-In the middle drawer is a big tupperware container. The big tupperware is a closed openable container. 
-understand "bread" as the loaf. The description of the tupperware is "A tupperware around 12' by 8' by 6' deep. It could hold lots of food."
+The top drawer, the middle drawer, and the bottom drawer are fixed in place closed openable containers. The top drawer, the middle drawer, and the bottom drawer are in the cabinet. Cereal crumbs are a liquid in the top drawer. Instead of opening the bottom drawer, say "It's stuck. But you're pretty sure it's empty; you don't recall ever having used it."
+In the middle drawer is a big tupperware container. The big tupperware is a fixed in place closed openable container. 
+understand "bread" as the loaf. The description of the tupperware is "A tupperware around 12' by 8' by 6' deep. It could hold lots of food. It seems to be stuck to the drawer with honey or something."
 In the big tupperware is a loaf of bread. The loaf can be wrapped or unwrapped. The loaf is wrapped. The description of the loaf is "A loaf of bread, whole grain and fresh from the bakery. It's pre-sliced! [if the bread is wrapped]It's tightly wrapped in plastic[else]It smells delicious[end if]."
 Understand "more bread" as the loaf of bread. Understand "another slice" as the loaf of bread.
 
@@ -343,7 +342,7 @@ The description of a quarter is usually "An unremarkable quarter. Not anything f
 West of the Upstairs Hall is the Study. The description of the Study is "Where you study. The hall is east." A desk is scenery in the study. 
 The description of the desk is "It's a sturdy wooden desk. There's a drawer.".
 1 quarter and a dime are on the desk. The description of the quarter is "Arkansas state quarter. Minted 2003. Looks pretty new for a 2003 quarter." The description of the dime is "Just a regular old dime. Minted 1994."
-A desk drawer is part of the desk. The desk drawer is a closed openable container. There are earbuds in the desk drawer. The earbuds are wearable. The description of the earbuds is "The earbuds are red." The earbuds can be connected. The earbuds are not connected.
+A desk drawer is part of the desk. The desk drawer is a fixed in place closed openable container. There are earbuds in the desk drawer. The earbuds are wearable. The description of the earbuds is "The earbuds are red." The earbuds can be connected. The earbuds are not connected.
 North of the Study is a door called the closet door. North of the closet door is a room called The Closet. The closet door is open. The description of the Closet is "A small room. The study is south."
 Instead of examining the closet door:
 	if the player is in the study:
@@ -351,7 +350,7 @@ Instead of examining the closet door:
 	else:
 		say "It looks like a door."
 	
-A wooden drawer is a kind of container. Every wooden drawer contains a quarter. Wooden drawers are usually closed. Wooden drawers are always openable.
+A wooden drawer is a kind of fixed in place container. Every wooden drawer contains a quarter. Wooden drawers are usually closed. Wooden drawers are always openable.
 In the closet is a chest of drawers.
 A wooden drawer called the first drawer is part of the chest of drawers. Understand "drawer 1" as the first drawer. Understand "top drawer" as the first drawer.
 A wooden drawer called the second drawer is part of the chest of drawers. Understand "drawer 2" as the second drawer.
@@ -452,7 +451,7 @@ Part 3 - Between
 Section 1 - Garden
 
 West of the bedroom is a door called the Side Door. West of the side door is a room called The Garden. The side door is closed. It is scenery. The spigot is scenery in the garden. Instead of turning on the spigot, say "It won't turn." The flowers are scenery in the garden. The squash are scenery in the garden.
-In the garden is a locked closed container called the shed. The brown key unlocks the shed. The description of the garden is "A small garden. There are a few different kinds of flowers and a few different kinds of squash[if the time machine's use count is greater than 1], which are looking mighty tasty[end if]. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt."
+In the garden is a locked closed fixed in place container called the shed. The brown key unlocks the shed. The description of the garden is "A small garden. There are a few different kinds of flowers and a few different kinds of squash[if the time machine's use count is greater than 1], which are looking mighty tasty[end if]. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt."
 The roof of the Shed is part of The Shed. On top of the Roof is a bucket. The bucket is an unopenable open container.
 
 Understand the command "dip" as "put".
@@ -995,9 +994,11 @@ Rule for printing the name of the shelf when the player is not on the stool:
 	say "high-up shelf"; omit contents in listing.
 The description of soylent is "A fully nutritional meal replacement. It's made of people." 
 
-Instead of opening something portable:	
+Instead of opening something portable:
 	if the player does not have the noun:
-		say "You need to pick up [the noun] before you can open it."
+		say "You need to pick up [the noun] before you can open it.";
+	else:
+		continue the action.
 
 The super glue can be cut or whole. The glue is whole.
 The description of the super glue is "A tube of super glue. It has a warning: EXTREMELY STICKY. [if the glue is whole]Unfortunately, the cap seems to be super glued on, so it's not going to be much use to you.[else]It has been cut, and glue is slowly seeping out of the tube.[end if]".
