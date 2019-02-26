@@ -129,7 +129,7 @@ Part 2 - House
 
 Section 1 - First Floor
 
-The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door ([if the side door is open]open[else]closed[end if]) leads out of the house to the West. [first time][paragraph break]You're lying in your bed, just having woken up from a nap.[only]".
+The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door ([if the side door is open]open[else]closed[end if]) leads out of the house to the West. [first time][paragraph break]You've just gotten out of your bed, having woken up from a nap.[only]".
 The nightstand is scenery in the Bedroom. There is an iPod on the nightstand. The iPod can be playing. The iPod is not playing. The description of the iPod is "It's an iPod touch, third-generation, maybe? [if playing]It's playing your favorite song.[end if]". Instead of wearing the iPod, say "People tend to wear headphones these days; wearing iPods is less fashionable."
 
 Instead of inserting the earbuds into the iPod:
@@ -399,7 +399,9 @@ Every turn while the water level is greater than 9 and the drain is plugged:
 Every turn while the faucet is on and the drain is plugged:
 	if the water level is not 10:
 		increase the water level by 1.
-		
+Understand "get out of [something]" as a mistake ("Try just typing GET OUT.").
+Understand "leave [something]" as a mistake ("Try just typing LEAVE.").
+
 The bathtub is a fixed in place enterable container in the bathroom. The description of the bathtub is "It's a bathtub. Big enough to sit in comfortably or lie down in uncomfortably. [paragraph break][the water status]". Understand "tub" as the bathtub.
 The drain is a part of the bathtub. The drain can be plugged. The bathtub has a number called its water level. The water level is initially 0.
 The faucet is a part of the bathtub. The faucet can be on or off.

@@ -1,1 +1,3 @@
 https://jakob.weisbl.at/gph_beta/index.html
+
+See http://inform7.com/if/anth/IntroductionToIF.pdf for some generic text adventure help.
