@@ -1,7 +1,7 @@
 "Unsafe" by Brian Chen and Jakob Weisblat
 
 The story description is "It's a puzzle".
-The release number is 2.
+The release number is 3.
 The story creation year is 2019.
 
 Part 1 - Meta
@@ -18,6 +18,7 @@ When play begins:
 	
 To conclude with (par - a number):
 	now the right hand status line is "Moves: [turn count]";
+	say "[paragraph break]";
 	end the story saying "You have died";
 	say "You've reached one of this game's 14 endings! In that game you used [turn count] moves. The optimal number of moves is [par].";
 	if turn count is less than par:
@@ -33,9 +34,14 @@ Instead of taking something when the number of entries in the multiple object li
 
 Section 1 - The Player
 
-The player is wearing pants, underwear, socks, a shirt, work shoes, a belt, a hat, and a jacket.
-
+The player is wearing pants, underwear, socks, a shirt, work shoes, a belt, a hat, and a jacket.	
 The description is "You're wearing [a list of things worn by the player]."
+
+Instead of going from the house when the jacket is not worn:
+	say "You step ouside, but you shiver and decide you need a jacket. You step back inside."
+
+Instead of taking off the jacket when the player is not in the house:
+	say "It's cold out here. You'd rather keep that on."
 
 Instead of taking off socks when the player is wearing work shoes or the player is wearing the pair of running shoes:
 	say "You need to take your shoes off first!"
@@ -97,8 +103,10 @@ using is an action applying to one thing.
 carry out using:
 	say "You'll have to be more specific."
 Understand "use [something]" as using.
-Understand "play [something]" as using.
-[TODO: implement use for some things]
+Understand "play [the iPod]" as using.
+
+Instead of using the ladder:
+	try going up.
 Instead of using the iPod:
 	if the iPod is playing:
 		say "Often people use music playing devices by listening to the place the music is coming from.";
@@ -143,7 +151,7 @@ The toaster, the cabinet, the refrigerator, and the stool are in the kitchen.
 Understand "fridge" as the refrigerator.
 Understand "pull out [something]" as opening.
 The cabinet is a closed openable fixed in place container. The description is "A cabinet with a top, middle, and bottom drawer."
-The top drawer, the middle drawer, and the bottom drawer are closed openable containers. The top drawer, the middle drawer, and the bottom drawer are in the cabinet. Cereal crumbs are a liquid in the top drawer. [TODO: improve the drawer situation]
+The top drawer, the middle drawer, and the bottom drawer are closed openable containers. The top drawer, the middle drawer, and the bottom drawer are in the cabinet. Cereal crumbs are a liquid in the top drawer. Instead of opening the bottom drawer, say "It's stuck. But you're pretty sure it's empty; you don't recall ever having used it."
 In the middle drawer is a big tupperware container. The big tupperware is a closed openable container. 
 understand "bread" as the loaf. The description of the tupperware is "A tupperware around 12' by 8' by 6' deep. It could hold lots of food."
 In the big tupperware is a loaf of bread. The loaf can be wrapped or unwrapped. The loaf is wrapped. The description of the loaf is "A loaf of bread, whole grain and fresh from the bakery. It's pre-sliced! [if the bread is wrapped]It's tightly wrapped in plastic[else]It smells delicious[end if]."
@@ -158,14 +166,15 @@ Instead of eating the loaf:
 A slice of bread is a kind of edible thing. A slice of bread can be toasted. The description of a slice of bread is "[if toasted]A piece of toast - scrumptious![else]A slice of bread.[end if]".
 
 Understand "use fork on toaster" as a mistake ("Try the verb INSERT.").
-
 Instead of inserting something into the toaster:
 	If the noun is the fork and the toaster is plugged in and the toaster is done:		
-		say "You stick the fork in the toaster, hoping it will help you remove your toast. Unfortunately, the toaster is electrified and as soon as your fork touches the coil you are electrocuted. You'll never get to eat that delicious toast... :([line break]";
+		say "You stick the fork in the toaster, hoping it will help you remove your toast. Unfortunately, the toaster is electrified and as soon as your fork touches the coil you are electrocuted. You'll never get to eat that delicious toast... :(";
 		conclude with 24;
 	else if the button is active:
 		say "The toaster is hard at work, don't bother it.";
-	Else if the noun is not the loaf of bread:
+	else if the noun is the sacrificial knife:
+		say "That seems to important to tarnish it by putting it in a toaster.";
+	else if the noun is not the loaf of bread:
 		say "That's not what you're supposed to put in a toaster!";
 	else if the bread is wrapped:
 		say "You need to unwrap that bread before you can put it in the toaster.";
@@ -174,6 +183,8 @@ Instead of inserting something into the toaster:
 	else:
 		say "You put a slice of bread in the toaster.";
 		increase the toaster's slice count by 1;
+Instead of going from the kitchen when the button is active:
+	say "You can't leave the toaster unattended - what if the toast gets burnt?!"
 Instead of opening the bread: [unwrap means open]
 	if the player does not have the bread:
 		say "You need to take the bread first.";
@@ -269,9 +280,12 @@ Instead of pushing the TOAST button:
 At the time when the toaster beeps:
 	say "DING! The toast is ready. The toaster pops it out but malfunctions and the toast becomes stuck in the toaster.";
 	now the toaster is done;
-	now the button is not active;
+	now the button is not active.
 
-[TODO: what if the player tries to take the toast out of the toaster with their hands?]
+Instead of taking the toast button when the toaster is done:
+	say "You can't reach into the thin toast hole. Maybe you could stick something in instead?"
+
+
 Test toaster with "open door / w / w / w / n / pull fork / take fork / s / s / d / u / e / open cabinet / open middle drawer / open big tupperware / get bread / unwrap bread / plug in toaster / put bread in toaster / put bread in toaster / press button / wait / wait / put fork in toaster"	
 		
 
@@ -283,7 +297,7 @@ The fish and the pie are edible.
 The stool is an enterable portable supporter in the kitchen. The description is "It's a stool that you can stand on."
 
 
-South of the Hall is the Back Entryway. There is a blue key in the back entryway. There is a locked door called the back door. The back door is south of the back entryway. The blue key unlocks the back door. The description of the back entryway is "The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. [if the Toyota key is tied]There is a Toyota key tied to the coat rack. [end if]The hall is to the North, the backyard to the South." The coat rack and the trash can are scenery in the back entryway. There is a right running shoe in the back entryway. There is a left running shoe in the upstairs hall.
+South of the Hall is the Back Entryway. There is a blue key in the back entryway. There is a locked door called the back door. The back door is south of the back entryway. The blue key unlocks the back door. The description of the back entryway is "The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. [if the Toyota key is tied]There is a Toyota key tied to the coat rack. [end if]The hall is to the North, the backyard to the South." The coat rack and the trash can are scenery in the back entryway. There is a right running shoe in the back entryway. There is a left running shoe in the Upstairs Hall.
 
 The Toyota key is in the back entryway. The Toyota key can be tied. The Toyota key is tied.
 untieing is an action applying to one visible thing.
@@ -348,7 +362,7 @@ The description of the chest is "It's an old wooden chest with 5 drawers.[if the
 
 East of the Upstairs Hall is the Bathroom. The description of the Bathroom is "It's just a bathroom."
 The mirror is a fixed in place thing in the bathroom. The description of the mirror is "You can see your own reflection in the mirror. [if the player is wearing some hair gel]Your hair looks awesome with the hair gel on it.[else]You look the same as always.[end if]".
-There is a medicine cabinet in the bathroom. The medicine cabinet is an openable closed container. There is a can of hair gel in the medicine cabinet. The description is "A can of hair gel. You can put it on. There's a warning on the gel that says 'EXTREMELY FLAMMABLE'."
+There is a medicine cabinet in the bathroom. The medicine cabinet is a fixed in place openable closed container. There is a can of hair gel in the medicine cabinet. The description is "A can of hair gel. You can put it on. There's a warning on the gel that says 'EXTREMELY FLAMMABLE'."
 Understand the command "spray" as "wear" [for hair gel]
 
 [naming things unambiguously is annoying]
@@ -402,7 +416,7 @@ A thing can be tub-relevant. A thing is usually tub-relevant. A dollop of hair g
 Instead of entering the bathtub when the player is wearing anything tub-relevant:
 	say "You are a person of few principles, but one of those principles is never to enter a bathtub while wearing anything. (You're wearing [a list of things worn by the player].)".
 Instead of entering the bathtub when the piranhas are in the bathtub:
-	say "You get in the tub. The warm water feels wonderful for a few seconds, and then the piranhas start to attack. They eat your feet, your legs, and... you can imagine the rest.[paragraph break]";
+	say "You get in the tub. The warm water feels wonderful for a few seconds, and then the piranhas start to attack. They eat your feet, your legs, and... you can imagine the rest.";
 	conclude with 32.
 
 Section 4 - Basement
@@ -416,6 +430,7 @@ A bucketful of rocket fuel is a liquid. The bucketful is nowhere.
 Instead of opening the vat:
 	say "You lift the large plastic lid off of the vat, revealing the pungent rocket fuel beneath.";
 	now the vat is open.
+Understand "fill bucket with fuel/water/piranhas" as a mistake ("Try DIPping the bucket in something.").
 Instead of inserting the bucket into the vat:
 	if the piranha-infested water is in the bucket:
 		say "You should probably empty the bucket out first.";
@@ -430,7 +445,7 @@ Instead of taking the key cabinet:
 	say "(the small metal key)";
 	try taking the small metal key.
 
-The House is a region. The Bedroom and the Kitchen and the Hall and the Upstairs Hall and the Study and the Back Entryway and the Closet and the Bathroom and the Basement are in the House.
+The House is a region. The Bedroom and the Kitchen and the Hall and the Upstairs Hall and the Study and the Back Entryway and the Closet and the Bathroom and the Basement are in the House. The Mad Scientist's House is in the house. The laboratory is in the house. The Control Room is in the house. The Hunting Lodge is in the house. [really this is just indoors]
 
 Part 3 - Between
 
@@ -441,7 +456,7 @@ In the garden is a locked closed container called the shed. The brown key unlock
 The roof of the Shed is part of The Shed. On top of the Roof is a bucket. The bucket is an unopenable open container.
 
 Understand the command "dip" as "put".
-Understand the command "fill" as "put".
+Understand "fill [something] in [something]" as inserting it into.
 
 The description of the Shed is "A narrow rusty shed. [if the player is on the stool]On the shed's roof, you can see [a list of the things on the roof of the shed].[else]The shed is really tall and you can't see above it.[end if]".
 
@@ -458,7 +473,8 @@ Section 2 - Other stuff
 West of the Garden is the Outskirts of Town. The description of the Outskirts of Town is "There's less town here than there is to the South. The garden is east. The space center is North. The road is West."
 North of the Outskirts of Town is the Space Center. The description of the space center is "Your friendly neighborhood space center. They build rockets and stuff. The outskirts of town are South, the launch pad is North."
 North of the Space Center is the Launch Pad. The description of the launch pad is "The place where rockets take off from. The rest of the Space Center is South."
-An enterable openable closed container called a spaceship is in the launch pad. The description of the spaceship is "A very small rocket. Just big enough to carry one person to space.". The spaceship can be low on fuel. The spaceship is low on fuel. The spaceship can be on or off.[TODO: override (closed) on space ship]
+A fixed in place enterable openable closed container called a spaceship is in the launch pad. The description of the spaceship is "A very small rocket. Just big enough to carry one person to space.". The spaceship can be low on fuel. The spaceship is low on fuel. The spaceship can be on or off.
+Rule for printing the name of the spaceship: say "spaceship"; omit contents in listing.
 There is an ON button and a LAUNCH button in the spaceship.  The on button is lit. The on button is fixed in place. The launch button is fixed in place. The spaceship can be waiting for confirmation. The computer is a fixed in place undescribed person in the spaceship. There is a spacesuit in the spaceship. There is a helmet in the spaceship. The spacesuit and the helmet are wearable. The spaceship can be broken. The spaceship is not broken.
 The description of the on button is "A glowing green button labelled ON". The description of the launch button is "A [if the spaceship is on]glowing [end if]purple button labelled LAUNCH".
 Flying is an action applying to one visible thing.
@@ -497,7 +513,7 @@ Instead of answering the computer that "CANCEL":
 			now the computer is disabled;
 			say "The autopilot is disabled."
 
-the air is a room. outer space is a room. floating is a region. the air and outer space are in floating.
+the air is a room. Outer Space is a room. floating is a region. the air and outer space are in floating.
 Instead of pushing the LAUNCH button:
 	if the spaceship is off:
 		say "The button doesn't do anything. Maybe try turning on the spaceship first?";
@@ -516,9 +532,7 @@ Instead of opening the spaceship in outer space:
 		continue the action;
 	else:
 		say "Space is pretty and all, but you wouldn't want to go out there without wearing a helmet and a spacesuit."
-
-[Instead of going outside in the spaceship:
-	try exiting the spaceship.]
+ 
 
 the computer can be disabled. The computer is not disabled.
 At the time when autopilot engages:
@@ -544,9 +558,10 @@ Every turn while the spaceship is out of control:
 	say "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 	say "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA![line break]";
 	say "The ship barrels toward the ground at an alarming rate.".
-There is a room called the ruins of the tunnel of extraction.
+There is a room called the Ruins of the Tunnel of Extraction.
 At the time when the ship crash lands:
-	say "With a CRASH and a BOOM the ship crash lands into the ground. It breaks through the ground and as you die on impact you vaguely recognize your surroundings: this was formerly part of the tunnel of extraction.[line break]";
+	now the player is in the ruins of the tunnel;
+	say "With a CRASH and a BOOM the ship crash lands into the ground. It breaks through the ground and as you die on impact you vaguely recognize your surroundings: this was formerly part of the Tunnel of Extraction.";
 	now the spaceship is in the ruins of the tunnel;
 	conclude with 21. 
 Understand "ship" as spaceship. Understand "door" as spaceship.
@@ -558,17 +573,20 @@ At the time when the autopilot lands the ship:
 Understand "fill spaceship" as a mistake ("Try POURing the fuel into the ship")
 
 Instead of inserting bucketful of rocket fuel into the spaceship:
-	say "You pour the rocket fuel into the ship's fuel hatch, closing the hatch when you are done.";
-	now the bucketful of rocket fuel is nowhere;
-	now the spaceship is not low on fuel;
-	if the spaceship is closed:
-		say "As if in a gesture of thanks, the computer opens the door to the spaceship for you.";
-		now the spaceship is open;
+	if the player is in the spaceship:
+		say "You can't reach the fuel port from inside the ship.";
+	else:
+		say "You pour the rocket fuel into the ship's fuel hatch, closing the hatch when you are done.";
+		now the bucketful of rocket fuel is nowhere;
+		now the spaceship is not low on fuel;
+		if the spaceship is closed:
+			say "As if in a gesture of thanks, the computer opens the door to the spaceship for you.";
+			now the spaceship is open;
 
 Instead of taking off the spacesuit in outer space:
 	say "That seems like an extraordinarily dumb thing to do."
 Instead of taking off the helmet in outer space:
-	say "You see space, with your own eyes. It's stunningly beautiful. Then your head explodes.[line break]";
+	say "You see space, with your own eyes. It's stunningly beautiful. Then your head explodes.";
 	conclude with 29
 
 
@@ -596,21 +614,31 @@ After entering the blue car:
 	
 understand "car door" as the car.
 
+Instead of entering the house when the player is in the car:
+	say "You can't drive indoors, that would be a safety hazard."
+
 Before going when the player is in the car:
 	if the car is open:
 		say "That would be unsafe. You should close the car door.";
 		stop the action.
 		
 understand "car key" as the Toyota key.
+Understand "unlock [the car]" as opening.
+Instead of unlocking the car with something:
+	say "Try OPENing the car."
 
 test car with "e / s / untie Toyota key / get Toyota key / n / d / w / n / n / n / e / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button  / press button / press button / w / s / w / open car / get in car / close car / e / n / n"
 
-Instead of going to the abandoned train station when the player is in the car and the train is ready and the car is not ready:
-	say "The boom gates are closing, it looks like a train is coming. You probably shouldn't go to the train station right now.";
-	now the car is ready.
-Instead of going to the abandoned train station when the player is in the car and the train is ready and the car is ready:
-	say "The boom gates are closing, it looks like a train is coming. You drive around them and toward the train station. As you go past them, a train comes and runs you over. That was really dumb.";
-	conclude with 39.
+Instead of going to the abandoned train station when the player is in the car:
+	if the train is not ready:
+		say "You drive across the tracks into the train station turnaround. This is the end of the road.";
+		continue the action;
+	else if the car is not ready:
+		say "The boom gates are closing, it looks like a train is coming. You probably shouldn't go to the train station right now.";
+		now the car is ready;
+	else:
+		say "The boom gates are closing, it looks like a train is coming. You drive around them and toward the train station. As you go past them, a train comes and runs you over. That was really dumb.";
+		conclude with 39.
 
 understand "drive around boom gates" as a mistake ("I don't understand those words. Maybe you want to go toward wherever the boom gates are.").
 understand "drive around the boom gates" as a mistake ("I don't understand those words. Maybe you want to go toward wherever the boom gates are.").
@@ -634,9 +662,11 @@ Every turn when the player is on the edge of the platform:
 		say "A train enters the station while you're jamming to the music, and you trip and fall into the train tracks in front of it. That was really dumb.";
 		conclude with 37.
 
-There is a thing in the control room called the CALL TRAIN button. The description of the CALL TRAIN button is "A big red button labelled CALL TRAIN. Next to the button is a handwritten note reading 'This button doesn't work very well. Sometimes you have to press it ten or twenty times to get it to work.'.". The button has a number called the finnickiness. The finnickiness of the button is 18.
+There is a thing in the control room called the CALL TRAIN button. The call train button can be examined or unexamined. The description of the CALL TRAIN button is "A big yellow button labelled CALL TRAIN. Next to the button is a handwritten note reading 'This button doesn't work very well. Sometimes you have to press it ten or twenty times to get it to work.'.". The button has a number called the finnickiness. The finnickiness of the button is 18.
 
 Instead of pushing the CALL TRAIN button:
+	if the finnickiness of the button is 16 and the button is unexamined:
+		say "Now that you've been standing here for a bit, you notice a sticky note next to the button.";
 	if the finnickiness of the button is not 0:
 		say "You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.";
 		decrease the finnickiness of the button by 1;
@@ -644,7 +674,9 @@ Instead of pushing the CALL TRAIN button:
 		say "You press the CALL TRAIN button. An electronic voice informs you, 'The train will be here any minute now.' That was easy.";
 		now the train is ready;
 		the train comes in 10 turns from now.
-
+Understand "note" and "sticky note" as the call train button.
+After examining the CALL TRAIN button:
+	now the noun is examined.
 At the time when the train comes:
 	if the player is in the train station:
 		say "A train whooshes by at dangerously high speed. Must be the one you called. It doesn't stop though, so if you really needed a train you might need to call another.";
@@ -701,10 +733,18 @@ The description of the lair is "A lair in which a demonic ritual might be held. 
 The table is scenery in the Spooky lair. The table is a supporter. There is a candle on the table. The candle is lit. A sacrificial knife is on the table. The description of the sacrificial knife is "A knife that looks like it might be used in a demonic ritual - or, you know, for cutting stuff".
 A snake is a kind of animal. A snake is usually privately-named. There is a snake called Alice. There is a snake called Bob. There is a snake called Charlie. There is a snake called David. Alice, Bob, Charlie, and David are in the lair.
 
+Understand "give mouse to snake" and "throw mouse to snake" and "feed mouse to snake" as a mistake ("The snakes are moving too fast to give one a mouse. Maybe you need to lure them to you.")
+
+After dropping a mouse:
+	if the noun is not in the cage:
+		say "The mouse sees an opportunity and scurries off before it is eaten by a snake or put back in a jar.";
+		now the noun is nowhere.
+	
+
 Instead of taking or touching the candle when the player is wearing a dollop of hair gel:
 	say "You touch the candle. The flame leaps onto your hair. Boom!";
 	conclude with 17.
-	
+
 Instead of taking the candle:
 	say "You feel like taking the candle will disrupt the rituals here and curse you and your descendants. Probably better not to disturb it."
 Blowing out is an action applying to one thing. Understand "Blow out [something]" as blowing out. Understand "Blow [something] out" as blowing out.
@@ -782,18 +822,21 @@ Section 2 - Trees
 South of By the Stream is a Clearing. The description of the Clearing is "It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north."
 
 West of the Clearing is the Edge of the Woods. The description of the Edge of the Woods is "The woods start here and extend to the west. There's a clearing to the east."
-West of the Edge is a room called the Woods. The description of the Woods is "There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge." [Trees are scenery in the Woods. The description is "The trees have bark and leaves." Understand "bark" and "leaves" as trees.]
+West of the Edge is a room called the Woods. The description of the Woods is "There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.[if the nest is not found] You can hear a faint sound from above.[end if]"
 
 Instead of going nowhere from the Woods: say "Too many trees. You'd get lost."
 
-A tree is a kind of backdrop. Every tree has a room called the branches. An ash tree is a tree. An elm tree is a tree. A pine tree is a tree.
+A tree is a kind of backdrop. Every tree has a room called the branches. An ash tree is a tree. An elm tree is a tree. A pine tree is a tree. Understand "branch" as a tree.
 
-The wasps' nest is in Top of Ash Tree. The description is "A light brown nest of wasps in the tree's branches."
+The wasps' nest is in Top of Ash Tree. The description is "A light brown nest of wasps[if the nest is not found] in the tree's branches[end if]."
 
+Instead of dropping the wasps' nest when the player does not have the wasps' nest:
+	say "You can only throw something you already have."
 Instead of taking the wasps' nest when the player is not in the Woods: say "Try as you might, you can't reach the nest. But you think you could shake the tree to make it drop."
 Instead of dropping the wasps' nest:
-	say "You toss the wasps' nest. Your last sensation is a barrage of stings from the army of angry wasps that bursts from the nest to attack you.";
+	say "You toss the wasps[apostrophe] nest. Your last sensation is a barrage of stings from the army of angry wasps that bursts from the nest to attack you.";
 	conclude with 34.
+The nest can be found. The nest is not found.
 
 Shaking is an action applying to one touchable thing. Understand "shake [something]" as shaking.
 
@@ -802,14 +845,15 @@ Carry out shaking: say "That would achieve nothing."
 Instead of shaking a tree:
 	say "You shake the tree vigorously.";
 	if the player is in Top of Ash Tree and the wasps' nest is in Top of Ash Tree:
-		say "The wasps' nest is dislodged. You watch it fall to the top of the elm tree.";
+		say "The wasps[apostrophe] nest is dislodged. You watch it fall to the top of the elm tree.";
 		now the wasps' nest is in Top of Elm Tree;
 	else if the player is in Top of Elm Tree and the wasps' nest is in Top of Elm Tree:
-		say "The wasps' nest is dislodged. You watch it fall to the top of the pine tree.";
+		say "The wasps[apostrophe] nest is dislodged. You watch it fall to the top of the pine tree.";
 		now the wasps' nest is in Top of Pine Tree;
 	else if the player is in Top of Pine Tree and the wasps' nest is in Top of Pine Tree:
-		say "The wasps' nest is dislodged. You watch it fall to the forest floor.";
-		now the wasps' nest is in Woods.
+		say "The wasps[apostrophe] nest is dislodged. You watch it fall to the forest floor.";
+		now the wasps' nest is in Woods;
+		now the nest is found.
 
 The branches of the elm is a room called Middle Branches of Elm Tree. The description of Middle Branches of Elm Tree is "You're roughly half of the height of the Elm Tree."
 The branches of the pine is a room called Top of Pine Tree. The description of Top of Pine Tree is "The pine tree is short. You're on top."
@@ -831,7 +875,9 @@ Up of the Woods is nowhere.
 
 Instead of going up from the Woods: say "There are many trees you could climb. You'll have to name one specifically."
 Instead of climbing a tree (called the apparatus):
-	if the player is in the Woods:
+	if the player is in the car:
+		say "You'll have to get out of the car to do that.";
+	else if the player is enclosed by the woods:
 		move the player to the branches of the apparatus;
 	else:
 		try going up.
@@ -841,6 +887,7 @@ Going-up is an action applying to nothing. Understand "climb up/upward/upwards/h
 Going-down is an action applying to nothing. Understand "climb down/downward/downwards/lower" as going-down. Instead of going-down: try going down.
 
 Test trees with "e / e / open fridge / take fish / w / d / w / w / w / w / throw fish / wait / wait / wait / w / climb ash / u / u / u / shake tree / d / d / d / d / climb elm / u / shake tree / d / d / climb pine / shake tree / d / take nest / throw nest".
+Test treetops with "e / e / open fridge / take fish / w / d / w / w / w / w / throw fish / wait / wait / wait / w / climb ash / u / u / u".
 
 
 
@@ -942,14 +989,22 @@ The description of Town Square is "The Town Square stretches out in front of you
 South of the Town Square is a door called the Mad Scientist's Grand Entrance. south of the Mad Scientist's grand entrance is the Mad Scientist's house.
 The description of the Mad Scientist's House is "A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier." Gadgets and tubes and a tool shelf and an amplifier are scenery in the Mad Scientist's house. A door called a ladder is above the mad scientist's house. The ladder is open and unopenable. Understand "amp" as the amplifier.
 
-[TODO: suppress shelf description]
-The description of the shelf is "A high-up shelf that you imagine stores the mad scientist's secrets.  [if the player is on the stool]On the tool shelf, you can see [a list of the things on the shelf]. That's disappointing[else]It's so high up that you can't see on it[end if]." The shelf is a supporter. A small tool box and a bottle of soylent are on the shelf. The small tool box is an openable closed container. Super glue is in the small tool box. Super glue and soylent are edible. [TODO: if you eat the soylent, it tastes good.]
-The description of soylent is "A full nutritional meal replacement. It's made of people." 
+The description of the shelf is "A high-up shelf that you imagine stores the mad scientist's secrets.  [if the player is on the stool]On the tool shelf, you can see [a list of the things on the shelf]. That's disappointing[else]It's so high up that you can't see on it[end if]." The shelf is a supporter. A small tool box and a bottle of soylent are on the shelf. The small tool box is an openable closed container. Super glue is in the small tool box. Super glue and soylent are edible.
+After eating the soylent, say "You could get used to this mad scientist lifestyle - that soylent is truly delectable."
+Rule for printing the name of the shelf when the player is not on the stool:
+	say "high-up shelf"; omit contents in listing.
+The description of soylent is "A fully nutritional meal replacement. It's made of people." 
+
+Instead of opening something portable:	
+	if the player does not have the noun:
+		say "You need to pick up [the noun] before you can open it."
 
 The super glue can be cut or whole. The glue is whole.
 The description of the super glue is "A tube of super glue. It has a warning: EXTREMELY STICKY. [if the glue is whole]Unfortunately, the cap seems to be super glued on, so it's not going to be much use to you.[else]It has been cut, and glue is slowly seeping out of the tube.[end if]".
 Instead of cutting the super glue:
-	If the player has the knife:
+	If the player does not have the glue:
+		say "You need to take the tube of super glue first.";
+	else If the player has the knife:
 		if the super glue is whole:
 			say "You use the sacrificial knife to cut the super glue's tip right off. Glue gurgles out of the tube viscously.";
 			now the glue is cut;
@@ -981,9 +1036,12 @@ Test glue with "e / e / take stool / w / down / go through tunnel / s / get knif
 
 Above the ladder is the Mad Science Laboratory. Understand "Lab" as the mad science laboratory. The description of the mad science laboratory is "A room full of so much mad science, it makes you mad just to think about it. The wall is covered in chalkboards, and the chalkboards are covered in diagrams, and the diagrams are covered in labels. Maddening."
 Instead of climbing the ladder, try going up.
-The time machine is a fixed in place enterable container in the Mad Science Laboratory. The time machine has a number called the use count. The time machine's use count is initially 0. The description of the time machine is "A cardboard box with the words 'TIME MACHINE' scrawled on it in sharpie. Below the words '25 cents per 2 weeks forward' are written a little smaller."  [TODO: time machine contents are announced :/]
+The time machine is a fixed in place enterable container in the Mad Science Laboratory. The time machine has a number called the use count. The time machine's use count is initially 0. The description of the time machine is "A cardboard box with the words 'TIME MACHINE' scrawled on it in sharpie. Below the words '25 cents per 2 weeks forward' are written a little smaller." 
 The red button is a fixed in place thing in the time machine. The coin slot is a fixed in place closed unopenable container in the time machine. The coin slot has a number called the credits. The coin slot's credits is initially 0. The coin slot can be available. The coin slot is available.
-
+Rule for printing  the name of the time machine:
+	say "time machine";
+	omit contents in listing.
+	
 The description of the red button is "A big red button. Says 'TRAVEL' on it. You guess it might mean time travel.". The description of the coin slot is "A coin slot that looks like it was ripped from an old arcade machine. Looks like it accepts only quarters. There's a note next to it that says you can put in as many quarters as you want before pressing the button."
 
 Every turn:
@@ -1025,6 +1083,8 @@ Instead of eating the pie when the pie is in the inner safe:
 Instead of eating the pie when the pie is aged:
 	say "You eat the pie. It tastes... strange. As though it's been sitting out for 2 weeks. Your stomach starts to feel unpleasant and then --";
 	conclude with 32.
+	
+pie crumbs are a liquid. The description of the crumbs is "The crumbs that were left behind when someone took a pie from this location." The pie crumbs are nowhere.
 Instead of pushing the button:
 	if the coin slot's credits is 0:
 		say "You need to put a quarter in the coin slot first.";
@@ -1039,7 +1099,9 @@ Instead of pushing the button:
 			if the pie is not in the refrigerator:
 				now the pie is aged;
 		else if the pie is not enclosed by the time machine:
-			now the pie is nowhere.
+			let X be the location of the pie;
+			now the pie is nowhere;
+			move the pie crumbs to X.
 	
 test pie with "e / e / open fridge / get pie / w / u / w / get quarter / e / d / d / w / e / open entrance / s / u / open time safe / open middle safe / open inner safe / put pie in inner safe / close inner safe / close middle safe / close time safe / go in time machine / put quarter in slot / press button / get out / open outer safe / open middle safe / open inner safe / get pie / eat pie"
 

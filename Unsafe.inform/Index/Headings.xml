@@ -18,126 +18,126 @@
     </dict>
     <key>2</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>34</integer>
+        <key>Line</key><integer>35</integer>
         <key>Title</key><string>Section 1 - The Player</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>53</integer>
+        <key>Line</key><integer>59</integer>
         <key>Title</key><string>Section 2 - Liquids and Dumping</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>94</integer>
+        <key>Line</key><integer>100</integer>
         <key>Title</key><string>section 3 - Using</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>121</integer>
+        <key>Line</key><integer>129</integer>
         <key>Title</key><string>Part 2 - House</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>123</integer>
+        <key>Line</key><integer>131</integer>
         <key>Title</key><string>Section 1 - First Floor</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>139</integer>
+        <key>Line</key><integer>147</integer>
         <key>Title</key><string>Section 2 - Kitchen</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>8</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>322</integer>
+        <key>Line</key><integer>336</integer>
         <key>Title</key><string>Section 3 - Second Floor</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>9</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>408</integer>
+        <key>Line</key><integer>422</integer>
         <key>Title</key><string>Section 4 - Basement</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>10</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>435</integer>
+        <key>Line</key><integer>450</integer>
         <key>Title</key><string>Part 3 - Between</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>11</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>437</integer>
+        <key>Line</key><integer>452</integer>
         <key>Title</key><string>Section 1 - Garden</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>12</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>456</integer>
+        <key>Line</key><integer>471</integer>
         <key>Title</key><string>Section 2 - Other stuff</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>13</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>618</integer>
+        <key>Line</key><integer>646</integer>
         <key>Title</key><string>Section 3 - Trains</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>14</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>686</integer>
+        <key>Line</key><integer>718</integer>
         <key>Title</key><string>Section 4 - Warehouse</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>15</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>750</integer>
+        <key>Line</key><integer>790</integer>
         <key>Title</key><string>Part 4 - Nature</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>16</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>752</integer>
+        <key>Line</key><integer>792</integer>
         <key>Title</key><string>Section 1 - Piranhas</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>17</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>780</integer>
+        <key>Line</key><integer>820</integer>
         <key>Title</key><string>Section 2 - Trees</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>18</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>876</integer>
+        <key>Line</key><integer>923</integer>
         <key>Title</key><string>Section 3 - Bear</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>19</key><dict>
         <key>Filename</key><string>/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Source/story.ni</string>
-        <key>Line</key><integer>938</integer>
+        <key>Line</key><integer>985</integer>
         <key>Title</key><string>Part 5 - Town</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
