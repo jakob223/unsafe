@@ -498,6 +498,8 @@ Instead of pushing the ON button:
 		if the spaceship is low on fuel:
 			say "[paragraph break]A dialog appears on the screen: WARNING: LOW FUEL. SAY 'confirm' to continue. Mission abort HIGHLY recommended.";
 			now the spaceship is waiting for confirmation.
+Instead of entering the spaceship when a mouse is enclosed by the player:
+	say "This space center has a strict no-mice policy. You'll have to put down any mice you are carrying before you get in."
 Instead of answering the computer that "confirm":
 	if the spaceship is waiting for confirmation:
 		say "The dialog on the screen goes away. The screen now reads READY FOR LAUNCH.";
@@ -555,8 +557,8 @@ At the time when the ship runs out of fuel:
 	the ship crash lands in five turns from now.
 Every turn while the spaceship is out of control:
 	say "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
-	say "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA![line break]";
-	say "The ship barrels toward the ground at an alarming rate.".
+	say "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA![line break]"; 
+	say "The ship barrels toward the ground at an alarming rate.".[TODO: vary this]
 There is a room called the Ruins of the Tunnel of Extraction.
 At the time when the ship crash lands:
 	now the player is in the ruins of the tunnel;
@@ -736,7 +738,7 @@ Understand "give mouse to snake" and "throw mouse to snake" and "feed mouse to s
 
 After dropping a mouse:
 	if the noun is not in the cage:
-		say "The mouse sees an opportunity and scurries off before it is eaten by a snake or put back in a jar.";
+		say "The mouse sees an opportunity and scurries off before it can be [if the player is in the lair]eaten by a snake or [end if]put back in the jar.";
 		now the noun is nowhere.
 	
 
@@ -941,7 +943,7 @@ Instead of going to the woods when not the woods are accessible:
 		say "The bear seems to be guarding the entrance to the woods. Seems like it would be awfully difficult to get through here unless the bear were somehow distracted. With food, maybe?";
 		now the bear is in the Woods.
 
-Understand the command "poke" as "attack".
+Understand the command "poke" as "attack". [TODO: if the player tries to attack the bear without first going to the woods, what do]
 Instead of attacking the bear:
 	if the player is holding the stick:
 		say "You take your stick and poke the bear. It wakes up and promptly eats you.";
