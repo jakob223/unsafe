@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6M62
 
-status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Build/StatusCblorb.html"
+status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/raxtus/dev/unsafe/Unsafe.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform"
-release to "/Users/jakob/Documents/Inform/UNSAFE/Unsafe.materials/Release"
+project folder "/Users/raxtus/dev/unsafe/Unsafe.inform"
+release to "/Users/raxtus/dev/unsafe/Unsafe.materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "Unsafe.gblorb"
-storyfile "/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Build/output.ulx" include
-ifiction "/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Metadata.iFiction" include
+storyfile "/Users/raxtus/dev/unsafe/Unsafe.inform/Build/output.ulx" include
+ifiction "/Users/raxtus/dev/unsafe/Unsafe.inform/Metadata.iFiction" include
 cover "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 picture 1 "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 release file "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
@@ -33,21 +33,21 @@ placeholder [BLURB] = "It's a puzzle"
 ! Website instructions
 
 placeholder [ENCODEDSTORYFILE] = "Unsafe.gblorb.js"
-template path "/Users/jakob/Documents/Inform/UNSAFE/Unsafe.materials/Templates"
-template path "/Users/jakob/Library/Inform/Templates"
+template path "/Users/raxtus/dev/unsafe/Unsafe.materials/Templates"
+template path "/Users/raxtus/Library/Containers/com.inform7.inform-compiler/Data/Library/Inform/Templates"
 template path "/Applications/Inform.app/Contents/Resources/Internal/Templates"
 placeholder [INTERPRETERSCRIPTS] = " "
 interpreter "Quixe" "g"
-base64 "/Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform/Build/output.ulx" to "/Users/jakob/Documents/Inform/UNSAFE/Unsafe.materials/Release/interpreter/Unsafe.gblorb.js"
+base64 "/Users/raxtus/dev/unsafe/Unsafe.inform/Build/output.ulx" to "/Users/raxtus/dev/unsafe/Unsafe.materials/Release/interpreter/Unsafe.gblorb.js"
 
 ! Website instructions
 
-template path "/Users/jakob/Documents/Inform/UNSAFE/Unsafe.materials/Templates"
-template path "/Users/jakob/Library/Inform/Templates"
+template path "/Users/raxtus/dev/unsafe/Unsafe.materials/Templates"
+template path "/Users/raxtus/Library/Containers/com.inform7.inform-compiler/Data/Library/Inform/Templates"
 template path "/Applications/Inform.app/Contents/Resources/Internal/Templates"
 css
 website "Standard"
-status instruction ||&nbsp;<a href="source:story.ni#line1114"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line1127"><img border=0 src=inform:/doc_images/Reveal.tif></a>||
 status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||

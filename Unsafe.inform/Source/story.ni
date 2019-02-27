@@ -35,6 +35,7 @@ Section 1 - The Player
 
 The player is wearing pants, underwear, socks, a shirt, work shoes, a belt, a hat, and a jacket.	
 The description is "You're wearing [a list of things worn by the player]."
+The description of the work shoes is "Shoes you wear to work. They look professional, but you can't do as much physical activity in them."
 
 Instead of going from the house when the jacket is not worn:
 	say "You step ouside, but you shiver and decide you need a jacket. You step back inside."
@@ -130,15 +131,17 @@ Part 2 - House
 Section 1 - First Floor
 
 The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door ([if the side door is open]open[else]closed[end if]) leads out of the house to the West. [first time][paragraph break]You've just gotten out of your bed, having woken up from a nap.[only]".
+The bed is scenery in the Bedroom. The description is "It's just your bed." Instead of entering the bed: say "You don't feel sleepy."
 The nightstand is scenery in the Bedroom. There is an iPod on the nightstand. The iPod can be playing. The iPod is not playing. The description of the iPod is "It's an iPod touch, third-generation, maybe? [if playing]It's playing your favorite song.[end if]". Instead of wearing the iPod, say "People tend to wear headphones these days; wearing iPods is less fashionable."
 
 Instead of inserting the earbuds into the iPod:
 	try plugging the earbuds.
 test platform with "get ipod / e / u / w / open drawer / get earbuds / e / d / d / w / n / n / n / e / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button  / press button / press button / w / put on earbuds / put earbuds in ipod / get on edge"	
 
-East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East.[if the brown key is in the hall] There is a muddy brown key hanging from a hook on the wall.[end if] You can also go down to the basement from here." The muddy brown key is in the hall. 
+East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East.[if the brown key is in the hall] There is a muddy brown key hanging from a hook on the wall.[end if] You can also go down to the basement from here." The muddy brown key is in the hall. The description is "It's a key, so it presumably unlocks something. It's brown."
 
 North of the Hall is the Staircase. The Staircase is an open door. The staircase is not openable.
+The description of the staircase is "Stairs that lead between the halls on the first and second floor of your home."
 Understand "stairs" as the staircase.
 Instead of climbing the staircase:
 	try going north.
@@ -146,6 +149,7 @@ Instead of climbing the staircase:
 Section 2 - Kitchen
 
 East of the Hall is the Kitchen.
+The description of the Kitchen is "Where food happens. The hall is to the west."
 The toaster, the cabinet, the refrigerator, and the stool are in the kitchen.
 Understand "fridge" as the refrigerator.
 Understand "pull out [something]" as opening.
@@ -296,10 +300,10 @@ The fish and the pie are edible.
 The stool is an enterable portable supporter in the kitchen. The description is "It's a stool that you can stand on."
 
 
-South of the Hall is the Back Entryway. There is a blue key in the back entryway. There is a locked door called the back door. The back door is south of the back entryway. The blue key unlocks the back door. The description of the back entryway is "The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. [if the Toyota key is tied]There is a Toyota key tied to the coat rack. [end if]The hall is to the North, the backyard to the South." The coat rack and the trash can are scenery in the back entryway. There is a right running shoe in the back entryway. There is a left running shoe in the Upstairs Hall.
+South of the Hall is the Back Entryway. There is a blue key in the back entryway. There is a locked door called the back door. The back door is south of the back entryway. The blue key unlocks the back door. The description of the back entryway is "The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. [if the Toyota key is tied]There is a Toyota key tied to the coat rack. [end if]The hall is to the North, the backyard to the South." The coat rack and the trash can are scenery in the back entryway. There is a right running shoe in the back entryway. The description is "The shoe goes on your right foot. You only run if you're wearing this shoe and its partner." There is a left running shoe in the Upstairs Hall. The description is "The shoe goes on your left foot. You only run if you're wearing this shoe and its partner."
 
-The Toyota key is in the back entryway. The Toyota key can be tied. The Toyota key is tied.
-untieing is an action applying to one visible thing.
+The Toyota key is in the back entryway. The Toyota key can be tied. The Toyota key is tied. The description is "The key to your blue Toyota."
+Untieing is an action applying to one visible thing.
 Understand "untie [something]" as untieing.
 Carry out untieing:
 	say "That doesn't make any sense."
@@ -321,7 +325,7 @@ Before taking the Toyota key:
 		say "The Toyota key is tied to the coat rack; you should untie it before you take it.";
 		stop the action
 
-The pair of running shoes is a wearable thing. The pair of running shoes is nowhere.
+The pair of running shoes is a wearable thing. The pair of running shoes is nowhere. The description is "Both of your running shoes, reunited."
 Instead of wearing the left running shoe, say "You can't wear just one running shoe - that would simply be unstylish."
 Instead of wearing the right running shoe, say "You can't wear just one running shoe - that would simply be unstylish."
 Every turn when the player has the right running shoe and the player has the left running shoe:
@@ -361,7 +365,7 @@ The description of the chest is "It's an old wooden chest with 5 drawers.[if the
 
 East of the Upstairs Hall is the Bathroom. The description of the Bathroom is "It's just a bathroom."
 The mirror is a fixed in place thing in the bathroom. The description of the mirror is "You can see your own reflection in the mirror. [if the player is wearing some hair gel]Your hair looks awesome with the hair gel on it.[else]You look the same as always.[end if]".
-There is a medicine cabinet in the bathroom. The medicine cabinet is a fixed in place openable closed container. There is a can of hair gel in the medicine cabinet. The description is "A can of hair gel. You can put it on. There's a warning on the gel that says 'EXTREMELY FLAMMABLE'."
+There is a medicine cabinet in the bathroom. The medicine cabinet is a fixed in place openable closed container. The description of the medicine cabinet is "A cabinet that could hold medicine and other bathroom-related stuff. It's far enough off the ground that you can't reach it unless you're standing on something, which is annoying." There is a can of hair gel in the medicine cabinet. The description is "A can of hair gel. You can put it on. There's a warning on the gel that says 'EXTREMELY FLAMMABLE'."
 Understand the command "spray" as "wear" [for hair gel]
 
 [naming things unambiguously is annoying]
@@ -441,7 +445,7 @@ Instead of inserting the bucket into the vat:
 Instead of inserting something into the vat:
 	say "You don't get the feeling [the noun] would do well in a vat of rocket fuel."
 	
-There is a key cabinet in the basement. The key cabinet is a fixed in place openable container. The description of the key cabinet is "A small cabinet that looks like it once held keys for all the rooms in the house.[if open] Now it looks like there aren't very many keys in it at all.[end if]". There is a small metal key in the key cabinet. 
+There is a key cabinet in the basement. The key cabinet is a fixed in place openable container. The description of the key cabinet is "A small cabinet that looks like it once held keys for all the rooms in the house.[if open] Now it looks like there aren't very many keys in it at all.[end if]". There is a small metal key in the key cabinet. The description is "It's a key, so it presumably unlocks something. It's metal."
 Instead of taking the key cabinet:
 	say "(the small metal key)";
 	try taking the small metal key.
@@ -590,7 +594,7 @@ Instead of taking off the spacesuit in outer space:
 	say "That seems like an extraordinarily dumb thing to do."
 Instead of taking off the helmet in outer space:
 	say "You see space, with your own eyes. It's stunningly beautiful. Then your head explodes.";
-	conclude with 29
+	conclude with 29.
 
 
 test fly with "open door / w / w / n / n / open spaceship / get in spaceship / close spaceship / press ON / say confirm / press LAUNCH / wait / say CANCEL / wait / wait / wait / wait / wait / wait / wait / wait"
@@ -598,9 +602,9 @@ test fly with "open door / w / w / n / n / open spaceship / get in spaceship / c
 test space with "e / e / get stool / w / w / open door / w / put down stool / get on stool / get bucket / e / e / d / open vat / dip bucket in vat / w / n / e / n / n / put fuel in ship / get in ship / close door / press ON / press LAUNCH / say SUIT UP / open door / get out / take off helmet"
 
 West of the Outskirts of Town is the Road.
-The description of the Road is "It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west."
+The description of the Road is "It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west. The warehouse is south."
 North of the road is a room called Further Along the Road. The description of Further Along the Road is "More road! [If the fork is stuck]There's a fork in the road here. [end if]The main road goes North and South. To the West there's a parking lot."
-The fork is a thing. The fork can be stuck. The fork is stuck. The fork is in further along the road. The fork is undescribed.
+The fork is a thing. The fork can be stuck. The fork is stuck. The fork is in further along the road. The fork is undescribed. The description of the fork is "A metal tool. On one end it has a handle that you can hold. On the other hand it has four pointy bits that you can stick into food or other things."
 Instead of taking or pulling the fork when the fork is stuck:
 	say "You try to pull the fork out of the road, but it's pretty stuck. Your hand slips off the fork just as you feel it has dislodged slightly from the road.";
 	now the fork is not stuck.
@@ -615,7 +619,7 @@ Before opening the blue car:
 After entering the blue car:
 	say "You get into and start the car. It's ready to roll!"
 	
-understand "car door" as the car.
+Understand "car door" as the car.
 
 Instead of entering the house when the player is in the car:
 	say "You can't drive indoors, that would be a safety hazard."
@@ -648,11 +652,13 @@ understand "drive around the boom gates" as a mistake ("I don't understand those
 
 Section 3 - Trains
 
-North of Further Along is the Abandoned Train Station. The description of Abandoned Train Station is "No trains." There is a map in the train station. The description of the map is "You see a map detailing the station, the tracks, the road, and a little control room nearby."
-East of the Abandoned Train station is the Control Room. The description of Control Room is "Where things get controlled."
+North of Further Along is the Abandoned Train Station. The description of Abandoned Train Station is "No trains.
+
+There are exits to the south and east." There is a map in the train station. The description of the map is "You see a map detailing the station, the tracks, the road, and a little control room nearby."
+East of the Abandoned Train station is the Control Room. The description of Control Room is "Where things get controlled. The only exit is to the west."
 The train can be ready. The train is not ready. [if the train is ready, any action that crosses the train tracks will get killed]
 
-The tracks are scenery in the train station. The description of the tracks is "Abandoned train tracks. Maybe trains run along them sometimes? you've never seen it happen."
+The tracks are scenery in the train station. The description of the tracks is "Abandoned train tracks. Maybe trains run along them sometimes? You've never seen it happen."
 Instead of entering the tracks:
 	if the train is ready:
 		say "As you start to climb down, you see the train coming in the distance and you think better of it.";
@@ -732,9 +738,10 @@ Instead of going west in the basement:
 The hole is scenery in the warehouse. The description of the hole is "A hole in the wall. You could probably go through it."
 
 South of the Abandoned Warehouse is a room called A Spooky Lair. 
-The description of the lair is "A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it."
-The table is scenery in the Spooky lair. The table is a supporter. There is a candle on the table. The candle is lit. A sacrificial knife is on the table. The description of the sacrificial knife is "A knife that looks like it might be used in a demonic ritual - or, you know, for cutting stuff".
+The description of the lair is "A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it. It's the south end of the warehouse; the only exit is north, to the rest of the warehouse."
+The table is scenery in the Spooky lair. The table is a supporter. There is a candle on the table. The candle is lit. The description is "It's a candle. It's burning, the way candles do." A sacrificial knife is on the table. The description of the sacrificial knife is "A knife that looks like it might be used in a demonic ritual - or, you know, for cutting stuff.".
 A snake is a kind of animal. A snake is usually privately-named. There is a snake called Alice. There is a snake called Bob. There is a snake called Charlie. There is a snake called David. Alice, Bob, Charlie, and David are in the lair.
+[todo: "x snake" or "x snakes" giving "you can't see any such thing" seems bad if they're described as being there]
 
 Understand "give mouse to snake" and "throw mouse to snake" and "feed mouse to snake" as a mistake ("The snakes are moving too fast to give one a mouse. Maybe you need to lure them to you.")
 
@@ -794,7 +801,7 @@ Part 4 - Nature
 
 Section 1 - Piranhas
 
-West of the Road is By the Stream. The description of By the Stream is "There's a stream, making whatever sound water makes. There's also a scary warning sign." The warning sign is scenery in By the Stream. The description is "The sign says BEWARE OF PIRANHAS." A thing called the stream is scenery in By the Stream. The description is "It's a stream of water." Understand "water" as the stream.
+West of the Road is By the Stream. The description of By the Stream is "There's a stream, making whatever sound water makes. There's also a scary warning sign. The road is to the east, and the clearing is to the south." The warning sign is scenery in By the Stream. The description is "The sign says BEWARE OF PIRANHAS." A thing called the stream is scenery in By the Stream. The description is "It's a stream of water." Understand "water" as the stream.
 
 Instead of entering the stream: say "Water is nice, but out here? Maybe in the privacy of your own home you'd reconsider."
 
@@ -939,7 +946,7 @@ Every turn when the player can see the bear and the bear is awake:
 		
 Instead of going to the woods when not the woods are accessible:
 	if the bear is in the Woods:
-		say "You're too scared of the bear to go there.";
+		say "You're too scared of the bear to go there. You might be able to distract the bear with something it likes eating, though.";
 	else:
 		say "As you walk into the woods, a large grizzly bear shows up, baring (bear-ing?) its teeth at you. You hastily take three steps back.";
 		say "The bear seems to be guarding the entrance to the woods. Seems like it would be awfully difficult to get through here unless the bear were somehow distracted. With food, maybe?";
@@ -1110,5 +1117,11 @@ Instead of pushing the button:
 	
 test pie with "e / e / open fridge / get pie / w / u / w / get quarter / e / d / d / w / e / open entrance / s / u / open time safe / open middle safe / open inner safe / put pie in inner safe / close inner safe / close middle safe / close time safe / go in time machine / put quarter in slot / press button / get out / open outer safe / open middle safe / open inner safe / get pie / eat pie"
 
+Xyzzying is an action applying to nothing. Understand "xyzzy" and "plover" as xyzzying.
+Plughing is an action applying to nothing. Understand "plugh" as plughing.
+
+Carry out xyzzying: say "A hollow voice says, 'Insert red herring here.'"
+
+Carry out plughing: say "A hollow voice says, 'This puzzle was brought to you by plugh (pronounced ✈✈✈ Galactic Trendsetters ✈✈✈).'"
 
 Release along with an interpreter.
