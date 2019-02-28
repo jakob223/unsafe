@@ -1,7 +1,7 @@
 "Unsafe" by Brian Chen and Jakob Weisblat
 
 The story description is "It's a puzzle".
-The release number is 3.
+The release number is 5.
 The story creation year is 2019.
 
 Part 1 - Meta
@@ -216,6 +216,9 @@ Understand "connect [something] to the iPod" as plugging.
 Plugging is an action applying to one visible thing.
 Unplugging is an action applying to one visible thing.
 
+understand "use earbuds with iPod" as a mistake ("Try PLUGging IN the earbuds").
+understand "use ipod with earbuds" as a mistake ("Try PLUGging IN the earbuds").
+
 Carry out plugging:
 	if the noun is the drain or the noun is the bathtub:
 		say "You plug the drain.";
@@ -223,11 +226,16 @@ Carry out plugging:
 	else if the noun is the toaster:
 		say "You plug in the toaster.";
 		now the toaster is plugged in;
-	else if the noun is the earbuds and the player has the iPod:
-		now the iPod is playing;
-		now the earbuds are connected;
-		say "You plug the earbuds into the iPod. Your favorite song starts to play through them!";
-		The song ends in five turns from now;
+	else if the noun is the earbuds:
+		if the earbuds are connected:
+			say "Those are already plugged in.";
+		else if the player has the iPod:
+			now the iPod is playing;
+			now the earbuds are connected;
+			say "You plug the earbuds into the iPod. Your favorite song starts to play through them!";
+			The song ends in five turns from now;
+		else:
+			say "You can't plug the earbuds in unless you have something to plug them into.";
 	else:
 		say "You can't plug in [a noun].";
 
@@ -526,6 +534,8 @@ Instead of pushing the LAUNCH button:
 		say "The button doesn't do anything. Maybe try turning on the spaceship first?";
 	else if the spaceship is open:
 		say "Launching with the door open seems like an extraordinarily bad idea, even for yourself.";
+	else if the spaceship is waiting for confirmation:
+		say "The warning about fuel flashes angrily at you. It's expecting a response.";
 	else if the spaceship is in the launch pad:
 		say "The computer counts down: '3... 2... 1... LAUNCHING'. [paragraph break] The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. [paragraph break]The computer says 'This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space.'";
 		now the spaceship is in the air;
@@ -575,7 +585,8 @@ Understand "ship" as spaceship. Understand "door" as spaceship.
 At the time when the autopilot lands the ship:
 	say "The spaceship lands in a near-crash. Your back hurts, but otherwise you feel okay. The ship looks in a rough shape though. All the lights turn off except for a few emergency lights. You should probably get out sooner rather than later.";
 	now the spaceship is off;
-	now the spaceship is broken.
+	now the spaceship is broken;
+	now the spaceship is open.
 	
 Understand "fill spaceship" as a mistake ("Try POURing the fuel into the ship")
 
@@ -726,14 +737,20 @@ test running with "e / s / get right shoe / n / u / get left shoe / d / d / w / 
 
 Section 4 - Warehouse
 
-Abandoned Warehouse is a room. West of the Town Square is the warehouse. The Abandoned Warehouse is south of the Road. The description is "The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West." The Tunnel of Extraction is below the warehouse.
+Abandoned Warehouse is a room. West of the Town Square is the warehouse. The Abandoned Warehouse is south of the Road. The description is "The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West." The Tunnel of Extraction is below the warehouse. The tunnel's count is initially 0.
 
-Instead of going west in the basement:
+Before going through the tunnel:
+	if the tunnel's count is 1:
+		say "This tunnel was pretty spooky the first time you went through it. You take a second to mentally prepare yourself before going through again.";
+		increment the tunnel's count;
+		stop the action;
+	increment the tunnel's count;
 	if the player is not wearing work shoes and the player is not wearing the pair of running shoes:
 		say "That doesn't look like a safe place to go without shoes.";
+		stop the action;
 	else:
 		say "You go through the long and winding Tunnel of Extraction.";
-		continue the action.
+
 
 The hole is scenery in the warehouse. The description of the hole is "A hole in the wall. You could probably go through it."
 
@@ -772,11 +789,20 @@ There is an ancient cabinet in the spooky lair. The description of the ancient c
 
 the can't take other people rule does nothing when taking the mouse.
 
+	
 Instead of inserting something into the cage:	
-	if the noun is not a mouse:
+	If the player does not have the noun:
+		say "You can't put [the noun] in the cage without first taking it.";
+		stop the action;
+	else if the noun is not a mouse:
 		continue the action;
-	if the cage is closed:
+	else if the cage is closed:
 		say "You can't put a mouse in a closed cage!";
+	else if the player has the cage:
+		say "You try to put the mouse in the cage while holding both of them, but in the end you drop the cage and the mouse scurries off. Oh well, maybe there are more mice.";
+		now the noun is nowhere;
+		let X be the location of the player;
+		now the cage is in X;
 	else if the player is in the lair:
 		say "A rattlesnake rushes into the cage and hungrily slurps up the mouse before it even has time to get its bearings.";
 		now the noun is nowhere;
@@ -991,6 +1017,9 @@ At the time when the bear falls asleep:
 		say "The bear flops onto its full stomach and starts snoring.";
 	now the bear is asleep.
 
+Before wearing something:
+	if the player does not have the noun:
+		stop the action.
 
 Part 5 - Town
 
@@ -1090,6 +1119,8 @@ To decide if the pie is guarded:
 	decide yes.
 
 The pie can be aged. The pie is not aged.
+Instead of taking the pie when the player is in the time machine:
+	say "You can't reach the time safe from in the time machine. You'll have to get out first."
 Instead of eating the pie when the pie is in the inner safe:
 	say "First you need to take the pie out of the safe."
 Instead of eating the pie when the pie is aged:
@@ -1107,6 +1138,7 @@ Instead of pushing the button:
 		decrease the poster weeks by the coin slot's credits;
 		now the coin slot's credits is 0;
 		now the wasps' nest is nowhere;
+		now the nest is found;
 		if the pie is guarded:
 			if the pie is not in the refrigerator:
 				now the pie is aged;
