@@ -1,7 +1,7 @@
 "Unsafe" by Brian Chen and Jakob Weisblat
 
 The story description is "It's a puzzle".
-The release number is 7.
+The release number is 8.
 The story creation year is 2019.
 
 Part 1 - Meta
@@ -111,7 +111,7 @@ Instead of using the iPod:
 	if the iPod is playing:
 		say "Often people use music playing devices by listening to the place the music is coming from.";
 	else:
-		say "You try playing a song but you think the speaker in the iPod is broken. Maybe plug in headphones or something?"
+		say "You try playing a song but you think the speaker in the iPod is broken. Maybe you need to plug in headphones or something?"
 Instead of using the stool:
 	if the player has the stool:
 		try dropping the stool;
@@ -130,6 +130,26 @@ Instead of using the hair gel:
 section 4 - help
 
 Include version 1 of Basic IF Help by Andrew Plotkin.
+
+section 5 - listening
+
+to say the wasp tree:
+	if the wasps' nest is in top of ash tree:
+		say "the ash tree";
+	else if the wasps' nest is in top of elm tree:
+		say "the elm tree";
+	else if the wasps' nest is in top of pine tree:
+		say "the pine tree";
+	else:
+		say "somewhere indistinct. Uh oh, the game is broken, send us an email with what you did!"
+
+Instead of listening when the iPod is playing:
+	if the player is wearing the earbuds:
+		say "Your favorite song! It's cute and dumb and it's about death.";
+	else if the player has the earbuds:
+		say "You can hear a song coming from the earbuds. Maybe if you put them on you could hear it better.";
+Instead of listening when the player is in the woods and the nest is not found:
+		say "You can hear the buzzing of wasps. They seem to be coming from [the wasp tree].".
 
 Part 2 - House
 
@@ -371,7 +391,7 @@ A desk drawer is part of the desk. The desk drawer is a fixed in place closed op
 North of the Study is a door called the closet door. North of the closet door is a room called The Closet. The closet door is open. The description of the Closet is "A small room. The study is South."
 Instead of examining the closet door:
 	if the player is in the study:
-		say "You look into the closet. Looks like a closet.";
+		say "You look into the closet. There's a chest of drawers in there.";
 	else:
 		say "It looks like a door."
 	
@@ -672,7 +692,8 @@ Before going when the player is in the car:
 	if the car is open:
 		say "That would be unsafe. You should close the car door.";
 		stop the action.
-		
+
+understand "door" as the car when the player is in the car.
 understand "car key" as the Toyota key.
 Understand "unlock [the car]" as opening.
 Instead of unlocking the car with something:
@@ -719,7 +740,7 @@ Every turn when the player is on the edge of the platform:
 			say "A train enters the station while you're jamming to the music, and you trip and fall into the train tracks in front of it. That was really dumb.";
 			conclude with 37;
 		else:
-			say "A train approaches the platform and you step away from the edge in order to be safe. It passes the station by while you watch, not slowing a bit.";
+			say "A train approaches the platform and you are nearly run over; however, you hear it coming and move away from the edge in order to be safe. It passes the station by while you watch, not slowing a bit.";
 			now the train is not ready.
 	
 
@@ -758,7 +779,10 @@ Carry out running-across:
 	if the player is not in the train station:
 		say "You don't see any tracks.";
 	else if the player is not wearing the pair of running shoes:
-		say "You're gonna run wearing these shoes???? You'd break your back.";
+		if the player is wearing work shoes:
+			say "You're gonna run wearing these shoes???? You'd break your back.";
+		else:
+			say "You'd hurt your feet! Better put on shoes first.";
 	else if the pair of running shoes is not laced:
 		say "You start to run but you trip on the loose laces.";
 	else if the train is not ready:
@@ -767,7 +791,7 @@ Carry out running-across:
 		say "Well that was dumb. You get distracted as you run across the tracks and don't notice the train coming until it's too late.";
 		conclude with 37.
 The pair of running shoes can be laced. The pair of running shoes is not laced.
-Lacing is an action applying to one touchable thing. Understand "lace [something] up" as lacing. Understand "tie [something]" as lacing. Understand "lace up [something]" as lacing.
+Lacing is an action applying to one touchable thing. Understand "lace [something] up" as lacing. Understand "tie [something]" as lacing. Understand "lace up [something]" as lacing. Understand "laces" as the pair of running shoes.
 Carry out lacing:
 	say "That doesn't make sense."
 Instead of lacing the pair of running shoes:
@@ -805,7 +829,7 @@ The hole is scenery in the warehouse. The description of the hole is "A hole in 
 South of the Abandoned Warehouse is a room called A Spooky Lair. 
 The description of the lair is "A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it. It's the South end of the warehouse; the only exit is North, to the rest of the warehouse."
 The table is scenery in the Spooky lair. The table is a supporter. There is a candle on the table. The candle is lit. The description is "It's a candle. It's burning, the way candles do." A sacrificial knife is on the table. The description of the sacrificial knife is "A knife that looks like it might be used in a demonic ritual - or, you know, for cutting stuff.".
-A snake is a kind of animal. A snake is usually privately-named. There is a snake called Alice. There is a snake called Bob. There is a snake called Charlie. There is a snake called David. Alice, Bob, Charlie, and David are in the lair.
+A snake is in the lair. The snake is an animal. The description of the snake is "It's a rattlesnake. They say rattlesnakes are dangerous, but you've always thought that was silly.".
 [todo: "x snake" or "x snakes" giving "you can't see any such thing" seems bad if they're described as being there]
 The candle can be urge passed. The candle is not urge passed.
 
@@ -813,13 +837,11 @@ Every turn when the player is in the lair:
 	if the player is wearing the dollop and the candle is not urge passed:
 		say "You feel drawn toward the candle, as though its destiny and yours are intertwined.";
 		now the candle is urge passed.
-Understand "snake" as Bob.
-Instead of examining Bob:
-	say "It's a rattlesnake. They say rattlesnakes are dangerous, but you've always thought that was silly.".
-Instead of taking Bob:
-	say "The snakes are moving too fast for that. Maybe if you could lure them to you..."
 
-Understand "give mouse to snake" and "throw mouse to snake" and "feed mouse to snake" as a mistake ("The snakes are moving too fast to give one a mouse. Maybe you need to lure into somewhere.")
+Instead of taking the snake:
+	say "The snake is moving too fast for that. Maybe if you could lure them to you..."
+
+Understand "give mouse to snake" and "throw mouse to snake" and "feed mouse to snake" as a mistake ("The snake is slithering around too fast to give it a mouse. Maybe you ought to lure it into somewhere.")
 
 After dropping a mouse:
 	if the noun is not in the cage:
@@ -865,7 +887,7 @@ Instead of inserting something into the cage:
 	else if the player is in the lair:
 		say "A rattlesnake rushes into the cage and hungrily slurps up the mouse before it even has time to get its bearings.";
 		now the noun is nowhere;
-		move Charlie to the cage;
+		move the snake to the cage;
 		The snake leaves the cage in 2 turns from now;
 	else:
 		say "The mouse scurries out of the cage and runs off to wherever it is mice go. Oh well, there are probably more mice wherever that one came from.";
@@ -877,7 +899,7 @@ At the time when the snake leaves the cage:
 		conclude with 22;
 	else if the location of the player is the location of the cage:
 		say "The snake slithers out of the cage with remarkable speed[if the cage is closed], slamming the door open as it goes. Maybe you should lock it next time[end if].";
-	move Charlie to the lair.
+	move the snake to the lair.
 
 test cage with "e / get key / w / open door / w / unlock shed with key / open shed / get cage / e / e / d / get small key / w / s / put cage down / open ancient cabinet / get canister / open canister / get mouse / put mouse in cage / close cage / lock cage with small key"
 	
@@ -1149,10 +1171,13 @@ The description of the red button is "A big red button. Says 'TRAVEL' on it. You
 Every turn:
 	now the coin slot is available.
 Instead of inserting something into the coin slot: 
+	if the player is not in the time machine:
+		say "You can't reach that from outside the time machine.";
+		stop the action;
 	if the coin slot is not available:
 		say "The previous quarter is still making its way into the slot.";
 		stop the action;
-	If the noun is not a quarter:
+	if the noun is not a quarter:
 		say "That doesn't fit in the slot!";
 		stop the action;
 	say "You put a quarter in the slot. It makes a satisfying *clink*.";
@@ -1190,6 +1215,9 @@ Instead of eating the pie when the pie is aged:
 	
 pie crumbs are a liquid. The description of the crumbs is "The crumbs that were left behind when someone took a pie from this location." The pie crumbs are nowhere.
 Instead of pushing the button:
+	if the player is not in the time machine:
+		say "You can't reach that. You'd have to be in the time machine first.";
+		stop the action;
 	if the coin slot's credits is 0:
 		say "You need to put a quarter in the coin slot first.";
 	else:
