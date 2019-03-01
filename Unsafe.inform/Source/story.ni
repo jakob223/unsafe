@@ -1,7 +1,7 @@
 "Unsafe" by Brian Chen and Jakob Weisblat
 
 The story description is "It's a puzzle".
-The release number is 5.
+The release number is 7.
 The story creation year is 2019.
 
 Part 1 - Meta
@@ -34,7 +34,7 @@ Instead of taking something when the number of entries in the multiple object li
 Section 1 - The Player
 
 The player is wearing pants, underwear, socks, a shirt, work shoes, a belt, a hat, and a jacket.	
-The description is "You're wearing [a list of things worn by the player]."
+The description is "You look like you could be in a cartoon. You're wearing [a list of things worn by the player]."
 The description of the work shoes is "Shoes you wear to work. They look professional, but you can't do as much physical activity in them."
 
 Instead of going from the house when the jacket is not worn:
@@ -126,11 +126,16 @@ Instead of using the car:
 Instead of using the hair gel:
 	try wearing the hair gel.
 
+
+section 4 - help
+
+Include version 1 of Basic IF Help by Andrew Plotkin.
+
 Part 2 - House
 
 Section 1 - First Floor
 
-The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the east. The side door ([if the side door is open]open[else]closed[end if]) leads out of the house to the West. [first time][paragraph break]You've just gotten out of your bed, having woken up from a nap.[only]".
+The Bedroom is a room. The description is "It's your bedroom. It's not very interesting. The hall is to the East. The side door ([if the side door is open]open[else]closed[end if]) leads out of the house to the West. [first time][paragraph break]You've just gotten out of your bed, having woken up from a nap.[only]".
 The bed is scenery in the Bedroom. The description is "It's just your bed." Instead of entering the bed: say "You don't feel sleepy."
 The nightstand is scenery in the Bedroom. There is an iPod on the nightstand. The iPod can be playing. The iPod is not playing. The description of the iPod is "It's an iPod touch, third-generation, maybe? [if playing]It's playing your favorite song.[end if]". Instead of wearing the iPod, say "People tend to wear headphones these days; wearing iPods is less fashionable."
 
@@ -138,25 +143,30 @@ Instead of inserting the earbuds into the iPod:
 	try plugging the earbuds.
 test platform with "get ipod / e / u / w / open drawer / get earbuds / e / d / d / w / n / n / n / e / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button  / press button / press button / w / put on earbuds / put earbuds in ipod / get on edge"	
 
-East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East.[if the brown key is in the hall] There is a muddy brown key hanging from a hook on the wall.[end if] You can also go down to the basement from here." The muddy brown key is in the hall. The description is "It's a key, so it presumably unlocks something. It's brown."
+East of the Bedroom is a room called the Hall. The description of The Hall is "The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.[if the brown key is in the hall][paragraph break]There is a muddy brown key hanging from a hook on the wall.[end if]". The muddy brown key is in the hall. The description is "It's a key, so it presumably unlocks something. It's brown."
 
-North of the Hall is the Staircase. The Staircase is an open door. The staircase is not openable.
+North of the Hall is the staircase. The Staircase is an open door. The staircase is not openable. The staircase is scenery. The muddy brown key is undescribed.
+After taking the muddy brown key:
+	now the muddy brown key is described.
 The description of the staircase is "Stairs that lead between the halls on the first and second floor of your home."
 Understand "stairs" as the staircase.
 Instead of climbing the staircase:
-	try going north.
+	try going North.
 
 Section 2 - Kitchen
 
 East of the Hall is the Kitchen.
-The description of the Kitchen is "Where food happens. The hall is to the west."
+The description of the Kitchen is "Where food happens. The hall is to the West."
 The toaster, the cabinet, the refrigerator, and the stool are in the kitchen.
 Understand "fridge" as the refrigerator.
 Understand "pull out [something]" as opening.
 The cabinet is a closed openable fixed in place container. The description is "A cabinet with a top, middle, and bottom drawer."
-The top drawer, the middle drawer, and the bottom drawer are fixed in place closed openable containers. The top drawer, the middle drawer, and the bottom drawer are in the cabinet. Cereal crumbs are a liquid in the top drawer. Instead of opening the bottom drawer, say "It's stuck. But you're pretty sure it's empty; you don't recall ever having used it."
-In the middle drawer is a big tupperware container. The big tupperware is a fixed in place closed openable container. 
+The top drawer, the middle drawer, and the bottom drawer are fixed in place closed openable containers. The top drawer, the middle drawer, and the bottom drawer are in the cabinet. cereal crumbs are a liquid in the top drawer. Instead of opening the bottom drawer, say "It's stuck. But you're pretty sure it's empty; you don't recall ever having used it."
+Instead of taking the cereal crumbs, say "Those probably aren't worth your time."
+
+In the middle drawer is a big tupperware container. The big tupperware is a fixed in place closed openable container. Understand "container" as the tupperware.
 understand "bread" as the loaf. The description of the tupperware is "A tupperware around 12' by 8' by 6' deep. It could hold lots of food. It seems to be stuck to the drawer with honey or something."
+Instead of taking the tupperware, say "It seems to be stuck to the drawer with honey or something. Probably best just to leave it there."
 In the big tupperware is a loaf of bread. The loaf can be wrapped or unwrapped. The loaf is wrapped. The description of the loaf is "A loaf of bread, whole grain and fresh from the bakery. It's pre-sliced! [if the bread is wrapped]It's tightly wrapped in plastic[else]It smells delicious[end if]."
 Understand "more bread" as the loaf of bread. Understand "another slice" as the loaf of bread.
 
@@ -176,7 +186,7 @@ Instead of inserting something into the toaster:
 	else if the button is active:
 		say "The toaster is hard at work, don't bother it.";
 	else if the noun is the sacrificial knife:
-		say "That seems to important to tarnish it by putting it in a toaster.";
+		say "That seems too important to tarnish it by putting it in a toaster.[if the toaster is done] A might be more apropos.[end if]";
 	else if the noun is not the loaf of bread:
 		say "That's not what you're supposed to put in a toaster!";
 	else if the bread is wrapped:
@@ -195,6 +205,9 @@ Instead of opening the bread: [unwrap means open]
 		say "You take off the plastic wrap and now the bread smells heavenly.";
 		now the bread is unwrapped.
 The toaster is a fixed in place thing. 
+Instead of switching on the toaster:
+	say "The toaster doesn't seem to have a switch. Just a button and a plug, and some slots for bread."
+
 The toaster has a number called its slice count. The toaster's slice count is initially 0.
 The description is "The toaster turns bread into toast. There is a button on the front of the toaster labelled 'TOAST'. [line break]The toaster [if the toaster is plugged in]is plugged in.[else]is unplugged.[end if][if the toaster's slice count is greater than 0] It has [the toaster's slice count] slice[s] of [the toaster's content] in it.[end if][if the toaster is done] The toast is ready to be eaten, should you be able to remove it.[end if]".
 The toaster can be plugged in or unplugged. The toaster is unplugged. The toaster can be done. The toaster is not done.
@@ -305,7 +318,7 @@ A fish is in the refrigerator. The description is "It's a blue herring. Deliciou
 A pie is in the refrigerator. The description of the pie is "[if the pie is not aged]A meat pie that looks like it came out of the oven just this morning.[else]A meat pie that looks like it has been sitting out for a while. Maybe a bad idea to eat it.[end if]".
 The fish and the pie are edible.
 
-The stool is an enterable portable supporter in the kitchen. The description is "It's a stool that you can stand on."
+The stool is an enterable portable supporter in the kitchen. The description is "It's a stool that you can stand on." Instead of climbing the stool, try entering the stool.
 
 
 South of the Hall is the Back Entryway. There is a blue key in the back entryway. There is a locked door called the back door. The back door is south of the back entryway. The blue key unlocks the back door. The description of the back entryway is "The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. [if the Toyota key is tied]There is a Toyota key tied to the coat rack. [end if]The hall is to the North, the backyard to the South." The coat rack and the trash can are scenery in the back entryway. There is a right running shoe in the back entryway. The description is "The shoe goes on your right foot. You only run if you're wearing this shoe and its partner." There is a left running shoe in the Upstairs Hall. The description is "The shoe goes on your left foot. You only run if you're wearing this shoe and its partner."
@@ -341,21 +354,21 @@ Every turn when the player has the right running shoe and the player has the lef
 	Now the right running shoe is nowhere;
 	Now the player has the pair of running shoes.
 
-South of the back door is the Backyard. In the backyard is a stick. The description of the backyard is "Your backyard is so well-manicured that all it contains is grass and a stick. Your house is to the north." Grass is scenery in the backyard.
+South of the back door is the Backyard. In the backyard is a stick. The description of the backyard is "Your backyard is so well-manicured that all it contains is grass and a stick. Your house is to the North." Grass is scenery in the backyard.
 
 
 Section 3 - Second Floor
 
-Above the Hall is a room called the Upstairs Hall. The description of the Upstairs Hall is "The second floor of your house. Stairs lead down. The study is west, and the bathroom is east."
+Above the Hall is a room called the Upstairs Hall. The description of the Upstairs Hall is "The second floor of your house. Stairs lead down. The study is West, and the bathroom is East."
 The staircase is below the Upstairs Hall.
 
 A quarter is a kind of thing. 
 The description of a quarter is usually "An unremarkable quarter. Not anything fancy, it's from before state quarters were a thing."
-West of the Upstairs Hall is the Study. The description of the Study is "Where you study. The hall is east." A desk is scenery in the study. 
+West of the Upstairs Hall is the Study. The description of the Study is "Where you study. The hall is East." A desk is scenery in the study. 
 The description of the desk is "It's a sturdy wooden desk. There's a drawer.".
 1 quarter and a dime are on the desk. The description of the quarter is "Arkansas state quarter. Minted 2003. Looks pretty new for a 2003 quarter." The description of the dime is "Just a regular old dime. Minted 1994."
 A desk drawer is part of the desk. The desk drawer is a fixed in place closed openable container. There are earbuds in the desk drawer. The earbuds are wearable. The description of the earbuds is "The earbuds are red." The earbuds can be connected. The earbuds are not connected.
-North of the Study is a door called the closet door. North of the closet door is a room called The Closet. The closet door is open. The description of the Closet is "A small room. The study is south."
+North of the Study is a door called the closet door. North of the closet door is a room called The Closet. The closet door is open. The description of the Closet is "A small room. The study is South."
 Instead of examining the closet door:
 	if the player is in the study:
 		say "You look into the closet. Looks like a closet.";
@@ -368,10 +381,10 @@ A wooden drawer called the first drawer is part of the chest of drawers. Underst
 A wooden drawer called the second drawer is part of the chest of drawers. Understand "drawer 2" as the second drawer.
 A wooden drawer called the third drawer is part of the chest of drawers. Understand "drawer 3" as the third drawer.
 A wooden drawer called the fourth drawer is part of the chest of drawers. Understand "drawer 4" as the fourth drawer.
-A wooden drawer called the fifth drawer is part of the chest of drawers. The fifth drawer is open. Understand "drawer 5" as the fifth drawer.
+A wooden drawer called the fifth drawer is part of the chest of drawers. The fifth drawer is open. Understand "drawer 5" as the fifth drawer. [TODO: make it harder to not notice a drawer is open]
 The description of the chest is "It's an old wooden chest with 5 drawers.[if the first drawer is open] The top drawer is open.[end if][if the second drawer is open] The second drawer is open.[end if][if the third drawer is open] The third drawer is open.[end if][if the fourth drawer is open] The fourth drawer is open.[end if][if the fifth drawer is open] The bottom drawer is open.[end if]". Instead of opening the chest, say "Which drawer do you want to open?".
 
-East of the Upstairs Hall is the Bathroom. The description of the Bathroom is "It's just a bathroom."
+East of the Upstairs Hall is the Bathroom. The description of the Bathroom is "It's just a bathroom. The Upstairs Hall is West."
 The mirror is a fixed in place thing in the bathroom. The description of the mirror is "You can see your own reflection in the mirror. [if the player is wearing some hair gel]Your hair looks awesome with the hair gel on it.[else]You look the same as always.[end if]".
 There is a medicine cabinet in the bathroom. The medicine cabinet is a fixed in place openable closed container. The description of the medicine cabinet is "A cabinet that could hold medicine and other bathroom-related stuff. It's far enough off the ground that you can't reach it unless you're standing on something, which is annoying." There is a can of hair gel in the medicine cabinet. The description is "A can of hair gel. You can put it on. There's a warning on the gel that says 'EXTREMELY FLAMMABLE'."
 Understand the command "spray" as "wear" [for hair gel]
@@ -413,7 +426,8 @@ Every turn while the faucet is on and the drain is plugged:
 		increase the water level by 1.
 Understand "get out of [something]" as a mistake ("Try just typing GET OUT.").
 Understand "leave [something]" as a mistake ("Try just typing LEAVE.").
-
+Instead of entering the bathtub when the water level is less than 5:
+	say "You can't enter that tub, it's not even half full!"
 The bathtub is a fixed in place enterable container in the bathroom. The description of the bathtub is "It's a bathtub. Big enough to sit in comfortably or lie down in uncomfortably. [paragraph break][the water status]". Understand "tub" as the bathtub.
 The drain is a part of the bathtub. The drain can be plugged. The bathtub has a number called its water level. The water level is initially 0.
 The faucet is a part of the bathtub. The faucet can be on or off.
@@ -423,6 +437,19 @@ Instead of switching on the faucet:
 Instead of switching off the faucet:
 	say "You turn off the faucet. Water stops flowing.";
 	now the faucet is off.
+Instead of turning the faucet:
+	if the faucet is on:
+		try switching off the faucet;
+	else:
+		try switching on the faucet.
+
+Rule for printing  the name of the bathtub:
+	say "bathtub";
+	if the water level is 0:
+		say " (empty)";
+	else if the water level is 10:
+		say " (overflowing)";
+	omit contents in listing.
 
 A thing can be tub-relevant. A thing is usually tub-relevant. A dollop of hair gel is not tub-relevant.
 
@@ -436,9 +463,9 @@ Section 4 - Basement
 
 Below the Hall is the Basement. There is a door called The Tunnel of Extraction. It is open. It is not openable. It is west of the Basement. The description is "A long, winding tunnel. It used to be used to extract minerals and stuff. Now, it's probably still useful for extracting other things."
 
-The description of the Basement is "The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west."
+The description of the Basement is "The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the West."
 
-A vat is in the basement. The vat is a closed openable fixed in place container. There is rocket fuel in the vat. The rocket fuel is a liquid. The description of the vat is "A large vat holding a greenish liquid. Who knows how long it's been here?"
+A vat is in the basement. The vat is a closed openable fixed in place container. There is rocket fuel in the vat. The rocket fuel is a liquid. The description of the vat is "A large vat holding a greenish liquid. The lid is tightly sealed. Who knows how long it's been here?". Understand "liquid" and "greenish liquid" as the rocket fuel.
 A bucketful of rocket fuel is a liquid. The bucketful is nowhere.
 Instead of opening the vat:
 	say "You lift the large plastic lid off of the vat, revealing the pungent rocket fuel beneath.";
@@ -465,15 +492,18 @@ Part 3 - Between
 Section 1 - Garden
 
 West of the bedroom is a door called the Side Door. West of the side door is a room called The Garden. The side door is closed. It is scenery. The spigot is scenery in the garden. Instead of turning on the spigot, say "It won't turn." The flowers are scenery in the garden. The squash are scenery in the garden.
-In the garden is a locked closed fixed in place container called the shed. The brown key unlocks the shed. The description of the garden is "A small garden. There are a few different kinds of flowers and a few different kinds of squash[if the time machine's use count is greater than 1], which are looking mighty tasty[end if]. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt."
-The roof of the Shed is part of The Shed. On top of the Roof is a bucket. The bucket is an unopenable open container.
+In the garden is a locked closed fixed in place container called the shed. The brown key unlocks the shed. The description of the garden is "A small garden. There are a few different kinds of flowers and a few different kinds of squash[if the time machine's use count is greater than 1], which are looking mighty tasty[end if]. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt.[if the bucket is hidden] You could swear there used to be a bucket somewhere around here, but you don't see it anywhere...[end if][paragraph break]The side door to your house is East, and a path leads off towards town to the West."
 
+The roof of the Shed is part of The Shed. On top of the Roof is a bucket. The bucket is an unopenable open container.
+The bucket can be hidden. The bucket is hidden.
 Understand the command "dip" as "put".
 Understand "fill [something] in [something]" as inserting it into.
 
 The description of the Shed is "A narrow rusty shed. [if the player is on the stool]On the shed's roof, you can see [a list of the things on the roof of the shed].[else]The shed is really tall and you can't see above it.[end if]".
 
 The cage is a transparent open lockable container. The small metal key unlocks the cage. The description of the cage is "A white metal cage that looks to have held a pet rabbit long ago." The cage is in the shed.
+Before taking the bucket:
+	now the bucket is not hidden.
 
 A rule for reaching inside the roof of the shed:
 	if the player is not on the stool:
@@ -483,7 +513,7 @@ A rule for reaching inside the roof of the shed:
 
 Section 2 - Other stuff
 
-West of the Garden is the Outskirts of Town. The description of the Outskirts of Town is "There's less town here than there is to the South. The garden is east. The space center is North. The road is West."
+West of the Garden is the Outskirts of Town. The description of the Outskirts of Town is "There's less town here than there is to the South. The garden is East. The space center is North. The road is West."
 North of the Outskirts of Town is the Space Center. The description of the space center is "Your friendly neighborhood space center. They build rockets and stuff. The outskirts of town are South, the launch pad is North."
 North of the Space Center is the Launch Pad. The description of the launch pad is "The place where rockets take off from. The rest of the Space Center is South."
 A fixed in place enterable openable closed container called a spaceship is in the launch pad. The description of the spaceship is "A very small rocket. Just big enough to carry one person to space.". The spaceship can be low on fuel. The spaceship is low on fuel. The spaceship can be on or off.
@@ -604,8 +634,11 @@ Instead of inserting bucketful of rocket fuel into the spaceship:
 Instead of taking off the spacesuit in outer space:
 	say "That seems like an extraordinarily dumb thing to do."
 Instead of taking off the helmet in outer space:
-	say "You see space, with your own eyes. It's stunningly beautiful. Then your head explodes.";
-	conclude with 29.
+	if the player is in the spaceship:
+		say "You can't reach onto your head while wearing this bulky spacesuit in this confining ship.";
+	else:
+		say "You see space, with your own eyes. It's stunningly beautiful. Then your head explodes.";
+		conclude with 29.
 
 
 test fly with "open door / w / w / n / n / open spaceship / get in spaceship / close spaceship / press ON / say confirm / press LAUNCH / wait / say CANCEL / wait / wait / wait / wait / wait / wait / wait / wait"
@@ -613,14 +646,14 @@ test fly with "open door / w / w / n / n / open spaceship / get in spaceship / c
 test space with "e / e / get stool / w / w / open door / w / put down stool / get on stool / get bucket / e / e / d / open vat / dip bucket in vat / w / n / e / n / n / put fuel in ship / get in ship / close door / press ON / press LAUNCH / say SUIT UP / open door / get out / take off helmet"
 
 West of the Outskirts of Town is the Road.
-The description of the Road is "It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west. The warehouse is south."
+The description of the Road is "It's a road, like what people travel on. The outskirts of town are to the East. To the North you can see a fork in the road. The stream is West. The warehouse is South."
 North of the road is a room called Further Along the Road. The description of Further Along the Road is "More road! [If the fork is stuck]There's a fork in the road here. [end if]The main road goes North and South. To the West there's a parking lot."
 The fork is a thing. The fork can be stuck. The fork is stuck. The fork is in further along the road. The fork is undescribed. The description of the fork is "A metal tool. On one end it has a handle that you can hold. On the other hand it has four pointy bits that you can stick into food or other things."
 Instead of taking or pulling the fork when the fork is stuck:
 	say "You try to pull the fork out of the road, but it's pretty stuck. Your hand slips off the fork just as you feel it has dislodged slightly from the road.";
 	now the fork is not stuck.
 
-West of Further Along the Road is the Parking Lot. The description of Parking Lot is "Where cars park[if the car is in the lot]. You see your boxy blue-gray Toyota in the corner of the lot.[else], except there aren't any today.[end if] The road is to the east." The blue car is a vehicle in the parking lot. The description of the blue car is "It's your car. Bluish-gray paint, steering wheel, headlights. All that.".  The blue car can be started. The blue car is closed. The blue car is openable. The blue car is transparent. the blue car can be ready. The blue car is not ready.
+West of Further Along the Road is the Parking Lot. The description of Parking Lot is "Where cars park[if the car is in the lot]. You see your boxy blue-gray Toyota in the corner of the lot.[else], except there aren't any today.[end if] The road is to the East." The blue car is a vehicle in the parking lot. The description of the blue car is "It's your car. Bluish-gray paint, steering wheel, headlights. All that.".  The blue car can be started. The blue car is closed. The blue car is openable. The blue car is transparent. the blue car can be ready. The blue car is not ready.
 
 Before opening the blue car:
 	if the player does not have the Toyota key:
@@ -643,7 +676,10 @@ Before going when the player is in the car:
 understand "car key" as the Toyota key.
 Understand "unlock [the car]" as opening.
 Instead of unlocking the car with something:
-	say "Try OPENing the car."
+	if the noun is the toyota key:
+		say "Try OPENing the car.";
+	else:
+		say "That doesn't seem to fit in the keyhole. You seem to remember that your car key had a Toyota logo on it.".
 
 test car with "e / s / untie Toyota key / get Toyota key / n / d / w / n / n / n / e / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button  / press button / press button / w / s / w / open car / get in car / close car / e / n / n"
 
@@ -663,26 +699,31 @@ understand "drive around the boom gates" as a mistake ("I don't understand those
 
 Section 3 - Trains
 
-North of Further Along is the Abandoned Train Station. The description of Abandoned Train Station is "No trains.
-
-There are exits to the south and east." There is a map in the train station. The description of the map is "You see a map detailing the station, the tracks, the road, and a little control room nearby."
-East of the Abandoned Train station is the Control Room. The description of Control Room is "Where things get controlled. The only exit is to the west."
-The train can be ready. The train is not ready. [if the train is ready, any action that crosses the train tracks will get killed]
+North of Further Along is the Abandoned Train Station. The description of Abandoned Train Station is "No trains.[paragraph break][if the map is examined]There are exits to the South and East.[else]The road leads South back toward town.[end if]". There is a map in the train station. The description of the map is "You see a map detailing the station, the tracks, the road, and a little control room to the East. At the bottom right corner is the insignia for Melbourne Metro." The map can be examined. The map is not examined.
+After examining the map:
+	now the map is examined.
+East of the Abandoned Train station is the Control Room. The description of Control Room is "Where things get controlled. The only exit is to the West."
+The train can be ready. The train is not ready. 
 
 The tracks are scenery in the train station. The description of the tracks is "Abandoned train tracks. Maybe trains run along them sometimes? You've never seen it happen."
 Instead of entering the tracks:
 	if the train is ready:
-		say "As you start to climb down, you see the train coming in the distance and you think better of it.";
+		say "As you start to climb down, you see the train coming in the distance and you think better of it. Maybe if you ran across you'd make it in time?";
 	else:
 		say "You wander around the abandoned train tracks. Cool! You return to the platform where it's probably safer."
 The edge of the platform is an undescribed enterable supporter in the train station.
-
+Understand "go to edge" as a mistake ("Try GET ON the edge").
 Every turn when the player is on the edge of the platform:
-	if the player is wearing the earbuds and the iPod is playing and the player has the iPod and the train is ready and the earbuds are connected:
-		say "A train enters the station while you're jamming to the music, and you trip and fall into the train tracks in front of it. That was really dumb.";
-		conclude with 37.
+	if the train is ready:	
+		if the player is wearing the earbuds and the iPod is playing and the player has the iPod and the earbuds are connected:
+			say "A train enters the station while you're jamming to the music, and you trip and fall into the train tracks in front of it. That was really dumb.";
+			conclude with 37;
+		else:
+			say "A train approaches the platform and you step away from the edge in order to be safe. It passes the station by while you watch, not slowing a bit.";
+			now the train is not ready.
+	
 
-There is a thing in the control room called the CALL TRAIN button. The call train button can be examined or unexamined. The description of the CALL TRAIN button is "A big yellow button labelled CALL TRAIN. Next to the button is a handwritten note reading 'This button doesn't work very well. Sometimes you have to press it ten or twenty times to get it to work.'.". The button has a number called the finnickiness. The finnickiness of the button is 18.
+There is a thing in the control room called the CALL TRAIN button. The call train button can be examined or unexamined. The description of the CALL TRAIN button is "A big yellow button labelled CALL TRAIN. Next to the button is a handwritten note reading 'This button doesn't work very well. Sometimes you have to press it ten or twenty times to get it to work.'.". The button has a number called the finnickiness. The finnickiness of the button is 18. There is an old screen in the control room. The description of the old screen is "It's an old TV screen built into the wall. It's playing a PSA about train safety." The old screen is fixed in place.
 
 Instead of pushing the CALL TRAIN button:
 	if the finnickiness of the button is 16 and the button is unexamined:
@@ -702,8 +743,15 @@ At the time when the train comes:
 		say "A train whooshes by at dangerously high speed. Must be the one you called. It doesn't stop though, so if you really needed a train you might need to call another.";
 	now the train is not ready.
 
-running-across is an action applying to nothing.
-Understand "run across the tracks" as running-across. Understand "run across tracks" as running-across.
+running-across is an action applying to nothing. Running is an action applying to nothing. Carry out running:
+	if the player is in the train station:
+		say "Where do you want to run?";
+	else:
+		say "This isn't the place for that".
+Understand the command "run" as something new.  Understand "run" as running.
+Understand "run e/east/w/west" as a mistake ("You'd run into a wall!").
+Understand "run s/South" as a mistake ("You'd fall in the road. Too dangerous.").
+Understand "run across the tracks" as running-across. Understand "run across tracks" as running-across. Understand "run tracks/n/north" as running-across.
 Instead of going when the player is wearing the pair of running shoes:
 	say "You're wearing running shoes. These are for running, not just exploring."
 Carry out running-across:
@@ -737,7 +785,7 @@ test running with "e / s / get right shoe / n / u / get left shoe / d / d / w / 
 
 Section 4 - Warehouse
 
-Abandoned Warehouse is a room. West of the Town Square is the warehouse. The Abandoned Warehouse is south of the Road. The description is "The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West." The Tunnel of Extraction is below the warehouse. The tunnel's count is initially 0.
+Abandoned Warehouse is a room. West of the Town Square is the warehouse. The Abandoned Warehouse is south of the Road. The description is "The warehouse is old and abandoned. It is big and extends South. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West." The Tunnel of Extraction is below the warehouse. The tunnel's count is initially 0.
 
 Before going through the tunnel:
 	if the tunnel's count is 1:
@@ -755,16 +803,27 @@ Before going through the tunnel:
 The hole is scenery in the warehouse. The description of the hole is "A hole in the wall. You could probably go through it."
 
 South of the Abandoned Warehouse is a room called A Spooky Lair. 
-The description of the lair is "A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it. It's the south end of the warehouse; the only exit is north, to the rest of the warehouse."
+The description of the lair is "A lair in which a demonic ritual might be held. There is a table with a pentagram drawn on it. It's the South end of the warehouse; the only exit is North, to the rest of the warehouse."
 The table is scenery in the Spooky lair. The table is a supporter. There is a candle on the table. The candle is lit. The description is "It's a candle. It's burning, the way candles do." A sacrificial knife is on the table. The description of the sacrificial knife is "A knife that looks like it might be used in a demonic ritual - or, you know, for cutting stuff.".
 A snake is a kind of animal. A snake is usually privately-named. There is a snake called Alice. There is a snake called Bob. There is a snake called Charlie. There is a snake called David. Alice, Bob, Charlie, and David are in the lair.
 [todo: "x snake" or "x snakes" giving "you can't see any such thing" seems bad if they're described as being there]
+The candle can be urge passed. The candle is not urge passed.
 
-Understand "give mouse to snake" and "throw mouse to snake" and "feed mouse to snake" as a mistake ("The snakes are moving too fast to give one a mouse. Maybe you need to lure them to you.")
+Every turn when the player is in the lair:
+	if the player is wearing the dollop and the candle is not urge passed:
+		say "You feel drawn toward the candle, as though its destiny and yours are intertwined.";
+		now the candle is urge passed.
+Understand "snake" as Bob.
+Instead of examining Bob:
+	say "It's a rattlesnake. They say rattlesnakes are dangerous, but you've always thought that was silly.".
+Instead of taking Bob:
+	say "The snakes are moving too fast for that. Maybe if you could lure them to you..."
+
+Understand "give mouse to snake" and "throw mouse to snake" and "feed mouse to snake" as a mistake ("The snakes are moving too fast to give one a mouse. Maybe you need to lure into somewhere.")
 
 After dropping a mouse:
 	if the noun is not in the cage:
-		say "The mouse sees an opportunity and scurries off before it can be [if the player is in the lair]eaten by a snake or [end if]put back in the jar.";
+		say "The mouse sees an opportunity and scurries off before it can be [if the player is in the lair]eaten by a snake or [end if]put back in the canister.";
 		now the noun is nowhere.
 	
 
@@ -783,9 +842,9 @@ Instead of blowing out the candle:
 Test candle with "e / e / get stool / w / n / e / put stool down / get on stool / open cabinet / get gel / put on gel / w / d / d / w / s / get candle".
 
 A mouse is a kind of animal.
-A jar is a kind of openable container. Every jar contains a mouse. Jars are usually closed.
+A canister is a kind of openable container. Every canister contains a mouse. canisters are usually closed.
 
-There is an ancient cabinet in the spooky lair. The description of the ancient cabinet is "The ancient cabinet seems like it could have been here for millenia." The ancient cabinet is a closed openable container. There are 3 jars in the ancient cabinet. The ancient cabinet is fixed in place.
+There is an ancient cabinet in the spooky lair. The description of the ancient cabinet is "The ancient cabinet seems like it could have been here for millenia." The ancient cabinet is a closed openable container. There are 3 canisters in the ancient cabinet. The ancient cabinet is fixed in place.
 
 the can't take other people rule does nothing when taking the mouse.
 
@@ -820,14 +879,14 @@ At the time when the snake leaves the cage:
 		say "The snake slithers out of the cage with remarkable speed[if the cage is closed], slamming the door open as it goes. Maybe you should lock it next time[end if].";
 	move Charlie to the lair.
 
-test cage with "e / get key / w / open door / w / unlock shed with key / open shed / get cage / e / e / d / get small key / w / s / put cage down / open ancient cabinet / get jar / open jar / get mouse / put mouse in cage / close cage / lock cage with small key"
+test cage with "e / get key / w / open door / w / unlock shed with key / open shed / get cage / e / e / d / get small key / w / s / put cage down / open ancient cabinet / get canister / open canister / get mouse / put mouse in cage / close cage / lock cage with small key"
 	
 
 Part 4 - Nature
 
 Section 1 - Piranhas
 
-West of the Road is By the Stream. The description of By the Stream is "There's a stream, making whatever sound water makes. There's also a scary warning sign. The road is to the east, and the clearing is to the south." The warning sign is scenery in By the Stream. The description is "The sign says BEWARE OF PIRANHAS." A thing called the stream is scenery in By the Stream. The description is "It's a stream of water." Understand "water" as the stream.
+West of the Road is By the Stream. The description of By the Stream is "There's a stream, making whatever sound water makes. There's also a scary warning sign. The road is to the East, and the clearing is to the South." The warning sign is scenery in By the Stream. The description is "The sign says BEWARE OF PIRANHAS." A thing called the stream is scenery in By the Stream. The description is "It's a stream of water." Understand "water" as the stream.
 
 Instead of entering the stream: say "Water is nice, but out here? Maybe in the privacy of your own home you'd reconsider."
 
@@ -855,10 +914,10 @@ get in tub]
 
 Section 2 - Trees
 
-South of By the Stream is a Clearing. The description of the Clearing is "It's very clear here. The edge of the woods is to the west. A hole that leads into the abandoned warehouse is to the east. There's a stream to the north."
+South of By the Stream is a Clearing. The description of the Clearing is "It's very clear here. The edge of the woods is to the West. A hole that leads into the abandoned warehouse is to the East. There's a stream to the North."
 
-West of the Clearing is the Edge of the Woods. The description of the Edge of the Woods is "The woods start here and extend to the west. There's a clearing to the east."
-West of the Edge is a room called the Woods. The description of the Woods is "There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the east. Going south, you can see signs for a hunting lodge.[if the nest is not found] You can hear a faint sound from above.[end if]"
+West of the Clearing is the Edge of the Woods. The description of the Edge of the Woods is "The woods start here and extend to the West. There's a clearing to the East."
+West of the Edge is a room called the Woods. The description of the Woods is "There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the East. Going South, you can see signs for a hunting lodge.[if the nest is not found] You can hear a faint sound from above.[end if]"
 
 Instead of going nowhere from the Woods: say "Too many trees. You'd get lost."
 
@@ -927,9 +986,9 @@ Test treetops with "e / e / open fridge / take fish / w / d / w / w / w / w / th
 
 
 
-South of the Woods is the Hunting Grounds. The description of the Hunting Grounds is "Where hunters hunt things, as long as it's the right season. The woods are to the north. You can head into the Hunting Lodge to the south."
+South of the Woods is the Hunting Grounds. The description of the Hunting Grounds is "Where hunters hunt things, as long as it's the right season. The woods are to the North. You can head into the Hunting Lodge to the South."
 
-South of the Hunting Grounds is a door called the hunting lodge entrance. South of the entrance is a room called the Hunting Lodge. The description of the Hunting Lodge is "Where hunters rest or something. One wall is covered in animal heads - a deer, a moose, a lion(!). Kinda creepy, to be honest. The exit is north." Instead of going outside from the Hunting Lodge, try going north. The moose head is a wearable portable undescribed things in the hunting lodge. The deer head and the lion head are undescribed things in the hunting lodge. The deer head is portable. There is a poster in the hunting lodge. The poster weeks is initially 5. 
+South of the Hunting Grounds is a door called the hunting lodge entrance. South of the entrance is a room called the Hunting Lodge. The description of the Hunting Lodge is "Where hunters rest or something. One wall is covered in animal heads - a deer, a moose, a lion(!). Kinda creepy, to be honest. The exit is North." Instead of going outside from the Hunting Lodge, try going North. The moose head is a wearable portable undescribed things in the hunting lodge. The deer head and the lion head are undescribed things in the hunting lodge. The deer head is portable. There is a poster in the hunting lodge. The poster weeks is initially 5. 
 The description of the poster is "A poster reading '[if it is hunting season]Hunting Season is Now[else]Hunting season begins in [the poster weeks] weeks![end if]'".
 
 
@@ -949,7 +1008,7 @@ Instead of going somewhere when the player is wearing the moose head and the moo
 	now the moose head is accustomed.
 
 Instead of going to the hunting grounds when the player is wearing the moose head and it is hunting season and the moose head is accustomed:
-	say "You go into the hunting grounds, foolishly forgetting that there is a moose head atop your own. The hunters waste no time before shooting you.. at least you got a quick death.";
+	say "You go into the hunting grounds, foolishly forgetting that there is a moose head atop your own. The hunters waste no time before shooting you.. at lEast you got a quick death.";
 	conclude with 36;
 
 test moose with "e / u / w / get quarter / n / get quarter / open second drawer / get quarter / s / e / d / d / w / e / open entrance / s / u / go into time machine / insert quarter into slot / insert quarter into slot / insert quarter into slot / press button / get out /d / n / w / w / w / w / s / open entrance / s / get moose head / wear moose head / n / n"
@@ -983,6 +1042,8 @@ Instead of attacking the bear:
 	if the player is holding the stick:
 		say "You take your stick and poke the bear. It wakes up and promptly eats you.";
 		conclude with 24;
+	else if the player is holding the knife:
+		say "You're not so violent as to use a knife on a poor innocent bear.";
 	else:
 		say "With your bear (*ahem*) bare hands? You're kind of dumb, but not *that* dumb."
 
@@ -993,12 +1054,12 @@ To decide if the fish is ready to be thrown:
 		decide yes;
 	decide no.
 understand "throw [something] to bear" as dropping.
-understand "throw [something] west" as dropping.
+understand "throw [something] West" as dropping.
 understand "toss [something] to bear" as dropping.
-understand "toss [something] west" as dropping.
+understand "toss [something] West" as dropping.
 
 Instead of dropping the fish when the fish is ready to be thrown:
-	say "You throw the fish to the west. The bear looks at the fish curiously.";
+	say "You throw the fish to the West. The bear looks at the fish curiously.";
 	now the fish is nowhere;
 	the bear eats the fish in one turn from now.
 
@@ -1025,7 +1086,7 @@ Part 5 - Town
 
 South of the Outskirts of Town is the Town Square.
 The description of Town Square is "The Town Square stretches out in front of you. There are 10 or 20 unremarkable buildings that you couldn't care less about. South of you is the Mad Scientist's House. West, a hole in the wall leads into the Abandoned Warehouse. North of here, the town thins out."
-South of the Town Square is a door called the Mad Scientist's Grand Entrance. south of the Mad Scientist's grand entrance is the Mad Scientist's house.
+South of the Town Square is a door called the Mad Scientist's Grand Entrance. South of the Mad Scientist's grand entrance is the Mad Scientist's house.
 The description of the Mad Scientist's House is "A house filled with so many useless gadgets the like of which you've never seen. There are tubes, filling two thirds of the room. High up on the wall there is a shelf. Taking up one entire wall of the room is an enormous amplifier." Gadgets and tubes and a tool shelf and an amplifier are scenery in the Mad Scientist's house. A door called a ladder is above the mad scientist's house. The ladder is open and unopenable. Understand "amp" as the amplifier.
 
 The description of the shelf is "A high-up shelf that you imagine stores the mad scientist's secrets.  [if the player is on the stool]On the tool shelf, you can see [a list of the things on the shelf]. That's disappointing[else]It's so high up that you can't see on it[end if]." The shelf is a supporter. A small tool box and a bottle of soylent are on the shelf. The small tool box is an openable closed container. Super glue is in the small tool box. Super glue and soylent are edible.
