@@ -1030,7 +1030,7 @@ Instead of going somewhere when the player is wearing the moose head and the moo
 	now the moose head is accustomed.
 
 Instead of going to the hunting grounds when the player is wearing the moose head and it is hunting season and the moose head is accustomed:
-	say "You go into the hunting grounds, foolishly forgetting that there is a moose head atop your own. The hunters waste no time before shooting you.. at lEast you got a quick death.";
+	say "You go into the hunting grounds, foolishly forgetting that there is a moose head atop your own. The hunters waste no time before shooting you... at least you got a quick death.";
 	conclude with 36;
 
 test moose with "e / u / w / get quarter / n / get quarter / open second drawer / get quarter / s / e / d / d / w / e / open entrance / s / u / go into time machine / insert quarter into slot / insert quarter into slot / insert quarter into slot / press button / get out /d / n / w / w / w / w / s / open entrance / s / get moose head / wear moose head / n / n"
