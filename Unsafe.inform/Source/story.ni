@@ -6,6 +6,8 @@ The story creation year is 2019.
 
 Part 1 - Meta
 
+Rule for printing the banner text: do nothing.
+
 test all with "test candle / restart / test bear / restart / test piranhas / restart / test toaster / restart / test fly / restart / test pie / restart / test space / restart / test cage  / restart / test glue / restart /  test moose / restar / test trees / restart / test platform / restart / test car / restart / test running "
 
 Instead of going through a closed door:
@@ -14,6 +16,7 @@ Instead of going through a closed door:
 
 When play begins:
 	now the right hand status line is "Moves: [turn count - 1]"; [Inform's turn count basically says what number the "current move" is, so we subtract one.]
+	say "Welcome to [italic type]Unsafe[roman type]. If you're not sure what to do, type 'help'."
 	
 To conclude with (par - a number):
 	now the right hand status line is "Moves: [turn count]";
@@ -21,7 +24,7 @@ To conclude with (par - a number):
 	end the story saying "You have died";
 	say "You've reached one of this game's 14 endings! In that game you used [turn count] moves. The optimal number of moves is [par].";
 	if turn count is less than par:
-		say "Uh-oh, the puzzle is broken! Send us an email!";
+		say "Uh-oh, the puzzle is broken! Please send us an email at galacticpuzzlesetters@gmail.com with the exact sequence of moves you made.";
 	else if turn count is par:
 		say "Great job, you got the optimal number of moves!";
 	else:
@@ -30,6 +33,7 @@ To conclude with (par - a number):
 [I think this blocks what we want it to, but the output is suboptimal, see §6.15 of the Recipe Book]
 Instead of taking something when the number of entries in the multiple object list is greater than 1:
 	say "One thing at a time!".
+
 
 Section 1 - The Player
 
@@ -85,12 +89,12 @@ Instead of dumping the bucket:
 		now the piranha-infested water is nowhere; 
 	else if the player is in the house:
 		say "That doesn't really seem like a good idea here.";
-	else if the rocket fuel	 is in the bucket:
+	else if a bucketful of rocket fuel is in the bucket:
 		if the player is in the launch pad:
-			try inserting the fuel into the spaceship;
+			try inserting a bucketful of rocket fuel into the spaceship;
 		else:
 			say "You pour the rocket fuel out onto the ground. It immediately starts to evaporate. Smells kinda funky.";
-			now the fuel is nowhere;
+			now a bucketful of rocket fuel is nowhere;
 	else if the piranha-infested water is in the bucket:
 		say "You unceremoniously dump the piranhas and the water out of the bucket. Good riddance.";
 		now the piranha-infested water is nowhere;
@@ -145,7 +149,7 @@ to say the wasp tree:
 
 Instead of listening when the iPod is playing:
 	if the player is wearing the earbuds:
-		say "Your favorite song! It's cute and dumb and it's about death.";
+		say "Your favorite song! It's a cute and silly song that went viral a few years ago, some kind of campaign or something — you can't quite remember, but you know most of the lyrics by heart, because they're important.";
 	else if the player has the earbuds:
 		say "You can hear a song coming from the earbuds. Maybe if you put them on you could hear it better.";
 Instead of listening when the player is in the woods and the nest is not found:
@@ -167,7 +171,8 @@ East of the Bedroom is a room called the Hall. The description of The Hall is "T
 
 North of the Hall is the staircase. The Staircase is an open door. The staircase is not openable. The staircase is scenery. The muddy brown key is undescribed.
 After taking the muddy brown key:
-	now the muddy brown key is described.
+	now the muddy brown key is described;
+	say "Taken."
 The description of the staircase is "Stairs that lead between the halls on the first and second floor of your home."
 Understand "stairs" as the staircase.
 Instead of climbing the staircase:
@@ -491,6 +496,8 @@ Instead of opening the vat:
 	say "You lift the large plastic lid off of the vat, revealing the pungent rocket fuel beneath.";
 	now the vat is open.
 Understand "fill bucket with fuel/water/piranhas" as a mistake ("Try DIPping the bucket in something.").
+Instead of inserting the bucket into the rocket fuel:
+	try inserting the bucket into the vat.
 Instead of inserting the bucket into the vat:
 	if the piranha-infested water is in the bucket:
 		say "You should probably empty the bucket out first.";
@@ -506,6 +513,9 @@ Instead of taking the key cabinet:
 	try taking the small metal key.
 
 The House is a region. The Bedroom and the Kitchen and the Hall and the Upstairs Hall and the Study and the Back Entryway and the Closet and the Bathroom and the Basement are in the House. The Mad Scientist's House is in the house. The laboratory is in the house. The Control Room is in the house. The Hunting Lodge is in the house. [really this is just indoors]
+
+Space Center is in the house. 
+The Abandoned Warehouse is in the house. A Spooky Lair is in the house.
 
 Part 3 - Between
 
@@ -567,16 +577,50 @@ Instead of entering the spaceship when a mouse is enclosed by the player:
 Instead of answering the computer that "confirm":
 	if the spaceship is waiting for confirmation:
 		say "The dialog on the screen goes away. The screen now reads READY FOR LAUNCH.";
-		now the spaceship is not waiting for confirmation.
+		now the spaceship is not waiting for confirmation;
+	else:
+		say "Nothing happens."
 Instead of answering the computer that "SUIT UP":
-	say "The spaceship's machinery puts a space suit on you faster than you could possibly have done it yourself.";
-	now the player is wearing the spacesuit;
-	now the player is wearing the helmet.
+	if the player is not in the spaceship:
+		say "The computer beeps. 'No humans detected in range. Please enter spaceship for automatic space suit assembly.'";
+	else if the spaceship is in the launch pad:
+		say "The computer beeps. 'Space suit assembly is not available in launch pad.'";
+	else if the player is wearing the spacesuit and the player is wearing the helmet:
+		say "The computer beeps. 'Space suit already be assembled. Aborting assembly procedure.'";
+	else:
+		say "The spaceship's machinery puts a space suit on you faster than you could possibly have done it yourself.";
+		now the player is wearing the spacesuit;
+		now the player is wearing the helmet.
 Instead of answering the computer that "CANCEL":
-	if the spaceship is in the air:
-		if the computer is not disabled:
-			now the computer is disabled;
-			say "The autopilot is disabled."
+	if the spaceship is in the air and the computer is not disabled:
+		now the computer is disabled;
+		say "The computer beeps. 'Autopilot is now disengaged.'";
+	else:
+		say "Nothing happens."
+
+Suiting-up is an action applying to nothing.
+Understand "suit up" as suiting-up.
+Instead of suiting-up:
+	if the computer is visible:
+		try answering the computer that "SUIT UP";
+	else:
+		say "That doesn't make sense here.".
+
+Confirming is an action applying to nothing.
+Understand "confirm" as confirming.
+Instead of confirming:
+	if the computer is visible:
+		try answering the computer that "CONFIRM";
+	else:
+		say "That doesn't make sense here.".
+
+Canceling is an action applying to nothing.
+Understand "cancel" as canceling.
+Instead of canceling:
+	if the computer is visible:
+		try answering the computer that "CANCEL";
+	else:
+		say "That doesn't make sense here.".
 
 the air is a room. Outer Space is a room. floating is a region. the air and outer space are in floating.
 Instead of pushing the LAUNCH button:
@@ -587,7 +631,7 @@ Instead of pushing the LAUNCH button:
 	else if the spaceship is waiting for confirmation:
 		say "The warning about fuel flashes angrily at you. It's expecting a response.";
 	else if the spaceship is in the launch pad:
-		say "The computer counts down: '3... 2... 1... LAUNCHING'. [paragraph break] The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. [paragraph break]The computer says 'This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space.'";
+		say "The computer counts down: '3... 2... 1... LAUNCHING'. [paragraph break] The world around you starts to disappear into the smoke emitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. [paragraph break]The computer says 'This ship is equipped with an auto space suit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space.'";
 		now the spaceship is in the air;
 		Autopilot engages in one turns from now;
 	else:
@@ -638,7 +682,7 @@ At the time when the autopilot lands the ship:
 	now the spaceship is broken;
 	now the spaceship is open.
 	
-Understand "fill spaceship" as a mistake ("Try POURing the fuel into the ship")
+Understand "fill spaceship" as a mistake ("Try POURing the fuel into the ship.")
 
 Instead of inserting bucketful of rocket fuel into the spaceship:
 	if the player is in the spaceship:
@@ -685,7 +729,7 @@ After entering the blue car:
 	
 Understand "car door" as the car.
 
-Instead of entering the house when the player is in the car:
+Instead of going to the house when the player is in the car:
 	say "You can't drive indoors, that would be a safety hazard."
 
 Before going when the player is in the car:
@@ -702,14 +746,16 @@ Instead of unlocking the car with something:
 	else:
 		say "That doesn't seem to fit in the keyhole. You seem to remember that your car key had a Toyota logo on it.".
 
-test car with "e / s / untie Toyota key / get Toyota key / n / d / w / n / n / n / e / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button  / press button / press button / w / s / w / open car / get in car / close car / e / n / n"
+test car with "e / s / untie Toyota key / get Toyota key / n / d / w / n / n / n / e / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button  / press button / press button / w / s / w / open car / get in car / close car / e / n / n".
+
+Test car2 with "e / s / untie toyota / get toyota / n / d / w / n / n / w / open car / get in car / close car / e / n / e / open car / press button / g / g / g / g / g / g / g / g / g / g / g / g / g / g / g / g / g / g / close car / w / w".
 
 Instead of going to the abandoned train station when the player is in the car:
 	if the train is not ready:
 		say "You drive across the tracks into the train station turnaround. This is the end of the road.";
 		continue the action;
 	else if the car is not ready:
-		say "The boom gates are closing, it looks like a train is coming. You probably shouldn't go to the train station right now.";
+		say "The boom gates are closing, it looks like a train is coming. You instinctively flinch and prevent yourself from driving toward the train station. After a moment of steeling your nerves, though, you think you could try again if you wanted.";
 		now the car is ready;
 	else:
 		say "The boom gates are closing, it looks like a train is coming. You drive around them and toward the train station. As you go past them, a train comes and runs you over. That was really dumb.";
@@ -802,7 +848,8 @@ Instead of lacing the pair of running shoes:
 		now the pair of running shoes is laced.
 	
 After taking off the pair of running shoes:
-	now the pair of running shoes is not laced.
+	now the pair of running shoes is not laced;
+	say "You take off the running shoes."
 
 test running with "e / s / get right shoe / n / u / get left shoe / d / d / w / n  / n / n / e / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button / press button  / press button / press button / w / take off shoes / put on running shoes / lace up running shoes / run across tracks "
 
@@ -821,8 +868,13 @@ Before going through the tunnel:
 		say "That doesn't look like a safe place to go without shoes.";
 		stop the action;
 	else:
-		say "You go through the long and winding Tunnel of Extraction.";
-
+		if the player is wearing the earbuds:
+			say "You go through the long and winding Tunnel of Extraction.
+			
+As you follow all the twists and turns of the tunnel, you turn your head one too many times and your earbuds fall out of your ears. You manage to grab them before they fall to the ground.";
+			now the player is carrying the earbuds;
+		else:
+			say "You go through the long and winding Tunnel of Extraction.";
 
 The hole is scenery in the warehouse. The description of the hole is "A hole in the wall. You could probably go through it."
 
@@ -846,9 +898,10 @@ Understand "give mouse to snake" and "throw mouse to snake" and "feed mouse to s
 After dropping a mouse:
 	if the noun is not in the cage:
 		say "The mouse sees an opportunity and scurries off before it can be [if the player is in the lair]eaten by a snake or [end if]put back in the canister.";
-		now the noun is nowhere.
+		now the noun is nowhere;
+	else:
+		say "You put the mouse in the cage." [this shouldn't happen, it should get instead'ed, but just in case]
 	
-
 Instead of taking or touching the candle when the player is wearing a dollop of hair gel:
 	say "You touch the candle. The flame leaps onto your hair. Boom!";
 	conclude with 17.
@@ -870,6 +923,9 @@ There is an ancient cabinet in the spooky lair. The description of the ancient c
 
 the can't take other people rule does nothing when taking the mouse.
 
+[do we need this idk]
+[Every turn when the snake is in the cage and the cage is not locked:
+	say "Living up to its name, the snake rattles at you from the cage."]
 	
 Instead of inserting something into the cage:	
 	If the player does not have the noun:
@@ -941,7 +997,14 @@ South of By the Stream is a Clearing. The description of the Clearing is "It's v
 West of the Clearing is the Edge of the Woods. The description of the Edge of the Woods is "The woods start here and extend to the West. There's a clearing to the East."
 West of the Edge is a room called the Woods. The description of the Woods is "There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the East. Going South, you can see signs for a hunting lodge.[if the nest is not found] You can hear a faint sound from above.[end if]"
 
-Instead of going nowhere from the Woods: say "Too many trees. You'd get lost."
+Instead of going up from the Woods:
+	if the player is in the car:
+		say "This isn't a flying car, unfortunately.";
+	else:
+		say "There are many trees you could climb. You'll have to name one specifically."
+Instead of going down from the Woods: say "There's nothing but dirt in that direction."
+Instead of going nowhere from the Woods (this is the too many trees rule): say "Too many trees. You'd get lost."
+The too many trees rule is listed last in the instead rules.
 
 A tree is a kind of backdrop. Every tree has a room called the branches. An ash tree is a tree. An elm tree is a tree. A pine tree is a tree. Understand "branch" as a tree.
 
@@ -1102,6 +1165,7 @@ At the time when the bear falls asleep:
 
 Before wearing something:
 	if the player does not have the noun:
+		say "You'd have to pick up [the noun] first.";
 		stop the action.
 
 Part 5 - Town
@@ -1113,6 +1177,8 @@ The description of the Mad Scientist's House is "A house filled with so many use
 
 The description of the shelf is "A high-up shelf that you imagine stores the mad scientist's secrets.  [if the player is on the stool]On the tool shelf, you can see [a list of the things on the shelf]. That's disappointing[else]It's so high up that you can't see on it[end if]." The shelf is a supporter. A small tool box and a bottle of soylent are on the shelf. The small tool box is an openable closed container. Super glue is in the small tool box. Super glue and soylent are edible.
 After eating the soylent, say "You could get used to this mad scientist lifestyle - that soylent is truly delectable."
+Instead of drinking the soylent:
+	try eating the soylent.
 Rule for printing the name of the shelf when the player is not on the stool:
 	say "high-up shelf"; omit contents in listing.
 The description of soylent is "A fully nutritional meal replacement. It's made of people." 
@@ -1213,7 +1279,7 @@ Instead of eating the pie when the pie is aged:
 	say "You eat the pie. It tastes... strange. As though it's been sitting out for 2 weeks. Your stomach starts to feel unpleasant and then --";
 	conclude with 32.
 	
-pie crumbs are a liquid. The description of the crumbs is "The crumbs that were left behind when someone took a pie from this location." The pie crumbs are nowhere.
+Pie crumbs are a liquid. The description of the crumbs is "The crumbs that were left behind when someone took a pie from this location." The pie crumbs are nowhere.
 Instead of pushing the button:
 	if the player is not in the time machine:
 		say "You can't reach that. You'd have to be in the time machine first.";
@@ -1238,11 +1304,35 @@ Instead of pushing the button:
 	
 test pie with "e / e / open fridge / get pie / w / u / w / get quarter / e / d / d / w / e / open entrance / s / u / open time safe / open middle safe / open inner safe / put pie in inner safe / close inner safe / close middle safe / close time safe / go in time machine / put quarter in slot / press button / get out / open outer safe / open middle safe / open inner safe / get pie / eat pie"
 
+Part 6 - Fun stuff and red herrings for decompilers
+
 Xyzzying is an action applying to nothing. Understand "xyzzy" and "plover" as xyzzying.
 Plughing is an action applying to nothing. Understand "plugh" as plughing.
 
 Carry out xyzzying: say "A hollow voice says, 'Insert red herring here.'"
 
 Carry out plughing: say "A hollow voice says, 'This puzzle was brought to you by plugh (pronounced ✈✈✈ Galactic Trendsetters ✈✈✈).'"
+ 
+[red herrings for decompilers]
+The workshop is a room. The wire is in the workshop. The description of the wire is "Thin metal wires. Electrons pass through."
+Instead of touching the wire:
+	say "The instant you touch the wire, ten thousand volts course through your body.";
+	conclude with 23.
+
+The eastern parking lot is a room. The black car is in the garage.
+Instead of attacking the black car:
+	say "The next sensation you have is somebody behind you throwing you into a bag, then a giant impact, then nothing.";
+	conclude with 31.
+	
+The clothes dryer is nowhere. The clothes dryer is a container.
+Instead of entering the clothes dryer:
+	say "You get into the dryer, feeling the rough bumps of the surface, and then settle in for a bit. After a few moments, you find the dryer interior, and yourself, spinning. It goes faster, and faster, and faster, and faster...";
+	conclude with 30.
+	
+The front door is a door. It is east of the workshop and west of the eastern parking lot. The description is "A beige object."
+
+Instead of opening the front door:
+	say "You open the door. Somebody wearing a weird mask comes in.";
+	conclude with 25.
 
 Release along with an interpreter.
