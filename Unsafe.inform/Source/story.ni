@@ -490,7 +490,7 @@ Below the Hall is the Basement. There is a door called The Tunnel of Extraction.
 
 The description of the Basement is "The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the West."
 
-A vat is in the basement. The vat is a closed openable fixed in place container. There is rocket fuel in the vat. The rocket fuel is a liquid. The description of the vat is "A large vat holding a greenish liquid. The lid is tightly sealed. Who knows how long it's been here?". Understand "liquid" and "greenish liquid" as the rocket fuel.
+A vat is in the basement. The vat is a closed openable fixed in place container. There is rocket fuel in the vat. The rocket fuel is a liquid. The description of the vat is "A large vat holding a greenish liquid. The lid is [if the vat is open]open[else]tightly sealed[end if]. Who knows how long it's been here?". Understand "liquid" and "greenish liquid" as the rocket fuel.
 A bucketful of rocket fuel is a liquid. The bucketful is nowhere.
 Instead of opening the vat:
 	say "You lift the large plastic lid off of the vat, revealing the pungent rocket fuel beneath.";
@@ -1313,6 +1313,8 @@ Carry out xyzzying: say "A hollow voice says, 'Insert red herring here.'"
 
 Carry out plughing: say "A hollow voice says, 'This puzzle was brought to you by plugh (pronounced ✈✈✈ Galactic Trendsetters ✈✈✈).'"
  
+The red herring is nowhere. The description is "A red herring. It tells anybody who tries to decompile Unsafe that, although you're welcome to do so, we believe it's neither necessary nor particularly helpful to finish the puzzle, and there are a few other red herrings in the disassembly."
+
 [red herrings for decompilers]
 The workshop is a room. The wire is in the workshop. The description of the wire is "Thin metal wires. Electrons pass through."
 Instead of touching the wire:
