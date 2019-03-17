@@ -504,7 +504,9 @@ Understand "fill bucket with fuel/water/piranhas" as a mistake ("Try DIPping the
 Instead of inserting the bucket into the rocket fuel:
 	try inserting the bucket into the vat.
 Instead of inserting the bucket into the vat:
-	if the piranha-infested water is in the bucket:
+	if the vat is closed:
+		say "You can't do that while the vat is closed!";
+	else if the piranha-infested water is in the bucket:
 		say "You should probably empty the bucket out first.";
 	else:
 		say "You dip the bucket in the vat of rocket fuel and come out with a fair amount. This stuff is lighter than it looks!";

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-1670"/>
+  <activeNode nodeId="node-1684"/>
   <item nodeId="node-1">
     <command xml:space="preserve">Unsafe</command>
     <result xml:space="preserve">Welcome to Unsafe. If you're not sure what to do, type "help".&#x000A;&#x000A;&#x000A;Bedroom&#x000A;It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. &#x000A;&#x000A;You've just gotten out of your bed, having woken up from a nap.&#x000A;&#x000A;On the nightstand is an iPod.&#x000A;&#x000A;&gt;</result>
@@ -10974,9 +10974,9 @@
   </item>
   <item nodeId="node-359">
     <command xml:space="preserve">test space</command>
-    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] e&#x000A;&#x000A;Hall&#x000A;The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.&#x000A;&#x000A;You can see a Staircase and a muddy brown key here.&#x000A;&#x000A;&gt;[2] e&#x000A;&#x000A;Kitchen&#x000A;Where food happens. The hall is to the west.&#x000A;&#x000A;You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.&#x000A;&#x000A;&gt;[3] get stool&#x000A;Taken.&#x000A;&#x000A;&gt;[4] w&#x000A;&#x000A;Hall&#x000A;The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.&#x000A;&#x000A;You can see a Staircase and a muddy brown key here.&#x000A;&#x000A;&gt;[5] w&#x000A;&#x000A;Bedroom&#x000A;It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. &#x000A;&#x000A;On the nightstand is an iPod.&#x000A;&#x000A;&gt;[6] open door&#x000A;You open the Side Door.&#x000A;&#x000A;&gt;[7] w&#x000A;&#x000A;The Garden&#x000A;A small garden. There are a few different kinds of flowers and a few different kinds of squash. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt. You could swear there used to be a bucket somewhere around here, but you don't see it anywhere...&#x000A;&#x000A;You can see the shed (closed) here.&#x000A;&#x000A;&gt;[8] put down stool&#x000A;Dropped.&#x000A;&#x000A;&gt;[9] get on stool&#x000A;You get onto the stool.&#x000A;&#x000A;&gt;[10] get bucket&#x000A;Taken.&#x000A;&#x000A;&gt;[11] e&#x000A;(first getting off the stool)&#x000A;&#x000A;Bedroom&#x000A;It's your bedroom. It's not very interesting. The hall is to the east. The side door (open) leads out of the house to the West. &#x000A;&#x000A;On the nightstand is an iPod.&#x000A;&#x000A;&gt;[12] e&#x000A;&#x000A;Hall&#x000A;The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.&#x000A;&#x000A;You can see a Staircase and a muddy brown key here.&#x000A;&#x000A;&gt;[13] d&#x000A;&#x000A;Basement&#x000A;The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.&#x000A;&#x000A;You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.&#x000A;&#x000A;&gt;[14] open vat&#x000A;You lift the large plastic lid off of the vat, revealing the pungent rocket fuel beneath.&#x000A;&#x000A;&gt;[15] dip bucket in vat&#x000A;You dip the bucket in the vat of rocket fuel and come out with a fair amount. This stuff is lighter than it looks!&#x000A;&#x000A;&gt;[16] w&#x000A;You go through the long and winding Tunnel of Extraction.&#x000A;&#x000A;Abandoned Warehouse&#x000A;The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.&#x000A;&#x000A;You can see The Tunnel of Extraction here.&#x000A;&#x000A;&gt;[17] n&#x000A;&#x000A;Road&#x000A;It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west. The warehouse is south.&#x000A;&#x000A;&gt;[18] e&#x000A;&#x000A;Outskirts of Town&#x000A;There's less town here than there is to the South. The garden is east. The space center is North. The road is West.&#x000A;&#x000A;&gt;[19] n&#x000A;&#x000A;Space Center&#x000A;Your friendly neighborhood space center. They build rockets and stuff. The outskirts of town are South, the launch pad is North.&#x000A;&#x000A;&gt;[20] n&#x000A;&#x000A;Launch Pad&#x000A;The place where rockets take off from. The rest of the Space Center is South.&#x000A;&#x000A;You can see a spaceship here.&#x000A;&#x000A;&gt;[21] put fuel in ship&#x000A;You pour the rocket fuel into the ship's fuel hatch, closing the hatch when you are done.&#x000A;As if in a gesture of thanks, the computer opens the door to the spaceship for you.&#x000A;&#x000A;&gt;[22] get in ship&#x000A;You get into the spaceship.&#x000A;&#x000A;In the spaceship you can see an ON button, a LAUNCH button, a spacesuit and a helmet.&#x000A;&#x000A;&gt;[23] close door&#x000A;You close the spaceship.&#x000A;&#x000A;&gt;[24] press on&#x000A;You press the ON button. All around you dials spin and lights blink.&#x000A;&#x000A;&gt;[25] press launch&#x000A;The computer counts down: "3... 2... 1... LAUNCHING". &#x000A;&#x000A; The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. &#x000A;&#x000A;The computer says "This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."&#x000A;&#x000A;&gt;[26] say suit up&#x000A;(to the computer)&#x000A;The spaceship's machinery puts a space suit on you faster than you could possibly have done it yourself.&#x000A;&#x000A;The spaceship has reached space. It's full of stars! It's the most beautiful thing you've ever seen! Now what?&#x000A;&#x000A;&gt;[27] open door&#x000A;You open the spaceship.&#x000A;&#x000A;&gt;[28] get out&#x000A;You get out of the spaceship.&#x000A;&#x000A;Outer Space&#x000A;You can see a spaceship here.&#x000A;&#x000A;&gt;[29] take off helmet&#x000A;You see space, with your own eyes. It's stunningly beautiful. Then your head explodes.&#x000A;&#x000A;&#x000A;You've reached one of this game's 14 endings! In that game you used 29 moves. The optimal number of moves is 29.&#x000A;Great job, you got the optimal number of moves!&#x000A;&#x000A;&#x000A;&#x000A;    *** You have died ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt; </result>
+    <result xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] e&#x000A;&#x000A;Hall&#x000A;The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.&#x000A;&#x000A;There is a muddy brown key hanging from a hook on the wall.&#x000A;&#x000A;&gt;[2] e&#x000A;&#x000A;Kitchen&#x000A;Where food happens. The hall is to the West.&#x000A;&#x000A;You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.&#x000A;&#x000A;&gt;[3] get stool&#x000A;Taken.&#x000A;&#x000A;&gt;[4] w&#x000A;&#x000A;Hall&#x000A;The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.&#x000A;&#x000A;There is a muddy brown key hanging from a hook on the wall.&#x000A;&#x000A;&gt;[5] w&#x000A;&#x000A;Bedroom&#x000A;It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. &#x000A;&#x000A;On the nightstand is an iPod.&#x000A;&#x000A;&gt;[6] open door&#x000A;You open the Side Door.&#x000A;&#x000A;&gt;[7] w&#x000A;&#x000A;The Garden&#x000A;A small garden. There are a few different kinds of flowers and a few different kinds of squash. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt. You could swear there used to be a bucket somewhere around here, but you don't see it anywhere...&#x000A;&#x000A;The side door to your house is East, and a path leads off towards town to the West.&#x000A;&#x000A;You can see the shed (closed) here.&#x000A;&#x000A;&gt;[8] put down stool&#x000A;Dropped.&#x000A;&#x000A;&gt;[9] get on stool&#x000A;You get onto the stool.&#x000A;&#x000A;&gt;[10] get bucket&#x000A;Taken.&#x000A;&#x000A;&gt;[11] e&#x000A;(first getting off the stool)&#x000A;&#x000A;Bedroom&#x000A;It's your bedroom. It's not very interesting. The hall is to the East. The side door (open) leads out of the house to the West. &#x000A;&#x000A;On the nightstand is an iPod.&#x000A;&#x000A;&gt;[12] e&#x000A;&#x000A;Hall&#x000A;The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.&#x000A;&#x000A;There is a muddy brown key hanging from a hook on the wall.&#x000A;&#x000A;&gt;[13] d&#x000A;&#x000A;Basement&#x000A;The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the West.&#x000A;&#x000A;You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.&#x000A;&#x000A;&gt;[14] open vat&#x000A;You lift the large plastic lid off of the vat, revealing the pungent rocket fuel beneath.&#x000A;&#x000A;&gt;[15] dip bucket in vat&#x000A;You dip the bucket in the vat of rocket fuel and come out with a fair amount. This stuff is lighter than it looks!&#x000A;&#x000A;&gt;[16] w&#x000A;You go through the long and winding Tunnel of Extraction.&#x000A;&#x000A;Abandoned Warehouse&#x000A;The warehouse is old and abandoned. It is big and extends South. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.&#x000A;&#x000A;You can see The Tunnel of Extraction here.&#x000A;&#x000A;&gt;[17] n&#x000A;&#x000A;Road&#x000A;It's a road, like what people travel on. The outskirts of town are to the East. To the North you can see a fork in the road. The stream is West. The warehouse is South.&#x000A;&#x000A;&gt;[18] e&#x000A;&#x000A;Outskirts of Town&#x000A;There's less town here than there is to the South. The garden is East. The space center is North. The road is West.&#x000A;&#x000A;&gt;[19] n&#x000A;&#x000A;Space Center&#x000A;Your friendly neighborhood space center. They build rockets and stuff. The outskirts of town are South, the launch pad is North.&#x000A;&#x000A;&gt;[20] n&#x000A;&#x000A;Launch Pad&#x000A;The place where rockets take off from. The rest of the Space Center is South.&#x000A;&#x000A;You can see a spaceship here.&#x000A;&#x000A;&gt;[21] put fuel in ship&#x000A;You pour the rocket fuel into the ship's fuel hatch, closing the hatch when you are done.&#x000A;As if in a gesture of thanks, the computer opens the door to the spaceship for you.&#x000A;&#x000A;&gt;[22] get in ship&#x000A;You get into the spaceship.&#x000A;&#x000A;In the spaceship you can see an ON button, a LAUNCH button, a spacesuit and a helmet.&#x000A;&#x000A;&gt;[23] close door&#x000A;You close the spaceship.&#x000A;&#x000A;&gt;[24] press on&#x000A;You press the ON button. All around you dials spin and lights blink.&#x000A;&#x000A;&gt;[25] press launch&#x000A;The computer counts down: "3... 2... 1... LAUNCHING". &#x000A;&#x000A; The world around you starts to disappear into the smoke emitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. &#x000A;&#x000A;The computer says "This ship is equipped with an auto space suit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."&#x000A;&#x000A;&gt;[26] say suit up&#x000A;(to the computer)&#x000A;The spaceship's machinery puts a space suit on you faster than you could possibly have done it yourself.&#x000A;&#x000A;The spaceship has reached space. It's full of stars! It's the most beautiful thing you've ever seen! Now what?&#x000A;&#x000A;&gt;[27] open door&#x000A;You open the spaceship.&#x000A;&#x000A;&gt;[28] get out&#x000A;You get out of the spaceship.&#x000A;&#x000A;Outer Space&#x000A;You can see a spaceship here.&#x000A;&#x000A;&gt;[29] take off helmet&#x000A;You see space, with your own eyes. It's stunningly beautiful. Then your head explodes.&#x000A;&#x000A;&#x000A;You've reached one of this game's 14 endings! In that game you used 29 moves. The optimal number of moves is 29.&#x000A;Great job, you got the optimal number of moves!&#x000A;&#x000A;&#x000A;&#x000A;    *** You have died ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
     <commentary xml:space="preserve">(Testing.)&#x000A;&#x000A;&gt;[1] e&#x000A;&#x000A;Hall&#x000A;The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.&#x000A;&#x000A;You can see a Staircase and a muddy brown key here.&#x000A;&#x000A;&gt;[2] e&#x000A;&#x000A;Kitchen&#x000A;You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.&#x000A;&#x000A;&gt;[3] get stool&#x000A;Taken.&#x000A;&#x000A;&gt;[4] w&#x000A;&#x000A;Hall&#x000A;The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.&#x000A;&#x000A;You can see a Staircase and a muddy brown key here.&#x000A;&#x000A;&gt;[5] w&#x000A;&#x000A;Bedroom&#x000A;It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. &#x000A;&#x000A;On the nightstand is an iPod.&#x000A;&#x000A;&gt;[6] open door&#x000A;You open the Side Door.&#x000A;&#x000A;&gt;[7] w&#x000A;&#x000A;The Garden&#x000A;A small garden. There are a few different kinds of flowers and a few different kinds of squash. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt.&#x000A;&#x000A;You can see the shed (closed) here.&#x000A;&#x000A;&gt;[8] put down stool&#x000A;Dropped.&#x000A;&#x000A;&gt;[9] get on stool&#x000A;You get onto the stool.&#x000A;&#x000A;&gt;[10] get bucket&#x000A;Taken.&#x000A;&#x000A;&gt;[11] e&#x000A;(first getting off the stool)&#x000A;&#x000A;Bedroom&#x000A;It's your bedroom. It's not very interesting. The hall is to the east. The side door (open) leads out of the house to the West. &#x000A;&#x000A;On the nightstand is an iPod.&#x000A;&#x000A;&gt;[12] e&#x000A;&#x000A;Hall&#x000A;The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. There is a muddy brown key hanging from a hook on the wall. You can also go down to the basement from here.&#x000A;&#x000A;You can see a Staircase and a muddy brown key here.&#x000A;&#x000A;&gt;[13] d&#x000A;&#x000A;Basement&#x000A;The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the west.&#x000A;&#x000A;You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.&#x000A;&#x000A;&gt;[14] open vat&#x000A;You lift the large plastic lid off of the vat, revealing the pungent rocket fuel beneath.&#x000A;&#x000A;&gt;[15] dip bucket in vat&#x000A;You dip the bucket in the vat of rocket fuel and come out with a fair amount. This stuff is lighter than it looks!&#x000A;&#x000A;&gt;[16] w&#x000A;You go through the long and winding Tunnel of Extraction.&#x000A;&#x000A;Abandoned Warehouse&#x000A;The warehouse is old and abandoned. It is big and extends south. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.&#x000A;&#x000A;You can see The Tunnel of Extraction here.&#x000A;&#x000A;&gt;[17] n&#x000A;&#x000A;Road&#x000A;It's a road, like what people travel on. The outskirts of town are to the east. To the North you can see a fork in the road. The stream is west.&#x000A;&#x000A;&gt;[18] e&#x000A;&#x000A;Outskirts of Town&#x000A;There's less town here than there is to the South. The garden is east. The space center is North. The road is West.&#x000A;&#x000A;&gt;[19] n&#x000A;&#x000A;Space Center&#x000A;Your friendly neighborhood space center. They build rockets and stuff. The outskirts of town are South, the launch pad is North.&#x000A;&#x000A;&gt;[20] n&#x000A;&#x000A;Launch Pad&#x000A;The place where rockets take off from. The rest of the Space Center is South.&#x000A;&#x000A;You can see a spaceship here.&#x000A;&#x000A;&gt;[21] put fuel in ship&#x000A;You pour the rocket fuel into the ship's fuel hatch, closing the hatch when you are done.&#x000A;As if in a gesture of thanks, the computer opens the door to the spaceship for you.&#x000A;&#x000A;&gt;[22] get in ship&#x000A;You get into the spaceship.&#x000A;&#x000A;In the spaceship you can see an ON button, a LAUNCH button, a spacesuit and a helmet.&#x000A;&#x000A;&gt;[23] close door&#x000A;You close the spaceship.&#x000A;&#x000A;&gt;[24] press on&#x000A;You press the ON button. All around you dials spin and lights blink.&#x000A;&#x000A;&gt;[25] press launch&#x000A;The computer counts down: "3... 2... 1... LAUNCHING". &#x000A;&#x000A; The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. &#x000A;&#x000A;The computer says "This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."&#x000A;&#x000A;&gt;[26] say suit up&#x000A;(to the computer)&#x000A;The spaceship's machinery puts a space suit on you faster than you could possibly have done it yourself.&#x000A;&#x000A;The spaceship has reached space. It's full of stars! It's the most beautiful thing you've ever seen! Now what?&#x000A;&#x000A;&gt;[27] open door&#x000A;You open the spaceship.&#x000A;&#x000A;&gt;[28] get out&#x000A;You get out of the spaceship.&#x000A;&#x000A;outer space&#x000A;You can see a spaceship here.&#x000A;&#x000A;&gt;[29] take off helmet&#x000A;You see space, with your own eyes. It's stunningly beautiful. Then your head explodes.&#x000A;&#x000A;&#x000A;You've reached one of this game's 14 endings! In that game you used 29 moves. The optimal number of moves is 29.&#x000A;Great job, you got the optimal number of moves!&#x000A;&#x000A;&#x000A;&#x000A;    *** You have died ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt; </commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-412"/>
       <child nodeId="node-360"/>
@@ -11278,11 +11278,12 @@
   </item>
   <item nodeId="node-360">
     <command xml:space="preserve">restart</command>
-    <result xml:space="preserve">&#x000A;&#x000A;&#x000A;Unsafe&#x000A;An Interactive Fiction by Brian Chen and Jakob Weisblat&#x000A;Release 6 / Serial number 190228 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Bedroom&#x000A;It's your bedroom. It's not very interesting. The hall is to the east. The side door (closed) leads out of the house to the West. &#x000A;&#x000A;You've just gotten out of your bed, having woken up from a nap.&#x000A;&#x000A;On the nightstand is an iPod.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Welcome to Unsafe. If you're not sure what to do, type "help".&#x000A;&#x000A;&#x000A;Bedroom&#x000A;It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. &#x000A;&#x000A;You've just gotten out of your bed, having woken up from a nap.&#x000A;&#x000A;On the nightstand is an iPod.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-361"/>
+      <child nodeId="node-1671"/>
     </children>
   </item>
   <item nodeId="node-361">
@@ -11738,6 +11739,129 @@
   <item nodeId="node-411">
     <command xml:space="preserve">get on platform</command>
     <result xml:space="preserve">You get onto the edge of the platform.&#x000A;&#x000A;A train enters the station while you're jamming to the music, and you trip and fall into the train tracks in front of it. That was really dumb.&#x000A;&#x000A;&#x000A;You've reached one of this game's 14 endings! In that game you used 37 moves. The optimal number of moves is 37.&#x000A;Great job, you got the optimal number of moves!&#x000A;&#x000A;&#x000A;&#x000A;    *** You have died ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt; </result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1671">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Hall&#x000A;The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.&#x000A;&#x000A;There is a muddy brown key hanging from a hook on the wall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1672"/>
+    </children>
+  </item>
+  <item nodeId="node-1672">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Kitchen&#x000A;Where food happens. The hall is to the West.&#x000A;&#x000A;You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1673"/>
+    </children>
+  </item>
+  <item nodeId="node-1673">
+    <command xml:space="preserve">take stool</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1674"/>
+    </children>
+  </item>
+  <item nodeId="node-1674">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Hall&#x000A;The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.&#x000A;&#x000A;There is a muddy brown key hanging from a hook on the wall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1675"/>
+    </children>
+  </item>
+  <item nodeId="node-1675">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Bedroom&#x000A;It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. &#x000A;&#x000A;On the nightstand is an iPod.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1676"/>
+    </children>
+  </item>
+  <item nodeId="node-1676">
+    <command xml:space="preserve">open door</command>
+    <result xml:space="preserve">You open the Side Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1677"/>
+    </children>
+  </item>
+  <item nodeId="node-1677">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">The Garden&#x000A;A small garden. There are a few different kinds of flowers and a few different kinds of squash. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt. You could swear there used to be a bucket somewhere around here, but you don't see it anywhere...&#x000A;&#x000A;The side door to your house is East, and a path leads off towards town to the West.&#x000A;&#x000A;You can see the shed (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1678"/>
+    </children>
+  </item>
+  <item nodeId="node-1678">
+    <command xml:space="preserve">use stool</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;Now you might want to get on the stool.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1679"/>
+    </children>
+  </item>
+  <item nodeId="node-1679">
+    <command xml:space="preserve">use stool</command>
+    <result xml:space="preserve">You get onto the stool.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1680"/>
+    </children>
+  </item>
+  <item nodeId="node-1680">
+    <command xml:space="preserve">take bucket</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1681"/>
+    </children>
+  </item>
+  <item nodeId="node-1681">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">(first getting off the stool)&#x000A;&#x000A;Bedroom&#x000A;It's your bedroom. It's not very interesting. The hall is to the East. The side door (open) leads out of the house to the West. &#x000A;&#x000A;On the nightstand is an iPod.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1682"/>
+    </children>
+  </item>
+  <item nodeId="node-1682">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Hall&#x000A;The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.&#x000A;&#x000A;There is a muddy brown key hanging from a hook on the wall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1683"/>
+    </children>
+  </item>
+  <item nodeId="node-1683">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">Basement&#x000A;The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the West.&#x000A;&#x000A;You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1684"/>
+    </children>
+  </item>
+  <item nodeId="node-1684">
+    <command xml:space="preserve">dip bucket in vat</command>
+    <result xml:space="preserve">You can't do that while the vat is closed!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
