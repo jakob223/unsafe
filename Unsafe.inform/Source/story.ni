@@ -348,6 +348,11 @@ The stool is an enterable portable supporter in the kitchen. The description is 
 
 South of the Hall is the Back Entryway. There is a blue key in the back entryway. There is a locked door called the back door. The back door is south of the back entryway. The blue key unlocks the back door. The description of the back entryway is "The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. [if the Toyota key is tied]There is a Toyota key tied to the coat rack. [end if]The hall is to the North, the backyard to the South." The coat rack and the trash can are scenery in the back entryway. There is a right running shoe in the back entryway. The description is "The shoe goes on your right foot. You only run if you're wearing this shoe and its partner." There is a left running shoe in the Upstairs Hall. The description is "The shoe goes on your left foot. You only run if you're wearing this shoe and its partner."
 
+Before unlocking the back door with the blue key:
+	if the player is not holding the blue key:
+		say "You need to take the key before you can do that.";
+		stop the action.
+
 The Toyota key is in the back entryway. The Toyota key can be tied. The Toyota key is tied. The description is "The key to your blue Toyota."
 Untieing is an action applying to one visible thing.
 Understand "untie [something]" as untieing.

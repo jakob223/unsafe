@@ -276,7 +276,7 @@
             }
         }
         function showAllResp() {
-            for (var i=0;i<531;i++) {
+            for (var i=0;i<532;i++) {
                 showResp('extra'+(1000000+i), 'plus'+(1000000+i));
             }
         }
@@ -623,8 +623,7 @@
     </script>
 </head>
 <body>
-    <script language="JavaScript">function pasteCode(code) { var myProject = project(); myProject.selectView('source'); myProject.pasteCode(code); }</script>
-    <font face="lucida grande,geneva,arial,tahoma,verdana,helvetica,helv" size=2>
+    <font size=2>
     <!--CONTENT BEGINS-->
     <table cellspacing="3" border="0" style="background:#eeeeee;"><tr>
     <td valign="top" align="left">
@@ -656,28 +655,236 @@
     to pass through it. If we were to create a new kind such as 'case file',
     we would also need to write rules to make the open and closed properties
     interesting for this kind.<p><hr><p><b>Typed commands leading to this action</b><p>
-    <p class="hangingin2">&quot;open/unwrap/uncover [something]&quot;</p><p class="hangingin2">&quot;pull/drag out [something]&quot;&nbsp;<a href="source:story.ni#line187"><img border=0 src=inform:/doc_images/Reveal.tif></a></p><p class="hangingin2">&quot;unlock [the car]&quot;&nbsp;<a href="source:story.ni#line742"><img border=0 src=inform:/doc_images/Reveal.tif></a></p><p><b>Rules controlling this action</b></p><p>
-    <p class="hangingin2">before&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the blue car</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line722"><img border=0 src=inform:/doc_images/Reveal.tif></a></p>
-    <br><p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the spaceship in the air</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line639"><img border=0 src=inform:/doc_images/Reveal.tif></a></p>
-    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the spaceship in outer space</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line641"><img border=0 src=inform:/doc_images/Reveal.tif></a></p>
-    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening or closing the medicine cabinet when the player is not on the stool</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line429"><img border=0 src=inform:/doc_images/Reveal.tif></a></p>
-    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the bottom drawer</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line189"><img border=0 src=inform:/doc_images/Reveal.tif></a></p>
-    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the bread</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line226"><img border=0 src=inform:/doc_images/Reveal.tif></a></p>
-    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the chest</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line410"><img border=0 src=inform:/doc_images/Reveal.tif></a></p>
-    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the vat</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line495"><img border=0 src=inform:/doc_images/Reveal.tif></a></p>
-    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the front door</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line1336"><img border=0 src=inform:/doc_images/Reveal.tif></a></p>
-    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening something portable</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line1186"><img border=0 src=inform:/doc_images/Reveal.tif></a></p>
-    <br><p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">can't open unless openable rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t open unless openable rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The can[=0x0027=]t open unless openable rule is not listed in the check opening rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000185', 'plus1000185'); return false;"><img border=0 id="plus1000185" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
-    <div id="extra1000185" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[regarding the noun][They] [aren't] something [we] [can] open."</span>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t open unless openable rule response (A)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t open unless openable rule response (A) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
-    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">can't open what's locked rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t open what[=0x0027=]s locked rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The can[=0x0027=]t open what[=0x0027=]s locked rule is not listed in the check opening rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000186', 'plus1000186'); return false;"><img border=0 id="plus1000186" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
-    <div id="extra1000186" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[regarding the noun][They] [seem] to be locked."</span>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t open what[=0x0027=]s locked rule response (A)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t open what[=0x0027=]s locked rule response (A) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
-    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">can't open what's already open rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t open what[=0x0027=]s already open rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The can[=0x0027=]t open what[=0x0027=]s already open rule is not listed in the check opening rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000187', 'plus1000187'); return false;"><img border=0 id="plus1000187" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
-    <div id="extra1000187" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[regarding the noun][They're] already open."</span>&nbsp;&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t open what[=0x0027=]s already open rule response (A)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('can[=0x0027=]t open what[=0x0027=]s already open rule response (A) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
-    <br><p class="hangingin2">carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">standard opening rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('standard opening rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The standard opening rule is not listed in the carry out opening rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-    <br><p class="hangingin2">report&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">reveal any newly visible interior rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('reveal any newly visible interior rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The reveal any newly visible interior rule is not listed in the report opening rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000189', 'plus1000189'); return false;"><img border=0 id="plus1000189" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
-    <div id="extra1000189" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[We] [open] [the noun], revealing "</span>&nbsp;&nbsp;<a href="javascript:pasteCode('reveal any newly visible interior rule response (A)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('reveal any newly visible interior rule response (A) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
-    <p class="hangingin2">report&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">standard report opening rule</font>&nbsp;&nbsp;<a href="javascript:pasteCode('standard report opening rule')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <a href="javascript:pasteCode('The standard report opening rule is not listed in the report opening rulebook.[=0x000A=]')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000190', 'plus1000190'); return false;"><img border=0 id="plus1000190" src=inform:/doc_images/responses.png></a>&nbsp;3</p>
-    <div id="extra1000190" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[We] [open] [the noun]."</span>&nbsp;&nbsp;<a href="javascript:pasteCode('standard report opening rule response (A)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('standard report opening rule response (A) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i><br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;B&nbsp;&nbsp;</span> <span style="color: #000066;">"[The actor] [open] [the noun]."</span>&nbsp;&nbsp;<a href="javascript:pasteCode('standard report opening rule response (B)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('standard report opening rule response (B) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i><br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;C&nbsp;&nbsp;</span> <span style="color: #000066;">"[The noun] [open]."</span>&nbsp;&nbsp;<a href="javascript:pasteCode('standard report opening rule response (C)')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<a href="javascript:pasteCode('standard report opening rule response (C) is [=0x0022=]New text.[=0x0022=].')"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <p class="hangingin2">&quot;open/unwrap/uncover [something]&quot;</p><p class="hangingin2">&quot;pull/drag out [something]&quot;&nbsp;<a href="source:story.ni#line187"><img border=0 src=inform:/doc_images/Reveal.png></a></p><p class="hangingin2">&quot;unlock [the car]&quot;&nbsp;<a href="source:story.ni#line747"><img border=0 src=inform:/doc_images/Reveal.png></a></p><p><b>Rules controlling this action</b></p><p>
+    <p class="hangingin2">before&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the blue car</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line727"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+    <br><p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the spaceship in the air</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line644"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the spaceship in outer space</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line646"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening or closing the medicine cabinet when the player is not on the stool</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line434"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the bottom drawer</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line189"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the bread</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line226"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the chest</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line415"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the vat</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line500"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening the front door</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line1341"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+    <p class="hangingin2">instead of&nbsp;&nbsp;&nbsp;&nbsp;<i>opening something portable</i>&nbsp;&nbsp;&nbsp;<a href="source:story.ni#line1191"><img border=0 src=inform:/doc_images/Reveal.png></a></p>
+    <br><p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">can't open unless openable rule</font>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2983(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('can[=0x0027=]t open unless openable rule');
+    }
+    </script>
+    <a href="javascript:pasteCode2983()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+    function pasteCode2984(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('The can[=0x0027=]t open unless openable rule is not listed in the check opening rulebook.[=0x000A=]');
+    }
+    </script>
+    <a href="javascript:pasteCode2984()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000185', 'plus1000185'); return false;"><img border=0 id="plus1000185" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
+    <div id="extra1000185" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[regarding the noun][They] [aren't] something [we] [can] open."</span>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2985(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('can[=0x0027=]t open unless openable rule response (A)');
+    }
+    </script>
+    <a href="javascript:pasteCode2985()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
+    function pasteCode2986(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('can[=0x0027=]t open unless openable rule response (A) is [=0x0022=]New text.[=0x0022=].');
+    }
+    </script>
+    <a href="javascript:pasteCode2986()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">can't open what's locked rule</font>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2987(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('can[=0x0027=]t open what[=0x0027=]s locked rule');
+    }
+    </script>
+    <a href="javascript:pasteCode2987()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+    function pasteCode2988(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('The can[=0x0027=]t open what[=0x0027=]s locked rule is not listed in the check opening rulebook.[=0x000A=]');
+    }
+    </script>
+    <a href="javascript:pasteCode2988()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000186', 'plus1000186'); return false;"><img border=0 id="plus1000186" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
+    <div id="extra1000186" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[regarding the noun][They] [seem] to be locked."</span>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2989(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('can[=0x0027=]t open what[=0x0027=]s locked rule response (A)');
+    }
+    </script>
+    <a href="javascript:pasteCode2989()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
+    function pasteCode2990(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('can[=0x0027=]t open what[=0x0027=]s locked rule response (A) is [=0x0022=]New text.[=0x0022=].');
+    }
+    </script>
+    <a href="javascript:pasteCode2990()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">can't open what's already open rule</font>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2991(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('can[=0x0027=]t open what[=0x0027=]s already open rule');
+    }
+    </script>
+    <a href="javascript:pasteCode2991()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+    function pasteCode2992(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('The can[=0x0027=]t open what[=0x0027=]s already open rule is not listed in the check opening rulebook.[=0x000A=]');
+    }
+    </script>
+    <a href="javascript:pasteCode2992()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000187', 'plus1000187'); return false;"><img border=0 id="plus1000187" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
+    <div id="extra1000187" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[regarding the noun][They're] already open."</span>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2993(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('can[=0x0027=]t open what[=0x0027=]s already open rule response (A)');
+    }
+    </script>
+    <a href="javascript:pasteCode2993()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
+    function pasteCode2994(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('can[=0x0027=]t open what[=0x0027=]s already open rule response (A) is [=0x0022=]New text.[=0x0022=].');
+    }
+    </script>
+    <a href="javascript:pasteCode2994()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <br><p class="hangingin2">carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">standard opening rule</font>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2995(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('standard opening rule');
+    }
+    </script>
+    <a href="javascript:pasteCode2995()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+    function pasteCode2996(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('The standard opening rule is not listed in the carry out opening rulebook.[=0x000A=]');
+    }
+    </script>
+    <a href="javascript:pasteCode2996()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
+    <br><p class="hangingin2">report&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">reveal any newly visible interior rule</font>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2997(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('reveal any newly visible interior rule');
+    }
+    </script>
+    <a href="javascript:pasteCode2997()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+    function pasteCode2998(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('The reveal any newly visible interior rule is not listed in the report opening rulebook.[=0x000A=]');
+    }
+    </script>
+    <a href="javascript:pasteCode2998()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000189', 'plus1000189'); return false;"><img border=0 id="plus1000189" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
+    <div id="extra1000189" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[We] [open] [the noun], revealing "</span>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2999(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('reveal any newly visible interior rule response (A)');
+    }
+    </script>
+    <a href="javascript:pasteCode2999()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
+    function pasteCode3000(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('reveal any newly visible interior rule response (A) is [=0x0022=]New text.[=0x0022=].');
+    }
+    </script>
+    <a href="javascript:pasteCode3000()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <p class="hangingin2">report&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">standard report opening rule</font>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode3001(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('standard report opening rule');
+    }
+    </script>
+    <a href="javascript:pasteCode3001()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+    function pasteCode3002(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('The standard report opening rule is not listed in the report opening rulebook.[=0x000A=]');
+    }
+    </script>
+    <a href="javascript:pasteCode3002()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000190', 'plus1000190'); return false;"><img border=0 id="plus1000190" src=inform:/doc_images/responses.png></a>&nbsp;3</p>
+    <div id="extra1000190" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[We] [open] [the noun]."</span>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode3003(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('standard report opening rule response (A)');
+    }
+    </script>
+    <a href="javascript:pasteCode3003()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
+    function pasteCode3004(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('standard report opening rule response (A) is [=0x0022=]New text.[=0x0022=].');
+    }
+    </script>
+    <a href="javascript:pasteCode3004()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i><br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;B&nbsp;&nbsp;</span> <span style="color: #000066;">"[The actor] [open] [the noun]."</span>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode3005(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('standard report opening rule response (B)');
+    }
+    </script>
+    <a href="javascript:pasteCode3005()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
+    function pasteCode3006(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('standard report opening rule response (B) is [=0x0022=]New text.[=0x0022=].');
+    }
+    </script>
+    <a href="javascript:pasteCode3006()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i><br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;C&nbsp;&nbsp;</span> <span style="color: #000066;">"[The noun] [open]."</span>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode3007(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('standard report opening rule response (C)');
+    }
+    </script>
+    <a href="javascript:pasteCode3007()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
+    function pasteCode3008(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('standard report opening rule response (C) is [=0x0022=]New text.[=0x0022=].');
+    }
+    </script>
+    <a href="javascript:pasteCode3008()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
     <br>Click on the speech-bubble icons to see the responses, or here to see all of them:&nbsp;<a href="#" onclick="showAllResp(); return false;"><img border=0 src=inform:/doc_images/responses.png></a>&nbsp;7</p>
     <!--CONTENT ENDS-->
     </font>
