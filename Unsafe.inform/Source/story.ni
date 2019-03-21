@@ -223,7 +223,7 @@ Instead of inserting something into the toaster:
 	else if the button is active:
 		say "The toaster is hard at work, don't bother it.";
 	else if the noun is the sacrificial knife:
-		say "That seems too important to tarnish it by putting it in a toaster.[if the toaster is done] A might be more apropos.[end if]";
+		say "That seems too important to tarnish it by putting it in a toaster.[if the toaster is done] A fork might be more apropos.[end if]";
 	else if the noun is not the loaf of bread:
 		say "That's not what you're supposed to put in a toaster!";
 	else if the bread is wrapped:

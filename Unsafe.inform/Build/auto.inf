@@ -18815,12 +18815,12 @@ Array ActionHappened --> 0 0 0 0 0 0 0;
             ParaContent(); print "The toaster is hard at work, don't bother it."; new_line; .L_Say77; .L_SayX77;} else {
             ! [9: if the noun is the sacrificial knife]
             if (((noun == I314_sacrificial_knife)))
-            {! [10: say ~That seems too important to tarnish it by putting it in a toaster.[if the toaster is done] A might be more apropos.[end if]~]
+            {! [10: say ~That seems too important to tarnish it by putting it in a toaster.[if the toaster is done] A fork might be more apropos.[end if]~]
                 say__p=1;! [11: ~That seems too important to tarnish it by putting it in a toaster.~]
                 ParaContent(); print "That seems too important to tarnish it by putting it in a toaster."; new_line;! [12: if the toaster is done]
 
-                	if (~~(((((Adj_93_t1_v10(I205_toaster))))))) jump L_Say78;! [13: ~ A might be more apropos.~]
-                ParaContent(); print " A might be more apropos."; new_line;! [14: end if]
+                	if (~~(((((Adj_93_t1_v10(I205_toaster))))))) jump L_Say78;! [13: ~ A fork might be more apropos.~]
+                ParaContent(); print " A fork might be more apropos."; new_line;! [14: end if]
 
                 	.L_Say78; .L_SayX78; .L_Say79; .L_SayX79;} else {
                 ! [15: if the noun is not the loaf of bread]
