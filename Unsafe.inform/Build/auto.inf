@@ -28192,6 +28192,8 @@ Array ActionHappened --> 0 0 0 0 0 0 0;
     (Adj_103_t2_v10(I288_spaceship));
     ! [6: now the spaceship is open]
     (Adj_72_t2_v10(I288_spaceship));
+    ! [7: now the spaceship is in the launch pad]
+    MoveObject(I288_spaceship,I287_launch_pad);
     rfalse;
 ];
 ! No specific request
@@ -28213,9 +28215,9 @@ Array ActionHappened --> 0 0 0 0 0 0 0;
     if (debug_rules) DB_Rule(R_974, 974);
     ! [2: if the cage is closed and the cage is locked]
     if (((((Adj_73_t1_v10(I285_cage))))) && ((((Adj_77_t1_v10(I285_cage))))))
-    {! [3: say ~Angry at being locked up and not wanting to be a pet, the snake breaks through the cage and attaches itself to your eye. You feeel the effects of the venom almost immediately.~]
-        say__p=1;! [4: ~Angry at being locked up and not wanting to be a pet, the snake breaks through the cage and attaches itself to your eye. You feeel the effects of the venom almost immediately.~]
-        ParaContent(); print "Angry at being locked up and not wanting to be a pet, the snake breaks through the cage and attaches itself to your eye. You feeel the effects of the venom almost immediately."; new_line; .L_Say556; .L_SayX556;! [5: conclude with 22]
+    {! [3: say ~Angry at being locked up and not wanting to be a pet, the snake breaks through the cage and attaches itself to your eye. You feel the effects of the venom almost immediately.~]
+        say__p=1;! [4: ~Angry at being locked up and not wanting to be a pet, the snake breaks through the cage and attaches itself to your eye. You feel the effects of the venom almost immediately.~]
+        ParaContent(); print "Angry at being locked up and not wanting to be a pet, the snake breaks through the cage and attaches itself to your eye. You feel the effects of the venom almost immediately."; new_line; .L_Say556; .L_SayX556;! [5: conclude with 22]
         (PHR_827_r2 (22));
         } else {
         ! [6: if the location of the player is the location of the cage]

@@ -1,5 +1,5 @@
 Debugging log of Inform 7
-Inform called as: /Applications/Inform.app/Contents/MacOS/ni -internal /Applications/Inform.app/Contents/Resources/Internal -external /Users/raxtus/Library/Containers/com.inform7.inform-compiler/Data/Library/Inform -project /Users/raxtus/dev/unsafe/Unsafe.inform -format=ulx -release
+Inform called as: /Applications/Inform.app/Contents/MacOS/ni -internal /Applications/Inform.app/Contents/Resources/Internal -external /Users/jakob/Library/Inform -project /Users/jakob/Documents/Inform/UNSAFE/Unsafe.inform -format=ulx -release
 Found language bundle 'German' (built in)
 Found language bundle 'Italian' (built in)
 Found language bundle 'English' (built in)
@@ -14,7 +14,7 @@ Reading language definition from </Applications/Inform.app/Contents/Resources/In
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 15770 words long.
+I've now read your source text, which is 15778 words long.
 
 
 -----------------------------------------------------
@@ -183,7 +183,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 126 files written as streams.
-CPU time: 351 centiseconds
+CPU time: 297 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

@@ -699,7 +699,8 @@ At the time when the autopilot lands the ship:
 	say "The spaceship lands in a near-crash. Your back hurts, but otherwise you feel okay. The ship looks in a rough shape though. All the lights turn off except for a few emergency lights. You should probably get out sooner rather than later.";
 	now the spaceship is off;
 	now the spaceship is broken;
-	now the spaceship is open.
+	now the spaceship is open;
+	now the spaceship is in the launch pad.
 	
 Understand "fill spaceship" as a mistake ("Try POURing the fuel into the ship.")
 
@@ -970,7 +971,7 @@ Instead of inserting something into the cage:
 
 At the time when the snake leaves the cage:
 	if the cage is closed and the cage is locked:
-		say "Angry at being locked up and not wanting to be a pet, the snake breaks through the cage and attaches itself to your eye. You feeel the effects of the venom almost immediately.";
+		say "Angry at being locked up and not wanting to be a pet, the snake breaks through the cage and attaches itself to your eye. You feel the effects of the venom almost immediately.";
 		conclude with 22;
 	else if the location of the player is the location of the cage:
 		say "The snake slithers out of the cage with remarkable speed[if the cage is closed], slamming the door open as it goes. Maybe you should lock it next time[end if].";
