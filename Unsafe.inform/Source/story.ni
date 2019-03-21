@@ -1260,11 +1260,16 @@ Instead of inserting something into the coin slot:
 
 The time safe is a fixed in place openable closed container. The description of the time safe is "A locker labelled 'TIME SAFE - place objects in here to guarantee that they age properly while not being messed with by people wandering by or the wind while you are in the time machine.". The time safe is in the mad science laboratory.
 The middle safe is a fixed in place openable closed container in the time safe. The description of the middle safe is "A smaller safe inside the bigger one, almost as big.".
-The inner safe is a fixed in place openable closed container in the middle safe. The description of the inner safe is "The innermost safe; where you are supposed to put things.". Understand "innermost safe" as the inner safe.
+The inner safe is a fixed in place openable closed container in the middle safe. The description of the inner safe is "The innermost safe; where you are supposed to put things. It looks pretty small.". Understand "innermost safe" as the inner safe.
+The inner safe has carrying capacity 1.
 Instead of inserting something into the middle safe:
 	say "There's no room. You have to put it in the inner safe."
 Instead of inserting something into the time safe:
 	say "There's no room. You have to put it in the innermost safe."
+After inserting something into the inner safe:
+	say "After you put [the noun] into the inner safe, it closes with a whoosh.";
+	now the inner safe is closed.
+
 Understand "outer safe" as the time safe.
 To decide if the pie is guarded:
 	if the pie is not in the inner safe:
@@ -1284,7 +1289,7 @@ Instead of eating the pie when the pie is in the inner safe:
 	say "First you need to take the pie out of the safe."
 Instead of eating the pie when the pie is aged:
 	say "You eat the pie. It tastes... strange. As though it's been sitting out for 2 weeks. Your stomach starts to feel unpleasant and then --";
-	conclude with 32.
+	conclude with 31.
 	
 Pie crumbs are a liquid. The description of the crumbs is "The crumbs that were left behind when someone took a pie from this location." The pie crumbs are nowhere.
 Instead of pushing the button:
@@ -1309,7 +1314,7 @@ Instead of pushing the button:
 			now the pie is nowhere;
 			move the pie crumbs to X.
 	
-test pie with "e / e / open fridge / get pie / w / u / w / get quarter / e / d / d / w / e / open entrance / s / u / open time safe / open middle safe / open inner safe / put pie in inner safe / close inner safe / close middle safe / close time safe / go in time machine / put quarter in slot / press button / get out / open outer safe / open middle safe / open inner safe / get pie / eat pie"
+test pie with "e / e / open fridge / get pie / w / u / w / get quarter / e / d / d / w / e / open entrance / s / u / open time safe / open middle safe / open inner safe / put pie in inner safe / close middle safe / close time safe / go in time machine / put quarter in slot / press button / get out / open outer safe / open middle safe / open inner safe / get pie / eat pie"
 
 Part 6 - Fun stuff and red herrings for decompilers
 
