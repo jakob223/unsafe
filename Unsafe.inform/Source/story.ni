@@ -14,9 +14,21 @@ Instead of going through a closed door:
 	say "You can't go through [the door gone through] because it's closed."
 
 
+Include Glulx Text Effects by Emily Short.
+
+Table of User Styles (continued) 
+style name	color
+special-style-1	"#FF0000"
+
+To say red letters: say first custom style.
+
+To say default letters: say roman type.
+
 When play begins:
 	now the right hand status line is "Moves: [turn count - 1]"; [Inform's turn count basically says what number the "current move" is, so we subtract one.]
-	say "Welcome to [italic type]Unsafe[roman type]. If you're not sure what to do, type 'help'."
+	say "[red letters]At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.[default letters]
+	
+	Welcome to [italic type]Unsafe[roman type]. If you're not sure what to do, type 'help'."
 	
 To conclude with (par - a number):
 	now the right hand status line is "Moves: [turn count]";
