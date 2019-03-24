@@ -26,7 +26,9 @@ To say default letters: say roman type.
 
 When play begins:
 	now the right hand status line is "Moves: [turn count - 1]"; [Inform's turn count basically says what number the "current move" is, so we subtract one.]
-	say "[red letters]At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.[default letters]
+	say "[red letters]At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+	
+	At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.[default letters]
 	
 	Welcome to [italic type]Unsafe[roman type]. If you're not sure what to do, type 'help'."
 	
@@ -53,11 +55,25 @@ The player is wearing pants, underwear, socks, a shirt, work shoes, a belt, a ha
 The description is "You look like you could be in a cartoon. You're wearing [a list of things worn by the player]."
 The description of the work shoes is "Shoes you wear to work. They look professional, but you can't do as much physical activity in them."
 
-Instead of going from the house when the jacket is not worn:
-	say "You step ouside, but you shiver and decide you need a jacket. You step back inside."
+[§7.13]
+
+Instead of going from the house to a room which is not in the house when the jacket is not worn:
+	say "You step outside, but you shiver and decide you need a jacket. You step back inside."
 
 Instead of taking off the jacket when the player is not in the house:
 	say "It's cold out here. You'd rather keep that on."
+	
+Instead of going from the house to a room which is not in the house when the hat is not worn:
+	say "You step outside, but you shiver and decide you need a hat. You step back inside."
+
+Instead of taking off the hat when the player is not in the house:
+	say "It's cold out here. You'd rather keep that on."
+	
+Instead of going from the house to a room which is not in the house when the belt is not worn:
+	say "You step outside for a moment, then look at your lack of pants and a belt and decide you should go out looking presentable."
+
+Instead of taking off the belt when the player is not in the house:
+	say "You'd rather stay presentable out here."
 
 Instead of taking off socks when the player is wearing work shoes or the player is wearing the pair of running shoes:
 	say "You need to take your shoes off first!"
@@ -67,9 +83,18 @@ Instead of taking off pants when the player is wearing shoes:
 	say "You need to take your shoes off first!"
 Instead of taking off pants when the player is wearing a belt:
 	say "You need to take your belt off first!"
-Instead of taking off pants when the player is wearing a belt:
-	say "You need to take your belt off first!"
 Instead of taking off underwear when the player is wearing pants:
+	say "You need to take your pants off first!"
+	
+Instead of putting on socks when the player is wearing work shoes or the player is wearing the pair of running shoes:
+	say "You need to take your shoes off first!"
+Instead of putting on a shirt when the player is wearing a jacket:
+	say "You need to take your jacket off first!"
+Instead of putting on pants when the player is wearing shoes:
+	say "You need to take your shoes off first!"
+Instead of putting on a belt when the player is not wearing pants:
+	say "Your belt goes over pants."
+Instead of putting on underwear when the player is wearing pants:
 	say "You need to take your pants off first!"
 
 Section 2 - Liquids and Dumping
@@ -886,6 +911,15 @@ Before going through the tunnel:
 	increment the tunnel's count;
 	if the player is not wearing work shoes and the player is not wearing the pair of running shoes:
 		say "That doesn't look like a safe place to go without shoes.";
+		stop the action;
+	else if the player is not wearing a jacket or the player is not wearing a hat:
+		say "The tunnel looks cold and ominous. You think you should be dressed warmly in a jacket and a hat before attempting to traverse it.";
+		stop the action;
+	else if the player is not wearing pants:
+		say "The tunnel looks cold and ominous. You would rather not expose so much of your lower body to its harsh conditions.";
+		stop the action;
+	else if the player is not wearing a belt:
+		say "The tunnel looks difficult to traverse. You think your pants would fall off without a belt.";
 		stop the action;
 	else:
 		if the player is wearing the earbuds:

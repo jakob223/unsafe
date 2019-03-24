@@ -9,6 +9,8 @@
 
 At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
 
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
 
 Welcome to Unsafe. If you're not sure what to do, type "help".
 
@@ -43,6 +45,7 @@ On the nightstand is an iPod.
             <child nodeId="node-1994"></child>
             <child nodeId="node-1904"></child>
             <child nodeId="node-1828"></child>
+            <child nodeId="node-4743"></child>
             <child nodeId="node-1770"></child>
             <child nodeId="node-1753"></child>
             <child nodeId="node-1688"></child>
@@ -11763,7 +11766,7 @@ A lair in which a demonic ritual might be held. There is a table with a pentagra
 
 On the table are a candle and a sacrificial knife.
 
-You can also see three snakes, Bob and an ancient cabinet (closed) here.
+You can also see a snake and an ancient cabinet (closed) here.
 
 You feel drawn toward the candle, as though its destiny and yours are intertwined.
 
@@ -11899,9 +11902,13 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
         <result xml:space="preserve">
 
 
-Unsafe
-An Interactive Fiction by Brian Chen and Jakob Weisblat
-Release 7 / Serial number 190228 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
+
+Welcome to Unsafe. If you're not sure what to do, type "help".
+
 
 Bedroom
 It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
@@ -12088,9 +12095,13 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
         <result xml:space="preserve">
 
 
-Unsafe
-An Interactive Fiction by Brian Chen and Jakob Weisblat
-Release 7 / Serial number 190228 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
+
+Welcome to Unsafe. If you're not sure what to do, type "help".
+
 
 Bedroom
 It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
@@ -12311,9 +12322,13 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
         <result xml:space="preserve">
 
 
-Unsafe
-An Interactive Fiction by Brian Chen and Jakob Weisblat
-Release 7 / Serial number 190228 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
+
+Welcome to Unsafe. If you're not sure what to do, type "help".
+
 
 Bedroom
 It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
@@ -12480,9 +12495,13 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
         <result xml:space="preserve">
 
 
-Unsafe
-An Interactive Fiction by Brian Chen and Jakob Weisblat
-Release 7 / Serial number 190228 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
+
+Welcome to Unsafe. If you're not sure what to do, type "help".
+
 
 Bedroom
 It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
@@ -12553,9 +12572,9 @@ The dialog on the screen goes away. The screen now reads READY FOR LAUNCH.
 &gt;[11] press launch
 The computer counts down: "3... 2... 1... LAUNCHING". 
 
- The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. 
+ The world around you starts to disappear into the smoke emitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. 
 
-The computer says "This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."
+The computer says "This ship is equipped with an auto space suit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."
 
 &gt;[12] wait
 Time passes.
@@ -12564,7 +12583,7 @@ The computer announces: "Auto pilot has engaged. Say CANCEL to fly the ship your
 
 &gt;[13] say cancel
 (to the computer)
-The autopilot is disabled.
+The computer beeps. "Autopilot is now disengaged."
 
 &gt;[14] wait
 Time passes.
@@ -12657,9 +12676,13 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
         <result xml:space="preserve">
 
 
-Unsafe
-An Interactive Fiction by Brian Chen and Jakob Weisblat
-Release 7 / Serial number 190228 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
+
+Welcome to Unsafe. If you're not sure what to do, type "help".
+
 
 Bedroom
 It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
@@ -12788,29 +12811,26 @@ You open the middle safe, revealing an inner safe.
 You open the inner safe.
 
 &gt;[20] put pie in inner safe
-You put the pie into the inner safe.
+After you put the pie into the inner safe, it closes with a whoosh.
 
-&gt;[21] close inner safe
-You close the inner safe.
-
-&gt;[22] close middle safe
+&gt;[21] close middle safe
 You close the middle safe.
 
-&gt;[23] close time safe
+&gt;[22] close time safe
 You close the time safe.
 
-&gt;[24] go in time machine
+&gt;[23] go in time machine
 You get into the time machine.
 
 In the time machine you can see a red button and a coin slot (closed).
 
-&gt;[25] put quarter in slot
+&gt;[24] put quarter in slot
 You put a quarter in the slot. It makes a satisfying *clink*.
 
-&gt;[26] press button
+&gt;[25] press button
 You feel yourself pressed back into the seat, and the world swirls around you. The sun sets and rises again many times. And then, suddenly, the world is calm.
 
-&gt;[27] get out
+&gt;[26] get out
 You get out of the time machine.
 
 Mad Science Laboratory
@@ -12818,22 +12838,22 @@ A room full of so much mad science, it makes you mad just to think about it. The
 
 You can see a ladder, a time machine and a time safe (closed) here.
 
-&gt;[28] open outer safe
+&gt;[27] open outer safe
 You open the time safe, revealing a middle safe.
 
-&gt;[29] open middle safe
+&gt;[28] open middle safe
 You open the middle safe, revealing an inner safe.
 
-&gt;[30] open inner safe
+&gt;[29] open inner safe
 You open the inner safe, revealing a pie.
 
-&gt;[31] get pie
+&gt;[30] get pie
 Taken.
 
-&gt;[32] eat pie
+&gt;[31] eat pie
 You eat the pie. It tastes... strange. As though it's been sitting out for 2 weeks. Your stomach starts to feel unpleasant and then --
 
-You've reached one of this game's 14 endings! In that game you used 32 moves. The optimal number of moves is 32.
+You've reached one of this game's 14 endings! In that game you used 31 moves. The optimal number of moves is 31.
 Great job, you got the optimal number of moves!
 
 
@@ -12864,18 +12884,17 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 [18] open middle safe
 [19] open inner safe
 [20] put pie in inner safe
-[21] close inner safe
-[22] close middle safe
-[23] close time safe
-[24] go in time machine
-[25] put quarter in slot
-[26] press button
-[27] get out
-[28] open outer safe
-[29] open middle safe
-[30] open inner safe
-[31] get pie
-[32] eat pie
+[21] close middle safe
+[22] close time safe
+[23] go in time machine
+[24] put quarter in slot
+[25] press button
+[26] get out
+[27] open outer safe
+[28] open middle safe
+[29] open inner safe
+[30] get pie
+[31] eat pie
 </commentary>
         <children><child nodeId="node-1699"></child>
         </children>
@@ -12885,9 +12904,13 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
         <result xml:space="preserve">
 
 
-Unsafe
-An Interactive Fiction by Brian Chen and Jakob Weisblat
-Release 7 / Serial number 190228 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
+
+Welcome to Unsafe. If you're not sure what to do, type "help".
+
 
 Bedroom
 It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
@@ -13033,9 +13056,9 @@ You press the ON button. All around you dials spin and lights blink.
 &gt;[25] press launch
 The computer counts down: "3... 2... 1... LAUNCHING". 
 
- The world around you starts to disappear into the smoke emmitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. 
+ The world around you starts to disappear into the smoke emitted from the rocket engine. You feel yourself pressed into the seat as the spaceship lifts off toward the sky. 
 
-The computer says "This ship is equipped with an auto spacesuit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."
+The computer says "This ship is equipped with an auto space suit. Simply say SUIT UP and the ship will automatically put your space suit on you so you can go out into space."
 
 &gt;[26] say suit up
 (to the computer)
@@ -13105,9 +13128,13 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
         <result xml:space="preserve">
 
 
-Unsafe
-An Interactive Fiction by Brian Chen and Jakob Weisblat
-Release 7 / Serial number 190228 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
+
+Welcome to Unsafe. If you're not sure what to do, type "help".
+
 
 Bedroom
 It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
@@ -13133,6 +13160,8 @@ The hall in the middle of your house. Your bedroom is to the West. The staircase
 There is a muddy brown key hanging from a hook on the wall.
 
 &gt;[2] get key
+Taken.
+
 &gt;[3] w
 
 Bedroom
@@ -13200,7 +13229,7 @@ A lair in which a demonic ritual might be held. There is a table with a pentagra
 
 On the table are a candle and a sacrificial knife.
 
-You can also see three snakes, Bob and an ancient cabinet (closed) here.
+You can also see a snake and an ancient cabinet (closed) here.
 
 &gt;[15] put cage down
 Dropped.
@@ -13226,7 +13255,7 @@ You close the cage.
 &gt;[22] lock cage with small key
 You lock the cage.
 
-Angry at being locked up and not wanting to be a pet, the snake breaks through the cage and attaches itself to your eye. You feeel the effects of the venom almost immediately.
+Angry at being locked up and not wanting to be a pet, the snake breaks through the cage and attaches itself to your eye. You feel the effects of the venom almost immediately.
 
 
 You've reached one of this game's 14 endings! In that game you used 22 moves. The optimal number of moves is 22.
@@ -13271,9 +13300,13 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
         <result xml:space="preserve">
 
 
-Unsafe
-An Interactive Fiction by Brian Chen and Jakob Weisblat
-Release 7 / Serial number 190228 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
+
+Welcome to Unsafe. If you're not sure what to do, type "help".
+
 
 Bedroom
 It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
@@ -13337,7 +13370,7 @@ A lair in which a demonic ritual might be held. There is a table with a pentagra
 
 On the table are a candle and a sacrificial knife.
 
-You can also see three snakes, Bob and an ancient cabinet (closed) here.
+You can also see a snake and an ancient cabinet (closed) here.
 
 &gt;[8] get knife
 Taken.
@@ -13429,9 +13462,13 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
         <result xml:space="preserve">
 
 
-Unsafe
-An Interactive Fiction by Brian Chen and Jakob Weisblat
-Release 7 / Serial number 190228 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
+
+Welcome to Unsafe. If you're not sure what to do, type "help".
+
 
 Bedroom
 It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
@@ -13645,7 +13682,7 @@ You put on the moose head.
 Wow, you nearly fell over. Walking while wearing a taxidermied moose head is hard. Maybe it'll go better if you try that again now that you have your balance?
 
 &gt;[36] n
-You go into the hunting grounds, foolishly forgetting that there is a moose head atop your own. The hunters waste no time before shooting you.. at lEast you got a quick death.
+You go into the hunting grounds, foolishly forgetting that there is a moose head atop your own. The hunters waste no time before shooting you... at least you got a quick death.
 
 
 You've reached one of this game's 14 endings! In that game you used 36 moves. The optimal number of moves is 36.
@@ -13704,9 +13741,13 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
         <result xml:space="preserve">
 
 
-Unsafe
-An Interactive Fiction by Brian Chen and Jakob Weisblat
-Release 7 / Serial number 190228 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
+
+Welcome to Unsafe. If you're not sure what to do, type "help".
+
 
 Bedroom
 It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
@@ -13718,7 +13759,1049 @@ On the nightstand is an iPod.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1708"></child>
+            <child nodeId="node-4585"></child>
         </children>
+    </item>
+    <item nodeId="node-4585">
+        <command xml:space="preserve">test trees</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.
+
+There is a muddy brown key hanging from a hook on the wall.
+
+&gt;[2] e
+
+Kitchen
+Where food happens. The hall is to the West.
+
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;[3] open fridge
+You open the refrigerator, revealing a fish and a pie.
+
+&gt;[4] take fish
+Taken.
+
+&gt;[5] w
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.
+
+There is a muddy brown key hanging from a hook on the wall.
+
+&gt;[6] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the West.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[7] w
+You go through the long and winding Tunnel of Extraction.
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends South. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[8] w
+
+Clearing
+It's very clear here. The edge of the woods is to the West. A hole that leads into the abandoned warehouse is to the East. There's a stream to the North.
+
+&gt;[9] w
+
+Edge of the Woods
+The woods start here and extend to the West. There's a clearing to the East.
+
+&gt;[10] w
+As you walk into the woods, a large grizzly bear shows up, baring (bear-ing?) its teeth at you. You hastily take three steps back.
+The bear seems to be guarding the entrance to the woods. Seems like it would be awfully difficult to get through here unless the bear were somehow distracted. With food, maybe?
+
+&gt;[11] throw fish
+You throw the fish to the West. The bear looks at the fish curiously.
+
+&gt;[12] wait
+Time passes.
+
+The bear finally decides to eat the fish, in a big gulp.
+
+&gt;[13] wait
+Time passes.
+
+The bear rubs its belly sleepily. Maybe it'll fall asleep soon.
+
+&gt;[14] wait
+Time passes.
+
+The bear flops onto its full stomach and starts snoring.
+
+&gt;[15] w
+
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the East. Going South, you can see signs for a hunting lodge. You can hear a faint sound from above.
+
+You can see a grizzly bear here.
+
+&gt;[16] climb ash
+Lower Branches of Ash Tree
+You're a bit off the ground in the ash tree.
+
+&gt;[17] u
+
+Middle Branches of Ash Tree
+More tree.
+
+&gt;[18] u
+
+Upper Branches of Ash Tree
+Even more tree.
+
+&gt;[19] u
+
+Top of Ash Tree
+The highest point of the tree. There's no more tree above. Wow, you can see so far away.
+
+You can see a wasps' nest here.
+
+&gt;[20] shake tree
+You shake the tree vigorously.
+The wasps' nest is dislodged. You watch it fall to the top of the elm tree.
+
+&gt;[21] d
+
+Upper Branches of Ash Tree
+Even more tree.
+
+&gt;[22] d
+
+Middle Branches of Ash Tree
+More tree.
+
+&gt;[23] d
+
+Lower Branches of Ash Tree
+You're a bit off the ground in the ash tree.
+
+&gt;[24] d
+
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the East. Going South, you can see signs for a hunting lodge. You can hear a faint sound from above.
+
+You can see a grizzly bear here.
+
+&gt;[25] climb elm
+Middle Branches of Elm Tree
+You're roughly half of the height of the Elm Tree.
+
+&gt;[26] u
+
+Top of Elm Tree
+You can see a wasps' nest here.
+
+&gt;[27] shake tree
+You shake the tree vigorously.
+The wasps' nest is dislodged. You watch it fall to the top of the pine tree.
+
+&gt;[28] d
+
+Middle Branches of Elm Tree
+You're roughly half of the height of the Elm Tree.
+
+&gt;[29] d
+
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the East. Going South, you can see signs for a hunting lodge. You can hear a faint sound from above.
+
+You can see a grizzly bear here.
+
+&gt;[30] climb pine
+Top of Pine Tree
+The pine tree is short. You're on top.
+
+You can see a wasps' nest here.
+
+&gt;[31] shake tree
+You shake the tree vigorously.
+The wasps' nest is dislodged. You watch it fall to the forest floor.
+
+&gt;[32] d
+
+Woods
+There's lots of trees, in particular, an ash tree, an elm tree, and a pine tree. The edge of the woods is to the East. Going South, you can see signs for a hunting lodge.
+
+You can see a wasps' nest and a grizzly bear here.
+
+&gt;[33] take nest
+Taken.
+
+&gt;[34] throw nest
+You toss the wasps' nest. Your last sensation is a barrage of stings from the army of angry wasps that bursts from the nest to attack you.
+
+
+You've reached one of this game's 14 endings! In that game you used 34 moves. The optimal number of moves is 34.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] e
+[3] open fridge
+[4] take fish
+[5] w
+[6] d
+[7] w
+[8] w
+[9] w
+[10] w
+[11] throw fish
+[12] wait
+[13] wait
+[14] wait
+[15] w
+[16] climb ash
+[17] u
+[18] u
+[19] u
+[20] shake tree
+[21] d
+[22] d
+[23] d
+[24] d
+[25] climb elm
+[26] u
+[27] shake tree
+[28] d
+[29] d
+[30] climb pine
+[31] shake tree
+[32] d
+[33] take nest
+[34] throw nest
+</commentary>
+        <children><child nodeId="node-4620"></child>
+        </children>
+    </item>
+    <item nodeId="node-4620">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
+
+Welcome to Unsafe. If you're not sure what to do, type "help".
+
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
+
+You've just gotten out of your bed, having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4621"></child>
+        </children>
+    </item>
+    <item nodeId="node-4621">
+        <command xml:space="preserve">test platform</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] get ipod
+Taken.
+
+&gt;[2] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.
+
+There is a muddy brown key hanging from a hook on the wall.
+
+&gt;[3] u
+
+Upstairs Hall
+The second floor of your house. Stairs lead down. The study is West, and the bathroom is East.
+
+You can see a left running shoe here.
+
+&gt;[4] w
+
+Study
+Where you study. The hall is East.
+
+On the desk are a dime and a quarter.
+
+You can also see the closet door here.
+
+&gt;[5] open drawer
+You open the desk drawer, revealing earbuds.
+
+&gt;[6] get earbuds
+Taken.
+
+&gt;[7] e
+
+Upstairs Hall
+The second floor of your house. Stairs lead down. The study is West, and the bathroom is East.
+
+You can see a left running shoe here.
+
+&gt;[8] d
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.
+
+There is a muddy brown key hanging from a hook on the wall.
+
+&gt;[9] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the West.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[10] w
+You go through the long and winding Tunnel of Extraction.
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends South. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[11] n
+
+Road
+It's a road, like what people travel on. The outskirts of town are to the East. To the North you can see a fork in the road. The stream is West. The warehouse is South.
+
+&gt;[12] n
+
+Further Along the Road
+More road! There's a fork in the road here. The main road goes North and South. To the West there's a parking lot.
+
+&gt;[13] n
+
+Abandoned Train Station
+No trains.
+
+The road leads South back toward town.
+
+You can see a map here.
+
+&gt;[14] e
+
+Control Room
+Where things get controlled. The only exit is to the West.
+
+You can see the CALL TRAIN button and an old screen here.
+
+&gt;[15] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[16] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[17] press button
+(the CALL TRAIN button)
+Now that you've been standing here for a bit, you notice a sticky note next to the button.
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[18] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[19] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[20] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[21] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[22] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[23] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[24] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[25] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[26] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[27] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[28] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[29] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[30] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[31] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[32] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[33] press button
+(the CALL TRAIN button)
+You press the CALL TRAIN button. An electronic voice informs you, "The train will be here any minute now." That was easy.
+
+&gt;[34] w
+
+Abandoned Train Station
+No trains.
+
+The road leads South back toward town.
+
+You can see a map here.
+
+&gt;[35] put on earbuds
+You put on earbuds.
+
+&gt;[36] put earbuds in ipod
+You plug the earbuds into the iPod. Your favorite song starts to play through them!
+
+&gt;[37] get on edge
+You get onto the edge of the platform.
+
+A train enters the station while you're jamming to the music, and you trip and fall into the train tracks in front of it. That was really dumb.
+
+
+You've reached one of this game's 14 endings! In that game you used 37 moves. The optimal number of moves is 37.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] get ipod
+[2] e
+[3] u
+[4] w
+[5] open drawer
+[6] get earbuds
+[7] e
+[8] d
+[9] d
+[10] w
+[11] n
+[12] n
+[13] n
+[14] e
+[15] press button
+[16] press button
+[17] press button
+[18] press button
+[19] press button
+[20] press button
+[21] press button
+[22] press button
+[23] press button
+[24] press button
+[25] press button
+[26] press button
+[27] press button
+[28] press button
+[29] press button
+[30] press button
+[31] press button
+[32] press button
+[33] press button
+[34] w
+[35] put on earbuds
+[36] put earbuds in ipod
+[37] get on edge
+</commentary>
+        <children><child nodeId="node-4659"></child>
+        </children>
+    </item>
+    <item nodeId="node-4659">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
+
+Welcome to Unsafe. If you're not sure what to do, type "help".
+
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
+
+You've just gotten out of your bed, having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4660"></child>
+        </children>
+    </item>
+    <item nodeId="node-4660">
+        <command xml:space="preserve">test car</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.
+
+There is a muddy brown key hanging from a hook on the wall.
+
+&gt;[2] s
+
+Back Entryway
+The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. There is a Toyota key tied to the coat rack. The hall is to the North, the backyard to the South.
+
+You can see the back door, a blue key, a right running shoe and a Toyota key here.
+
+&gt;[3] untie toyota key
+You untie the Toyota key, but in your clumsiness it falls to the floor.
+
+&gt;[4] get toyota key
+Taken.
+
+&gt;[5] n
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.
+
+There is a muddy brown key hanging from a hook on the wall.
+
+&gt;[6] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the West.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[7] w
+You go through the long and winding Tunnel of Extraction.
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends South. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[8] n
+
+Road
+It's a road, like what people travel on. The outskirts of town are to the East. To the North you can see a fork in the road. The stream is West. The warehouse is South.
+
+&gt;[9] n
+
+Further Along the Road
+More road! There's a fork in the road here. The main road goes North and South. To the West there's a parking lot.
+
+&gt;[10] n
+
+Abandoned Train Station
+No trains.
+
+The road leads South back toward town.
+
+You can see a map here.
+
+&gt;[11] e
+
+Control Room
+Where things get controlled. The only exit is to the West.
+
+You can see the CALL TRAIN button and an old screen here.
+
+&gt;[12] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[13] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[14] press button
+Now that you've been standing here for a bit, you notice a sticky note next to the button.
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[15] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[16] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[17] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[18] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[19] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[20] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[21] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[22] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[23] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[24] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[25] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[26] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[27] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[28] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[29] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[30] press button
+You press the CALL TRAIN button. An electronic voice informs you, "The train will be here any minute now." That was easy.
+
+&gt;[31] w
+
+Abandoned Train Station
+No trains.
+
+The road leads South back toward town.
+
+You can see a map here.
+
+&gt;[32] s
+
+Further Along the Road
+More road! There's a fork in the road here. The main road goes North and South. To the West there's a parking lot.
+
+&gt;[33] w
+
+Parking Lot
+Where cars park. You see your boxy blue-gray Toyota in the corner of the lot. The road is to the East.
+
+You can see a blue car (closed and empty) here.
+
+&gt;[34] open car
+You open the blue car.
+
+&gt;[35] get in car
+You get into and start the car. It's ready to roll!
+
+&gt;[36] close car
+You close the blue car.
+
+&gt;[37] e
+
+Further Along the Road (in the blue car)
+More road! There's a fork in the road here. The main road goes North and South. To the West there's a parking lot.
+
+&gt;[38] n
+The boom gates are closing, it looks like a train is coming. You instinctively flinch and prevent yourself from driving toward the train station. After a moment of steeling your nerves, though, you think you could try again if you wanted.
+
+&gt;[39] n
+The boom gates are closing, it looks like a train is coming. You drive around them and toward the train station. As you go past them, a train comes and runs you over. That was really dumb.
+
+
+You've reached one of this game's 14 endings! In that game you used 39 moves. The optimal number of moves is 39.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] s
+[3] untie toyota key
+[4] get toyota key
+[5] n
+[6] d
+[7] w
+[8] n
+[9] n
+[10] n
+[11] e
+[12] press button
+[13] press button
+[14] press button
+[15] press button
+[16] press button
+[17] press button
+[18] press button
+[19] press button
+[20] press button
+[21] press button
+[22] press button
+[23] press button
+[24] press button
+[25] press button
+[26] press button
+[27] press button
+[28] press button
+[29] press button
+[30] press button
+[31] w
+[32] s
+[33] w
+[34] open car
+[35] get in car
+[36] close car
+[37] e
+[38] n
+[39] n
+</commentary>
+        <children><child nodeId="node-4700"></child>
+        </children>
+    </item>
+    <item nodeId="node-4700">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
+
+Welcome to Unsafe. If you're not sure what to do, type "help".
+
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
+
+You've just gotten out of your bed, having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4701"></child>
+        </children>
+    </item>
+    <item nodeId="node-4701">
+        <command xml:space="preserve">test running</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] e
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.
+
+There is a muddy brown key hanging from a hook on the wall.
+
+&gt;[2] s
+
+Back Entryway
+The back entryway to your house. It's a tiny room with a coat rack and a trash can being the most notable scenery. There is a Toyota key tied to the coat rack. The hall is to the North, the backyard to the South.
+
+You can see the back door, a blue key, a right running shoe and a Toyota key here.
+
+&gt;[3] get right shoe
+Taken.
+
+&gt;[4] n
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.
+
+There is a muddy brown key hanging from a hook on the wall.
+
+&gt;[5] u
+
+Upstairs Hall
+The second floor of your house. Stairs lead down. The study is West, and the bathroom is East.
+
+You can see a left running shoe here.
+
+&gt;[6] get left shoe
+Taken.
+
+&gt;[7] d
+
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.
+
+There is a muddy brown key hanging from a hook on the wall.
+
+&gt;[8] d
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the West.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;[9] w
+You go through the long and winding Tunnel of Extraction.
+
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends South. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;[10] n
+
+Road
+It's a road, like what people travel on. The outskirts of town are to the East. To the North you can see a fork in the road. The stream is West. The warehouse is South.
+
+&gt;[11] n
+
+Further Along the Road
+More road! There's a fork in the road here. The main road goes North and South. To the West there's a parking lot.
+
+&gt;[12] n
+
+Abandoned Train Station
+No trains.
+
+The road leads South back toward town.
+
+You can see a map here.
+
+&gt;[13] e
+
+Control Room
+Where things get controlled. The only exit is to the West.
+
+You can see the CALL TRAIN button and an old screen here.
+
+&gt;[14] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[15] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[16] press button
+Now that you've been standing here for a bit, you notice a sticky note next to the button.
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[17] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[18] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[19] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[20] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[21] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[22] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[23] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[24] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[25] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[26] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[27] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[28] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[29] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[30] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[31] press button
+You press the CALL TRAIN button. Nothing happens. Maybe try pressing the button again.
+
+&gt;[32] press button
+You press the CALL TRAIN button. An electronic voice informs you, "The train will be here any minute now." That was easy.
+
+&gt;[33] w
+
+Abandoned Train Station
+No trains.
+
+The road leads South back toward town.
+
+You can see a map here.
+
+&gt;[34] take off shoes
+(work shoes)
+You take off work shoes.
+
+&gt;[35] put on running shoes
+You put on the pair of running shoes.
+
+&gt;[36] lace up running shoes
+You tie the laces on the running shoes so that there is no chance you could trip on them. You're ready to run!
+
+&gt;[37] run across tracks
+Well that was dumb. You get distracted as you run across the tracks and don't notice the train coming until it's too late.
+
+
+You've reached one of this game's 14 endings! In that game you used 37 moves. The optimal number of moves is 37.
+Great job, you got the optimal number of moves!
+
+
+
+    *** You have died ***
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] e
+[2] s
+[3] get right shoe
+[4] n
+[5] u
+[6] get left shoe
+[7] d
+[8] d
+[9] w
+[10] n
+[11] n
+[12] n
+[13] e
+[14] press button
+[15] press button
+[16] press button
+[17] press button
+[18] press button
+[19] press button
+[20] press button
+[21] press button
+[22] press button
+[23] press button
+[24] press button
+[25] press button
+[26] press button
+[27] press button
+[28] press button
+[29] press button
+[30] press button
+[31] press button
+[32] press button
+[33] w
+[34] take off shoes
+[35] put on running shoes
+[36] lace up running shoes
+[37] run across tracks
+</commentary>
+        <children><child nodeId="node-4739"></child>
+        </children>
+    </item>
+    <item nodeId="node-4739">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">
+
+
+At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
+
+Welcome to Unsafe. If you're not sure what to do, type "help".
+
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
+
+You've just gotten out of your bed, having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4740"></child>
+        </children>
+    </item>
+    <item nodeId="node-4740">
+        <command xml:space="preserve">take off belt</command>
+        <result xml:space="preserve">You take off the belt.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4741"></child>
+        </children>
+    </item>
+    <item nodeId="node-4741">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You step ouside for a moment, then look at your lack of pants and a belt and decide you should go out looking presentable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4742"></child>
+        </children>
+    </item>
+    <item nodeId="node-4742">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You step ouside for a moment, then look at your lack of pants and a belt and decide you should go out looking presentable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1708">
         <command xml:space="preserve">test platform</command>
@@ -18466,6 +19549,485 @@ It's your bedroom. It's not very interesting. The hall is to the East. The side 
 You've just gotten out of your bed, having woken up from a nap.
 
 On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-4743">
+        <command xml:space="preserve">take off belt</command>
+        <result xml:space="preserve">You take off the belt.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4744"></child>
+        </children>
+    </item>
+    <item nodeId="node-4744">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.
+
+There is a muddy brown key hanging from a hook on the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4745"></child>
+        </children>
+    </item>
+    <item nodeId="node-4745">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen
+Where food happens. The hall is to the West.
+
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4746"></child>
+        </children>
+    </item>
+    <item nodeId="node-4746">
+        <command xml:space="preserve">get stool</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4747"></child>
+        </children>
+    </item>
+    <item nodeId="node-4747">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.
+
+There is a muddy brown key hanging from a hook on the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4748"></child>
+        </children>
+    </item>
+    <item nodeId="node-4748">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4749"></child>
+        </children>
+    </item>
+    <item nodeId="node-4749">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">You open the Side Door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4750"></child>
+        </children>
+    </item>
+    <item nodeId="node-4750">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You step outside for a moment, then look at your lack of pants and a belt and decide you should go out looking presentable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4751"></child>
+        </children>
+    </item>
+    <item nodeId="node-4751">
+        <command xml:space="preserve">put on belt</command>
+        <result xml:space="preserve">You put on the belt.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4752"></child>
+        </children>
+    </item>
+    <item nodeId="node-4752">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+The Garden
+A small garden. There are a few different kinds of flowers and a few different kinds of squash. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt. You could swear there used to be a bucket somewhere around here, but you don't see it anywhere...
+
+The side door to your house is East, and a path leads off towards town to the West.
+
+You can see the shed (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4753"></child>
+        </children>
+    </item>
+    <item nodeId="node-4753">
+        <command xml:space="preserve">restart</command>
+        <result xml:space="preserve">Are you sure you want to restart? </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4754"></child>
+        </children>
+    </item>
+    <item nodeId="node-4754">
+        <command xml:space="preserve">y</command>
+        <result xml:space="preserve">
+
+
+At 10:45am EDT on Thursday March 21st, the behavior of the safe was changed.
+
+At 1:15am EDT on Sunday March 24th, the behavior of some of the player's clothing was changed.
+
+
+Welcome to Unsafe. If you're not sure what to do, type "help".
+
+
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
+
+You've just gotten out of your bed, having woken up from a nap.
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4755"></child>
+        </children>
+    </item>
+    <item nodeId="node-4755">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.
+
+There is a muddy brown key hanging from a hook on the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4756"></child>
+        </children>
+    </item>
+    <item nodeId="node-4756">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen
+Where food happens. The hall is to the West.
+
+You can see a toaster, a cabinet (closed), a refrigerator (closed) and a stool here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4757"></child>
+        </children>
+    </item>
+    <item nodeId="node-4757">
+        <command xml:space="preserve">get stool</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4758"></child>
+        </children>
+    </item>
+    <item nodeId="node-4758">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Hall
+The hall in the middle of your house. Your bedroom is to the West. The staircase leading upwards is to the North. The back entryway is to the South. The kitchen is to the East. You can also go down to the basement from here.
+
+There is a muddy brown key hanging from a hook on the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4759"></child>
+        </children>
+    </item>
+    <item nodeId="node-4759">
+        <command xml:space="preserve"></command>
+        <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4760"></child>
+        </children>
+    </item>
+    <item nodeId="node-4760">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Bedroom
+It's your bedroom. It's not very interesting. The hall is to the East. The side door (closed) leads out of the house to the West. 
+
+On the nightstand is an iPod.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4761"></child>
+        </children>
+    </item>
+    <item nodeId="node-4761">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">You open the Side Door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4762"></child>
+        </children>
+    </item>
+    <item nodeId="node-4762">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+The Garden
+A small garden. There are a few different kinds of flowers and a few different kinds of squash. It's a peaceful place. A spigot on the wall sits above a circular indent in the dirt. You could swear there used to be a bucket somewhere around here, but you don't see it anywhere...
+
+The side door to your house is East, and a path leads off towards town to the West.
+
+You can see the shed (closed) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4763"></child>
+        </children>
+    </item>
+    <item nodeId="node-4763">
+        <command xml:space="preserve">put down stool</command>
+        <result xml:space="preserve">Dropped.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4764"></child>
+        </children>
+    </item>
+    <item nodeId="node-4764">
+        <command xml:space="preserve">get on stool</command>
+        <result xml:space="preserve">You get onto the stool.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4765"></child>
+        </children>
+    </item>
+    <item nodeId="node-4765">
+        <command xml:space="preserve">et bucket</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4766"></child>
+        </children>
+    </item>
+    <item nodeId="node-4766">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first getting off the stool)
+
+Outskirts of Town
+There's less town here than there is to the South. The garden is East. The space center is North. The road is West.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4767"></child>
+        </children>
+    </item>
+    <item nodeId="node-4767">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">The Garden
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4768"></child>
+        </children>
+    </item>
+    <item nodeId="node-4768">
+        <command xml:space="preserve">get bucket</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4769"></child>
+        </children>
+    </item>
+    <item nodeId="node-4769">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first getting off the stool)
+
+Outskirts of Town
+There's less town here than there is to the South. The garden is East. The space center is North. The road is West.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4770"></child>
+        </children>
+    </item>
+    <item nodeId="node-4770">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Road
+It's a road, like what people travel on. The outskirts of town are to the East. To the North you can see a fork in the road. The stream is West. The warehouse is South.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4771"></child>
+        </children>
+    </item>
+    <item nodeId="node-4771">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+By the Stream
+There's a stream, making whatever sound water makes. There's also a scary warning sign. The road is to the East, and the clearing is to the South.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4772"></child>
+        </children>
+    </item>
+    <item nodeId="node-4772">
+        <command xml:space="preserve">take water</command>
+        <result xml:space="preserve">You dip the bucket in the water, coming out with a bucketful of water and a few... piranhas?!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4773"></child>
+        </children>
+    </item>
+    <item nodeId="node-4773">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Road
+It's a road, like what people travel on. The outskirts of town are to the East. To the North you can see a fork in the road. The stream is West. The warehouse is South.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4774"></child>
+        </children>
+    </item>
+    <item nodeId="node-4774">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+Abandoned Warehouse
+The warehouse is old and abandoned. It is big and extends South. Not much more to say. The Road is to the North. The Tunnel of Extraction is below. There are holes in the wall to the East and West.
+
+You can see The Tunnel of Extraction here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4775"></child>
+        </children>
+    </item>
+    <item nodeId="node-4775">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">You go through the long and winding Tunnel of Extraction.
+
+Basement
+The dark basement of your house. The hall is upstairs. The Tunnel of Extraction is to the West.
+
+You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which is a small metal key) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4776"></child>
+        </children>
+    </item>
+    <item nodeId="node-4776">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Abandoned Warehouse
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4777"></child>
+        </children>
+    </item>
+    <item nodeId="node-4777">
+        <command xml:space="preserve">take off belt</command>
+        <result xml:space="preserve">You take off the belt.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4778"></child>
+        </children>
+    </item>
+    <item nodeId="node-4778">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">The tunnel looks difficult to traverse. You think your pants would fall off without a belt.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4779"></child>
+        </children>
+    </item>
+    <item nodeId="node-4779">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Abandoned Warehouse
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4780"></child>
+        </children>
+    </item>
+    <item nodeId="node-4780">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Abandoned Warehouse
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4781"></child>
+        </children>
+    </item>
+    <item nodeId="node-4781">
+        <command xml:space="preserve">take off hat</command>
+        <result xml:space="preserve">You take off the hat.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4782"></child>
+        </children>
+    </item>
+    <item nodeId="node-4782">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">The tunnel looks cold and ominous. You think you should be dressed warmly in a jacket and a hat before attempting to traverse it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4783"></child>
+        </children>
+    </item>
+    <item nodeId="node-4783">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Abandoned Warehouse
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4784"></child>
+        </children>
+    </item>
+    <item nodeId="node-4784">
+        <command xml:space="preserve">take off jacket</command>
+        <result xml:space="preserve">You take off the jacket.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4785"></child>
+        </children>
+    </item>
+    <item nodeId="node-4785">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">The tunnel looks cold and ominous. You think you should be dressed warmly in a jacket and a hat before attempting to traverse it.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-4786"></child>
+        </children>
+    </item>
+    <item nodeId="node-4786">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Abandoned Warehouse
+[Previous turn undone.]
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -28903,8 +30465,8 @@ You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2705"></child>
-            <child nodeId="node-4201"></child>
+        <children><child nodeId="node-2747"></child>
+            <child nodeId="node-2705"></child>
             <child nodeId="node-2702"></child>
         </children>
     </item>
@@ -28933,7 +30495,7 @@ You can see The Tunnel of Extraction, a vat (closed) and a key cabinet (in which
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-4201">
+    <item nodeId="node-2705">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">You go through the long and winding Tunnel of Extraction.
 
@@ -28944,10 +30506,10 @@ You can see The Tunnel of Extraction here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4202"></child>
+        <children><child nodeId="node-2706"></child>
         </children>
     </item>
-    <item nodeId="node-4202">
+    <item nodeId="node-2706">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Road
@@ -28955,10 +30517,10 @@ It's a road, like what people travel on. The outskirts of town are to the East. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4203"></child>
+        <children><child nodeId="node-2707"></child>
         </children>
     </item>
-    <item nodeId="node-4203">
+    <item nodeId="node-2707">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Further Along the Road
@@ -28966,10 +30528,10 @@ More road! There's a fork in the road here. The main road goes North and South. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4204"></child>
+        <children><child nodeId="node-2708"></child>
         </children>
     </item>
-    <item nodeId="node-4204">
+    <item nodeId="node-2708">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 Road
@@ -28977,10 +30539,10 @@ It's a road, like what people travel on. The outskirts of town are to the East. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4205"></child>
+        <children><child nodeId="node-2709"></child>
         </children>
     </item>
-    <item nodeId="node-4205">
+    <item nodeId="node-2709">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Outskirts of Town
@@ -28988,10 +30550,10 @@ There's less town here than there is to the South. The garden is East. The space
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4206"></child>
+        <children><child nodeId="node-2710"></child>
         </children>
     </item>
-    <item nodeId="node-4206">
+    <item nodeId="node-2710">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Road
@@ -28999,10 +30561,10 @@ It's a road, like what people travel on. The outskirts of town are to the East. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4207"></child>
+        <children><child nodeId="node-2711"></child>
         </children>
     </item>
-    <item nodeId="node-4207">
+    <item nodeId="node-2711">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Outskirts of Town
@@ -29010,10 +30572,10 @@ There's less town here than there is to the South. The garden is East. The space
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4208"></child>
+        <children><child nodeId="node-2712"></child>
         </children>
     </item>
-    <item nodeId="node-4208">
+    <item nodeId="node-2712">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Space Center
@@ -29021,10 +30583,10 @@ Your friendly neighborhood space center. They build rockets and stuff. The outsk
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4209"></child>
+        <children><child nodeId="node-2713"></child>
         </children>
     </item>
-    <item nodeId="node-4209">
+    <item nodeId="node-2713">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Launch Pad
@@ -29034,28 +30596,28 @@ You can see a spaceship here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4210"></child>
+        <children><child nodeId="node-2714"></child>
         </children>
     </item>
-    <item nodeId="node-4210">
+    <item nodeId="node-2714">
         <command xml:space="preserve">get in ship</command>
         <result xml:space="preserve">You can't get into the closed spaceship.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4211"></child>
+        <children><child nodeId="node-2715"></child>
         </children>
     </item>
-    <item nodeId="node-4211">
+    <item nodeId="node-2715">
         <command xml:space="preserve">open ship</command>
         <result xml:space="preserve">You open the spaceship, revealing an ON button, a LAUNCH button, a spacesuit and a helmet.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4212"></child>
+        <children><child nodeId="node-2716"></child>
         </children>
     </item>
-    <item nodeId="node-4212">
+    <item nodeId="node-2716">
         <command xml:space="preserve">get in ship</command>
         <result xml:space="preserve">You get into the spaceship.
 
@@ -29063,19 +30625,19 @@ In the spaceship you can see an ON button, a LAUNCH button, a spacesuit and a he
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4213"></child>
+        <children><child nodeId="node-2717"></child>
         </children>
     </item>
-    <item nodeId="node-4213">
+    <item nodeId="node-2717">
         <command xml:space="preserve">close ship</command>
         <result xml:space="preserve">You close the spaceship.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4214"></child>
+        <children><child nodeId="node-2718"></child>
         </children>
     </item>
-    <item nodeId="node-4214">
+    <item nodeId="node-2718">
         <command xml:space="preserve">press ON</command>
         <result xml:space="preserve">You press the ON button. All around you dials spin and lights blink.
 
@@ -29084,20 +30646,20 @@ A dialog appears on the screen: WARNING: LOW FUEL. SAY "confirm" to continue. Mi
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4215"></child>
+        <children><child nodeId="node-2719"></child>
         </children>
     </item>
-    <item nodeId="node-4215">
+    <item nodeId="node-2719">
         <command xml:space="preserve">say confirm</command>
         <result xml:space="preserve">(to the computer)
 The dialog on the screen goes away. The screen now reads READY FOR LAUNCH.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4216"></child>
+        <children><child nodeId="node-2720"></child>
         </children>
     </item>
-    <item nodeId="node-4216">
+    <item nodeId="node-2720">
         <command xml:space="preserve">press launch</command>
         <result xml:space="preserve">The computer counts down: "3... 2... 1... LAUNCHING". 
 
@@ -29107,10 +30669,10 @@ The computer says "This ship is equipped with an auto space suit. Simply say SUI
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4217"></child>
+        <children><child nodeId="node-2721"></child>
         </children>
     </item>
-    <item nodeId="node-4217">
+    <item nodeId="node-2721">
         <command xml:space="preserve">say suit up</command>
         <result xml:space="preserve">(to the computer)
 The spaceship's machinery puts a space suit on you faster than you could possibly have done it yourself.
@@ -29119,19 +30681,19 @@ The computer announces: "Auto pilot has engaged. Say CANCEL to fly the ship your
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4218"></child>
+        <children><child nodeId="node-2722"></child>
         </children>
     </item>
-    <item nodeId="node-4218">
+    <item nodeId="node-2722">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">You would have to get out of the spaceship first.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4219"></child>
+        <children><child nodeId="node-2723"></child>
         </children>
     </item>
-    <item nodeId="node-4219">
+    <item nodeId="node-2723">
         <command xml:space="preserve">wait</command>
         <result xml:space="preserve">Time passes.
 
@@ -29139,28 +30701,28 @@ The ship stops ascending as the auto pilot takes over. You start to fall toward 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4220"></child>
+        <children><child nodeId="node-2724"></child>
         </children>
     </item>
-    <item nodeId="node-4220">
+    <item nodeId="node-2724">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4221"></child>
+        <children><child nodeId="node-2725"></child>
         </children>
     </item>
-    <item nodeId="node-4221">
+    <item nodeId="node-2725">
         <command xml:space="preserve">wait</command>
         <result xml:space="preserve">Time passes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4222"></child>
+        <children><child nodeId="node-2726"></child>
         </children>
     </item>
-    <item nodeId="node-4222">
+    <item nodeId="node-2726">
         <command xml:space="preserve">wait</command>
         <result xml:space="preserve">Time passes.
 
@@ -29168,10 +30730,10 @@ The spaceship lands in a near-crash. Your back hurts, but otherwise you feel oka
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4223"></child>
+        <children><child nodeId="node-2727"></child>
         </children>
     </item>
-    <item nodeId="node-4223">
+    <item nodeId="node-2727">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Launch Pad (in the spaceship)
 The place where rockets take off from. The rest of the Space Center is South.
@@ -29180,46 +30742,46 @@ In the spaceship you can see an ON button and a LAUNCH button.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4224"></child>
+        <children><child nodeId="node-2728"></child>
         </children>
     </item>
-    <item nodeId="node-4224">
+    <item nodeId="node-2728">
         <command xml:space="preserve">press ON</command>
         <result xml:space="preserve">The spaceship doesn't seem to work anymore. Maybe someone crashed it.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4225"></child>
+        <children><child nodeId="node-2729"></child>
         </children>
     </item>
-    <item nodeId="node-4225">
+    <item nodeId="node-2729">
         <command xml:space="preserve">press LAUNCH</command>
         <result xml:space="preserve">The button doesn't do anything. Maybe try turning on the spaceship first?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4226"></child>
+        <children><child nodeId="node-2730"></child>
         </children>
     </item>
-    <item nodeId="node-4226">
+    <item nodeId="node-2730">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">You would have to get out of the spaceship first.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4227"></child>
+        <children><child nodeId="node-2731"></child>
         </children>
     </item>
-    <item nodeId="node-4227">
+    <item nodeId="node-2731">
         <command xml:space="preserve">get out of ship</command>
         <result xml:space="preserve">Try just typing GET OUT.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4228"></child>
+        <children><child nodeId="node-2732"></child>
         </children>
     </item>
-    <item nodeId="node-4228">
+    <item nodeId="node-2732">
         <command xml:space="preserve">GET OUT</command>
         <result xml:space="preserve">You get out of the spaceship.
 
@@ -29230,10 +30792,10 @@ You can see a spaceship here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4229"></child>
+        <children><child nodeId="node-2733"></child>
         </children>
     </item>
-    <item nodeId="node-4229">
+    <item nodeId="node-2733">
         <command xml:space="preserve">get in ship</command>
         <result xml:space="preserve">You get into the spaceship.
 
@@ -29241,19 +30803,19 @@ In the spaceship you can see an ON button and a LAUNCH button.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4230"></child>
+        <children><child nodeId="node-2734"></child>
         </children>
     </item>
-    <item nodeId="node-4230">
+    <item nodeId="node-2734">
         <command xml:space="preserve">press ON</command>
         <result xml:space="preserve">The spaceship doesn't seem to work anymore. Maybe someone crashed it.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4231"></child>
+        <children><child nodeId="node-2735"></child>
         </children>
     </item>
-    <item nodeId="node-4231">
+    <item nodeId="node-2735">
         <command xml:space="preserve">get out</command>
         <result xml:space="preserve">You get out of the spaceship.
 
@@ -29264,10 +30826,10 @@ You can see a spaceship here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4232"></child>
+        <children><child nodeId="node-2736"></child>
         </children>
     </item>
-    <item nodeId="node-4232">
+    <item nodeId="node-2736">
         <command xml:space="preserve">l</command>
         <result xml:space="preserve">Launch Pad
 The place where rockets take off from. The rest of the Space Center is South.
@@ -29276,10 +30838,10 @@ You can see a spaceship here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4233"></child>
+        <children><child nodeId="node-2737"></child>
         </children>
     </item>
-    <item nodeId="node-4233">
+    <item nodeId="node-2737">
         <command xml:space="preserve">x ship</command>
         <result xml:space="preserve">A very small rocket. Just big enough to carry one person to space.
 
@@ -29287,17 +30849,17 @@ In the spaceship are an ON button and a LAUNCH button.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4234"></child>
+        <children><child nodeId="node-2738"></child>
         </children>
     </item>
-    <item nodeId="node-4234">
+    <item nodeId="node-2738">
         <command xml:space="preserve">restart</command>
         <result xml:space="preserve">Are you sure you want to restart? </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4235"></child>
+        <children><child nodeId="node-2739"></child>
         </children>
     </item>
-    <item nodeId="node-4235">
+    <item nodeId="node-2739">
         <command xml:space="preserve">y</command>
         <result xml:space="preserve">
 
@@ -29317,10 +30879,10 @@ On the nightstand is an iPod.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4236"></child>
+        <children><child nodeId="node-2740"></child>
         </children>
     </item>
-    <item nodeId="node-4236">
+    <item nodeId="node-2740">
         <command xml:space="preserve">test ship</command>
         <result xml:space="preserve">&gt;--&gt; The following tests are available:
 'test all'
@@ -29343,10 +30905,10 @@ On the nightstand is an iPod.
 'test pie'
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4237"></child>
+        <children><child nodeId="node-2741"></child>
         </children>
     </item>
-    <item nodeId="node-4237">
+    <item nodeId="node-2741">
         <command xml:space="preserve">test space</command>
         <result xml:space="preserve">(Testing.)
 
@@ -29542,10 +31104,10 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 [28] get out
 [29] take off helmet
 </commentary>
-        <children><child nodeId="node-4267"></child>
+        <children><child nodeId="node-2742"></child>
         </children>
     </item>
-    <item nodeId="node-4267">
+    <item nodeId="node-2742">
         <command xml:space="preserve">restart</command>
         <result xml:space="preserve">
 
@@ -29565,10 +31127,10 @@ On the nightstand is an iPod.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4268"></child>
+        <children><child nodeId="node-2743"></child>
         </children>
     </item>
-    <item nodeId="node-4268">
+    <item nodeId="node-2743">
         <command xml:space="preserve">test car2</command>
         <result xml:space="preserve">(Testing.)
 
@@ -29768,19 +31330,19 @@ You can't go that way.
 [38] w
 [39] w
 </commentary>
-        <children><child nodeId="node-4308"></child>
+        <children><child nodeId="node-2744"></child>
         </children>
     </item>
-    <item nodeId="node-4308">
+    <item nodeId="node-2744">
         <command xml:space="preserve"> g</command>
         <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4309"></child>
+        <children><child nodeId="node-2745"></child>
         </children>
     </item>
-    <item nodeId="node-4309">
+    <item nodeId="node-2745">
         <command xml:space="preserve">help</command>
         <result xml:space="preserve">
 This tutorial has lots of built-in help on how to play text adventures. To read more, type "help" followed by whatever it is you want to get help on, and then hit enter. For example, you can type "help basics" to see the most important IF commands.
@@ -29798,10 +31360,10 @@ All of these topics are general information on playing IF. If you are stuck on a
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-4310"></child>
+        <children><child nodeId="node-2746"></child>
         </children>
     </item>
-    <item nodeId="node-4310">
+    <item nodeId="node-2746">
         <command xml:space="preserve">help commands</command>
         <result xml:space="preserve">
 These are the most common ways of interacting with the game's world. It's usually worth trying these, in almost any situation. You never know what might happen -- or what you might learn. 
@@ -29825,25 +31387,25 @@ These commands do what they say. Common sense applies. There are many more possi
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-2705">
+    <item nodeId="node-2747">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2706"></child>
+        <children><child nodeId="node-2748"></child>
         </children>
     </item>
-    <item nodeId="node-2706">
+    <item nodeId="node-2748">
         <command xml:space="preserve">open cabinet</command>
         <result xml:space="preserve">That's already open.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2707"></child>
+        <children><child nodeId="node-2749"></child>
         </children>
     </item>
-    <item nodeId="node-2707">
+    <item nodeId="node-2749">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">You go through the long and winding Tunnel of Extraction.
 
@@ -29854,10 +31416,10 @@ You can see The Tunnel of Extraction here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2708"></child>
+        <children><child nodeId="node-2750"></child>
         </children>
     </item>
-    <item nodeId="node-2708">
+    <item nodeId="node-2750">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 A Spooky Lair
@@ -29869,64 +31431,64 @@ You can also see four snakes and an ancient cabinet (closed) here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2709"></child>
+        <children><child nodeId="node-2751"></child>
         </children>
     </item>
-    <item nodeId="node-2709">
+    <item nodeId="node-2751">
         <command xml:space="preserve">open cabinet</command>
         <result xml:space="preserve">You open the ancient cabinet, revealing three jars.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2710"></child>
+        <children><child nodeId="node-2752"></child>
         </children>
     </item>
-    <item nodeId="node-2710">
+    <item nodeId="node-2752">
         <command xml:space="preserve">get jar</command>
         <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2711"></child>
+        <children><child nodeId="node-2753"></child>
         </children>
     </item>
-    <item nodeId="node-2711">
+    <item nodeId="node-2753">
         <command xml:space="preserve">open jar</command>
         <result xml:space="preserve">You open the jar, revealing a mouse.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2712"></child>
+        <children><child nodeId="node-2754"></child>
         </children>
     </item>
-    <item nodeId="node-2712">
+    <item nodeId="node-2754">
         <command xml:space="preserve">get mouse</command>
         <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2713"></child>
+        <children><child nodeId="node-2755"></child>
         </children>
     </item>
-    <item nodeId="node-2713">
+    <item nodeId="node-2755">
         <command xml:space="preserve">wait</command>
         <result xml:space="preserve">Time passes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2714"></child>
+        <children><child nodeId="node-2756"></child>
         </children>
     </item>
-    <item nodeId="node-2714">
+    <item nodeId="node-2756">
         <command xml:space="preserve">wait</command>
         <result xml:space="preserve">Time passes.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2715"></child>
+        <children><child nodeId="node-2757"></child>
         </children>
     </item>
-    <item nodeId="node-2715">
+    <item nodeId="node-2757">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Abandoned Warehouse
@@ -29936,10 +31498,10 @@ You can see The Tunnel of Extraction here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2716"></child>
+        <children><child nodeId="node-2758"></child>
         </children>
     </item>
-    <item nodeId="node-2716">
+    <item nodeId="node-2758">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Road
@@ -29947,10 +31509,10 @@ It's a road, like what people travel on. The outskirts of town are to the east. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2717"></child>
+        <children><child nodeId="node-2759"></child>
         </children>
     </item>
-    <item nodeId="node-2717">
+    <item nodeId="node-2759">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Outskirts of Town
@@ -29958,10 +31520,10 @@ There's less town here than there is to the South. The garden is east. The space
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2718"></child>
+        <children><child nodeId="node-2760"></child>
         </children>
     </item>
-    <item nodeId="node-2718">
+    <item nodeId="node-2760">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Space Center
@@ -29969,10 +31531,10 @@ Your friendly neighborhood space center. They build rockets and stuff. The outsk
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2719"></child>
+        <children><child nodeId="node-2761"></child>
         </children>
     </item>
-    <item nodeId="node-2719">
+    <item nodeId="node-2761">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Launch Pad
@@ -29982,155 +31544,155 @@ You can see a spaceship here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2720"></child>
+        <children><child nodeId="node-2762"></child>
         </children>
     </item>
-    <item nodeId="node-2720">
+    <item nodeId="node-2762">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">You can't go that way.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2721"></child>
+        <children><child nodeId="node-2763"></child>
         </children>
     </item>
-    <item nodeId="node-2721">
+    <item nodeId="node-2763">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2722"></child>
+        <children><child nodeId="node-2764"></child>
         </children>
     </item>
-    <item nodeId="node-2722">
+    <item nodeId="node-2764">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2723"></child>
+        <children><child nodeId="node-2765"></child>
         </children>
     </item>
-    <item nodeId="node-2723">
+    <item nodeId="node-2765">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2724"></child>
+        <children><child nodeId="node-2766"></child>
         </children>
     </item>
-    <item nodeId="node-2724">
+    <item nodeId="node-2766">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2725"></child>
+        <children><child nodeId="node-2767"></child>
         </children>
     </item>
-    <item nodeId="node-2725">
+    <item nodeId="node-2767">
         <command xml:space="preserve">open ship</command>
         <result xml:space="preserve">You open the spaceship, revealing an ON button, a LAUNCH button, a spacesuit and a helmet.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2726"></child>
+        <children><child nodeId="node-2768"></child>
         </children>
     </item>
-    <item nodeId="node-2726">
+    <item nodeId="node-2768">
         <command xml:space="preserve">get in ship</command>
         <result xml:space="preserve">This space center has a strict no-mice policy. You'll have to put down any mice you are carrying before you get in.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2727"></child>
+        <children><child nodeId="node-2769"></child>
         </children>
     </item>
-    <item nodeId="node-2727">
+    <item nodeId="node-2769">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2728"></child>
+        <children><child nodeId="node-2770"></child>
         </children>
     </item>
-    <item nodeId="node-2728">
+    <item nodeId="node-2770">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2729"></child>
+        <children><child nodeId="node-2771"></child>
         </children>
     </item>
-    <item nodeId="node-2729">
+    <item nodeId="node-2771">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2730"></child>
+        <children><child nodeId="node-2772"></child>
         </children>
     </item>
-    <item nodeId="node-2730">
+    <item nodeId="node-2772">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2731"></child>
+        <children><child nodeId="node-2773"></child>
         </children>
     </item>
-    <item nodeId="node-2731">
+    <item nodeId="node-2773">
         <command xml:space="preserve">put down mouse</command>
         <result xml:space="preserve">The mouse sees an opportunity and scurries off before it can be put back in a jar.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2732"></child>
+        <children><child nodeId="node-2774"></child>
         </children>
     </item>
-    <item nodeId="node-2732">
+    <item nodeId="node-2774">
         <command xml:space="preserve">undo</command>
         <result xml:space="preserve">Launch Pad
 [Previous turn undone.]
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2733"></child>
+        <children><child nodeId="node-2775"></child>
         </children>
     </item>
-    <item nodeId="node-2733">
+    <item nodeId="node-2775">
         <command xml:space="preserve">put mouse in jar</command>
         <result xml:space="preserve">You put the mouse into the jar.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2734"></child>
+        <children><child nodeId="node-2776"></child>
         </children>
     </item>
-    <item nodeId="node-2734">
+    <item nodeId="node-2776">
         <command xml:space="preserve">close jar</command>
         <result xml:space="preserve">You close the jar.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2735"></child>
+        <children><child nodeId="node-2777"></child>
         </children>
     </item>
-    <item nodeId="node-2735">
+    <item nodeId="node-2777">
         <command xml:space="preserve">get in ship</command>
         <result xml:space="preserve">This space center has a strict no-mice policy. You'll have to put down any mice you are carrying before you get in.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-2736"></child>
+        <children><child nodeId="node-2778"></child>
         </children>
     </item>
-    <item nodeId="node-2736">
+    <item nodeId="node-2778">
         <command xml:space="preserve">put down jar</command>
         <result xml:space="preserve">Dropped.
 
